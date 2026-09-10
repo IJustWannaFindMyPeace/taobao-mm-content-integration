@@ -1,0 +1,57 @@
+{
+  "files": {
+    "item_features.parquet": {
+      "rows": 10,
+      "sha256": "13faf3c0636f21aaf2174c10efd2f679b953e718fb44cf82c52fbbf776d1b1a9"
+    },
+    "scl_embedding_int8_p90.parquet": {
+      "rows": 10,
+      "sha256": "06e546a79d32b8d34d6642e01c10f259c129b49fae04aa2b06cdda96fd16ea7a"
+    },
+    "test_samples.parquet": {
+      "rows": 10,
+      "sha256": "2a9343e6966e1d6d2bffa3dfe36599c6fd6eb969618108932e119df91de50833"
+    },
+    "test_user_features.parquet": {
+      "rows": 10,
+      "sha256": "5662b11b44c2a0e6b875a739d950c93143f47402b8cd5bd3271a875bd980f6ab"
+    },
+    "train_samples.parquet": {
+      "rows": 10,
+      "sha256": "7a11b0d1ef3443982b10422ba7328d922bd84c0f90632dcc336705a6112260c9"
+    },
+    "train_user_features.parquet": {
+      "rows": 10,
+      "sha256": "447627e96e33da4003387994fe7fd7612b849c38423feae9fef02716c1b337a3"
+    }
+  },
+  "splits": {
+    "train": {
+      "samples": 10,
+      "clicks": 0,
+      "user_join_hits": 0,
+      "item_join_hits": 0,
+      "content_join_hits": 0,
+      "history_lengths": [
+        1000
+      ],
+      "aligned_item_category_lengths": true
+    },
+    "test": {
+      "samples": 10,
+      "clicks": 1,
+      "user_join_hits": 0,
+      "item_join_hits": 0,
+      "content_join_hits": 0,
+      "history_lengths": [
+        351,
+        1000
+      ],
+      "aligned_item_category_lengths": true
+    }
+  },
+  "content_dimensions": [
+    128
+  ],
+  "decision": "schema_fixture_only; require coherently joined real subset before C0 training"
+}

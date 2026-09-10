@@ -1,0 +1,18 @@
+{
+  "kind": "synthetic_plumbing_only_not_paper_result",
+  "python": "3.11.15",
+  "torch": "2.12.1+cu132",
+  "cuda_runtime": "13.2",
+  "gpu": "NVIDIA GeForce RTX 5070",
+  "steps": 40,
+  "batch": 32,
+  "history_length": 50,
+  "first_loss": 0.715927243232727,
+  "final_loss": 0.0004800649476237595,
+  "parameters_updated": true,
+  "reload_max_abs_error": 0.0,
+  "empty_history_finite": true,
+  "peak_allocated_mib": 64.677734375,
+  "peak_reserved_mib": 66.0,
+  "seconds": 0.5184639000799507
+}
