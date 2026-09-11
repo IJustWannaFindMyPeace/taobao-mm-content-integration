@@ -14,6 +14,7 @@
 |官方 demo 检查|独立样例表无法按 ID 完整关联；见 [检查记录](reports/demo-audit.json)|
 |真实训练分片|固定版本、下载校验及 1,890 行字段检查完成；见 [分片报告](reports/real-probe.json)|
 |ID 工程原型|真实分片训练、mask 与重载检查通过；见 [阶段 2](docs/stage-02-id-probe.md)|
+|统一指标|AUC、GAUC、LogLoss 与真实预测完整性检查通过；见 [阶段 3](docs/stage-03-evaluation.md)|
 |正式实验协议|用户子集、验证划分、词表及内容覆盖待冻结|
 |模型与结果|C0–C7 尚未完成训练；暂无论文对照成绩|
 

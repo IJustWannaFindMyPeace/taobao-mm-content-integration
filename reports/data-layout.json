@@ -1,0 +1,16 @@
+{
+  "revision": "f185841b6e9612edd06f5112e06416f1bdf6c6d0",
+  "source": "source-manifest.json",
+  "splits": {
+    "train": {
+      "parquet_files": 161,
+      "bytes": 52550388665
+    },
+    "test": {
+      "parquet_files": 49,
+      "bytes": 15621321643
+    }
+  },
+  "status": "manifest_only_no_full_scan",
+  "user_shard_locality_verified": false
+}

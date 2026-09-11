@@ -1,0 +1,21 @@
+{
+  "rows": 1890,
+  "positives": 264,
+  "auc": 0.6712582466733759,
+  "logloss": 0.3825710982182643,
+  "gauc": 0.6406797636242845,
+  "gauc_weighting": "exposure_count_among_users_with_both_labels",
+  "users": 156,
+  "valid_users": 78,
+  "valid_rows": 1403,
+  "excluded_users": 78,
+  "excluded_rows": 487,
+  "valid_row_fraction": 0.7423280423280423,
+  "scope": "training_probe_only_not_validation_or_test",
+  "input_sha256": "6658185d341489ac1160e9509f4a3d51ee967985ef661cdf54164b1ea86bea6c",
+  "predictions_sha256": "434c0c3644dae4d0c19224bd1fbbabee1f018f1eef5aa9aba1cce58ee2672809",
+  "limitations": [
+    "GAUC groups complete only within this probe",
+    "training fit is not evidence of generalization"
+  ]
+}
