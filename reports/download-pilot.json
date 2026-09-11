@@ -1,0 +1,15 @@
+{
+  "source": "raw/train_user_features.parquet",
+  "revision": "f185841b6e9612edd06f5112e06416f1bdf6c6d0",
+  "chunk_bytes": 67108864,
+  "first_run_bytes": 67108864,
+  "resumed_run_bytes": 134217728,
+  "resume_chunk_checksums_verified": true,
+  "full_file_verified": false,
+  "background_queue": [
+    "raw/train_user_features.parquet",
+    "raw/test_user_features.parquet",
+    "raw/scl_embedding_int8_p90.parquet"
+  ],
+  "status_at_report": "background_download_started_not_complete"
+}
