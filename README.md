@@ -16,6 +16,7 @@
 |ID 工程原型|真实分片训练、mask 与重载检查通过；见 [阶段 2](docs/stage-02-id-probe.md)|
 |统一指标|AUC、GAUC、LogLoss 与真实预测完整性检查通过；见 [阶段 3](docs/stage-03-evaluation.md)|
 |用户曝光子集|固定用户抽样与完整曝光扫描完成；见 [阶段 4](docs/stage-04-user-cohort.md)|
+|扩容与属性|0.5% / 1% 嵌套曝光子集完成，1% 目标属性覆盖 100%；见 [阶段 5](docs/stage-05-scale-and-items.md)|
 |正式实验协议|曝光集合已版本化；历史连接、词表及内容覆盖待完成|
 |模型与结果|C0–C7 尚未完成训练；暂无论文对照成绩|
 

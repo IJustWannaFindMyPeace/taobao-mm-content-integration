@@ -1,0 +1,15 @@
+{
+  "revision": "f185841b6e9612edd06f5112e06416f1bdf6c6d0",
+  "verification": "TLS range and footer only; not full-file SHA256",
+  "train_user_features": {
+    "rows": 6929671,
+    "row_groups": 7,
+    "file_bytes": 44555404924,
+    "footer_bytes": 11140,
+    "first_row_group_rows": 1048576,
+    "first_row_group_item_history_compressed_bytes": 5314855434,
+    "first_row_group_category_history_compressed_bytes": 1445041891
+  },
+  "test_footer": "range response length mismatch; rejected",
+  "content_footer": "not inspected after test failure"
+}

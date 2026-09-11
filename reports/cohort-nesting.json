@@ -1,0 +1,26 @@
+{
+  "train": {
+    "nested_source_rows_verified": true,
+    "counts": [
+      60509,
+      301470,
+      609902
+    ]
+  },
+  "validation": {
+    "nested_source_rows_verified": true,
+    "counts": [
+      15472,
+      75844,
+      151947
+    ]
+  },
+  "test": {
+    "nested_source_rows_verified": true,
+    "counts": [
+      18571,
+      93925,
+      185253
+    ]
+  }
+}

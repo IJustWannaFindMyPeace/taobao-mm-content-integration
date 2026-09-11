@@ -17,6 +17,7 @@ def main():
     parser.add_argument('--manifest', type=Path, required=True)
     parser.add_argument('--output-dir', type=Path, required=True)
     parser.add_argument('--report', type=Path, required=True)
+    parser.add_argument('--buckets', type=int, choices=[1, 5, 10], default=1)
     args = parser.parse_args()
     manifest = json.loads(args.manifest.read_text(encoding='utf-8'))
     files = {e['path']: e for e in manifest['files']}
@@ -40,7 +41,7 @@ def main():
                 if ids_column.null_count:
                     raise ValueError('Null user IDs')
                 ids = ids_column.to_numpy()
-                training, validation = user_masks(ids)
+                training, validation = user_masks(ids, args.buckets)
                 table = table.append_column('source_row', pa.array(np.arange(offset, offset + len(table), dtype=np.int64)))
                 for split in outputs:
                     mask = validation if split == 'validation' else training
@@ -63,7 +64,8 @@ def main():
             stats[split] = dict(rows=totals[split], users=len(users[split]), sha256=sha256(target))
         print(f'{original}: completed {offset} rows', flush=True)
     report = dict(protocol='user-cohort-v1-exposures', revision=manifest['revision'],
-        selection='splitmix64(user_id_bits XOR 42) modulo 1000 equals 0',
+        selection=f'splitmix64(user_id_bits XOR 42) modulo 1000 less than {args.buckets}',
+        buckets=args.buckets,
         validation='independent splitmix64 seed 2026 modulo 5 equals 0',
         test='official test boundary; selected non-validation cohort; labels not used for selection',
         scans=scans, subsets=stats, history_join_complete=False, formal_training_ready=False,
