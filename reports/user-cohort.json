@@ -1,0 +1,46 @@
+{
+  "protocol": "user-cohort-v1-exposures",
+  "revision": "f185841b6e9612edd06f5112e06416f1bdf6c6d0",
+  "selection": "splitmix64(user_id_bits XOR 42) modulo 1000 equals 0",
+  "validation": "independent splitmix64 seed 2026 modulo 5 equals 0",
+  "test": "official test boundary; selected non-validation cohort; labels not used for selection",
+  "scans": {
+    "train": {
+      "rows": 76015123,
+      "sha256": "688e88f3a9eef3db0531e9a7244c479146893574308323022b211bf1a2ac7978"
+    },
+    "test": {
+      "rows": 22979465,
+      "sha256": "ed2414267303d495e294af859eef9e32deff8ca8e23f9919bd0ccdd94b134dd0"
+    }
+  },
+  "subsets": {
+    "train": {
+      "rows": 60509,
+      "users": 5518,
+      "sha256": "9b56ac502571403490c47206abf43e47925a70f4350a9f1c8133c5546a37c086"
+    },
+    "validation": {
+      "rows": 15472,
+      "users": 1404,
+      "sha256": "b84edf61c9c2877bda90a19304ecdfe2e51a53c67f4400725dcc09aab6fce925"
+    },
+    "test": {
+      "rows": 18571,
+      "users": 1679,
+      "sha256": "1c853efa41cec25963141936d8e754b268c1d9b5b81d8daf1c47d23aa2fe4268"
+    }
+  },
+  "history_join_complete": false,
+  "formal_training_ready": false,
+  "limitations": [
+    "user-disjoint validation is not a temporal holdout",
+    "test cohort may contain users absent from training",
+    "history and item joins, coverage and duplicate checks remain pending"
+  ],
+  "verification": {
+    "source_rows_unique_and_ordered": true,
+    "validation_disjoint_from_train_and_test": true,
+    "test_users_seen_in_train": 163
+  }
+}
