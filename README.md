@@ -30,7 +30,7 @@ CLIP-O、CLIP-E、SCL及去Triplet/去Triplet和MoCo的原始预训练对照均�
 
 ## 下一项目
 
-后续MUSE项目在同一数据和评估协议上研究长历史检索与语义注意力。交接使用冻结公共基线；不宣称MAKE为MUSE必需模块。建议仓库名taobao-mm-cikm24-repro，远程仓库已创建并完成首次推送。
+后续MUSE项目在同一数据和评估协议上研究长历史检索与语义注意力。交接使用冻结公共基线；不宣称MAKE为MUSE必需模块。建议仓库名taobao-mm-content-integration，远程仓库已创建并完成首次推送。
 
 ## 完成标准
 
@@ -47,7 +47,7 @@ CLIP-O、CLIP-E、SCL及去Triplet/去Triplet和MoCo的原始预训练对照均�
 
 ## 仓库链接
 
-本项目：https://github.com/IJustWannaFindMyPeace/taobao-mm-cikm24-repro
+本项目：https://github.com/IJustWannaFindMyPeace/taobao-mm-content-integration
 
 衔接项目：https://github.com/IJustWannaFindMyPeace/taobao-mm-muse-repro
 
