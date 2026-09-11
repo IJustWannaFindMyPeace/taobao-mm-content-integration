@@ -30,7 +30,7 @@ CLIP-O、CLIP-E、SCL及去Triplet/去Triplet和MoCo的原始预训练对照均�
 
 ## 下一项目
 
-后续MUSE项目在同一数据和评估协议上研究长历史检索与语义注意力。交接使用冻结公共基线；不宣称MAKE为MUSE必需模块。建议仓库名taobao-mm-cikm24-repro，远程仓库尚未创建。
+后续MUSE项目在同一数据和评估协议上研究长历史检索与语义注意力。交接使用冻结公共基线；不宣称MAKE为MUSE必需模块。建议仓库名taobao-mm-cikm24-repro，远程仓库已创建并完成首次推送。
 
 ## 完成标准
 
@@ -38,8 +38,17 @@ CLIP-O、CLIP-E、SCL及去Triplet/去Triplet和MoCo的原始预训练对照均�
 
 ## 2026-09-11 实操进度更新
 
-本地Git骨架已建立。工作区Windows CUDA bootstrap训练检查已通过，实际Python3.11.15/PyTorch2.12.1+cu132；暂复用既有环境，最终独立依赖锁未完成。CIKM目录scripts/smoke_train.py是合成数据诊断，不是C0或论文结果。官方demo键关联不完整，真实训练等待提取一致子集。前文规划状态中的“环境未验证”已被本节更新：仅bootstrap验证完成，正式训练尚未完成。远程仓库未创建。
+本地Git骨架已建立。工作区Windows CUDA bootstrap训练检查已通过，实际Python3.11.15/PyTorch2.12.1+cu132；暂复用既有环境，最终独立依赖锁未完成。CIKM目录scripts/smoke_train.py是合成数据诊断，不是C0或论文结果。官方demo键关联不完整，真实训练等待提取一致子集。前文规划状态中的“环境未验证”已被本节更新：仅bootstrap验证完成，正式训练尚未完成。远程仓库已创建并完成首次推送。
 
 ## 分阶段学习
 
 阅读[学习路线](docs/learning-path.md)。每阶段展示问题、关键代码、验证过的命令、产物与检查问题，通过Git提交记录进展。当前仅完成环境合成训练诊断与官方demo读取，真实数据基线尚未开始。
+
+
+## 仓库链接
+
+本项目：https://github.com/IJustWannaFindMyPeace/taobao-mm-cikm24-repro
+
+衔接项目：https://github.com/IJustWannaFindMyPeace/taobao-mm-muse-repro
+
+两个仓库均为私有。首次推送已完成；正式数据训练尚未开始。
