@@ -1,0 +1,36 @@
+{
+  "purpose": "engineering_probe_not_formal_evaluation",
+  "revision": "f185841b6e9612edd06f5112e06416f1bdf6c6d0",
+  "source_file": "train/train-shard-000159.parquet",
+  "source_sha256": "53737a51d308869cdd52ec6a19f86677ca5dd37390e01d1647a7c675e121796c",
+  "source_rows": 1890,
+  "probe_rows": 1890,
+  "columns": [
+    "label_0",
+    "129_1",
+    "130_1",
+    "130_2",
+    "130_3",
+    "130_4",
+    "130_5",
+    "150_2_180",
+    "151_2_180",
+    "205",
+    "206",
+    "213",
+    "214"
+  ],
+  "clicks": 264,
+  "users": 156,
+  "users_with_both_labels": 78,
+  "history_min": 1000,
+  "history_max": 1000,
+  "target_items": 1867,
+  "content_vectors_available": false,
+  "limitations": [
+    "size-selected training shard; selection bias",
+    "user records may exist outside probe",
+    "no validation/test split yet; no reported AUC",
+    "time semantics not yet independently validated"
+  ]
+}

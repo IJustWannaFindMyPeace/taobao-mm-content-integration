@@ -1,0 +1,2802 @@
+{
+  "repo": "TaoBao-MM/Taobao-MM",
+  "revision": "f185841b6e9612edd06f5112e06416f1bdf6c6d0",
+  "files": [
+    {
+      "type": "directory",
+      "oid": "68972b4dc5d154e321d1d5ccfc2227e4b4bdeae2",
+      "size": 0,
+      "path": "feature_map"
+    },
+    {
+      "type": "directory",
+      "oid": "f4d20d539e31993fba94d7384f5c3b0472a47317",
+      "size": 0,
+      "path": "raw"
+    },
+    {
+      "type": "directory",
+      "oid": "dcbc029df3c289a5eb48bb207f21212da7fb49d4",
+      "size": 0,
+      "path": "test"
+    },
+    {
+      "type": "directory",
+      "oid": "287102302c97ee8cec4c994b0eaedd934a8bbc5e",
+      "size": 0,
+      "path": "train"
+    },
+    {
+      "type": "file",
+      "oid": "1ef325f1b111266a6b26e0196871bd78baa8c2f3",
+      "size": 2461,
+      "path": ".gitattributes"
+    },
+    {
+      "type": "file",
+      "oid": "464f5fbf170899e5abb8ad2d1866289a1b4a6c3a",
+      "size": 9158,
+      "path": "README.md"
+    },
+    {
+      "type": "file",
+      "oid": "1550bd5a9b78fa7e099a607dbfdf6ab58c918f83",
+      "size": 55437496,
+      "lfs": {
+        "oid": "fff1bf6e4ee1253e3b2808046b4e8996868decd58cbd9df68e22a11703830378",
+        "size": 55437496,
+        "pointerSize": 133
+      },
+      "xetHash": "74ae757b7e3adcfe481a8c282a197efeaeb810c74a73a912d89931d98863e59f",
+      "path": "feature_map/129_1_sorted_map.npy"
+    },
+    {
+      "type": "file",
+      "oid": "030fd34cf14cd2b7af6c6898684f429671761ab5",
+      "size": 216,
+      "lfs": {
+        "oid": "790d15daa3fbdd5bae9fb802999eb683a2dc7dae91f42e3e60511f8347a6f4cf",
+        "size": 216,
+        "pointerSize": 128
+      },
+      "xetHash": "7a59cda8cb51b9744e46b3d7b2a02dcb8d37d06cc82d85ac49e513a0b8561b07",
+      "path": "feature_map/130_1_sorted_map.npy"
+    },
+    {
+      "type": "file",
+      "oid": "de8d26c37baa9c9d930ff3414605237b7447a129",
+      "size": 152,
+      "lfs": {
+        "oid": "8ef8d40abc140ac61eaf66c206e286c07dcce697907f7736875c9c342ebbd7c3",
+        "size": 152,
+        "pointerSize": 128
+      },
+      "xetHash": "b231bf17db1711985a1fa74acf258f8ab7150aa5ba30285035b9efe612218ab2",
+      "path": "feature_map/130_2_sorted_map.npy"
+    },
+    {
+      "type": "file",
+      "oid": "4d1e752ce883ecb6f760ac031fe047e41c0016cd",
+      "size": 520,
+      "lfs": {
+        "oid": "d2764a2d4bfa5771232363ed0e1838993ae4c7c0fd91d658055b0ea09570ac4f",
+        "size": 520,
+        "pointerSize": 128
+      },
+      "xetHash": "2f7b58def8f8c2c4c0c431a5e905af61a3be783f37d406c40f92387f4688cc6e",
+      "path": "feature_map/130_3_sorted_map.npy"
+    },
+    {
+      "type": "file",
+      "oid": "268e5318f1b8f4bac4b43d1f90ef7ee8cf948bc0",
+      "size": 4072,
+      "lfs": {
+        "oid": "4d27fd47603f62fa22e5e6c194f408549f78fd10709bc70b78f11d5f176aa684",
+        "size": 4072,
+        "pointerSize": 129
+      },
+      "xetHash": "eda15bd50456017f5111c7d590c9c747f208e3f7eb62d4f254fb66e43e3cfbce",
+      "path": "feature_map/130_4_sorted_map.npy"
+    },
+    {
+      "type": "file",
+      "oid": "9c17ad293d0d5e8bc5a1d5a39dd86590b40bf557",
+      "size": 176,
+      "lfs": {
+        "oid": "30f42ce71296000b45ef920dcaa90408541e60940a514dc38844820be119bf53",
+        "size": 176,
+        "pointerSize": 128
+      },
+      "xetHash": "e7428539c62a824bf873ad59540f7212568137d56f96fa64a8f73fa3385cb99f",
+      "path": "feature_map/130_5_sorted_map.npy"
+    },
+    {
+      "type": "file",
+      "oid": "961ccd82c694c79ce7d1d8ceaf41412f6c0fa7ef",
+      "size": 1946904288,
+      "lfs": {
+        "oid": "16515eb525c2838317cd2860ddea7276e4aca24ba73d2747a0f25242d8ff9c5f",
+        "size": 1946904288,
+        "pointerSize": 135
+      },
+      "xetHash": "823d7f3ffbdfa427d3ed645818991156516a9795489df9978732c233508578d5",
+      "path": "feature_map/150_2_180_sorted_map.npy"
+    },
+    {
+      "type": "file",
+      "oid": "2fd7c66a45acf84899a1d8e12cfb983c8e95b6fb",
+      "size": 283668112,
+      "lfs": {
+        "oid": "10606848b72c80a6e67ce7e1781d161e04c2e23f0955af7cb2322e019fbbb870",
+        "size": 283668112,
+        "pointerSize": 134
+      },
+      "xetHash": "b9403789413234269d3dd4bc0357d13b347fbb09f755d6c63f59fdaa7ff490f9",
+      "path": "feature_map/150_2_180_sorted_map_p90.npy"
+    },
+    {
+      "type": "file",
+      "oid": "a9d01b74b8c905c2333405393995a17db0df0fec",
+      "size": 211304,
+      "lfs": {
+        "oid": "f86ed9da0acfa115f17d87d1cda9c6d4648e790720a2c27a5f4536d1943d0f6b",
+        "size": 211304,
+        "pointerSize": 131
+      },
+      "xetHash": "2cace6e5b5038fdf47841a09ee6f1ed0b8c21f544d1d2d8ee1edc041a6f7f085",
+      "path": "feature_map/151_2_180_sorted_map.npy"
+    },
+    {
+      "type": "file",
+      "oid": "05573f35081dfaedeab50bd65f28a51f689c7b98",
+      "size": 4464,
+      "lfs": {
+        "oid": "21697d00a9a9fa61feba92d73bac4602b6e2d214faf004ada39f6907d5da1c20",
+        "size": 4464,
+        "pointerSize": 129
+      },
+      "xetHash": "e1fb6c6afedf0c2d5f73afd2d110110ab8b9a47cbf1443b170474b7a1d764849",
+      "path": "feature_map/213_sorted_map.npy"
+    },
+    {
+      "type": "file",
+      "oid": "60452d10dfedb2787f7b8312cb1850e538213f4d",
+      "size": 1096,
+      "lfs": {
+        "oid": "7a5bf3f7642a5ec87315b1482255807319780fbb1985f02a3866398e7429d21a",
+        "size": 1096,
+        "pointerSize": 129
+      },
+      "xetHash": "8047b24184929f6d2da1a7bcb8e0278b7e0960fc15239d2b01123ddc0c00134c",
+      "path": "feature_map/214_sorted_map.npy"
+    },
+    {
+      "type": "file",
+      "oid": "bf490b3e06db6b3d76d9f5560100533d6d61e9df",
+      "size": 283667864,
+      "lfs": {
+        "oid": "b98f93891189e947d361eaf6068dbdf3feccb2d9ce01b525f01084d7593375b0",
+        "size": 283667864,
+        "pointerSize": 134
+      },
+      "xetHash": "2a2892c43dc78839abf27db92729fe1b6da82ea1e185f6eb17471b79c7ed3c9b",
+      "path": "feature_map/scl_emb_int8_p90_keys.npy"
+    },
+    {
+      "type": "file",
+      "oid": "6353fabe2183047981bab321e97b19de41874d8c",
+      "size": 4538683904,
+      "lfs": {
+        "oid": "254741cd5fb68fac4dfe8eae85bc7d0492d5cd0503c880dbb074502d444b6447",
+        "size": 4538683904,
+        "pointerSize": 135
+      },
+      "xetHash": "3c352d5084338e5bc3d309beb9ca2ed1cfbde318816fed10c2ea1bc677cdc4d0",
+      "path": "feature_map/scl_emb_int8_p90_values.npy"
+    },
+    {
+      "type": "file",
+      "oid": "c525d78dc5bdeadc7e3735b1d9272e72d650f732",
+      "size": 47959715,
+      "lfs": {
+        "oid": "818975f265689215dac2ff8c5328ef7b59dbb54ad9371b7cc0f4f9ad6748d7fc",
+        "size": 47959715,
+        "pointerSize": 133
+      },
+      "xetHash": "d94f377b39eb9fd3499a33f7497c4dcc40b6d198667b5998efd2dc2969d40b68",
+      "path": "raw/item_features.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "d204e991c3d7818d8b4c3c00f87c20b57073c6e7",
+      "size": 5252316402,
+      "lfs": {
+        "oid": "2450616e96ac649d85af6e089bb4b77d8b6a761cde8f7bc7a332a5ea8f350458",
+        "size": 5252316402,
+        "pointerSize": 135
+      },
+      "xetHash": "61fa851ab410db068e079bb454be70ceca3e1aa6d5994bdad5b948a7cc1c357a",
+      "path": "raw/scl_embedding_int8_p90.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "4d9bee2efaeeac821b0aef6ba180e9f314d233bd",
+      "size": 215380784,
+      "lfs": {
+        "oid": "ed2414267303d495e294af859eef9e32deff8ca8e23f9919bd0ccdd94b134dd0",
+        "size": 215380784,
+        "pointerSize": 134
+      },
+      "xetHash": "2db0b0c2a480c0093654e6a4f932d63a153b774621c6be93bc60573770ac9e09",
+      "path": "raw/test_samples.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "d79e9aed3ef96cd5465909f8847eac8c2d38fe32",
+      "size": 13361022405,
+      "lfs": {
+        "oid": "9906bb0a98cbb5cf0df747c34d76ad6badc9ba1c6708a3dfb5e98969b34007a1",
+        "size": 13361022405,
+        "pointerSize": 136
+      },
+      "xetHash": "731dc14d1549b1b4ce6cab074e6b147f4ca1ce3f28242ca12a9a666a4ef1805a",
+      "path": "raw/test_user_features.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "8911714c7abe3c13f1d7d912ae53727d005d21c1",
+      "size": 714262982,
+      "lfs": {
+        "oid": "688e88f3a9eef3db0531e9a7244c479146893574308323022b211bf1a2ac7978",
+        "size": 714262982,
+        "pointerSize": 134
+      },
+      "xetHash": "01e97edbc05613c6b67ab5cd20807a44071fc565cb6e319dba1d6d5ba05cc79d",
+      "path": "raw/train_samples.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "e6f1847ce57638900dff8548bc0595655b09d190",
+      "size": 44555404924,
+      "lfs": {
+        "oid": "ce4c3554f12d20707c84c921123c7b24a508a51477054c9c468f0cc5679771d6",
+        "size": 44555404924,
+        "pointerSize": 136
+      },
+      "xetHash": "155148860c15c6966b834accc2591621eaca5ebcd633e3f52739e8bf685dd0ce",
+      "path": "raw/train_user_features.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "9a06d14b15b70e3315257fafcf36a72776fe0e60",
+      "size": 576,
+      "path": "test/metadata.json"
+    },
+    {
+      "type": "file",
+      "oid": "6436fa1b648e9de45de92a5db8c0dc1b8d386100",
+      "size": 339285890,
+      "lfs": {
+        "oid": "a4fadea011766dacb5cb099c1c3d2a35b807b3a7ec8eb2ee0fc2f79140d6669c",
+        "size": 339285890,
+        "pointerSize": 134
+      },
+      "xetHash": "2cd9515b1b6a4b6060abe22afb071112b0d15d309706ffabebbf1b65cac9a4e7",
+      "path": "test/test-shard-000000.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "0c7a6e0cdc1e26640c56c4791eeb22a7ba3c07dc",
+      "size": 342892251,
+      "lfs": {
+        "oid": "6973b824859364aaa810422c870fe4ee071c9262cf25b640f43f1c9c965aca91",
+        "size": 342892251,
+        "pointerSize": 134
+      },
+      "xetHash": "5a416451459dbec7ae03a7bfa7d65b232947472cec402a3469c9866dbb77f435",
+      "path": "test/test-shard-000001.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "1680814dc499e9f3cf7d9b75e57066b3e7b70d38",
+      "size": 340428487,
+      "lfs": {
+        "oid": "35617d2a8f200226fa99b1e131f297fdc89b57d926a0226480e98881ced6ec6b",
+        "size": 340428487,
+        "pointerSize": 134
+      },
+      "xetHash": "faa36230e25d3878686be332302e05bd077d7c65382d0e05680b050695fbba87",
+      "path": "test/test-shard-000002.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "0685080de863c06d658234344172442193eb8f63",
+      "size": 342235352,
+      "lfs": {
+        "oid": "0f8614a0bb8cfdefbc46d6c6ec85f1965e8a8230504bd78c351da287211128d1",
+        "size": 342235352,
+        "pointerSize": 134
+      },
+      "xetHash": "c54f5001ddc569f0c87bc5807f83e7a8ee259545422139b3e5064b90a36fa3b1",
+      "path": "test/test-shard-000003.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "9010fd3b757ff26d4eafc0be7f6dbef5733ba0a8",
+      "size": 340951692,
+      "lfs": {
+        "oid": "a278ed11f01fa70ad4a84f9379acf7cd7f2a4283a4fde29595ec0fa035ccc215",
+        "size": 340951692,
+        "pointerSize": 134
+      },
+      "xetHash": "2fa61b5af751caba659adf00ea70e382a5fb1af1f1db24cbb83deda00e85f143",
+      "path": "test/test-shard-000004.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "68f81c8183672dd2d787526259657639b1041f7e",
+      "size": 340918213,
+      "lfs": {
+        "oid": "f74775a775a309af5a05f1707a59465be5fc81305b5b37af69d487ffd21b44cd",
+        "size": 340918213,
+        "pointerSize": 134
+      },
+      "xetHash": "3be307cb6bbbccafac02ecdaaaab0124c441bc45216e1e2da6664c99e5530eed",
+      "path": "test/test-shard-000005.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "e872cace84db5edd671087078c6275d78847a8b9",
+      "size": 340646357,
+      "lfs": {
+        "oid": "ed54a27f8ea12d59d22ac4782f8c5546bb8ed40140d6b57077279d2d66d05b9a",
+        "size": 340646357,
+        "pointerSize": 134
+      },
+      "xetHash": "82792a713217aa145bf893e855b9e1e17e88875440b44c5850726596510dcb61",
+      "path": "test/test-shard-000006.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "8942478d5790985210f676e411e02369c160641c",
+      "size": 341081604,
+      "lfs": {
+        "oid": "25c249158c045b4c30ac908bd9dc45d6d9b171058247177c70d05b9ba58e90e7",
+        "size": 341081604,
+        "pointerSize": 134
+      },
+      "xetHash": "5b742452e958604c5950db287c7fae5815ae85d35beab93453502f1502754471",
+      "path": "test/test-shard-000007.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "0a13c8f1ca0db4170b4330410e9b93142cbe1c91",
+      "size": 344302989,
+      "lfs": {
+        "oid": "f0c7b9465c0bfa37f0a8b735377308b6d9c3ebebec4a3be459498f53647a705b",
+        "size": 344302989,
+        "pointerSize": 134
+      },
+      "xetHash": "bfd92fdd6eef1ff9c4d2abe02baeb0a86f252cbee2752a0b8d1062356062bbb3",
+      "path": "test/test-shard-000008.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "ffc1255aaf71cd6e949467ca2cf992692e22eaa1",
+      "size": 343090977,
+      "lfs": {
+        "oid": "a8d84fc583907fbaeaad52ecb636f4dc06644f800932c7df6644dbeccea25e35",
+        "size": 343090977,
+        "pointerSize": 134
+      },
+      "xetHash": "39ab4fde7f0a383b3447a2a60c4b4e9382b0a880be51ac5453744421f9eeb3d9",
+      "path": "test/test-shard-000009.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "cff7e9f7801655336429c15dec0c77f9ff59b8f9",
+      "size": 343111161,
+      "lfs": {
+        "oid": "4fadaaee3c74c2c02270ea274c17a3c939e89ee6c9f5862f1f25ff44e35b39ae",
+        "size": 343111161,
+        "pointerSize": 134
+      },
+      "xetHash": "a1b5df2631b350a677118e87dcc8aea5448cf163ad4d390624bb834a93e3e7b9",
+      "path": "test/test-shard-000010.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "013d44d844c04e2daf94de1d6b6ab612fec18c68",
+      "size": 340134911,
+      "lfs": {
+        "oid": "38a90c9eaaaa9994adf24ea541788fdc804917ad1358f58470edbdc82a71144e",
+        "size": 340134911,
+        "pointerSize": 134
+      },
+      "xetHash": "2adf8d4854a80b6cc2eaafb2490f324a9d9c79a2eb053886760e8df36cb4ffd1",
+      "path": "test/test-shard-000011.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "1f72f10e3271c40114f96d6685688fc5d8358945",
+      "size": 342856219,
+      "lfs": {
+        "oid": "5cfe77de5faf9001c77d659819e57e43630d948ab7052e54ab32848f9aa779f1",
+        "size": 342856219,
+        "pointerSize": 134
+      },
+      "xetHash": "6e9e79564fe5fadf04e9209f19be3bd2cb21bd20c0bc222f13ce76c8e78ee851",
+      "path": "test/test-shard-000012.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "7157498e7da5f9a32fd452d1db4a27081afa3d80",
+      "size": 342839941,
+      "lfs": {
+        "oid": "95489cd1f7e8140c5cbd913a257d0e2db82b12eece2a2851cf9a08ef94e925a7",
+        "size": 342839941,
+        "pointerSize": 134
+      },
+      "xetHash": "d2bb6183147401d0382276d07771faec1b09db1b8d4f3d391661aceef4784fb7",
+      "path": "test/test-shard-000013.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "015c03a32e5da90d75d9b5a74a742d16a187448e",
+      "size": 342062309,
+      "lfs": {
+        "oid": "8025c37731bf38e76e73ce7a838e013f98fc36f0398913920b47bea2fd01fc09",
+        "size": 342062309,
+        "pointerSize": 134
+      },
+      "xetHash": "b75e59730711f2c26c4a6e92d8a42f9cd7545f9f8a302b4f2a276922fb742155",
+      "path": "test/test-shard-000014.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "358f18040372e42ecfe82194fd2c1883731756f2",
+      "size": 344215464,
+      "lfs": {
+        "oid": "0039eff95fb7cc1280dab1b4f8cd8b894940c372023865aa0b072961148fcf90",
+        "size": 344215464,
+        "pointerSize": 134
+      },
+      "xetHash": "317daa3c5f11b71424e7ff340780c37174aca9948d8efbf8c3cce0dd38fc1eb7",
+      "path": "test/test-shard-000015.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "a265997283ee2569cc3477a42b8281d288908c15",
+      "size": 339977439,
+      "lfs": {
+        "oid": "90038578eced9b4e291771882327e1200541cbf6c3f37e67dbb6c79c04da8ddc",
+        "size": 339977439,
+        "pointerSize": 134
+      },
+      "xetHash": "cc61687ab10cf69ad6c1d49f3a9b2e0b4ea6de93cdf9a48e0b589e96b5c9ab98",
+      "path": "test/test-shard-000016.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "baf6de1f65ed24ba10a5b262b04cf1b02649c1e9",
+      "size": 341691071,
+      "lfs": {
+        "oid": "823081df8f008a90d26ddf834158a295bbce9ad0eb2316274f6a1af5df86946f",
+        "size": 341691071,
+        "pointerSize": 134
+      },
+      "xetHash": "7813f2b7506b602da8eefe59fa5144e867ef05dd1bedc4490f4f399ebfc3be8b",
+      "path": "test/test-shard-000017.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "362a744cb05713cae4d3d0249d43328c8c6c1e2c",
+      "size": 339687916,
+      "lfs": {
+        "oid": "ae2d49895627e991267c55701aa8f406f0666d07352ad7f9db96307bfc09a722",
+        "size": 339687916,
+        "pointerSize": 134
+      },
+      "xetHash": "ecf73722407bcc375cc0a3d8cd90684e3d2a03c9b0ba14ea6e922969870ccd3b",
+      "path": "test/test-shard-000018.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "f879c03f3212120592c22f3b974405f8fe5ea7b8",
+      "size": 341387832,
+      "lfs": {
+        "oid": "343fe6b80e9a0d143b0b81d9730efa5fe12e006acc65086cdc439fa11063ae63",
+        "size": 341387832,
+        "pointerSize": 134
+      },
+      "xetHash": "70636bc6a1b92868ffcae1ecc421329b91835c1550a9af9a43c776ea219cee8a",
+      "path": "test/test-shard-000019.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "8c5457f8d550edffe764a309f9f36a4fa48418ad",
+      "size": 339041327,
+      "lfs": {
+        "oid": "38e465ea6f78efaeef3db34d764271358ac519286242f62486c83ebdab1fa859",
+        "size": 339041327,
+        "pointerSize": 134
+      },
+      "xetHash": "fd93404f2c72a1a611a78bf4382e5ee7bda269363ac9cd062c931d3be0a1a537",
+      "path": "test/test-shard-000020.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "21f0cc3d4bf6641e6146b59edacdf5dd71c9a566",
+      "size": 344903338,
+      "lfs": {
+        "oid": "405fd0d5facbbd770aed834c245e62b4b0e948e0d41ea47df171acdf74cbaa60",
+        "size": 344903338,
+        "pointerSize": 134
+      },
+      "xetHash": "b035eb03885d64aa6debc50eafbad832da8808a26e40bc30c61955489d8e8faa",
+      "path": "test/test-shard-000021.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "6931020f8de978a98e5af6a52b7797a840a4ae8e",
+      "size": 342070470,
+      "lfs": {
+        "oid": "5c5e04b7d801b66f3327d739411bef25ba31c4484b12ae4d0446f895e47540dc",
+        "size": 342070470,
+        "pointerSize": 134
+      },
+      "xetHash": "df68bc0b091dd2ab3c9608ed29a8c09a495014d8e03186b234ae133594f3ea9d",
+      "path": "test/test-shard-000022.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "0f76dacd8c29a9e8eea6ed3532c19754d2c3c33b",
+      "size": 342009867,
+      "lfs": {
+        "oid": "870533633bda092af98d28b3fb92caa84a618049fe195a251ea9a11627bc6f38",
+        "size": 342009867,
+        "pointerSize": 134
+      },
+      "xetHash": "77c056fe5d83ecb88472d6b75899871501fbe938e739a489503e9a6bba1b0437",
+      "path": "test/test-shard-000023.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "87e2486ba05473f4491e2cbbe69080f1abb72a5d",
+      "size": 339950753,
+      "lfs": {
+        "oid": "9ac2a1572f4f618c36f9641cf1eb030b3290ca6b0f406082508694e58262c67e",
+        "size": 339950753,
+        "pointerSize": 134
+      },
+      "xetHash": "f18154b56f9110555089125c3c93428e3705cf8880e1fe0ce1141ea719545872",
+      "path": "test/test-shard-000024.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "e27739baf5ab46b744e19c4600e97a5329820f3b",
+      "size": 341057644,
+      "lfs": {
+        "oid": "4964a62e4369572a76b07ee4a79d6f0013d3951a4b51f3a0e5c6dd1a28d479f6",
+        "size": 341057644,
+        "pointerSize": 134
+      },
+      "xetHash": "36fa114741ec2840e49ac433ef332b5c3bdb6b70d1051ade043a5e5f1e60fbee",
+      "path": "test/test-shard-000025.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "569e7938aaf24ec6ab24e6636c39219bc68f2398",
+      "size": 344290760,
+      "lfs": {
+        "oid": "07af90605976e89d0ab6071d33b6909edb456fa9dc63638fda4117a5f47b1598",
+        "size": 344290760,
+        "pointerSize": 134
+      },
+      "xetHash": "73d57156cde50bc880ae672653d57165ffaba9cd524fbba9abcff47dd0eff225",
+      "path": "test/test-shard-000026.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "3c175a96ad856b2c6e069ad5e06a3f784e1f83d5",
+      "size": 342945741,
+      "lfs": {
+        "oid": "87e29d672d6aed266b1f942af99b2ebe3f51071ef2d0e42e1760f5b13a145209",
+        "size": 342945741,
+        "pointerSize": 134
+      },
+      "xetHash": "ace8720447511806cc0021c4bc9456fbce40b28ac22f6cf1395cc097d6992dcd",
+      "path": "test/test-shard-000027.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "b97cdf73b7ee698b96f1122acb4bb893943f13ac",
+      "size": 344259677,
+      "lfs": {
+        "oid": "8bf35913c540714744e74ea1ef85f427eac62c3087e8d014d03c9c0321f7f375",
+        "size": 344259677,
+        "pointerSize": 134
+      },
+      "xetHash": "91577e6821b333a1c46de96f5f91f7a838633cba72628095c6a12baa3c8a2184",
+      "path": "test/test-shard-000028.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "406f27a3a79b6314ea41bf5836c9099033532881",
+      "size": 338098280,
+      "lfs": {
+        "oid": "7a7ea6478a36a61c2f451f32cdafe67b69f2c7b65e10923a1ca530ee29edd1a0",
+        "size": 338098280,
+        "pointerSize": 134
+      },
+      "xetHash": "c05c23ac92401abdd7d859b4527f61192c9b3df2100000c7eb918e09318ecc10",
+      "path": "test/test-shard-000029.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "fb0135d7823ef75598e92e86fd03e6c8a379a099",
+      "size": 340311379,
+      "lfs": {
+        "oid": "fc75912de4fcfe54ea2b11e7eaf7babb0d683e8880a2df8efd8dc62d161a8826",
+        "size": 340311379,
+        "pointerSize": 134
+      },
+      "xetHash": "662ae5c3dd926b5c7816afd6f9661acf63a9eb2b3cf5982845ea1dd4382be883",
+      "path": "test/test-shard-000030.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "5cd65d7b8cb238bd83dfef20208065f3203788c2",
+      "size": 343682498,
+      "lfs": {
+        "oid": "c865290973aaa914095cff8638f36298643ce8dc9647c07153c39865d1420e8d",
+        "size": 343682498,
+        "pointerSize": 134
+      },
+      "xetHash": "95fdd38630dee027df3f091e9e70469534c42aa0559801563f26d601fae8173a",
+      "path": "test/test-shard-000031.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "a554a39c5acabd9114f79c7128975389f6ad5984",
+      "size": 342190450,
+      "lfs": {
+        "oid": "ae8c3931f5ff5250ce8091e5d2725328be0926a6003f8067535414b3413c295f",
+        "size": 342190450,
+        "pointerSize": 134
+      },
+      "xetHash": "653e452ef83405e173161466d6f44ac43a95f3c8be230e86de3d5ad81decbd5b",
+      "path": "test/test-shard-000032.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "f67139856643af0eb4f97daf438c21d85dafd38a",
+      "size": 339775614,
+      "lfs": {
+        "oid": "0790fba3fe38a0a721304cccb1c28f19d90d410f239ac33e3e2b9ba91b2fe31f",
+        "size": 339775614,
+        "pointerSize": 134
+      },
+      "xetHash": "7fc25fb63ea127233be2c9ee6579371d7b36d6de4a26af2751f4d02c50c3b460",
+      "path": "test/test-shard-000033.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "dcae9813d661c97285c3e88ef0df81fb8c0a958c",
+      "size": 339547293,
+      "lfs": {
+        "oid": "e7dd3ef961d002dd6fca3b184bebfb757c268b42962910772bda1cda6d65e3e0",
+        "size": 339547293,
+        "pointerSize": 134
+      },
+      "xetHash": "a96877c2bef43cf6edbf470f9c005d546207125f5419134e75d417c532eca927",
+      "path": "test/test-shard-000034.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "69e3b01aae6cc40fdce3ea4b0a6543ff92e97998",
+      "size": 343802458,
+      "lfs": {
+        "oid": "ed062f1b98dd5b6480d130c02825b7c5d90b5ca915b22c0a2c612cfac27ae381",
+        "size": 343802458,
+        "pointerSize": 134
+      },
+      "xetHash": "412b22a4e8623a2ab35c553174f523c49d71992fda7f94c1938c3b97fff818bb",
+      "path": "test/test-shard-000035.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "cb9eb29801d079423fcfa51e4aede4d082cfb164",
+      "size": 344162320,
+      "lfs": {
+        "oid": "2d225f1cf1d1d15609343d8c9d4767814ab642c89c9e617cd0027633ab598ad3",
+        "size": 344162320,
+        "pointerSize": 134
+      },
+      "xetHash": "c0cee042b36bbc79b684346c414f90285d8498948c74b358b202326166c720bf",
+      "path": "test/test-shard-000036.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "37c624f1974350d40ccefea1941df9dff54a6fba",
+      "size": 340840033,
+      "lfs": {
+        "oid": "9b448c69a2d4dbf5c0a0ae3f3046827b3dba8b5968bb2d9f7d38f8350c4237f3",
+        "size": 340840033,
+        "pointerSize": 134
+      },
+      "xetHash": "cff690374e603b5781104b8eb33a7f21bb4bbc56b46eb600bd307354ea23df59",
+      "path": "test/test-shard-000037.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "b0198451ee5af36754b75c6705fe36c5eb185f44",
+      "size": 341791487,
+      "lfs": {
+        "oid": "d7cc3735325abc5d88a96af38b6c976776e8440fdbe7a7944cd532161b2e5218",
+        "size": 341791487,
+        "pointerSize": 134
+      },
+      "xetHash": "64ba9322a60bcf6e47e71de9840c164b24dcc389696c45c65654137cf73e26db",
+      "path": "test/test-shard-000038.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "01a6082e5d48d4504d827dd6322c3b14777d855d",
+      "size": 343755160,
+      "lfs": {
+        "oid": "ab2f83535bbfbfd4c2946b667dc6c7ccf4435697df9363f17666a656afe48f03",
+        "size": 343755160,
+        "pointerSize": 134
+      },
+      "xetHash": "ed4dd8780dd82acb224e324cc3f4c8ba218fa2a15bc39a71f3cefe97e51150ee",
+      "path": "test/test-shard-000039.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "b06977685486d16c88dd1c55017c42e4ceaef177",
+      "size": 242541787,
+      "lfs": {
+        "oid": "33777d6459603dc9390a38489d2f2b1985e8f5213c45e04e62e4322f6957c294",
+        "size": 242541787,
+        "pointerSize": 134
+      },
+      "xetHash": "dfd4c27a9e4f99df4c9c05f880dcf334954fb8b57f287a846f49481e03f54429",
+      "path": "test/test-shard-000040.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "5e74a444030b0c731a94cafb7f59335063f71237",
+      "size": 241392078,
+      "lfs": {
+        "oid": "765be775370a845d47e17ea68d3a470270bfcd140890d958d1c00def73a13b37",
+        "size": 241392078,
+        "pointerSize": 134
+      },
+      "xetHash": "fb54d954e384e4567f6a510dc500152e620bfded4f8d1e3a386df12db8e32fb3",
+      "path": "test/test-shard-000041.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "cae5bcf9a6b70c320aa6cbbe9333f00697842568",
+      "size": 245540953,
+      "lfs": {
+        "oid": "caa8d9d0383b937162510f5899d1f5773bfdb05272ff94f4ac703c38e994840d",
+        "size": 245540953,
+        "pointerSize": 134
+      },
+      "xetHash": "8b8582e9bfd90b282c103c7d1108434555118c6e7d38a0b1f6c29b2d78a246ed",
+      "path": "test/test-shard-000042.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "e4bc73985e107c5b3cbbb9f80de9503b1cdc6a7d",
+      "size": 243634295,
+      "lfs": {
+        "oid": "259429496f1133bd49ed9aac59d2227c52ebcc34968385e25416c5d63110e3e6",
+        "size": 243634295,
+        "pointerSize": 134
+      },
+      "xetHash": "fde40922f5ed82d1ac7166662248168f846670c3f699110ef053f9de66a5f4e1",
+      "path": "test/test-shard-000043.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "53e354673ead3e6d813a55ec0ab73f8fd63bdc04",
+      "size": 246239633,
+      "lfs": {
+        "oid": "a80a9e55123bc05725a31def5d97298dd83d17ffaa49a62f0707d08cdbff023b",
+        "size": 246239633,
+        "pointerSize": 134
+      },
+      "xetHash": "4b9747b4216c5b91a5c70d2db3b8a67062c153e691db3bf3e171054afca8d202",
+      "path": "test/test-shard-000044.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "aa1070ba2d7097c8ed5e8ebb2ebf789fa9b02812",
+      "size": 240154672,
+      "lfs": {
+        "oid": "ddd5b86f09eaf10be411147278fa7b81370c5ee922cb840c5d042aa88eed2490",
+        "size": 240154672,
+        "pointerSize": 134
+      },
+      "xetHash": "e0d38e2fca0de463b4fdf58f2325d78dcbce61cd02f653b7a05586471cfe3921",
+      "path": "test/test-shard-000045.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "31941a2e16ff03953c446a4810c006d12c6a2ee0",
+      "size": 244815405,
+      "lfs": {
+        "oid": "2414ba8d7cf7f5cdf0bc0ecba527dd28d2227c09e6228e5d06ec1183befe7837",
+        "size": 244815405,
+        "pointerSize": 134
+      },
+      "xetHash": "939e6cc5e81b17eabb54df15b2a75f7199dce967b4531cf39c739666996b5f1f",
+      "path": "test/test-shard-000046.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "ce4814fb94ebe05e6ad1ecdfbcb6567618ec92e9",
+      "size": 244702505,
+      "lfs": {
+        "oid": "d64dd46a428aedc6774d253b3116a54cc9199cbb91be5f27b1941085aada7dc8",
+        "size": 244702505,
+        "pointerSize": 134
+      },
+      "xetHash": "f847e73ad7d78a243f00aea65178f79de754887e995228663dcee2de4a90de25",
+      "path": "test/test-shard-000047.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "aad3d10d9d13bcae5d6580b67cfc9211753a8d91",
+      "size": 15691,
+      "lfs": {
+        "oid": "8c77a6f4f77567a502691a237cc90c378bdebf9e0ba9eec41d17b4154f362c65",
+        "size": 15691,
+        "pointerSize": 130
+      },
+      "xetHash": "5af6a3c335b498ab801122db3b3feb9e8f84dbd5c1f709159720ea3b3318eb0d",
+      "path": "test/test-shard-000048.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "cb29ae7cdb1691813b5070822b02f0ed147bbbb2",
+      "size": 578,
+      "path": "train/metadata.json"
+    },
+    {
+      "type": "file",
+      "oid": "dcf4667827d79f720a6c49f7b8e6073429ac3c34",
+      "size": 348726222,
+      "lfs": {
+        "oid": "e3ea51a0168904721354b24b0224398b2624301b654e76f5cc694ebfb760e0fa",
+        "size": 348726222,
+        "pointerSize": 134
+      },
+      "xetHash": "6ab500e43b150bd99814514984102981a340e2b4313c8b910b9431b60907ae7a",
+      "path": "train/train-shard-000000.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "7a3a0085f645dba202851899186637d0f8907915",
+      "size": 343631155,
+      "lfs": {
+        "oid": "a6a440eabf5955230839b13eb831bfccbbdf8a030f5ba22bdbe0f9655509f62c",
+        "size": 343631155,
+        "pointerSize": 134
+      },
+      "xetHash": "f915c3cee3c9e96000b97cb3278c4b80a4a44a8ab3e65c0332b45181cf37aa89",
+      "path": "train/train-shard-000001.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "d5b0e393b924c76aa1baf851e650cd1f1d2bfe78",
+      "size": 347058911,
+      "lfs": {
+        "oid": "e9725382eb463f49d67c32c02dad127c646ea0556f8fe5faf3e1215fd2fd5172",
+        "size": 347058911,
+        "pointerSize": 134
+      },
+      "xetHash": "49a1142ec81765d4d57c4ed76a1c0f1aa0a5be6c63fc64ba7cb605bb55c0f2f2",
+      "path": "train/train-shard-000002.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "4de2763b4f8959c437b694432edb89fe5e77b604",
+      "size": 344952175,
+      "lfs": {
+        "oid": "570443d01f33200a4a5e40ab56d73ae0282989f70111aebed296cff6b20376da",
+        "size": 344952175,
+        "pointerSize": 134
+      },
+      "xetHash": "3b93b676323c16ce061103a7755534b269a44b85e90bcdbccfebb1d489be7f6c",
+      "path": "train/train-shard-000003.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "0a65c7c8edc44d939fcf905a7d599f05eac283a1",
+      "size": 344548671,
+      "lfs": {
+        "oid": "3cd90476d9bfa304c2ff1f7b36c01268e85cdea475c13d61882ef23d63c6adf0",
+        "size": 344548671,
+        "pointerSize": 134
+      },
+      "xetHash": "6739b27f67cdddf89ce022444597eeb432129fb637585203182fe5f8bab598da",
+      "path": "train/train-shard-000004.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "95992696661c1563e7edc13e346458eb13ae8459",
+      "size": 343981679,
+      "lfs": {
+        "oid": "289389a3517ad9c151e6e407cc0effb5efef7deee542f4487f4f59249db0e2ef",
+        "size": 343981679,
+        "pointerSize": 134
+      },
+      "xetHash": "3859a358cd60b3cb2c5c3d36da087396569bedee128bfaa0e032d01efd200a53",
+      "path": "train/train-shard-000005.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "ee828129f6c5c8a30a6eab5d7060417a86b57133",
+      "size": 346729637,
+      "lfs": {
+        "oid": "49276e1ca4da1bed23920d95b63e5d5fd5318c416b7df1947ec11212db4e77f0",
+        "size": 346729637,
+        "pointerSize": 134
+      },
+      "xetHash": "d5ca0bdec5694ba843b361069a133f9d6ef0a2fa546d417f4ec08354841687e3",
+      "path": "train/train-shard-000006.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "1e0b9e9257dc40f0a196e30115af2b852550729c",
+      "size": 346025923,
+      "lfs": {
+        "oid": "8e508c8881e7f4a352c7d1b020b929a45d328820b47a5e2843efe6d954db6ecc",
+        "size": 346025923,
+        "pointerSize": 134
+      },
+      "xetHash": "0167351b6373b7d064a8aad86d13cfa797945b0f3a0df84bdbb9a1d22eb3d64f",
+      "path": "train/train-shard-000007.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "77ecff83db287707c09e38671603842f6083ce2d",
+      "size": 345336254,
+      "lfs": {
+        "oid": "3eaf373753a3ffbe8bf222ef5156eba7b804a3ee3aa89fe48f9a039938ac28a2",
+        "size": 345336254,
+        "pointerSize": 134
+      },
+      "xetHash": "62dc593217432a996650b1dcd30714c21dfa5d3b1cd703410260dfe8c7b64077",
+      "path": "train/train-shard-000008.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "1644521871c9a3e85d46dd1adb319aeb7ff70cdd",
+      "size": 344147033,
+      "lfs": {
+        "oid": "6fe185599435789bea1f968f3524e2a5b913a8e0f6f8eb9e794feeca6bafd6e9",
+        "size": 344147033,
+        "pointerSize": 134
+      },
+      "xetHash": "15b234d4b99e06740acd3be976ac3af643d8ee5d187e8b3435f2c1bd64f23e7a",
+      "path": "train/train-shard-000009.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "eb48baccf878313e38c52557d5141853f9399a41",
+      "size": 347526860,
+      "lfs": {
+        "oid": "13ff5f2daacd056a861142c3b0612c74040580cf86fc1d9e974bb79dfa17c990",
+        "size": 347526860,
+        "pointerSize": 134
+      },
+      "xetHash": "d1a649bd76176784ca75af307dc345762e2a8db529404c57e81af93b00f247d2",
+      "path": "train/train-shard-000010.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "d0682bacd785c8d4514a93f538b2701002d8d61b",
+      "size": 345866663,
+      "lfs": {
+        "oid": "b8d8ae4aa8622b0b2ae6ec66fec27fb419288ff2a0cd40826ad669fc2556f2d6",
+        "size": 345866663,
+        "pointerSize": 134
+      },
+      "xetHash": "8bf3613176ee34ca1a2adf6ba6ac366abc39858ed33316277021b8e4976eb7b8",
+      "path": "train/train-shard-000011.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "f8dc8ce1b50bfce7320245d9ff088998adf40e37",
+      "size": 347451724,
+      "lfs": {
+        "oid": "f7356d12c373baed93720a6d78a28c2732b4071b2fa39064c715d561527bef84",
+        "size": 347451724,
+        "pointerSize": 134
+      },
+      "xetHash": "15376b48d8609b61f47a5897fab790c0346dce2ab8d0026e901745a1e15dc6ce",
+      "path": "train/train-shard-000012.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "e5ffd4fb87acb902b1cd6b00b395193cf20f8510",
+      "size": 346872595,
+      "lfs": {
+        "oid": "743d4b2bf99f5d8686371074a795101c1f07593c31086f0f0ffcab34516fa748",
+        "size": 346872595,
+        "pointerSize": 134
+      },
+      "xetHash": "6d3d519d63446d5090ee9dc79387b4ec1a08461f6d59801eae38ada970dcc5b9",
+      "path": "train/train-shard-000013.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "3007dc47438a7e72d1c068c4438e78af9a00f7a1",
+      "size": 346278806,
+      "lfs": {
+        "oid": "d66e6f0b7d8c6cbc2ee56c507e16f13e78f0f7ed7912181c6a77e319f675b100",
+        "size": 346278806,
+        "pointerSize": 134
+      },
+      "xetHash": "9d84d1c0173fdf630318ea85ed840bda643098d612170fb55c88804ee49fd20a",
+      "path": "train/train-shard-000014.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "fd15e310322e8335e06b16730a815a9be0c0c175",
+      "size": 350008181,
+      "lfs": {
+        "oid": "a34e46d51587570c98a1e48b76faf6f70f5332df9daa3989fdae3234c33b6671",
+        "size": 350008181,
+        "pointerSize": 134
+      },
+      "xetHash": "cf01f4d365c1a1a967fc3567602a5102e7dfd83df0bd7b6d916e76cf73b758cf",
+      "path": "train/train-shard-000015.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "08383b0fda55207b2595a9edda2ed6fb4e64769d",
+      "size": 345062320,
+      "lfs": {
+        "oid": "24ae1d12c476b65dbf84490dc519ad5ec17a91a7c4aeac1296bb1497dc9e57e6",
+        "size": 345062320,
+        "pointerSize": 134
+      },
+      "xetHash": "dcab2a1e453dcf86d0bb17baec443d2d9cb26c09d0c1bdeb01031021ae13ad25",
+      "path": "train/train-shard-000016.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "93a6fa4946a91a066c3850d7c8ceb4569f22353c",
+      "size": 345553578,
+      "lfs": {
+        "oid": "59afda015e1cbab970939f46ad7a043d78307d5bfabb2142a57d62c4662e431b",
+        "size": 345553578,
+        "pointerSize": 134
+      },
+      "xetHash": "76a61d76e7d6354f90fb704fff0071c221c68e74836038028d94600cb94bb507",
+      "path": "train/train-shard-000017.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "cc12f161d165207ab5657080cd1309645a287f1f",
+      "size": 348232520,
+      "lfs": {
+        "oid": "d1ba4d3c1c8b1beb74e033b690866732ba13514d4b1ea9182c15dfcdc2674925",
+        "size": 348232520,
+        "pointerSize": 134
+      },
+      "xetHash": "ec36b3f003bfc5953ad00052c72d1c3ae9a3e2ab0de0fb86d92200acc97243bf",
+      "path": "train/train-shard-000018.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "7cb728086d9a92d8cff4330ef769465bd66e7094",
+      "size": 347629441,
+      "lfs": {
+        "oid": "5f915359f23459671709229d12ad675330eceb345dede3c3c8eb256d7136db1b",
+        "size": 347629441,
+        "pointerSize": 134
+      },
+      "xetHash": "720cffd8c7f73cf876b45dd47f33b6dee0e290ac46bfad60132ec8f5e423199e",
+      "path": "train/train-shard-000019.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "e0ba4262a51880fd63d144a5fa76d19b6970b667",
+      "size": 344702923,
+      "lfs": {
+        "oid": "200cc19b6f0324787e0da3381e7256ea654d5ed4b751e7e0ad8fa65dd2a70bfa",
+        "size": 344702923,
+        "pointerSize": 134
+      },
+      "xetHash": "0f4a594b4156fffb8710bd4e61d82839c7b34a3033dae56f47413b518a7f74b6",
+      "path": "train/train-shard-000020.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "4bad648e8c43ed9da978e47dfa8a143a8d2d7774",
+      "size": 343613827,
+      "lfs": {
+        "oid": "56a1189765284092b97e377770d7faeeef1b22bb9fa4bb1bece6e0735fd785ef",
+        "size": 343613827,
+        "pointerSize": 134
+      },
+      "xetHash": "98e8ce9a264390967ae6878b2afe9456fb86c315dd027a277aeb5bbc35f4af2f",
+      "path": "train/train-shard-000021.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "8cac6cc324b20776a5287d471decf8aae333171e",
+      "size": 346572496,
+      "lfs": {
+        "oid": "dc475db686e7d2409b0bd93aab47eb77d7afbd080619da74ddfd48463b374bdd",
+        "size": 346572496,
+        "pointerSize": 134
+      },
+      "xetHash": "97c953ed3e2ce31e3302738ba658b067479cf4061e97e959be541e7ca88c2a4f",
+      "path": "train/train-shard-000022.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "8a5c14224eea9303f12369e58bdabb196e141e2c",
+      "size": 342900967,
+      "lfs": {
+        "oid": "9866efd3180f9bfb92d00d974d93500d594ee92dcc05d8a68335dd3caac37a8f",
+        "size": 342900967,
+        "pointerSize": 134
+      },
+      "xetHash": "899052d7728e9225235c3c839a5a1882b9feddc6da781284b9e40403c5815f7c",
+      "path": "train/train-shard-000023.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "b516bf010ad0ca1f141d100a726631f74d6c5ffa",
+      "size": 347845731,
+      "lfs": {
+        "oid": "28aecd42021a685488dcc27ea74a04b2defd8e11da8f435a693634f6b52fcd1c",
+        "size": 347845731,
+        "pointerSize": 134
+      },
+      "xetHash": "37085c65ed73a50e102f0c5ca4c2bae215f51ba455fd9d32c100fc81849a069e",
+      "path": "train/train-shard-000024.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "bbe04619f8f2592d806dc0ba79fd54ca35df7c91",
+      "size": 345025916,
+      "lfs": {
+        "oid": "a51b615c9c1df09449e205affc7e6bc0d4fa07836260d576f83de26d99950aa6",
+        "size": 345025916,
+        "pointerSize": 134
+      },
+      "xetHash": "9a0e15d09045d3f7fe296f8cdde8ff63ba5e757ac224c4a56459fd812cc407e9",
+      "path": "train/train-shard-000025.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "1e368cfc798cb4cbd3facec7006790aa47a94a26",
+      "size": 345045878,
+      "lfs": {
+        "oid": "5aec7aea59ea39c01299e4a57e3c0fe6cfbfa23ea62547dc39938491f54c45cd",
+        "size": 345045878,
+        "pointerSize": 134
+      },
+      "xetHash": "4cf23fa9aa4a6ff186792ff7355967225beb1ede6838c03190e45a15ecad5c74",
+      "path": "train/train-shard-000026.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "8ca0ec3c6721f90660672a4026dba0317300abe4",
+      "size": 342691542,
+      "lfs": {
+        "oid": "e9771a2bbdadc6c2a4f32f31231bd67c6dcd77edbe9de9c1f357c7211a17239e",
+        "size": 342691542,
+        "pointerSize": 134
+      },
+      "xetHash": "3c79acc277a5d14574a5f3fac274844d0848d355edfdbab81502438e4d2c9556",
+      "path": "train/train-shard-000027.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "9df216491658d9b20f9544bf472845a351390953",
+      "size": 346007351,
+      "lfs": {
+        "oid": "aca3a05bdcc47a40c7bbb19ef154423da8fb23566615f3feec0ff1240b175852",
+        "size": 346007351,
+        "pointerSize": 134
+      },
+      "xetHash": "56c7b9e4af2581563d882ee5316935b1af202c267e3722f7095951f9f6ae358b",
+      "path": "train/train-shard-000028.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "702bdb767ff276d1d473330153033fe9e07a56c8",
+      "size": 347184772,
+      "lfs": {
+        "oid": "0517a5f5b94dfd74f8e551dcc5ae681a5e31d5c8ed1f31b8e929c17c3715ba2c",
+        "size": 347184772,
+        "pointerSize": 134
+      },
+      "xetHash": "0b7c696ecf9d4b67a2ffd99bfc69f669d97bb1c68308c4868e2fd34fb16ab231",
+      "path": "train/train-shard-000029.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "1b7ed9e48921e3ddd66fe4ec93ee495f81d6b123",
+      "size": 342243601,
+      "lfs": {
+        "oid": "c1ed82a90bab611f24547afef419b103e36babf1c4add7a088d1a3e94adc1533",
+        "size": 342243601,
+        "pointerSize": 134
+      },
+      "xetHash": "bad1d9462a05fa5b7b11d89c6bab17fcae9b688dd241262ea0405d1efa3c1d18",
+      "path": "train/train-shard-000030.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "8443ed824e8fc98aa1a39a5b9b7ba629a5343582",
+      "size": 345765332,
+      "lfs": {
+        "oid": "1d53be0b6c7886eb3fe60f04193b2876caa2fa0f0a5438604cccd95259c4ba04",
+        "size": 345765332,
+        "pointerSize": 134
+      },
+      "xetHash": "cd7a08d6785faf5c6a5d88cd7203af5b61c33bb8ca43989de94996b8f6cae1cf",
+      "path": "train/train-shard-000031.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "77039da0259ca1845d354e88f2aa70e8a65d5dde",
+      "size": 344105195,
+      "lfs": {
+        "oid": "fa2dd3be0816eff79a35c10c3aa0aafb328315c288814c123748d9bab8439fdb",
+        "size": 344105195,
+        "pointerSize": 134
+      },
+      "xetHash": "987b1b6a6624a79b35d82d455820fa4cdada54362063bb1d642dfd5c870e0029",
+      "path": "train/train-shard-000032.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "2a8f1c43564f8c9f93ff97b2da69cd0e110de5b6",
+      "size": 345582051,
+      "lfs": {
+        "oid": "180d8efd4e1d1fb0024f16961b60779f0ba87c311d4d1d96d1a22ec505566ec6",
+        "size": 345582051,
+        "pointerSize": 134
+      },
+      "xetHash": "8afa723c4bf92a9a8ca5d738f07ee9c855c097f6994c9415e0c26041495b7b94",
+      "path": "train/train-shard-000033.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "9b2d4fb005a64d4edd19cbe7feacada0079f1758",
+      "size": 345939890,
+      "lfs": {
+        "oid": "4966cc8e5a14e774f4ee0540d3446d900e207097838426772bcbbbb0cc0a28c7",
+        "size": 345939890,
+        "pointerSize": 134
+      },
+      "xetHash": "2fb3b142febce7cd5065aee4c21d18f2776b1069aefa79a555b6da484c163186",
+      "path": "train/train-shard-000034.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "9a73219dd65ca9382c8f12cf614b699f24b380c2",
+      "size": 343865002,
+      "lfs": {
+        "oid": "6e0ae33958f8322f3ef0e5b68eb8e67c8dec16926a5255f694fb4a06a116b904",
+        "size": 343865002,
+        "pointerSize": 134
+      },
+      "xetHash": "1c01853cab43b2808972108613e14faa1dc07c0321b176546c1b56c003caae5b",
+      "path": "train/train-shard-000035.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "955aeb9a46965ebfcca733e6009337b8d6b00864",
+      "size": 344228989,
+      "lfs": {
+        "oid": "ba4bc20b83b97d84bb94e0f2dc3ebbe208f40edb06f5444bfbde3233b506ca12",
+        "size": 344228989,
+        "pointerSize": 134
+      },
+      "xetHash": "da49c7b3f1172e6ca55955ed16ed533bd8ac0c383eff0d6c368eb4851204857d",
+      "path": "train/train-shard-000036.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "d40e897f12dedc23d1ebf6c51e84cfd77ed2122e",
+      "size": 341846473,
+      "lfs": {
+        "oid": "114070353b97089e062c4798e1e3081b69bed7f754505aa1c3fbbf74314cc47e",
+        "size": 341846473,
+        "pointerSize": 134
+      },
+      "xetHash": "34ee1fd8d9c05c22a7cf46fe1a67d20538a6d896b6a5582950cb7bc146f2a7d4",
+      "path": "train/train-shard-000037.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "aaaf0ec0d79764ac62e06327f9f13887b4f63213",
+      "size": 347631609,
+      "lfs": {
+        "oid": "0bf53d9d04ed672a4d6b17d69087dd2b3f915349c68c94963846b8a8753032bd",
+        "size": 347631609,
+        "pointerSize": 134
+      },
+      "xetHash": "feba93922fbe8316e372539735cac1d657f05fb09b594b50c365b401aa8eb74b",
+      "path": "train/train-shard-000038.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "72c8a95a0874e6d415be629f3fdc70ebcdfaed5f",
+      "size": 346481200,
+      "lfs": {
+        "oid": "28069c7ce4d45f55bb56757f020132e9f4cd761ee546ae4ae2b958a65ee500f9",
+        "size": 346481200,
+        "pointerSize": 134
+      },
+      "xetHash": "6478a2a9ce61b37d700a14f2ac729bfa0a2e2ceea42d07a6d4955d0057565138",
+      "path": "train/train-shard-000039.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "cb741ce67bdc189b0ad7e165161657b6f94810ec",
+      "size": 345532286,
+      "lfs": {
+        "oid": "4c75afcdea2082545b390f2d45928542db533956ba0eb490461f07de5950e0f8",
+        "size": 345532286,
+        "pointerSize": 134
+      },
+      "xetHash": "046b5bb26eff95e648aa2c375e3b6813cf77865d5daa2e290f30ec7a2723a3c9",
+      "path": "train/train-shard-000040.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "8d2874630c217e90f6597e6d7683d44077549db6",
+      "size": 346560631,
+      "lfs": {
+        "oid": "331fdf9bec46e065d39cd6e59a46ca885727fa6809ed78a9916131494bae7080",
+        "size": 346560631,
+        "pointerSize": 134
+      },
+      "xetHash": "1d6226821025336abeb9de3dec79cf035a06011f23ffc1eef1e796814411f73c",
+      "path": "train/train-shard-000041.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "53327e206fcb079ea28a78bf0f48c32c550f9793",
+      "size": 344884940,
+      "lfs": {
+        "oid": "477c6ab7e51f95e4b372124452ba9d5874df13ee7acbe609218ff1690a66f266",
+        "size": 344884940,
+        "pointerSize": 134
+      },
+      "xetHash": "25cefc420abe090607d494709308d681d0d88742dfedf7e01bd823dc24e00d92",
+      "path": "train/train-shard-000042.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "cc33753311fa28b6c74d6b0b6140049453cf8dfe",
+      "size": 345790935,
+      "lfs": {
+        "oid": "7592f50de234a09c57e2277509eaab8f1b9a9e7accf7d1e6f8aead16090a5bde",
+        "size": 345790935,
+        "pointerSize": 134
+      },
+      "xetHash": "dd873b2e85b6aa038259669a602f9d73e9aa11e0b1382159c7d17a08970f1f4c",
+      "path": "train/train-shard-000043.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "2dce7f1190278a0ad6890164c5cabfa4fdee8a83",
+      "size": 345478763,
+      "lfs": {
+        "oid": "d0892a4f4a91627fb065af6f613611f49333ab6ce5447d8d4dad8b73cd79b111",
+        "size": 345478763,
+        "pointerSize": 134
+      },
+      "xetHash": "322cb18ae88872ace6048d352b5887e96b50ee10060eab0d7bd1901bf7969774",
+      "path": "train/train-shard-000044.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "2addaedc4311324aafe57d41d115a7910a06992a",
+      "size": 348016845,
+      "lfs": {
+        "oid": "64c310d9fb1151c9539531a212b5996119fbfcb1b28f957f8fe7f0d4832549ea",
+        "size": 348016845,
+        "pointerSize": 134
+      },
+      "xetHash": "617426afd940ce39b474be5c0064f302cb07a5b68dbdaa2f9648e185fa221c9b",
+      "path": "train/train-shard-000045.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "879d44ae86cc426706c46540e116d928e1c10bfc",
+      "size": 344153761,
+      "lfs": {
+        "oid": "c219301bcf1729f7e7b93efae5c8949a5f6e0ca76e60787f5de2e94c35acfa6b",
+        "size": 344153761,
+        "pointerSize": 134
+      },
+      "xetHash": "0d8e8f3e7b0d7b9c8be2ae17cfe746e38ae321f4adc302c01402c8de5da6a540",
+      "path": "train/train-shard-000046.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "3ef00f9c30331f05112e33a59d9bb5cb3a82b9ab",
+      "size": 345836079,
+      "lfs": {
+        "oid": "f395a69eaaf8eff734ea8bc55585e25a51b73cbb4694335db1539c78099a2921",
+        "size": 345836079,
+        "pointerSize": 134
+      },
+      "xetHash": "87b18cf0a733c520626f9b9d832ac4a2c63dd10cd9f12839f4bd437a6e20bd0b",
+      "path": "train/train-shard-000047.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "4ec8912cbd7c158fd09aa43b2438d424ccb5b526",
+      "size": 346117423,
+      "lfs": {
+        "oid": "763306d39b4ca412d9165c1bac4d66622ef3eeeacc78191d9faf68466f6f4c70",
+        "size": 346117423,
+        "pointerSize": 134
+      },
+      "xetHash": "8c00ca0fb30f19064441f3a801402eeba1938a6727a04751447033f69823f0d1",
+      "path": "train/train-shard-000048.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "9083e1112005c7b9274d9e7ecffb47593f9bf7d4",
+      "size": 344227360,
+      "lfs": {
+        "oid": "e30cbdc57d39de2ce1b31b33cec0ffab7dc72501053c26e16617de3b34fa932c",
+        "size": 344227360,
+        "pointerSize": 134
+      },
+      "xetHash": "301839792f4667b2d6f5c334911e7d8a5bbb001e8b59e395e60ed7ab4184c321",
+      "path": "train/train-shard-000049.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "09f83f4987ad6109749693ae90c581c103e36133",
+      "size": 341845201,
+      "lfs": {
+        "oid": "343c9a2925c60b9716e98a851099f026c0be02b09d533ee6826e2e6202c09bad",
+        "size": 341845201,
+        "pointerSize": 134
+      },
+      "xetHash": "16125950f24715aec37451f88e2e6a54ff709603b1ee8055621d56a1141d1001",
+      "path": "train/train-shard-000050.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "8cce321867edf255ec57174b8bf5375565051b45",
+      "size": 347102441,
+      "lfs": {
+        "oid": "22734f7c88797d312fbea694864e1b0eb4f24ea44fa01fc188fb3865681a3aee",
+        "size": 347102441,
+        "pointerSize": 134
+      },
+      "xetHash": "0bc41d57d83cbb04228f139dcd3a51e1332fe0d5bdc4e9c48036d92bc8d1d70f",
+      "path": "train/train-shard-000051.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "ac1fc4650f75ddc63511892c1e7c1970b0f9ba9f",
+      "size": 347700511,
+      "lfs": {
+        "oid": "8822a5552eb3eb6e4cfbb9115d47b77491dc5ceac8372c2a915235ddc03e315d",
+        "size": 347700511,
+        "pointerSize": 134
+      },
+      "xetHash": "3d70a03cdb9f924b19a522872e70357e3ca9cdccb1721f3abc67af2097d9b4a9",
+      "path": "train/train-shard-000052.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "e5fd68a61d46d730076de232b0f962dd7628756e",
+      "size": 343039723,
+      "lfs": {
+        "oid": "003a2fbc93b3891cb7daf1f2063fa8a6134956d63f755ccb57a5b923b660e90e",
+        "size": 343039723,
+        "pointerSize": 134
+      },
+      "xetHash": "aec51abd68174877155541b7366ee86eeb00127de0c03f47316fcc8fee2f8a13",
+      "path": "train/train-shard-000053.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "3b0be6fc5f5bf1ee47dbb32256231c70b4421994",
+      "size": 342919493,
+      "lfs": {
+        "oid": "c2782901b101686c6e41f1a32234aeb44892f76da1d7cfa65e036b0f9d3560b6",
+        "size": 342919493,
+        "pointerSize": 134
+      },
+      "xetHash": "e750bef967a5589437974f8ff7a6ec0939270e0bd9eb1a14fcf93ded6197ec93",
+      "path": "train/train-shard-000054.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "98a4e7b94f4ef6a1884c6d9e086d32b64e9b6d9c",
+      "size": 342742090,
+      "lfs": {
+        "oid": "02c02d21b27efdefc63622cbae707c445dbe1678cff210489054c6f05d111ccd",
+        "size": 342742090,
+        "pointerSize": 134
+      },
+      "xetHash": "f4937313bd63ab52e11a7c7e2f013518ea976e4f32ed9431c94ce343d3fbf70b",
+      "path": "train/train-shard-000055.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "17222580deb354e0276d33ef0f930bcb688d418e",
+      "size": 345388784,
+      "lfs": {
+        "oid": "a11baad0149e5f2ccd94abaf35643b78c35ee82cc0f63b63e0a5b1e1fe9c4cca",
+        "size": 345388784,
+        "pointerSize": 134
+      },
+      "xetHash": "ab89f4b23edcd79534f10586b5208601e119c52f6d2b8e12e6044d8674125c54",
+      "path": "train/train-shard-000056.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "1429926939064fc0e1695648a6dd0b951b0a3063",
+      "size": 345848306,
+      "lfs": {
+        "oid": "06df566330626747875631c3a8a29331e79b8d27faa69f432e18acb024684c60",
+        "size": 345848306,
+        "pointerSize": 134
+      },
+      "xetHash": "5b23bf92b46a7e403a94302019805a86869c8ef1e03b63bbc147909e314a9a8d",
+      "path": "train/train-shard-000057.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "b05b869cee65d8b9916ff2b0dfbd46a7e88d1b45",
+      "size": 346827755,
+      "lfs": {
+        "oid": "25037eb3c431a5cca82d5b180a5eb4133a2798a493fb6c2cc7d10363e65c8639",
+        "size": 346827755,
+        "pointerSize": 134
+      },
+      "xetHash": "0e91251b33aa6ecec551660001e0c14e1d5c036dd595417acfd9e7585bcf3353",
+      "path": "train/train-shard-000058.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "b8f6dc48003891b9ca4dd834fca3aed41b80ed3f",
+      "size": 349178456,
+      "lfs": {
+        "oid": "000deee55c672488dc17ffae5ba137ed175adba134784a58fc629a75213aa562",
+        "size": 349178456,
+        "pointerSize": 134
+      },
+      "xetHash": "1e0a43e3667df4eef81e952967d7ff3d3075288d28106335de564243691c78d9",
+      "path": "train/train-shard-000059.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "cf1fa4d383aab7b345dee7bc1a8e248522449c22",
+      "size": 345957971,
+      "lfs": {
+        "oid": "5b2d6652b1bfb7c218280c4c3e7d84ad1b57faa01073a0acb0437d896ebdc9c3",
+        "size": 345957971,
+        "pointerSize": 134
+      },
+      "xetHash": "1983f1c853d80a27a53ae4619b4bde3e2a744eccf2343e4aade5151c541aeaea",
+      "path": "train/train-shard-000060.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "34a4535c9b8635997a9b8f51eb2f412ef90bd9ef",
+      "size": 344040703,
+      "lfs": {
+        "oid": "78d6d0a9f996d2f6767834e0c221166ee9aa73b30bceb50a998d1482373c959b",
+        "size": 344040703,
+        "pointerSize": 134
+      },
+      "xetHash": "b40ed5ba5bd39263506ce2c22728926944fde544961e082f5e4195f1cef8c195",
+      "path": "train/train-shard-000061.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "dd1d0ee4f7d994d12a26d8a89696485debe982d2",
+      "size": 343575628,
+      "lfs": {
+        "oid": "93a3db3a608cf079592596447bbf66f31a83048eae55cb9f64ea639da782949a",
+        "size": 343575628,
+        "pointerSize": 134
+      },
+      "xetHash": "8b74539d146144fd7a8b3250a1dd1e939cd0774270e4be55d5bf61cd1f5790ea",
+      "path": "train/train-shard-000062.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "dab80b1efa3c83696668ff068e07d17dd8bee30f",
+      "size": 346677568,
+      "lfs": {
+        "oid": "448a4349b3f3306740e00eee286f156d104c8b9f082f914e9847d74149642638",
+        "size": 346677568,
+        "pointerSize": 134
+      },
+      "xetHash": "d7e9bee602513914bd20c627e01dc8a232e262b96f40da55a5adf7133f91361f",
+      "path": "train/train-shard-000063.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "6b2808d683635ce0430507eb58dd328e9da99cbf",
+      "size": 348358554,
+      "lfs": {
+        "oid": "06765420f85aa933f7db53e444747d45df4677d57ef72a5f00139cb7a75f83d0",
+        "size": 348358554,
+        "pointerSize": 134
+      },
+      "xetHash": "bc3ec22a0ae3c8fb03b8be6cf55aa7366b0b4c36660687deeccde1f398dab82c",
+      "path": "train/train-shard-000064.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "3e292c2b145c3bc2b5f68cf7947861895eedab91",
+      "size": 344767552,
+      "lfs": {
+        "oid": "09b694a24b0b5ebfb10c13e499e3ba8d3364cc739ea24573d4ee203152211923",
+        "size": 344767552,
+        "pointerSize": 134
+      },
+      "xetHash": "160fe970d8966aa5511bf9e0af1a11aec2b8805591838b1cbb7e159332969556",
+      "path": "train/train-shard-000065.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "920b0cad9df11b61dab2ad34332b60e37c87abe5",
+      "size": 343280567,
+      "lfs": {
+        "oid": "351f3d6be3558086b3a6075e65a727bd2cf8f877412868d3b9fa86d1b9917852",
+        "size": 343280567,
+        "pointerSize": 134
+      },
+      "xetHash": "52104ad473faf7825c4683c6ea17da9bf457fa4766fb404ab7c7b7daafddd5e8",
+      "path": "train/train-shard-000066.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "fdbe7febfe4089f237f6759b35d5f2e6bfc0ed65",
+      "size": 347232543,
+      "lfs": {
+        "oid": "db98178934dc5e3a2e94cbdffe48b2ad844d6ead70524566429e9dcfe52bb7e8",
+        "size": 347232543,
+        "pointerSize": 134
+      },
+      "xetHash": "794133eaca6a326ec95b03507715d33e8fe2816ba09e2890574bf878a410ed8e",
+      "path": "train/train-shard-000067.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "c28a2ed2d7ce39c25aed28f4e36a2952d4ae78f8",
+      "size": 343724690,
+      "lfs": {
+        "oid": "ca3625ee26db73400ee092852f0af6d771df16a55f3221c8d58227641be2d1d3",
+        "size": 343724690,
+        "pointerSize": 134
+      },
+      "xetHash": "3963a58bcee6e902b15bab95ae6e1b3bc8e31a1ce727bdd50aea1fd98d09859d",
+      "path": "train/train-shard-000068.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "a4b207963ac9b852499bfbfadd482e2b0940ee40",
+      "size": 346119312,
+      "lfs": {
+        "oid": "ec9115da95a04dd91bd342daa4816b7d2db12f6d72c4fb022f17f9f923ad2f00",
+        "size": 346119312,
+        "pointerSize": 134
+      },
+      "xetHash": "6108993d8d6902a7c321aa1662542aac307e6b850675f68a0d9fbc54a65d3175",
+      "path": "train/train-shard-000069.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "1a621d3210b3a5d5faa5fb79e9d51d350a9e1c46",
+      "size": 344692335,
+      "lfs": {
+        "oid": "eaa3b9a2118e76c4de011488f9529969264eea395c498a433681c90efdbb6e97",
+        "size": 344692335,
+        "pointerSize": 134
+      },
+      "xetHash": "6bc0e5c99f5bdfb4a27676c5b4a7a674a7cbb4efc9823ef9181dc9a1864e8e2d",
+      "path": "train/train-shard-000070.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "45f6231acf92e8de773fefc77b7309b9ce0bef4c",
+      "size": 344367595,
+      "lfs": {
+        "oid": "b2e40391cf5bfb3fb2f0b317a6082f2f09c7dc74f81664ac8486259870d37e93",
+        "size": 344367595,
+        "pointerSize": 134
+      },
+      "xetHash": "c16d34f78853f7df1a58df5c568d5b5ca591e93248d123a164039111fbac2465",
+      "path": "train/train-shard-000071.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "98010b8a92ccb5aaf76beaa9a6ec495fc7b06a9a",
+      "size": 345359787,
+      "lfs": {
+        "oid": "2267deae7d261c83b966bb8870832b07205667a38fcdb76f732c8983281116aa",
+        "size": 345359787,
+        "pointerSize": 134
+      },
+      "xetHash": "337d4bf6999b92ebacc6b7db83acb535e880d6fd89f9aae4c99249dbf33b086e",
+      "path": "train/train-shard-000072.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "db837dbbb70112fe9db0e0ef562f6c517cbac62a",
+      "size": 341859480,
+      "lfs": {
+        "oid": "4ab134418888729496dbaa87c691446c539b5e4784fe6e1909f2c086e214b3fa",
+        "size": 341859480,
+        "pointerSize": 134
+      },
+      "xetHash": "658375bfcdee7e0caca14bcde4d56192a46f25a6cd5f081055c58c5cd01aeaa0",
+      "path": "train/train-shard-000073.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "f877c5cf594e1ce8b1b6402098eb8ad5adc33839",
+      "size": 348091754,
+      "lfs": {
+        "oid": "2933869aed2bc262afafc38af04bec449fde2473d8462309136a639e12533feb",
+        "size": 348091754,
+        "pointerSize": 134
+      },
+      "xetHash": "2c39ae6dd14be4a6f0bc6568492f8303da2dc09cdcc76c74597f047dd5fd7e9e",
+      "path": "train/train-shard-000074.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "8dcc4013ef4c3082358f898fb2769bcd2b6a1510",
+      "size": 345061510,
+      "lfs": {
+        "oid": "de1a4bc3f6d77b4a9e2490a6b18cffa228d55e19a431b30939ea4e123d905cae",
+        "size": 345061510,
+        "pointerSize": 134
+      },
+      "xetHash": "861e407740f3a343ac1eb3e16400890ea1891d381ced2153acd7ac29be335551",
+      "path": "train/train-shard-000075.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "ab1c59a197129e7ff2a27a401abe7200fc8f556b",
+      "size": 344151962,
+      "lfs": {
+        "oid": "1e82db6fcd6e7a149e7bed659c236035ba86aed6eabaa1cc618acb12b937c272",
+        "size": 344151962,
+        "pointerSize": 134
+      },
+      "xetHash": "7d12426e4a6760a2b46de2599302bc616ac43c4abc8d80e50a8d315dd599b73e",
+      "path": "train/train-shard-000076.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "b83e95b7a3f29ba893785e11c02e226c04e1a010",
+      "size": 346674342,
+      "lfs": {
+        "oid": "542ed8c1f890a2ad880c156600e40527a5759234b7fc675c41dd95fe037a5bd6",
+        "size": 346674342,
+        "pointerSize": 134
+      },
+      "xetHash": "b2c0b77a09337e3f0fe627ab9cf07f33549c3b0c6579a1783080bd83eedeb429",
+      "path": "train/train-shard-000077.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "0e6181bfee0e6ef77e4ff79bfc39fc4c07d3a87b",
+      "size": 345032284,
+      "lfs": {
+        "oid": "df98b322cf442869ebad89837db4becadf98a55e8a94eb5325a2eac69a032125",
+        "size": 345032284,
+        "pointerSize": 134
+      },
+      "xetHash": "7e07b73df8d652574bcc6058df626721d956d03cda96fe8bf00d679ce845f41b",
+      "path": "train/train-shard-000078.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "cdfa4e223f0917ade25dd164639e08b4f227f263",
+      "size": 344691452,
+      "lfs": {
+        "oid": "9c4d9a8f5c2a1fb914c37bf4c925e779b0e04c51bded256b24649891f125b07f",
+        "size": 344691452,
+        "pointerSize": 134
+      },
+      "xetHash": "e0b730d7487e0ead80bf8e6b99390c11fbd1ef7d2e49318f233be7fc0fc3a4a6",
+      "path": "train/train-shard-000079.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "e6c066b9e6fa57c9c6e05f68dea614aa873321a6",
+      "size": 352342489,
+      "lfs": {
+        "oid": "71a8af9890a3aee5074320404809d774bd081ba76a06d084be8fbceefc9c2bad",
+        "size": 352342489,
+        "pointerSize": 134
+      },
+      "xetHash": "06a55009fc2a4251da0f4bf37a87da981d2e3071416b47fa5c257dec54ea136b",
+      "path": "train/train-shard-000080.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "70a36b4a59b8e67beb670035a451c1442288c76a",
+      "size": 347617961,
+      "lfs": {
+        "oid": "955afd74e297c0c4d8dd695d62163456e231afdccc6484b6183128c7206ef672",
+        "size": 347617961,
+        "pointerSize": 134
+      },
+      "xetHash": "c8d07f7514f1c7cad752d1199b1f7c914cbd923adb866a244de21c3d5b3a5e53",
+      "path": "train/train-shard-000081.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "be66f89f18aa4fdb23c1a99be3163b18c70f9fb8",
+      "size": 344967427,
+      "lfs": {
+        "oid": "feff86d517a0d5052fc86ce26b999b23cf318ade7446cefdf518c508ae9657db",
+        "size": 344967427,
+        "pointerSize": 134
+      },
+      "xetHash": "b612c9c4543f41f575c8ae547200a46b1dd707196324bd2633622cc3612f19be",
+      "path": "train/train-shard-000082.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "d798083d76a2adb7d28f315331278a9c42117f61",
+      "size": 347191643,
+      "lfs": {
+        "oid": "7075a38a5b4320a2cc6202486ef6f0dbb465b05d257c4da21710954b0447e4e6",
+        "size": 347191643,
+        "pointerSize": 134
+      },
+      "xetHash": "9f2ecfc0554edee030e92a3ef188f4543893fed7dfa95084c43ed188ec6add50",
+      "path": "train/train-shard-000083.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "451360ba5c1b323cb299f522c2df954af4501901",
+      "size": 348018173,
+      "lfs": {
+        "oid": "f92b5f59394eb94bfd587c44154e1033cd81e14f2af7613b44b642355cc6fcda",
+        "size": 348018173,
+        "pointerSize": 134
+      },
+      "xetHash": "867be9b7fd3f985edbecca9e66befb9b3dc91cc87889da2407578e14418a8b3d",
+      "path": "train/train-shard-000084.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "05a0313f48da46ef438e4704203bb8a393507da2",
+      "size": 344954916,
+      "lfs": {
+        "oid": "ca1bd2e5b3249ec983593ef33d90ad04ace07fa6a56c9c78f9fa0c3810c08755",
+        "size": 344954916,
+        "pointerSize": 134
+      },
+      "xetHash": "be04cbdac683f21f3ab57dc5f939f95ed4a28a32ab51913b5a27a3038a601d42",
+      "path": "train/train-shard-000085.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "042ab29211f4047f2621c99498c424530b67947a",
+      "size": 344512225,
+      "lfs": {
+        "oid": "3cd325486bd941547d64dbaae7be9e8ce217e1f3dc644345f5ce20f53eefc87c",
+        "size": 344512225,
+        "pointerSize": 134
+      },
+      "xetHash": "6cb88a0e77a269da808d58f028987a598a08094994d71bb16fd806cae923812a",
+      "path": "train/train-shard-000086.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "6274fe16c0d491bf6781acc058d1412d818f18be",
+      "size": 348444026,
+      "lfs": {
+        "oid": "ce025c478a08dd0692a5f5a653f8b4da7a034cb052e381d274d11d2b506f7ff9",
+        "size": 348444026,
+        "pointerSize": 134
+      },
+      "xetHash": "3ebbf903a00789a159565e040c22604c8b6da849ce4e133e9528734e9fe67db0",
+      "path": "train/train-shard-000087.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "e51368162dfbcc7bcdef8c329020292c71fd641d",
+      "size": 347019702,
+      "lfs": {
+        "oid": "d22c813a4a44350d24bc03a1d70b0116e777e46c311259b796665f4bdc9a80f8",
+        "size": 347019702,
+        "pointerSize": 134
+      },
+      "xetHash": "12f24e12c759557301acc4b5198342a469116d5aab994dd80bd12d2bcf45bdbc",
+      "path": "train/train-shard-000088.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "0914dd22a297e6d6e7afd14b0d2b2bb00adfe558",
+      "size": 347126439,
+      "lfs": {
+        "oid": "d4ca8a1393022a6ccbd6ac852284b37bb8bf103ffff49e1b9f3db3e778c64a74",
+        "size": 347126439,
+        "pointerSize": 134
+      },
+      "xetHash": "196b875ed8991fddb6ac1604bbd7bd3bc338599623f8ab3a0af88df4902781a0",
+      "path": "train/train-shard-000089.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "61336dc5d5ac210f14362481b678b78c9fc2e34c",
+      "size": 348488140,
+      "lfs": {
+        "oid": "87d34aa3d34b6382aff47e3af21fd70989e98226b2e6e74f2fe91af5ea90894c",
+        "size": 348488140,
+        "pointerSize": 134
+      },
+      "xetHash": "95d4cdbe243adfece687e10e93975a22ec95a3faf1e6c5c9f6607919776a8683",
+      "path": "train/train-shard-000090.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "4e6076bf911f32f13dccfbcd81d2dca1dc974933",
+      "size": 349515842,
+      "lfs": {
+        "oid": "8f5488508c52f817e2ae43b8fdec14d5c480fe409acc2af76345412074a1faad",
+        "size": 349515842,
+        "pointerSize": 134
+      },
+      "xetHash": "e46072fea76c73711a44dff3934717a26f639c8be4622d2d2b967091f33041b3",
+      "path": "train/train-shard-000091.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "00549ecfa27d09474e06c2313c792dbba940885f",
+      "size": 344652827,
+      "lfs": {
+        "oid": "15482c98581941f10535f874b5c38fae83ceda2771c42b123bb2b98809988ff3",
+        "size": 344652827,
+        "pointerSize": 134
+      },
+      "xetHash": "7e23738ad919d8d016ec3221b8472a081fed44ef9bd7a342bd29813920d9b8bf",
+      "path": "train/train-shard-000092.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "d19f3de23708cee3d2fa59dc49d5db6f0c1f5380",
+      "size": 347014900,
+      "lfs": {
+        "oid": "1fd46acc4a683b815b40139887036c02054254e249caa686762b1a1ae95a302b",
+        "size": 347014900,
+        "pointerSize": 134
+      },
+      "xetHash": "80332b2866ca056e521f3002e20b1e7c493e86c56c14634a7ab1bd140dd9f88d",
+      "path": "train/train-shard-000093.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "770d655b9a998c9f2b7d02728b9ff2540ed5425c",
+      "size": 344764296,
+      "lfs": {
+        "oid": "4f238f267e95966e02dff577b5e7128b59f54da84aeb2c80aac5cfc2fc8e5795",
+        "size": 344764296,
+        "pointerSize": 134
+      },
+      "xetHash": "a5b8b3a469668d968e195a991a4144efb0f0cd621dde8442c139c9c46cca0489",
+      "path": "train/train-shard-000094.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "7923da46b167bba133b5fe9db9c12df8c8cee43d",
+      "size": 343644216,
+      "lfs": {
+        "oid": "8ae00fbbc9f6984736ed7c9e18b28d2667cf51a5c536b81002e2c5de85858efa",
+        "size": 343644216,
+        "pointerSize": 134
+      },
+      "xetHash": "83ba5e5e582cc1f6d44444cde720e363b613864d89facf2b4ad686cb09aa22e5",
+      "path": "train/train-shard-000095.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "b7fc10ddbea04d64b81e4cdd5e1cbd2da6264123",
+      "size": 344671253,
+      "lfs": {
+        "oid": "b29034b2821b5609aced0b8601151fcb456c78624452ff6c8ffa85820ea3023d",
+        "size": 344671253,
+        "pointerSize": 134
+      },
+      "xetHash": "e81651f28bfb0ff125dad2a0262e996aff8d9d4789b503df9113f5a9adbdf80d",
+      "path": "train/train-shard-000096.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "ad4a13a15af722d925f69686fef6db3fe8e1a42e",
+      "size": 347070895,
+      "lfs": {
+        "oid": "31cbeb5391eb158f8cac8ab9099a362e88247da1b22ef6a1eab47285dd8d0c47",
+        "size": 347070895,
+        "pointerSize": 134
+      },
+      "xetHash": "94e92c277b8770089cebf2624175b3127e522a743e3df881e14433b65878a4c8",
+      "path": "train/train-shard-000097.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "1bfe0c22b311d6195de017a5a95eff3b4df8a62c",
+      "size": 341564431,
+      "lfs": {
+        "oid": "37f1aff4de399c602ae804853fafd32c6b58d508c3dea815378abbc406a75392",
+        "size": 341564431,
+        "pointerSize": 134
+      },
+      "xetHash": "b976d0d983a3c6dd548d8b52d55f6a47313931f17d62a8e73ed9750f3d04246b",
+      "path": "train/train-shard-000098.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "10fa2333fa79f82d43a36c07df85c985d3bc034c",
+      "size": 344146100,
+      "lfs": {
+        "oid": "529ed087b7861e984414c46df338e59f034d81428bf49fdba52c372b923ba7b1",
+        "size": 344146100,
+        "pointerSize": 134
+      },
+      "xetHash": "b1a879cb9b40c47cb5f323ef9e85119296b8b88e03da4c18f0d2fb385ce52270",
+      "path": "train/train-shard-000099.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "c68119e5a63b8afbd76983a9c31117187ee0ee7b",
+      "size": 345308385,
+      "lfs": {
+        "oid": "11fea230f6ea87fde7a18506f3e7febecbeb7e931f75eb12ac4cdc0d392ab1d6",
+        "size": 345308385,
+        "pointerSize": 134
+      },
+      "xetHash": "3e443a640544853e5d4b3532a6c8ed0ce6806674f91636dc968fbe30dbaa32a9",
+      "path": "train/train-shard-000100.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "066555bae5261af76663fa5664f005b679913c78",
+      "size": 346355589,
+      "lfs": {
+        "oid": "567dadbdec9ad86eb53e0c8b0d33df454415384c009099277fe4b5766c03f49d",
+        "size": 346355589,
+        "pointerSize": 134
+      },
+      "xetHash": "274c8a5479d58947c4f3011d4f1f02244b572a6bfc1c5b2ffd169ad7d47a6fd7",
+      "path": "train/train-shard-000101.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "f9f1a9bd5edf51964f0912483dd9d0ffdee5f4ef",
+      "size": 346780050,
+      "lfs": {
+        "oid": "dd72da3c01538f9be1c4326f41d3d7850ecbc29ac9a047f23a3794974cc644ed",
+        "size": 346780050,
+        "pointerSize": 134
+      },
+      "xetHash": "bc272cb3bb03d00fced51385903313cec5d61609f26279c1ba6f6b14f1a9821d",
+      "path": "train/train-shard-000102.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "6affb1d825daa2af242fe669774c71dcc87a7f31",
+      "size": 347831407,
+      "lfs": {
+        "oid": "4ad7d283bebf4ce5bf68c12a4ad68c256f9a6cc8760b2201ec32dadaccf876ac",
+        "size": 347831407,
+        "pointerSize": 134
+      },
+      "xetHash": "d81b724456652c7260b31d2e91f3b1976025dbe1dac7f608e7f17ca36a33815b",
+      "path": "train/train-shard-000103.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "d267372de3c695c7938f795822c07530fc5873e7",
+      "size": 348454059,
+      "lfs": {
+        "oid": "e7a95703a1bc47710014b1e2ed14b0b6fc9fdc4ef0439ce7b4b5616cc8fb271f",
+        "size": 348454059,
+        "pointerSize": 134
+      },
+      "xetHash": "948640a438e5cec960283128ca2b6c50e20aa72b762fb2e1ed33a1e22d4fe7a1",
+      "path": "train/train-shard-000104.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "55a237d999428961465ed07cbdee4e5bc829f1e2",
+      "size": 348088236,
+      "lfs": {
+        "oid": "511cb636772729b7c36d9b55777630f01b7522c3af1ff58541ea4bc8417380b4",
+        "size": 348088236,
+        "pointerSize": 134
+      },
+      "xetHash": "e6d38588a81103f5f79a79e6b316d7b037ee1423213207688ed7d84041dc3070",
+      "path": "train/train-shard-000105.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "7249edb31b5219b3f5f7541ecc946f51282f6293",
+      "size": 344534141,
+      "lfs": {
+        "oid": "c7fed47b0594afd98a83f9126cdbc5aa297b921551de2cc904d118405f2c851f",
+        "size": 344534141,
+        "pointerSize": 134
+      },
+      "xetHash": "ee04dfdee7e734fac89750fdd2c763b3377118115caba7ba55d5005c50dd9673",
+      "path": "train/train-shard-000106.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "ff7e9dfc740bfcc8230d1e400cef90ce312e13fa",
+      "size": 345271482,
+      "lfs": {
+        "oid": "e8d1ca7ce36347c697c36ecf70c886aaa4fdb9e1ff2be8e5a7e838db80b7c6ef",
+        "size": 345271482,
+        "pointerSize": 134
+      },
+      "xetHash": "8c1d095365b87891ec5f1027a473dd5099638bf773635e9228ab53ce9eae58ca",
+      "path": "train/train-shard-000107.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "92ae234aebee67628bd9b79cbb9ae9522d60f3e8",
+      "size": 345724414,
+      "lfs": {
+        "oid": "3f020caf9d72ea9e7506e9e24846f9efa614a304f731d7bbecebbb0cc720c08c",
+        "size": 345724414,
+        "pointerSize": 134
+      },
+      "xetHash": "4cbc9f53e58c84584ab5b4d8ffbff134fb045aebece7107ca77f260ee44e1431",
+      "path": "train/train-shard-000108.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "cf68babd9e3a65c38a84127f83907e443245aa12",
+      "size": 345878750,
+      "lfs": {
+        "oid": "72b834fef1084381c08a9d79edf7c3ee900defb5aeffe84731a6e581a8e6ffbe",
+        "size": 345878750,
+        "pointerSize": 134
+      },
+      "xetHash": "fb640768472f4eafbab08f3e184415a224b455e2a980e07cb753451a070f4b68",
+      "path": "train/train-shard-000109.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "870eda814d10a7ba6f09043f15362a0fddaa653f",
+      "size": 346109734,
+      "lfs": {
+        "oid": "9a423ebbdc14328d3546d444fc7f3d88f65504ccb1b56bfe7bda12d41b9a3831",
+        "size": 346109734,
+        "pointerSize": 134
+      },
+      "xetHash": "69a8970f18ffe511823514ddaeb6012c5d7f4bd3e784b38dc2d2cf12a9011064",
+      "path": "train/train-shard-000110.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "878ff096cae2607540601e4fd1b8dd95cbba6f7f",
+      "size": 344085027,
+      "lfs": {
+        "oid": "fe291c75941e0042059da71d6acfcc9d86b46c80dcbca7a44f699e11c1b3e2b2",
+        "size": 344085027,
+        "pointerSize": 134
+      },
+      "xetHash": "9e68cbe5eb22a7ed0ab79dd72bc968390b567a4671a1f7793eeba8b71f66f15c",
+      "path": "train/train-shard-000111.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "595a5b0c298785af10c406ce710920146ec8d465",
+      "size": 344784171,
+      "lfs": {
+        "oid": "e3994264f71f44bccfe551c9f3cebe11f8bf85d0e106b85a87ddaaa54e8abfa2",
+        "size": 344784171,
+        "pointerSize": 134
+      },
+      "xetHash": "df2a722077dc63e12e1841da0e17ba51e0bd9d340d029ee1dc87974524b1a725",
+      "path": "train/train-shard-000112.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "9d9450aab300dbf5f0aff91836ed07a8d1b58146",
+      "size": 343627189,
+      "lfs": {
+        "oid": "4fa9b803c596fa060e3f1584b37e7dda3014c33e228994628e874e21ee62d4db",
+        "size": 343627189,
+        "pointerSize": 134
+      },
+      "xetHash": "ac2fd48d34100cd0eda662290ced64e426d90d11236221d51f39fe78af2e85a0",
+      "path": "train/train-shard-000113.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "25cbc17d13cc5e59b91442145bed78199cbc93a0",
+      "size": 344824803,
+      "lfs": {
+        "oid": "b918f67646379badc15e1d34342a557d23237d0e8c5dcaff73272659987f9324",
+        "size": 344824803,
+        "pointerSize": 134
+      },
+      "xetHash": "d6bc8e86efa96124228ff04f38b3868c37b8b47400412f0fb294806b38fc316e",
+      "path": "train/train-shard-000114.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "68987742d2db797d06c01479c3c7b9057cc974e3",
+      "size": 342654542,
+      "lfs": {
+        "oid": "5bbd513ecf86afff8249ff54b8fb3226f7d6fd7cc24e8500e42e731787278a43",
+        "size": 342654542,
+        "pointerSize": 134
+      },
+      "xetHash": "c9298e6def662e97328e464e8b6c357618e4df39975e060af2aefb1308f543fb",
+      "path": "train/train-shard-000115.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "178896384af2573dac9e057330098d8003e3a3c2",
+      "size": 347024717,
+      "lfs": {
+        "oid": "0cd479b2cec6ed3023942c3f57b2b212b8481417989f79fc63a3e37b44d8c885",
+        "size": 347024717,
+        "pointerSize": 134
+      },
+      "xetHash": "39cf2000981d30a664634afb19943a2922093682436df8f4de52bb2e101a9a8f",
+      "path": "train/train-shard-000116.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "7630cf2a17e7bbaa8aa7c5774d27e0420f8d2df2",
+      "size": 342729141,
+      "lfs": {
+        "oid": "d796f8020b69b067e5d6bfcf6e15990a26149ea5806d9d072f90255027c65516",
+        "size": 342729141,
+        "pointerSize": 134
+      },
+      "xetHash": "1b55d728272b702f040be978201f0443ae8fa2850f7bccd9db3ae4d92a49c82f",
+      "path": "train/train-shard-000117.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "a8d26b15e45d42461ef93065778031372af3ad40",
+      "size": 344726994,
+      "lfs": {
+        "oid": "916dff4f18b571a2db423e5cf12e97fdc07a1056ad1a7631bd63df151e688616",
+        "size": 344726994,
+        "pointerSize": 134
+      },
+      "xetHash": "871740efc08587090ae2d7e90517fef2ea95c81393698be70f5b7a7463dcb9cb",
+      "path": "train/train-shard-000118.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "818dd1e61177be8729f0bc5ba46ec24fa099ad20",
+      "size": 343970310,
+      "lfs": {
+        "oid": "69d8c381db69c37ff03e0afff33545e6a9f5b60ffbdad8d7d3a286bfede81b80",
+        "size": 343970310,
+        "pointerSize": 134
+      },
+      "xetHash": "c6c1bd72d6bfc3c56212908e976359cdac41d1b4c877d338f873ac0f5caf0d7b",
+      "path": "train/train-shard-000119.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "630ceb4bb6d605ef5de0f4f0c8abe3f69e614d02",
+      "size": 345445419,
+      "lfs": {
+        "oid": "92fbf3dbe9ebfc87fd97a3c61bc832625edc00304cfad59d19f2d461e82dfacd",
+        "size": 345445419,
+        "pointerSize": 134
+      },
+      "xetHash": "7e316f4e140a20a3df7fb6113db6a8f741113d6310f6df21ca6f19fc45cdbdc5",
+      "path": "train/train-shard-000120.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "5963ff2c7cdf2e65e04597753e0b1486d33630ae",
+      "size": 347266105,
+      "lfs": {
+        "oid": "9d35fad77a4ab448d9f8e333fdabe86b47912d179638e6c8ae0df361ed2fac89",
+        "size": 347266105,
+        "pointerSize": 134
+      },
+      "xetHash": "c6bf675ab06289a05a33ed976f5bdacbba768a7dcb63619bd5acbcb16786d3c9",
+      "path": "train/train-shard-000121.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "a063a00202a2c6257bc0dc3979ccf7f7f034f3b9",
+      "size": 344194475,
+      "lfs": {
+        "oid": "c36a6768b5ebd1783058c05c8944954000157e985cd0c142c22cd8e9824cdede",
+        "size": 344194475,
+        "pointerSize": 134
+      },
+      "xetHash": "2447e2e8cf7521278fdd1886923c5a61a25f20e05c4f9e96065ca787bd52dfc5",
+      "path": "train/train-shard-000122.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "dc9a13dc692925a6304932874621bd4afab1747d",
+      "size": 343779574,
+      "lfs": {
+        "oid": "2603880f175a3d39b78eff063059f042c2ac927fb0edb13d03bfe83ee02f09a6",
+        "size": 343779574,
+        "pointerSize": 134
+      },
+      "xetHash": "17171eb0f01c4e52b366c4fea1f7cc74653df452d35063d3fbea5df039af6588",
+      "path": "train/train-shard-000123.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "68ccf8b6ece2dbee916edc7212309d29202bb125",
+      "size": 349047322,
+      "lfs": {
+        "oid": "b03ce8423f60f1562025feb5258706ea773f7f8174a5046ebba6edb4569d632b",
+        "size": 349047322,
+        "pointerSize": 134
+      },
+      "xetHash": "8770a72f411db4e7e8693adb4db9733a296400526ff1fc28c0ebda02bd699458",
+      "path": "train/train-shard-000124.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "eb32c45bcdece787013062600bc5ea74df87bb9e",
+      "size": 346460545,
+      "lfs": {
+        "oid": "b19ebf8091196e9c8659c640662a4ecc0ade0ac7bb6e2521cb348e090313e200",
+        "size": 346460545,
+        "pointerSize": 134
+      },
+      "xetHash": "c2f02d6b25837e3a0d1b724991f3b48d8adbe93bb3dfac1c69e8dcf2f60f6d15",
+      "path": "train/train-shard-000125.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "90143609c3abdd7dda42a4bf6d294008baa077a4",
+      "size": 344400213,
+      "lfs": {
+        "oid": "2d800f0df61556d6a9ca5b3c2845a8de7368ef83512b0d3f8952585ae2a32452",
+        "size": 344400213,
+        "pointerSize": 134
+      },
+      "xetHash": "b1756529f50cc7083fd1aacacb23a8e3a8f94ba256c4ad4b4f8d0fdf8fe33f00",
+      "path": "train/train-shard-000126.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "4853996a5a7d50b683fad33b08ffd3d2a10743eb",
+      "size": 344575339,
+      "lfs": {
+        "oid": "b1657bf2c57b9c8bbb3b8931857db4d8f2596dc30c3547f41a7dca709f1d62d8",
+        "size": 344575339,
+        "pointerSize": 134
+      },
+      "xetHash": "fe35b26d91e4f5c26bb01e29d1c3bbc48912c25addf01e076f428654791de781",
+      "path": "train/train-shard-000127.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "2e2d935e79e6a67f5bc6bd806dc2005004f45668",
+      "size": 344697166,
+      "lfs": {
+        "oid": "61c44caa04aa4dbbbcc9ed67224aeeca8fcedfedd586df5e9e38bf96b73710e8",
+        "size": 344697166,
+        "pointerSize": 134
+      },
+      "xetHash": "780ef750b3a57d786b27b3db5b4b64a6f2c894ff3456e564d63ad1c807838540",
+      "path": "train/train-shard-000128.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "0aa9806d6e060bc240d1d3a3feb4dbbf5b5d1a0f",
+      "size": 344662820,
+      "lfs": {
+        "oid": "de19b37d372bb258aa6aff6d89957a78b890b76029bf725cf7f64a8d86f52893",
+        "size": 344662820,
+        "pointerSize": 134
+      },
+      "xetHash": "6cbc59a65cabc9c4380ec8815820303fd6dd49b7e0c120828d9ef5bccec16302",
+      "path": "train/train-shard-000129.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "c9841832886200a73c4d06d182cf0ae33099a5e6",
+      "size": 344203105,
+      "lfs": {
+        "oid": "03cc28cf3b6256679e0555aa4c13b4c9a5b5d0f5f551ef33bf3af632d4de4bdf",
+        "size": 344203105,
+        "pointerSize": 134
+      },
+      "xetHash": "952f83d1ce661dcf3afb6af2087932252cfb3a60633d7ceadd69fccc00d86174",
+      "path": "train/train-shard-000130.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "5f362bbd476ac98952da44a5a8d83ccb285fdc96",
+      "size": 348341552,
+      "lfs": {
+        "oid": "86776e25a72afe728419764f689a140f94105aa7fbfba73bc37bcf8cd25d8473",
+        "size": 348341552,
+        "pointerSize": 134
+      },
+      "xetHash": "52e95ce314f3cbf5cbdf5f08ce4105fde846b9383df3a823fc107b3d3954b9d2",
+      "path": "train/train-shard-000131.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "4f5f4b6464441ca34a63ef381a9ba8ee67d14a8a",
+      "size": 344765727,
+      "lfs": {
+        "oid": "2d3a1324f9281885b51db7a4f92e5a695e77667d274d443e20baaa5d46da6dfe",
+        "size": 344765727,
+        "pointerSize": 134
+      },
+      "xetHash": "0a334268f9279b99eff1b0298db6448f89b52c5d5fc5104e3532e42b88a96aba",
+      "path": "train/train-shard-000132.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "a279d9d706c5dedae7c092b2eabfe111c2e573ad",
+      "size": 345953667,
+      "lfs": {
+        "oid": "abcbefc8c8f03016577aa15e2d814036d3d16ca60d7c8b5f9c3903e05ce38d58",
+        "size": 345953667,
+        "pointerSize": 134
+      },
+      "xetHash": "2efefc51d128e497ee5f4ca7f4abe05e7107845c86939c441f67db7c1b5333b9",
+      "path": "train/train-shard-000133.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "8f411f459a9b02224f89379f6176521b40aee942",
+      "size": 351330905,
+      "lfs": {
+        "oid": "b7672322bdfefea52aec37794e94f9138e021d0a2118820cbb65f0a54fd1c663",
+        "size": 351330905,
+        "pointerSize": 134
+      },
+      "xetHash": "626b9e67769bf6d711718f301c2c862f52f1012e45704360c19cb5de7fdbc91c",
+      "path": "train/train-shard-000134.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "55a45cb166ad4927678f5219c1ce665ddc07d9e8",
+      "size": 345727768,
+      "lfs": {
+        "oid": "7b7da7f104c4a36d53b91530e2a6dd694c0a25afe244fbba1622ee8bf5362116",
+        "size": 345727768,
+        "pointerSize": 134
+      },
+      "xetHash": "5af8290aab32fba3c8026d4359a049e52364c7b18a5e58db71f1e4aadf637fac",
+      "path": "train/train-shard-000135.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "b1d93785fb7739afcf8090c85cf4b608bb575724",
+      "size": 344651924,
+      "lfs": {
+        "oid": "bf25a7f74a741da4f9789cd4bd0c5126726f8cae5008f4116b9a226fb6dab30d",
+        "size": 344651924,
+        "pointerSize": 134
+      },
+      "xetHash": "42a9c0a94e811123898a7d5e9dd67eba10fc1d564c371bdc08974daa2f38a54d",
+      "path": "train/train-shard-000136.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "e2faeaebd943f0daafaffe1f6bf05acb2dd00beb",
+      "size": 344879825,
+      "lfs": {
+        "oid": "a21f39ffd97ce72ee1fa1fdfda42353385d3a45b85c45adf158204b8b468b642",
+        "size": 344879825,
+        "pointerSize": 134
+      },
+      "xetHash": "9a3c7a0654733db8c4c21da025ac5a5bf7170de339d330e1430808219ad16669",
+      "path": "train/train-shard-000137.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "b04e22002701b86707215d893715e584f9035a7b",
+      "size": 343400471,
+      "lfs": {
+        "oid": "a23a53bdde20b37ec7944cc088be6f6c0aeccdd04f8c2a9a417b7cf37a013aad",
+        "size": 343400471,
+        "pointerSize": 134
+      },
+      "xetHash": "f9a166656062d66de12860be6ac36ffcb1784e0139b8034b6b435d8fc9b3abbf",
+      "path": "train/train-shard-000138.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "044b5193cc7bbcb573b75321812a3fd01e5ce8f1",
+      "size": 347529259,
+      "lfs": {
+        "oid": "0872e81a3b2528f19439927a0e79552179535d53dc7d9cb141ad795ffcfbfaed",
+        "size": 347529259,
+        "pointerSize": 134
+      },
+      "xetHash": "ad654b04b1b28d9f18a79e1ca4bc6840ad7e670093a8d5dbf41a6c65f52f72c4",
+      "path": "train/train-shard-000139.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "96264c0640157298b956c09bcb10b9b2b4f8eb72",
+      "size": 343867298,
+      "lfs": {
+        "oid": "b52d5ec77879920e36e3ea7ea564f7116068135fdeced8aeab4c5a30e1c49dd1",
+        "size": 343867298,
+        "pointerSize": 134
+      },
+      "xetHash": "b5118483960a33059abcfee09025aec4baef517a9440459479f3e732f082fc5e",
+      "path": "train/train-shard-000140.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "040044012bacdfd616d5355578c0c720d60e0310",
+      "size": 347235640,
+      "lfs": {
+        "oid": "8ed130defa74c377afe569b467c3bff14af4438bcc039f19979b0633b1fe7e21",
+        "size": 347235640,
+        "pointerSize": 134
+      },
+      "xetHash": "609dca9273e3d640638eee6d313d8a363b17bae8f98388f9a3e48d1469ebb47f",
+      "path": "train/train-shard-000141.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "474c977335dce71366554e5dd8875ad1c82c34f0",
+      "size": 345779936,
+      "lfs": {
+        "oid": "b2ad03a6095f9f022f5bcca99b2da48393094c770d2b91f4c9e445adad209a4e",
+        "size": 345779936,
+        "pointerSize": 134
+      },
+      "xetHash": "0c168b7d79d52ca9a32819cdc81250e1b92886d60701987b3eccae75790001a9",
+      "path": "train/train-shard-000142.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "2757140c144a93ce0484aedbf5682820e7d55eef",
+      "size": 343896383,
+      "lfs": {
+        "oid": "f3c0e1b860430a86877abd053be9a482c5b34118029dd2fb67ac1838346d5f08",
+        "size": 343896383,
+        "pointerSize": 134
+      },
+      "xetHash": "eb452b3707bab399f5544703c996e06cbc4a22e6026503cacf9e31421ae3720a",
+      "path": "train/train-shard-000143.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "dbb49cc6fd704dedc8149c0c1d7ead20a082cdb9",
+      "size": 346909982,
+      "lfs": {
+        "oid": "dbd31b6841797fe71a1661c71739a783a664cfc8152331920e377d41b0769f19",
+        "size": 346909982,
+        "pointerSize": 134
+      },
+      "xetHash": "572379f36a358512680786b6d60d6f34ba37253b642069c949c9c2f8e2ab13a0",
+      "path": "train/train-shard-000144.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "4e0c38ed68f7246c4be281748d2b467c1c6f4976",
+      "size": 347130258,
+      "lfs": {
+        "oid": "9bf4283953706725ea2a3bb8c3af5ce03ae0cc4da8cab1c078404bc161ef48dd",
+        "size": 347130258,
+        "pointerSize": 134
+      },
+      "xetHash": "308971fa06d1dac5fab3dff725c310cfa98aec339ec5fc3e7388887c79126fa4",
+      "path": "train/train-shard-000145.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "13141d892153e6a01a1f5f749c4783996d5af896",
+      "size": 345881204,
+      "lfs": {
+        "oid": "ab4a0e1160f5477b10a05ac961d1cd0d700111a971a957be4d455fd00fc6675a",
+        "size": 345881204,
+        "pointerSize": 134
+      },
+      "xetHash": "cecd43d0e0e444c27102795b3ff4fed5d7fc668ff05ee9e0452dc6143ae2e123",
+      "path": "train/train-shard-000146.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "eb608f75ebd63cacad79c83e6828e853d639a7ff",
+      "size": 346921126,
+      "lfs": {
+        "oid": "19eed98f6e0f1714d71851db5eae112c47a23cdcfa4358369796964eb407d45c",
+        "size": 346921126,
+        "pointerSize": 134
+      },
+      "xetHash": "f13431d5b98b5c10f40f4ab84d25267a8b7a3ad86f86e03f6295cc8b81f2a46c",
+      "path": "train/train-shard-000147.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "b46963c91a67e1efab878a668085a57fdc85d32c",
+      "size": 348549448,
+      "lfs": {
+        "oid": "fee3eba4af6a78a4ba1415ff3808f1eac9fc51ab177727f8a5fca2295ab10557",
+        "size": 348549448,
+        "pointerSize": 134
+      },
+      "xetHash": "a22f348231b266c4ab869c40c4f0a134bec48886bba08795763048a10e93e982",
+      "path": "train/train-shard-000148.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "044bf216e4fb6f198ac20a2ff621129c97dbdf55",
+      "size": 344581577,
+      "lfs": {
+        "oid": "0f8d29d89404cc758e205907f15488120d0e228a796bbf2a8918ca62a7f98b46",
+        "size": 344581577,
+        "pointerSize": 134
+      },
+      "xetHash": "c096a85bc3926ff9f600b18647a0520f3496d902832b900be78d70d933b2b810",
+      "path": "train/train-shard-000149.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "5bef5a78513df294b70af43e80a835efc517f5db",
+      "size": 343636974,
+      "lfs": {
+        "oid": "36b10bfd92d2ab368fcde695e70893541264d9b8eab4d50a3a0e59ba8c0e87b9",
+        "size": 343636974,
+        "pointerSize": 134
+      },
+      "xetHash": "ffe5d01051202cedf1fc9b1c10b8b8ce919ffae2046cbe292a7a0e3281229d67",
+      "path": "train/train-shard-000150.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "d89b4e9ad3d2a340d311851d5890682a48bb8ac9",
+      "size": 344606841,
+      "lfs": {
+        "oid": "b5593849efc64e09b31eb77630ee5aef0edb85392d5f3f9ca023e4a24c425518",
+        "size": 344606841,
+        "pointerSize": 134
+      },
+      "xetHash": "bedbd084196ef2484e286cdc0313c3d8ab1960129ef0418759b7806a68dbd7e5",
+      "path": "train/train-shard-000151.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "137205855a7a256527f0a55b677c361da4723869",
+      "size": 1615635,
+      "lfs": {
+        "oid": "95037e9cb755eeffc28fe6057f06bc8fb6588d3033581af444bcc8468086bc16",
+        "size": 1615635,
+        "pointerSize": 132
+      },
+      "xetHash": "99abbe26e6ee46989b78eb51afdf80b677cdd025c280f523c60fde39e02f6e94",
+      "path": "train/train-shard-000152.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "3119d16913b8b72b94d3af7b45b76533e5070b92",
+      "size": 1401326,
+      "lfs": {
+        "oid": "00fc35db27f08d20f2f1bfafa8625fcd9535e71d47b3a8600dea66fbf9e9ac8b",
+        "size": 1401326,
+        "pointerSize": 132
+      },
+      "xetHash": "e8d1e31fb84295489cec4d3a0c90c19ad74dd742e842c1cc31b53b2b5f4f7c56",
+      "path": "train/train-shard-000153.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "9419cb25b9b2c107d54ffca8ee038ba5b3fb9247",
+      "size": 1398898,
+      "lfs": {
+        "oid": "5cab064cfdf085515b2129553ea3d37fd3b8e3c584632922d796ee8cfb96e3a7",
+        "size": 1398898,
+        "pointerSize": 132
+      },
+      "xetHash": "2a0d68aab98a5aefc380b0edf44c1b6bb9cc00e4ff79960a04af2f5ed195238b",
+      "path": "train/train-shard-000154.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "e9ac0c324bb0df72a5e52b486b1f90fe56a3d24b",
+      "size": 1520070,
+      "lfs": {
+        "oid": "5ecc6356f82d4f3d6fd84337fadbdcd349053761a341cc404f4bd5f1491a7fd8",
+        "size": 1520070,
+        "pointerSize": 132
+      },
+      "xetHash": "187e7aa73c6d799781f422a2c705b053d196bcc1a85c93703b91d2a700f22bca",
+      "path": "train/train-shard-000155.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "6c035bf6a8b2012ff56d04f5501f3995d5bd6c00",
+      "size": 1432966,
+      "lfs": {
+        "oid": "391a222a76dc1d6d99bd99d835273ee57c6eda74435753123b0dc4826c8ed3ab",
+        "size": 1432966,
+        "pointerSize": 132
+      },
+      "xetHash": "e7f2099e28c609f6e9ba120651349372028ed057a610ad570751bb31545c87c3",
+      "path": "train/train-shard-000156.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "7e84d7b620772d20b1cd7b02f16f4faa27f62b6f",
+      "size": 1513197,
+      "lfs": {
+        "oid": "5494ffde426d8c925cd0215939ab8b41a5939332b746b48b53f7c172f423146c",
+        "size": 1513197,
+        "pointerSize": 132
+      },
+      "xetHash": "f190d98dd70c8851b40992f7e42c2177a9dc449599517062d01032edc2160824",
+      "path": "train/train-shard-000157.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "dc7ad80f6215052e629c9d234e94915124ea99f5",
+      "size": 1526689,
+      "lfs": {
+        "oid": "efc01cdf322ae572996feb436651f47ea16fce547c0b9ff350620fb42b6a7502",
+        "size": 1526689,
+        "pointerSize": 132
+      },
+      "xetHash": "cf5d6c09a4811e4bc4621f85235e8443502335cbfd2ba8ae89e63f1aa720a20a",
+      "path": "train/train-shard-000158.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "2f16b4d54ce153d20ce2c11394bf55106262dfe7",
+      "size": 1352869,
+      "lfs": {
+        "oid": "53737a51d308869cdd52ec6a19f86677ca5dd37390e01d1647a7c675e121796c",
+        "size": 1352869,
+        "pointerSize": 132
+      },
+      "xetHash": "0bb1d067c98874adf991448404eeb6d4916d8a6aa432ab00a940f8ce2203b30e",
+      "path": "train/train-shard-000159.parquet"
+    },
+    {
+      "type": "file",
+      "oid": "e21cace60e3264e79e61c9b2e4d1a918311e5f68",
+      "size": 15660,
+      "lfs": {
+        "oid": "04b2797c40486c018d69610f9898b07e5b9ec2b91aa25085860229fda4cb57ae",
+        "size": 15660,
+        "pointerSize": 130
+      },
+      "xetHash": "e3ba61377de5daee59adc201ec4b593c1ddb6b929a35f10e21e9b1719d7f3ee6",
+      "path": "train/train-shard-000160.parquet"
+    }
+  ]
+}

@@ -52,3 +52,7 @@ CLIP-O、CLIP-E、SCL及去Triplet/去Triplet和MoCo的原始预训练对照均�
 衔接项目：https://github.com/IJustWannaFindMyPeace/taobao-mm-muse-repro
 
 两个仓库均为私有。首次推送已完成；正式数据训练尚未开始。
+
+## 阶段1：真实数据工程样本
+
+已固定官方revision并取得1,890条已关联的训练曝光。脚本、统计、命令和限制见[阶段1代码导读](docs/stage-01-real-data.md)。内容向量与正式评估划分尚未完成；不是论文结果。
