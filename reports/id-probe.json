@@ -1,0 +1,57 @@
+{
+  "kind": "training_only_id_engineering_probe_not_formal_C0",
+  "source_commit": "79d288a542eddd6a2ce489ca23c7a4c2c3beb560",
+  "implementation_sha256": {
+    "scripts\\train_id_probe.py": "1bc65259c2d73dd9694a35c62554a867dd026fc71a0d8dac3460c84942194f30",
+    "src\\id_probe.py": "ec56cdbe624a870e1bb0848d5accab15db3da6bc7b269618457af596392036a5"
+  },
+  "input_sha256": "6658185d341489ac1160e9509f4a3d51ee967985ef661cdf54164b1ea86bea6c",
+  "vocab_sha256": "77fa6f4de2fa921acc8d9b2c6d3549729e2287e18148a51bde029c28ff8809cb",
+  "python": "3.11.15",
+  "torch": "2.12.1+cu132",
+  "gpu": "NVIDIA GeForce RTX 5070",
+  "seed": 42,
+  "rows": 1890,
+  "clicks": 264,
+  "vocab_size": 20915,
+  "batch_size": 32,
+  "history_length": 200,
+  "epochs": 3,
+  "optimizer": "Adam",
+  "learning_rate": 0.001,
+  "width": 16,
+  "epoch_curve": [
+    {
+      "epoch": 1,
+      "rows": 1890,
+      "online_train_logloss": 0.6250345404185946
+    },
+    {
+      "epoch": 2,
+      "rows": 1890,
+      "online_train_logloss": 0.45487206723324203
+    },
+    {
+      "epoch": 3,
+      "rows": 1890,
+      "online_train_logloss": 0.3984565370297306
+    }
+  ],
+  "initial_train_logloss": 0.7482282519340515,
+  "final_train_logloss": 0.38257113099098206,
+  "parameters_updated": true,
+  "prediction_rows": 1890,
+  "reload_max_abs_error": 0.0,
+  "empty_history_finite": true,
+  "masked_value_max_abs_error": 0.0,
+  "training_seconds": 1.112142900001345,
+  "training_peak_allocated_mib": 72.65283203125,
+  "training_peak_reserved_mib": 88.0,
+  "limitations": [
+    "training-only size-selected shard; no held-out evaluation",
+    "item-only attention prototype, not final shared C0 architecture",
+    "suffix history order follows reference code, not independently verified timestamps",
+    "vocabulary built only from this probe targets and selected histories",
+    "memory includes diagnostic parameter snapshot; not a full-data estimate"
+  ]
+}
