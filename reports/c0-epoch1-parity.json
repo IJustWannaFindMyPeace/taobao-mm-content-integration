@@ -1,0 +1,16 @@
+{
+  "scope": "c0_first_epoch_regression_check",
+  "rows": 151947,
+  "identical_keys": [
+    "labels",
+    "source_rows",
+    "user_rows",
+    "logits"
+  ],
+  "max_abs_logit_error": 0.0,
+  "prediction_sha256": [
+    "df081055e291c703534813da1dc4678d79450dc8db7bb72a6fe5bc3d8d93af7b",
+    "df081055e291c703534813da1dc4678d79450dc8db7bb72a6fe5bc3d8d93af7b"
+  ],
+  "test_evaluated": false
+}
