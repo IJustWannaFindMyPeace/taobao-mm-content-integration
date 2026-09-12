@@ -1,5 +1,7 @@
 # 阶段 1 · 真实训练分片验证
 
+本文记录该阶段的验证范围；当前项目状态见 [README](../README.md)。
+
 ## 解决的问题
 
 六张独立demo表无法按ID关联，不能按行号拼接。正式数据仓库提供已关联的训练分片，可以直接得到曝光对应的用户、目标与历史字段。
@@ -21,13 +23,13 @@ scripts/prepare_probe.py：
 
 ## 已验证的命令
 
-在仓库根目录使用已安装 PyArrow 22.0.0 的 Python。下列命令与已验证的工作区调用使用相同脚本及参数，数据输出至仓库外：
+在仓库根目录使用已安装 PyArrow 22.0.0 的 Python。在仓库根目录运行以下命令，数据输出至仓库外：
 
 ```powershell
 python scripts/prepare_probe.py --manifest reports/source-manifest.json --output-dir ../taobao-mm-probe --report reports/real-probe.json
 ```
 
-第二次会校验已有文件并复用。依赖为pyarrow22.0.0；当前bootstrap新增huggingface_hub1.31.0，后者本脚本未使用。Python3.11.15/PyTorch2.12.1+cu132，最终独立环境仍待整理。网络需要正常用户环境，未关闭TLS校验。
+重复运行会校验并复用已有文件。数据准备依赖 Python 3.11 与 PyArrow 22.0.0；完整环境配置见[环境与特征提取](stage-07-environment-and-features.md)。
 
 ## 局限与下一步
 

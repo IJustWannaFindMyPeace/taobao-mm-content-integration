@@ -1,0 +1,32 @@
+{
+  "scope": "1_percent_cohort_direct_full_source_key_audit",
+  "source_key_rows": 35458467,
+  "splits": {
+    "train": {
+      "target_missing_exposures": 12,
+      "target_missing_unique": 6,
+      "nonpadding_history_occurrences": 54370027,
+      "matched_history_occurrences": 48361727,
+      "user_history_occurrence_coverage": 0.889492421991992,
+      "exposure_weighted_history_coverage": 0.9083113666201404
+    },
+    "validation": {
+      "target_missing_exposures": 1,
+      "target_missing_unique": 1,
+      "nonpadding_history_occurrences": 13464919,
+      "matched_history_occurrences": 11962968,
+      "user_history_occurrence_coverage": 0.8884545090839387,
+      "exposure_weighted_history_coverage": 0.9074825224757678
+    },
+    "test": {
+      "target_missing_exposures": 6,
+      "target_missing_unique": 4,
+      "nonpadding_history_occurrences": 16108703,
+      "matched_history_occurrences": 14360285,
+      "user_history_occurrence_coverage": 0.8914612802781204,
+      "exposure_weighted_history_coverage": 0.9100087296775474
+    }
+  },
+  "revision": "f185841b6e9612edd06f5112e06416f1bdf6c6d0",
+  "source_sha256_verified_by_extraction": "2450616e96ac649d85af6e089bb4b77d8b6a761cde8f7bc7a332a5ea8f350458"
+}

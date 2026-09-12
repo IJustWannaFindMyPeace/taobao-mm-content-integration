@@ -2,7 +2,7 @@
 
 ## 专用环境
 
-工作区 `.envs/taobao-mm` 为独立 Conda prefix，Python 3.11.15，不继承旧项目 site-packages。旧 `.venv-bootstrap` 依赖的基础环境已被删除，仅保留其历史报告。
+运行环境为独立 Conda 环境，Python 3.11.15。环境定义与依赖快照见下方安装入口。
 
 已安装并验证 PyTorch 2.12.1+cu132、PyArrow 22.0.0、NumPy 2.3.3、psutil 7.1.0。18 项测试与 pip check 通过，RTX 5070 的前后向、参数更新和保存重载通过。见 [CUDA 报告](../reports/dedicated-cuda-smoke.json)。
 
@@ -13,7 +13,7 @@ python -m pip install -r requirements-win-cu132.txt
 python -m unittest discover -s tests -v
 ```
 
-上述入口对应本次已执行的分步安装。依赖版本见 [requirements-win-cu132.txt](../requirements-win-cu132.txt)，这是 Windows CUDA 环境快照，不是跨平台或带 wheel 哈希的锁文件。Conda 环境声明见 [environment.yml](../environment.yml)。
+安装过程与 CUDA 验证结果对应以下版本快照。依赖版本见 [requirements-win-cu132.txt](../requirements-win-cu132.txt)，这是 Windows CUDA 环境快照，不是跨平台或带 wheel 哈希的锁文件。Conda 环境声明见 [environment.yml](../environment.yml)。
 
 ## 用户历史
 
@@ -27,14 +27,14 @@ python -m unittest discover -s tests -v
 
 所需商品为三份曝光集合的目标商品与选中用户完整历史商品的并集，排除 padding ID 0。对固定 SCL int8 表完整扫描，保留所需向量，校验选中商品键唯一、向量等长且无空元素。保留量化格式；参考代码解量化因子为 1/127。
 
-提取所需内容可以覆盖验证和测试商品，但这不授权将它们加入可训练 ID 词表。内容缺失不能作为 padding 删除；缺失策略须在正式模型接口中统一。
+提取所需内容可以覆盖验证和测试商品，但可训练 ID 词表仍仅使用训练划分构建。内容缺失不能作为 padding 删除；缺失策略须在正式模型接口中统一。
 
 ```powershell
 python scripts/extract_histories.py --manifest reports/source-manifest.json --source-dir ../taobao-mm-source --cohort-dir ../user-cohort-v1-010 --cohort-report reports/user-cohort-010.json --output-dir ../user-cohort-v1-010-histories --report reports/history-extraction-010.json
 python scripts/extract_content.py --source ../taobao-mm-source/raw/scl_embedding_int8_p90.parquet --manifest reports/source-manifest.json --cohort-dir ../user-cohort-v1-010 --cohort-report reports/user-cohort-010.json --history-dir ../user-cohort-v1-010-histories --history-report reports/history-extraction-010.json --output-dir ../user-cohort-v1-010-content --report reports/content-extraction-010.json
 ```
 
-实际工作区数据均位于 `work` 下；命令中的目录参数可按本地布局调整。正式公共数据加载、训练词表、缺失内容处理与模型消融尚未完成。
+命令中的数据目录为示例路径，运行时通过参数指定。正式公共数据加载、训练词表、缺失内容处理与模型消融尚未完成。
 
 ## 内容提取结果与限制
 
@@ -48,4 +48,7 @@ python scripts/extract_content.py --source ../taobao-mm-source/raw/scl_embedding
 
 内容提取峰值工作集约 2.26 GiB，约 139 秒。见 [内容报告](../reports/content-extraction-010.json)。69.01% 为历史与目标合并后的去重商品覆盖，不是历史行为加权覆盖；不能据此断言 30.99% 的历史行为缺内容。近乎完整的目标覆盖也不等于完全覆盖。
 
-此缺失与公开 p90 内容表范围相关，仍需逐行为统计和统一 fallback。后续不得按内容存在与否删除曝光来改善成绩，也不能将内容缺失等同于 padding。当前已准备好特征子表，正式输入接口与训练词表尚未冻结。
+官方 p90 的历史覆盖口径与此处去重商品口径不同；目标缺失与官方目标全覆盖声明存在差异，需独立核验。评估保留全部曝光，内容缺失使用独立标记。当前已准备好特征子表，正式输入接口与训练词表尚未冻结。
+
+
+官方定义、实测口径及差异见[数据集说明与覆盖核验](dataset-contract.md)。

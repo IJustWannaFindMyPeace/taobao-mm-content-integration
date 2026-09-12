@@ -40,7 +40,7 @@ MAKE（Multimodal Knowledge Extractor）用于提取多模态知识。优先完�
 
 ## 环境与数据
 
-目标设备为 RTX 5070 12 GB、32 GB RAM。专用 Conda 环境已完成独立安装和 CUDA 验证：Python 3.11.15、PyTorch 2.12.1+cu132、PyArrow 22.0.0。安装入口和版本快照见[阶段 7](docs/stage-07-environment-and-features.md)；旧 bootstrap 环境已失效。
+目标设备为 RTX 5070 12 GB、32 GB RAM。专用 Conda 环境已完成独立安装和 CUDA 验证：Python 3.11.15、PyTorch 2.12.1+cu132、PyArrow 22.0.0。安装入口和版本快照见[阶段 7](docs/stage-07-environment-and-features.md)。
 
 当前脚本入口为 [CUDA 检查](scripts/smoke_train.py)、[demo 检查](scripts/audit_demo.py)和[真实分片准备](scripts/prepare_probe.py)。分片准备命令、数据版本及限制见[阶段报告](docs/stage-01-real-data.md)。数据文件与模型权重不提交至仓库。
 
@@ -53,3 +53,7 @@ MAKE（Multimodal Knowledge Extractor）用于提取多模态知识。优先完�
 ## 与 MUSE 的衔接
 
 本项目研究内容如何融入推荐模型；[MUSE 项目](https://github.com/IJustWannaFindMyPeace/taobao-mm-muse-repro)进一步研究内容如何选择和利用长历史。两者计划共享数据版本、评估口径和可验证的公共接口，协议冲突优先对齐 MUSE，并记录差异。MAKE 不作为 MUSE 的默认前置模块。
+
+## 数据来源与统计口径
+
+官方数据定义、p90 覆盖率口径和指定版本的差异核验见[数据集契约](docs/dataset-contract.md)。

@@ -1,5 +1,7 @@
 # 阶段 2 · 真实数据 ID 基线工程验证
 
+本文记录该阶段的验证范围；当前项目状态见 [README](../README.md)。
+
 ## 目标与范围
 
 在固定训练分片上验证原始 ID 到张量、目标注意力、点击损失、参数更新与模型保存重载的完整链路。此实现为 C0 的工程原型，仅使用商品 ID；用户、类目及公共短历史分支尚未接入，不能作为正式 C0 对照。
@@ -14,7 +16,7 @@
 
 ## 运行
 
-在仓库根目录，使用已验证 bootstrap 环境对应的 Python：
+在仓库根目录，使用项目 Python 环境运行：
 
 ```powershell
 python scripts/train_id_probe.py --input ../taobao-mm-probe/probe.parquet --output-dir ../id-probe --report reports/id-probe.json

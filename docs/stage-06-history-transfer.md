@@ -1,18 +1,20 @@
 # 阶段 6 · 历史文件传输与提取准备
 
+本文记录该阶段的验证范围；当前项目状态见 [README](../README.md)。
+
 ## 已验证行为
 
 下载器以固定 revision 和来源 SHA256 为身份，按 64 MiB 的精确 HTTP Range 读取。每个完整分块落盘后记录摘要；重启时逐块校验，截去未登记尾部后继续。最终完整 SHA256 匹配才将 `.part` 发布为正式 Parquet。
 
 真实训练历史进行了两次独立启动：第一次下载 64 MiB，第二次校验已有分块后续传至 128 MiB。此结果验证续传路径，不代表完整文件已经校验通过。见 [试验记录](../reports/download-pilot.json)。
 
-下载队列为训练用户历史、测试用户历史、SCL int8 向量，合计约 63.2 GB。启动前磁盘剩余约 737 GB。队列启动时仅完成首文件的两个试验分块；当前进度以本地 status 文件和进程日志为准，仓库不将动态下载进度描述为最终产物。
+下载队列为训练用户历史、测试用户历史、SCL int8 向量，合计约 63.2 GB。三份完整文件均已通过来源 SHA256 校验，提取结果见[特征报告](stage-07-environment-and-features.md)。
 
 ```powershell
 python scripts/download_large.py --manifest reports/source-manifest.json --output-dir ../taobao-mm-source --files raw/train_user_features.parquet raw/test_user_features.parquet raw/scl_embedding_int8_p90.parquet
 ```
 
-同一目标目录仅运行一个下载进程。再次执行相同命令可恢复中断下载。每个分块最多尝试四次；网络持续失败时退出并保留可恢复数据。日志不保存带签名的重定向地址。不要在下载尚未完成时把 `.part` 当作正式源文件。
+同一目标目录仅运行一个下载进程。再次执行相同命令可恢复中断下载。每个分块最多尝试四次；网络持续失败时退出并保留可恢复数据。日志不保存带签名的重定向地址。仅使用完整校验后发布的 Parquet 文件。
 
 ## 历史提取入口
 
@@ -26,4 +28,4 @@ python scripts/extract_histories.py --manifest reports/source-manifest.json --so
 
 ## 验证状态
 
-合计 17 项测试通过。历史提取的三项构造测试验证正确选取、缺失用户拒绝、重复用户拒绝。Windows 异常路径下的 Parquet 文件句柄已用上下文管理器关闭。完整历史提取、内存峰值与内容覆盖尚未验证，正式训练仍未开始。
+合计 17 项测试通过。历史提取的三项构造测试验证正确选取、缺失用户拒绝、重复用户拒绝。Parquet 资源在正常和异常路径均通过上下文管理器释放。真实数据提取与内存测量见[特征报告](stage-07-environment-and-features.md)。
