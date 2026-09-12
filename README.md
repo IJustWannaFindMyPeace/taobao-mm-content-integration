@@ -58,3 +58,7 @@ MAKE（Multimodal Knowledge Extractor）用于提取多模态知识。优先完�
 ## 数据来源与统计口径
 
 官方数据定义、p90 覆盖率口径和指定版本的差异核验见[数据集契约](docs/dataset-contract.md)。
+
+## 内容分支预训练
+
+C1 内容兴趣模块与逐轮训练入口已实现，结构适配和运行协议见[阶段 11](docs/stage-11-content-pretraining.md)。三轮实验已启动，完成结果另行发布。
