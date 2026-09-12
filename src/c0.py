@@ -29,10 +29,13 @@ class C0(nn.Module):
         self.long_attention=TargetAttention(width*2)
         self.tower=nn.Sequential(nn.Linear(width*(len(FIELDS)+4),128),nn.ReLU(),nn.Linear(128,64),nn.ReLU(),nn.Linear(64,1))
 
-    def forward(self,features,item,category,valid):
+    def representation(self,features,item,category,valid):
         scalar=[self.embeddings[f](features[:,i]) for i,f in enumerate(FIELDS)]
         target=torch.cat([scalar[6],scalar[7]],-1)
         history=torch.cat([self.embeddings['205'](item),self.embeddings['206'](category)],-1)
         short=self.short_attention(target,history[:,-self.short_length:],valid[:,-self.short_length:])
         long=self.long_attention(target,history,valid)
-        return self.tower(torch.cat(scalar+[short,long],-1)).squeeze(-1)
+        return torch.cat(scalar+[short,long],-1)
+
+    def forward(self,features,item,category,valid):
+        return self.tower(self.representation(features,item,category,valid)).squeeze(-1)

@@ -1,0 +1,13 @@
+{
+  "experiment": "C3-SimTier-count-adapted",
+  "seed": 42,
+  "embedding_width": 16,
+  "history_length": 200,
+  "short_length": 50,
+  "batch_size": 32,
+  "epochs": 1,
+  "dense_learning_rate": 0.001,
+  "sparse_learning_rate": 0.001,
+  "weight_decay": 0.0,
+  "simtier_bins": 20
+}

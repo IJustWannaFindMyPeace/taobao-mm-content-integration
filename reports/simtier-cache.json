@@ -1,0 +1,22 @@
+{
+  "version": "cosine_count_histogram_v1",
+  "bins": 20,
+  "history_length": 200,
+  "store_manifest_sha256": "eb8cac821d0991ef67769725928fe2aef8aff83d7fd7f3763635edac8d02799d",
+  "boundary": "floor((cosine+1)*N/2), clamped to [0,N-1]",
+  "missing_policy": "exclude unavailable pairs; all-zero histogram for unavailable target",
+  "splits": {
+    "train": {
+      "rows": 609902,
+      "matched_pairs": 111982438,
+      "sha256": "3ccf03a865bc8c35be5fc7b6094b47b2372d4988dff13c13b7777ed6b037a0ab"
+    },
+    "validation": {
+      "rows": 151947,
+      "matched_pairs": 27883122,
+      "sha256": "2206c2143848548995e3ffe340a165db32c715e6a2bcd3183e2962c581fd65f5"
+    }
+  },
+  "seconds": 37.32939310002257,
+  "peak_allocated_mib": 78.80810546875
+}
