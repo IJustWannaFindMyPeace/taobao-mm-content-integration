@@ -61,4 +61,4 @@ MAKE（Multimodal Knowledge Extractor）用于提取多模态知识。优先完�
 
 ## 内容分支预训练
 
-C1 内容兴趣模块与逐轮训练入口已实现，结构适配和运行协议见[阶段 11](docs/stage-11-content-pretraining.md)。三轮实验已启动，完成结果另行发布。
+C1 内容兴趣模块与逐轮训练入口已实现，结构适配和运行协议见[阶段 11](docs/stage-11-content-pretraining.md)。单种子三轮实验完成：验证 GAUC 依次为 0.56808、0.57191、0.57095，第二轮最佳。
