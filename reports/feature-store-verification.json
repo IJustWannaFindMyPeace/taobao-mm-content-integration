@@ -1,0 +1,35 @@
+{
+  "train": {
+    "rows": 609902,
+    "all_labels_and_source_rows_equal": true,
+    "all_target_id_mappings_equal": true,
+    "sampled_history_lengths": [
+      50,
+      200,
+      1000
+    ],
+    "missing_target_exposures_retained": 12
+  },
+  "validation": {
+    "rows": 151947,
+    "all_labels_and_source_rows_equal": true,
+    "all_target_id_mappings_equal": true,
+    "sampled_history_lengths": [
+      50,
+      200,
+      1000
+    ],
+    "missing_target_exposures_retained": 1
+  },
+  "test": {
+    "rows": 185253,
+    "all_labels_and_source_rows_equal": true,
+    "all_target_id_mappings_equal": true,
+    "sampled_history_lengths": [
+      50,
+      200,
+      1000
+    ],
+    "missing_target_exposures_retained": 6
+  }
+}
