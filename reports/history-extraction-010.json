@@ -1,0 +1,21 @@
+{
+  "revision": "f185841b6e9612edd06f5112e06416f1bdf6c6d0",
+  "splits": {
+    "train": {
+      "source_rows": 6929671,
+      "selected_users": 69346,
+      "coverage": 1.0,
+      "sha256": "d7d0fac0c8df6c0a71c1d5357cda57d850bb7720b9b419e4ee484dc56ee6ce37",
+      "seconds": 165.52612059999956,
+      "process_peak_working_set_mib": 11797.2421875
+    },
+    "test": {
+      "source_rows": 2063692,
+      "selected_users": 16415,
+      "coverage": 1.0,
+      "sha256": "4cefb261e0596223c7133a341ed6c33af30fc514076b5338cd5308a3750c1954",
+      "seconds": 44.18051780000678,
+      "process_peak_working_set_mib": 11797.2421875
+    }
+  }
+}

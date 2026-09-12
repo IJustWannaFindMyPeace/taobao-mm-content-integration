@@ -1,6 +1,8 @@
 """Stream verified raw history tables and retain selected users only."""
 import argparse
 import json
+import time
+import psutil
 from pathlib import Path
 import pyarrow as pa
 import pyarrow.compute as pc
@@ -9,6 +11,7 @@ from fetch_source import sha256
 
 
 def extract(source, requested, output):
+    started = time.perf_counter()
     with pq.ParquetFile(source, pre_buffer=False) as pf:
         wanted = pa.array(sorted(requested), type=pa.int64())
         found = set()
@@ -16,9 +19,11 @@ def extract(source, requested, output):
         saved = 0
         temporary = output.with_suffix('.parquet.part')
         with pq.ParquetWriter(temporary, pf.schema_arrow, compression='zstd') as writer:
-            for batch in pf.iter_batches(batch_size=256, use_threads=False):
+            for batch in pf.iter_batches(batch_size=4096, use_threads=False):
                 table = pa.Table.from_batches([batch])
                 scanned += len(table)
+                if scanned % 262144 == 0:
+                    print(f"Scanned {scanned}/{pf.metadata.num_rows} users", flush=True)
                 selected = table.filter(pc.is_in(table['129_1'], value_set=wanted))
                 if not len(selected): continue
                 ids = selected['129_1'].to_pylist()
@@ -35,7 +40,9 @@ def extract(source, requested, output):
         if scanned != pf.metadata.num_rows or found != requested:
             raise ValueError(f'Incomplete history coverage: {len(found)}/{len(requested)}')
         temporary.replace(output)
-        return dict(source_rows=scanned, selected_users=saved, coverage=1.0, sha256=sha256(output))
+        return dict(source_rows=scanned, selected_users=saved, coverage=1.0, sha256=sha256(output),
+                    seconds=time.perf_counter()-started,
+                    process_peak_working_set_mib=psutil.Process().memory_info().peak_wset/2**20)
 
 def main():
     parser = argparse.ArgumentParser()

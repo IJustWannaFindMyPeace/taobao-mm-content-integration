@@ -17,7 +17,7 @@
 |统一指标|AUC、GAUC、LogLoss 与真实预测完整性检查通过；见 [阶段 3](docs/stage-03-evaluation.md)|
 |用户曝光子集|固定用户抽样与完整曝光扫描完成；见 [阶段 4](docs/stage-04-user-cohort.md)|
 |扩容与属性|0.5% / 1% 嵌套曝光子集完成，1% 目标属性覆盖 100%；见 [阶段 5](docs/stage-05-scale-and-items.md)|
-|历史传输|真实断点续传通过，完整文件下载已启动；见 [阶段 6](docs/stage-06-history-transfer.md)|
+|历史与环境|源文件全部校验、选中用户历史覆盖 100%、独立 CUDA 环境通过；见 [阶段 7](docs/stage-07-environment-and-features.md)|
 |正式实验协议|曝光集合已版本化；历史连接、词表及内容覆盖待完成|
 |模型与结果|C0–C7 尚未完成训练；暂无论文对照成绩|
 
@@ -40,7 +40,7 @@ MAKE（Multimodal Knowledge Extractor）用于提取多模态知识。优先完�
 
 ## 环境与数据
 
-目标设备为 RTX 5070 12 GB、32 GB RAM。已验证的 Windows bootstrap 环境为 Python 3.11.15、PyTorch 2.12.1+cu132；数据检查使用 PyArrow 22.0.0。该环境复用了既有依赖，独立环境锁定和从零安装验证尚未完成。
+目标设备为 RTX 5070 12 GB、32 GB RAM。专用 Conda 环境已完成独立安装和 CUDA 验证：Python 3.11.15、PyTorch 2.12.1+cu132、PyArrow 22.0.0。安装入口和版本快照见[阶段 7](docs/stage-07-environment-and-features.md)；旧 bootstrap 环境已失效。
 
 当前脚本入口为 [CUDA 检查](scripts/smoke_train.py)、[demo 检查](scripts/audit_demo.py)和[真实分片准备](scripts/prepare_probe.py)。分片准备命令、数据版本及限制见[阶段报告](docs/stage-01-real-data.md)。数据文件与模型权重不提交至仓库。
 
