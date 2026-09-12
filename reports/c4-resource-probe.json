@@ -1,0 +1,80 @@
+{
+  "scope": "partial_training_resource_probe",
+  "config": {
+    "experiment": "c4-MAKE-adapted",
+    "seed": 42,
+    "embedding_width": 16,
+    "history_length": 200,
+    "short_length": 50,
+    "batch_size": 32,
+    "epochs": 1,
+    "dense_learning_rate": 0.001,
+    "sparse_learning_rate": 0.001,
+    "weight_decay": 0.0,
+    "make_fusion": true,
+    "pretrained_content": false,
+    "freeze_content": false
+  },
+  "store_manifest_sha256": "eb8cac821d0991ef67769725928fe2aef8aff83d7fd7f3763635edac8d02799d",
+  "implementation_sha256": {
+    "train_c0.py": "7710187109350d3ce8143b74e4ce207c76f9482970b4dd803233c0a90b4c8095",
+    "c0.py": "b411d1cc6088559adab91ca71bacc02b191a687870bd57a2ecce6e6658faf456",
+    "simtier.py": "7c32c320b67de55edb1df9e8fcb11dd7a81b380464383aeed4a96924acbdb51d",
+    "make.py": "4c36b3a98c82bef9f4ea684c48ffa17bdb1737054d8b08764758e0b70b8955a3",
+    "make_fusion.py": "2153a8f7620a64cb0dd3a6c22e54f451d40844ca8a2446ea4b538ab264853247"
+  },
+  "torch": "2.12.1+cu132",
+  "gpu": "NVIDIA GeForce RTX 5070",
+  "steps": 20,
+  "epochs": [
+    {
+      "epoch": 1,
+      "rows": 640,
+      "online_train_logloss": 0.5796457469463349,
+      "training_seconds": 1.208997100009583,
+      "training_peak_allocated_mib": 2854.0185546875,
+      "training_peak_reserved_mib": 2870.0,
+      "validation": {
+        "rows": 151947,
+        "positives": 20611,
+        "auc": 0.5173316173420136,
+        "logloss": 0.41414200746325713,
+        "gauc": 0.5471677201350829,
+        "gauc_weighting": "exposure_count_among_users_with_both_labels",
+        "users": 13744,
+        "valid_users": 7575,
+        "valid_rows": 114470,
+        "excluded_users": 6169,
+        "excluded_rows": 37477,
+        "valid_row_fraction": 0.7533547881827216
+      }
+    }
+  ],
+  "training_seconds": 1.208997100009583,
+  "training_peak_allocated_mib": 2854.0185546875,
+  "training_peak_reserved_mib": 2870.0,
+  "parameters_updated": true,
+  "reload_max_abs_error": 0.0,
+  "validation": {
+    "rows": 151947,
+    "positives": 20611,
+    "auc": 0.5173316173420136,
+    "logloss": 0.41414200746325713,
+    "gauc": 0.5471677201350829,
+    "gauc_weighting": "exposure_count_among_users_with_both_labels",
+    "users": 13744,
+    "valid_users": 7575,
+    "valid_rows": 114470,
+    "excluded_users": 6169,
+    "excluded_rows": 37477,
+    "valid_row_fraction": 0.7533547881827216
+  },
+  "test_evaluated": false,
+  "content_checkpoint_sha256": null,
+  "histogram_cache_sha256": null,
+  "limitations": [
+    "single seed; no comparative model result",
+    "user-disjoint validation",
+    "local architecture and optimizer adaptation"
+  ]
+}
