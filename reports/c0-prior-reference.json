@@ -1,0 +1,19 @@
+{
+  "kind": "constant_training_click_prior_reference",
+  "training_click_rate": 0.13635141383369787,
+  "validation": {
+    "rows": 151947,
+    "positives": 20611,
+    "auc": 0.5,
+    "logloss": 0.39698237404910647,
+    "gauc": 0.5,
+    "gauc_weighting": "exposure_count_among_users_with_both_labels",
+    "users": 13744,
+    "valid_users": 7575,
+    "valid_rows": 114470,
+    "excluded_users": 6169,
+    "excluded_rows": 37477,
+    "valid_row_fraction": 0.7533547881827216
+  },
+  "test_evaluated": false
+}

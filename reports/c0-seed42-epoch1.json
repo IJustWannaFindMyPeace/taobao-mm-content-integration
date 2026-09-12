@@ -1,0 +1,55 @@
+{
+  "scope": "one_seed_C0_validation_run",
+  "config": {
+    "experiment": "C0-ID-only-adapted",
+    "seed": 42,
+    "embedding_width": 16,
+    "history_length": 200,
+    "short_length": 50,
+    "batch_size": 32,
+    "epochs": 1,
+    "dense_learning_rate": 0.001,
+    "sparse_learning_rate": 0.001,
+    "weight_decay": 0.0
+  },
+  "store_manifest_sha256": "eb8cac821d0991ef67769725928fe2aef8aff83d7fd7f3763635edac8d02799d",
+  "implementation_sha256": {
+    "train_c0.py": "85ca75af89ee6d733db465ed76b80565c8abf6d0c8734aa4ca05e5030bfadb5b",
+    "c0.py": "d0feef29defefb11fc16260eb845e5bdba099b9552bf4b920ba012cda6a74883"
+  },
+  "torch": "2.12.1+cu132",
+  "gpu": "NVIDIA GeForce RTX 5070",
+  "steps": 19060,
+  "epochs": [
+    {
+      "epoch": 1,
+      "rows": 609902,
+      "online_train_logloss": 0.38550411065141316
+    }
+  ],
+  "training_seconds": 420.58947700000135,
+  "training_peak_allocated_mib": 2830.7451171875,
+  "training_peak_reserved_mib": 2840.0,
+  "parameters_updated": true,
+  "reload_max_abs_error": 0.0,
+  "validation": {
+    "rows": 151947,
+    "positives": 20611,
+    "auc": 0.5913554069237661,
+    "logloss": 0.3936466683959223,
+    "gauc": 0.5564952103750347,
+    "gauc_weighting": "exposure_count_among_users_with_both_labels",
+    "users": 13744,
+    "valid_users": 7575,
+    "valid_rows": 114470,
+    "excluded_users": 6169,
+    "excluded_rows": 37477,
+    "valid_row_fraction": 0.7533547881827216
+  },
+  "test_evaluated": false,
+  "limitations": [
+    "single seed; no comparative model result",
+    "user-disjoint validation",
+    "local architecture and optimizer adaptation"
+  ]
+}
