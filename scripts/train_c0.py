@@ -7,7 +7,7 @@ from torch import nn
 sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'src'))
 from c0 import C0
 from simtier import C3
-from make_fusion import MAKEFusion
+from make_fusion import MAKEFusion, C6
 from feature_store import FeatureStore
 from metrics import evaluate
 from fetch_source import sha256
@@ -51,9 +51,10 @@ def main():
             if sha256(path)!=cache['splits'][split]['sha256']:raise ValueError('Histogram digest mismatch')
             histograms[split]=np.load(path,mmap_mode='r')
             if histograms[split].shape!=(len(store),cfg['simtier_bins']):raise ValueError('Histogram shape mismatch')
-        model=C3(train.manifest['vocab_sizes'],cfg['embedding_width'],cfg['short_length'],cfg['simtier_bins']).cuda()
-    elif cfg.get('make_fusion'):
-        model=MAKEFusion(train.manifest['vocab_sizes'],cfg['embedding_width'],cfg['short_length'],cfg['freeze_content']).cuda()
+    if cfg.get('make_fusion'):
+        cls=C6 if histograms else MAKEFusion
+        extra={'bins':cfg['simtier_bins']} if histograms else {}
+        model=cls(train.manifest['vocab_sizes'],cfg['embedding_width'],cfg['short_length'],cfg['freeze_content'],**extra).cuda()
         if cfg['pretrained_content']:
             if args.content_checkpoint is None:raise ValueError('Pretrained checkpoint required')
             checkpoint_digest=sha256(args.content_checkpoint)
@@ -63,6 +64,8 @@ def main():
                 raise ValueError('Pretraining store or history mismatch')
             model.content_branch.load_state_dict(torch.load(args.content_checkpoint,map_location='cpu',weights_only=True))
         elif args.content_checkpoint is not None:raise ValueError('Random initialization cannot load a checkpoint')
+    elif histograms:
+        model=C3(train.manifest['vocab_sizes'],cfg['embedding_width'],cfg['short_length'],cfg['simtier_bins']).cuda()
     else:
         model=C0(train.manifest['vocab_sizes'],cfg['embedding_width'],cfg['short_length']).cuda()
     def get_batch(store,split,indices):

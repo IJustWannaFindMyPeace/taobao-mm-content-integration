@@ -1,0 +1,17 @@
+{
+  "experiment": "C6-SimTier-MAKE-adapted",
+  "seed": 42,
+  "embedding_width": 16,
+  "history_length": 200,
+  "short_length": 50,
+  "batch_size": 32,
+  "epochs": 1,
+  "dense_learning_rate": 0.001,
+  "sparse_learning_rate": 0.001,
+  "weight_decay": 0.0,
+  "make_fusion": true,
+  "pretrained_content": true,
+  "freeze_content": true,
+  "content_checkpoint_sha256": "5cacd420cf613490bca09d21528292f8098eaf8f03858f5ed41d8b8c16fe803d",
+  "simtier_bins": 20
+}

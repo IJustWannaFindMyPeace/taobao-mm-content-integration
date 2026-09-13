@@ -17,8 +17,8 @@ class MAKEFusion(C0):
         self.content_projection = nn.Linear(128+32, 128, bias=False)
         nn.init.zeros_(self.content_projection.weight)
 
-    def forward(self, features, item, category, valid, target_content,
-                history_content, target_available, history_available):
+    def fused_first(self, features, item, category, valid, target_content,
+                    history_content, target_available, history_available):
         arguments=(target_content, history_content, valid, target_available, history_available)
         if self.freeze_content:
             with torch.no_grad(): interest, hidden = self.content_branch.extract(*arguments)
@@ -26,4 +26,19 @@ class MAKEFusion(C0):
             interest, hidden = self.content_branch.extract(*arguments)
         first=self.tower[0](self.representation(features,item,category,valid))
         first=first+self.content_projection(torch.cat([interest,hidden],-1))
-        return self.tower[1:](first).squeeze(-1)
+        return first
+
+    def forward(self, *inputs):
+        return self.tower[1:](self.fused_first(*inputs)).squeeze(-1)
+
+
+class C6(MAKEFusion):
+    """Frozen/pretrained MAKE plus the same count histogram used by C3."""
+    def __init__(self, sizes, width=16, short_length=50, freeze_content=True, bins=20):
+        super().__init__(sizes, width, short_length, freeze_content)
+        self.histogram_projection=nn.Linear(bins,128,bias=False)
+        nn.init.zeros_(self.histogram_projection.weight)
+
+    def forward(self, features, item, category, valid, counts, *content):
+        first=self.fused_first(features,item,category,valid,*content)
+        return self.tower[1:](first+self.histogram_projection(counts)).squeeze(-1)

@@ -64,3 +64,5 @@ MAKE（Multimodal Knowledge Extractor）用于提取多模态知识。优先完�
 C1 内容兴趣模块与逐轮训练入口已实现，结构适配和运行协议见[阶段 11](docs/stage-11-content-pretraining.md)。单种子三轮实验完成：验证 GAUC 依次为 0.56808、0.57191、0.57095，第二轮最佳。
 
 MAKE 接入的双因素设计、运行入口与结果边界见[阶段 12](docs/stage-12-make-factorial.md)。C0 三轮诊断和四组 MAKE 单种子对照已完成：C0 多轮验证退步，C5 验证 GAUC 为 0.57452；归因与置信区间见阶段报告。
+
+SimTier 与 MAKE 的组合对照已实现并启动训练，比较协议见[阶段 13](docs/stage-13-combined-fusion.md)。
