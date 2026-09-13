@@ -1,0 +1,487 @@
+{
+  "scope": "completed_single_seed_validation_study",
+  "original_c0_epoch1_max_abs_error": 0.0,
+  "report_sha256": {
+    "c0-epochs3": "e91bfb38437e60b844ec984427a7a1be0401487252a2de72272d3ca26d53812b",
+    "c4": "635f662fccd5b8c048ad2ee6fbafb76572af07a48e87a7a5d5c042ede8fab128",
+    "c4-frozen": "ab39afeac3fb8b6d0628657c3656c0a8bd78d30a7e294a2ad76987f0fa6aba0a",
+    "c5": "83db2ae83c889726ef98235b315e16f37fd1830f74f0c5bfcdb56499a3782c86",
+    "c5-joint": "9816d6444d12ad4f92b480a516fbd2c90daa38bf7469befe754eafb7ff471493"
+  },
+  "c0_epochs": [
+    {
+      "epoch": 1,
+      "rows": 609902,
+      "online_train_logloss": 0.38550411065141316,
+      "training_seconds": 409.51222030000645,
+      "training_peak_allocated_mib": 2830.7451171875,
+      "training_peak_reserved_mib": 2840.0,
+      "validation": {
+        "rows": 151947,
+        "positives": 20611,
+        "auc": 0.5913554069237661,
+        "logloss": 0.3936466683959223,
+        "gauc": 0.5564952103750347,
+        "gauc_weighting": "exposure_count_among_users_with_both_labels",
+        "users": 13744,
+        "valid_users": 7575,
+        "valid_rows": 114470,
+        "excluded_users": 6169,
+        "excluded_rows": 37477,
+        "valid_row_fraction": 0.7533547881827216
+      }
+    },
+    {
+      "epoch": 2,
+      "rows": 609902,
+      "online_train_logloss": 0.26263568016041156,
+      "training_seconds": 407.14242839999497,
+      "training_peak_allocated_mib": 2830.7451171875,
+      "training_peak_reserved_mib": 2840.0,
+      "validation": {
+        "rows": 151947,
+        "positives": 20611,
+        "auc": 0.5506773132723186,
+        "logloss": 0.47404657205612366,
+        "gauc": 0.5331171328568457,
+        "gauc_weighting": "exposure_count_among_users_with_both_labels",
+        "users": 13744,
+        "valid_users": 7575,
+        "valid_rows": 114470,
+        "excluded_users": 6169,
+        "excluded_rows": 37477,
+        "valid_row_fraction": 0.7533547881827216
+      }
+    },
+    {
+      "epoch": 3,
+      "rows": 609902,
+      "online_train_logloss": 0.16424553891758242,
+      "training_seconds": 396.5718220999988,
+      "training_peak_allocated_mib": 2830.7451171875,
+      "training_peak_reserved_mib": 2840.0,
+      "validation": {
+        "rows": 151947,
+        "positives": 20611,
+        "auc": 0.5419717713766466,
+        "logloss": 0.6231489140256233,
+        "gauc": 0.5277170731181602,
+        "gauc_weighting": "exposure_count_among_users_with_both_labels",
+        "users": 13744,
+        "valid_users": 7575,
+        "valid_rows": 114470,
+        "excluded_users": 6169,
+        "excluded_rows": 37477,
+        "valid_row_fraction": 0.7533547881827216
+      }
+    }
+  ],
+  "comparisons": {
+    "c5-joint-vs-c4": {
+      "scope": "paired_single_seed_validation",
+      "baseline_sha256": "f17e0b77143db455757652e4d6ecb4bd2adfd8ec280a2066fd12a24795f2b243",
+      "candidate_sha256": "f8d3f05adde6862847c5d79cc6d4552e4fff51d54b861dcdab4530911c84079f",
+      "rows": 151947,
+      "baseline": {
+        "rows": 151947,
+        "positives": 20611,
+        "auc": 0.5997711986289171,
+        "logloss": 0.39291919682320026,
+        "gauc": 0.56733933135936,
+        "gauc_weighting": "exposure_count_among_users_with_both_labels",
+        "users": 13744,
+        "valid_users": 7575,
+        "valid_rows": 114470,
+        "excluded_users": 6169,
+        "excluded_rows": 37477,
+        "valid_row_fraction": 0.7533547881827216
+      },
+      "candidate": {
+        "rows": 151947,
+        "positives": 20611,
+        "auc": 0.6011408632625251,
+        "logloss": 0.3922479172722183,
+        "gauc": 0.5713928574388856,
+        "gauc_weighting": "exposure_count_among_users_with_both_labels",
+        "users": 13744,
+        "valid_users": 7575,
+        "valid_rows": 114470,
+        "excluded_users": 6169,
+        "excluded_rows": 37477,
+        "valid_row_fraction": 0.7533547881827216
+      },
+      "candidate_minus_baseline": {
+        "auc": 0.001369664633607992,
+        "gauc": 0.004053526079525582,
+        "logloss": -0.0006712795509819514
+      },
+      "gauc_delta_user_bootstrap_95_percentile": [
+        -0.00013022545670430185,
+        0.00825939804471327
+      ],
+      "bootstrap_replicates": 2000,
+      "bootstrap_seed": 2026,
+      "limitations": [
+        "conditional on these trained models and this cohort",
+        "does not measure training-seed or cohort-selection variability",
+        "validation comparison, not test evidence"
+      ]
+    },
+    "c5-vs-c4-frozen": {
+      "scope": "paired_single_seed_validation",
+      "baseline_sha256": "f53ef41ec9664b25fdc6ec118370b8b3d9c2e92a37e93dcd19e2117f26c098d1",
+      "candidate_sha256": "caae7988becb2ece8055abb60a8e5d6d60106c332644f9f24ae56e34a3928f04",
+      "rows": 151947,
+      "baseline": {
+        "rows": 151947,
+        "positives": 20611,
+        "auc": 0.5899762863172346,
+        "logloss": 0.39446182730620843,
+        "gauc": 0.5566445125361181,
+        "gauc_weighting": "exposure_count_among_users_with_both_labels",
+        "users": 13744,
+        "valid_users": 7575,
+        "valid_rows": 114470,
+        "excluded_users": 6169,
+        "excluded_rows": 37477,
+        "valid_row_fraction": 0.7533547881827216
+      },
+      "candidate": {
+        "rows": 151947,
+        "positives": 20611,
+        "auc": 0.606047813164202,
+        "logloss": 0.39216336081830433,
+        "gauc": 0.5745176050778048,
+        "gauc_weighting": "exposure_count_among_users_with_both_labels",
+        "users": 13744,
+        "valid_users": 7575,
+        "valid_rows": 114470,
+        "excluded_users": 6169,
+        "excluded_rows": 37477,
+        "valid_row_fraction": 0.7533547881827216
+      },
+      "candidate_minus_baseline": {
+        "auc": 0.016071526846967332,
+        "gauc": 0.017873092541686675,
+        "logloss": -0.002298466487904105
+      },
+      "gauc_delta_user_bootstrap_95_percentile": [
+        0.012454112542268502,
+        0.02345680013875427
+      ],
+      "bootstrap_replicates": 2000,
+      "bootstrap_seed": 2026,
+      "limitations": [
+        "conditional on these trained models and this cohort",
+        "does not measure training-seed or cohort-selection variability",
+        "validation comparison, not test evidence"
+      ]
+    },
+    "c4-vs-c4-frozen": {
+      "scope": "paired_single_seed_validation",
+      "baseline_sha256": "f53ef41ec9664b25fdc6ec118370b8b3d9c2e92a37e93dcd19e2117f26c098d1",
+      "candidate_sha256": "f17e0b77143db455757652e4d6ecb4bd2adfd8ec280a2066fd12a24795f2b243",
+      "rows": 151947,
+      "baseline": {
+        "rows": 151947,
+        "positives": 20611,
+        "auc": 0.5899762863172346,
+        "logloss": 0.39446182730620843,
+        "gauc": 0.5566445125361181,
+        "gauc_weighting": "exposure_count_among_users_with_both_labels",
+        "users": 13744,
+        "valid_users": 7575,
+        "valid_rows": 114470,
+        "excluded_users": 6169,
+        "excluded_rows": 37477,
+        "valid_row_fraction": 0.7533547881827216
+      },
+      "candidate": {
+        "rows": 151947,
+        "positives": 20611,
+        "auc": 0.5997711986289171,
+        "logloss": 0.39291919682320026,
+        "gauc": 0.56733933135936,
+        "gauc_weighting": "exposure_count_among_users_with_both_labels",
+        "users": 13744,
+        "valid_users": 7575,
+        "valid_rows": 114470,
+        "excluded_users": 6169,
+        "excluded_rows": 37477,
+        "valid_row_fraction": 0.7533547881827216
+      },
+      "candidate_minus_baseline": {
+        "auc": 0.009794912311682502,
+        "gauc": 0.010694818823241858,
+        "logloss": -0.0015426304830081783
+      },
+      "gauc_delta_user_bootstrap_95_percentile": [
+        0.006549957701759526,
+        0.014737193572849474
+      ],
+      "bootstrap_replicates": 2000,
+      "bootstrap_seed": 2026,
+      "limitations": [
+        "conditional on these trained models and this cohort",
+        "does not measure training-seed or cohort-selection variability",
+        "validation comparison, not test evidence"
+      ]
+    },
+    "c5-joint-vs-c5": {
+      "scope": "paired_single_seed_validation",
+      "baseline_sha256": "caae7988becb2ece8055abb60a8e5d6d60106c332644f9f24ae56e34a3928f04",
+      "candidate_sha256": "f8d3f05adde6862847c5d79cc6d4552e4fff51d54b861dcdab4530911c84079f",
+      "rows": 151947,
+      "baseline": {
+        "rows": 151947,
+        "positives": 20611,
+        "auc": 0.606047813164202,
+        "logloss": 0.39216336081830433,
+        "gauc": 0.5745176050778048,
+        "gauc_weighting": "exposure_count_among_users_with_both_labels",
+        "users": 13744,
+        "valid_users": 7575,
+        "valid_rows": 114470,
+        "excluded_users": 6169,
+        "excluded_rows": 37477,
+        "valid_row_fraction": 0.7533547881827216
+      },
+      "candidate": {
+        "rows": 151947,
+        "positives": 20611,
+        "auc": 0.6011408632625251,
+        "logloss": 0.3922479172722183,
+        "gauc": 0.5713928574388856,
+        "gauc_weighting": "exposure_count_among_users_with_both_labels",
+        "users": 13744,
+        "valid_users": 7575,
+        "valid_rows": 114470,
+        "excluded_users": 6169,
+        "excluded_rows": 37477,
+        "valid_row_fraction": 0.7533547881827216
+      },
+      "candidate_minus_baseline": {
+        "auc": -0.004906949901676838,
+        "gauc": -0.003124747638919234,
+        "logloss": 8.455645391397537e-05
+      },
+      "gauc_delta_user_bootstrap_95_percentile": [
+        -0.007083953296283785,
+        0.0006623451471321422
+      ],
+      "bootstrap_replicates": 2000,
+      "bootstrap_seed": 2026,
+      "limitations": [
+        "conditional on these trained models and this cohort",
+        "does not measure training-seed or cohort-selection variability",
+        "validation comparison, not test evidence"
+      ]
+    },
+    "c4-vs-c0": {
+      "scope": "paired_single_seed_validation",
+      "baseline_sha256": "df081055e291c703534813da1dc4678d79450dc8db7bb72a6fe5bc3d8d93af7b",
+      "candidate_sha256": "f17e0b77143db455757652e4d6ecb4bd2adfd8ec280a2066fd12a24795f2b243",
+      "rows": 151947,
+      "baseline": {
+        "rows": 151947,
+        "positives": 20611,
+        "auc": 0.5913554069237661,
+        "logloss": 0.3936466683959223,
+        "gauc": 0.5564952103750347,
+        "gauc_weighting": "exposure_count_among_users_with_both_labels",
+        "users": 13744,
+        "valid_users": 7575,
+        "valid_rows": 114470,
+        "excluded_users": 6169,
+        "excluded_rows": 37477,
+        "valid_row_fraction": 0.7533547881827216
+      },
+      "candidate": {
+        "rows": 151947,
+        "positives": 20611,
+        "auc": 0.5997711986289171,
+        "logloss": 0.39291919682320026,
+        "gauc": 0.56733933135936,
+        "gauc_weighting": "exposure_count_among_users_with_both_labels",
+        "users": 13744,
+        "valid_users": 7575,
+        "valid_rows": 114470,
+        "excluded_users": 6169,
+        "excluded_rows": 37477,
+        "valid_row_fraction": 0.7533547881827216
+      },
+      "candidate_minus_baseline": {
+        "auc": 0.008415791705151054,
+        "gauc": 0.0108441209843253,
+        "logloss": -0.000727471572722016
+      },
+      "gauc_delta_user_bootstrap_95_percentile": [
+        0.006919144533616467,
+        0.014696569649826673
+      ],
+      "bootstrap_replicates": 2000,
+      "bootstrap_seed": 2026,
+      "limitations": [
+        "conditional on these trained models and this cohort",
+        "does not measure training-seed or cohort-selection variability",
+        "validation comparison, not test evidence"
+      ]
+    },
+    "c4-frozen-vs-c0": {
+      "scope": "paired_single_seed_validation",
+      "baseline_sha256": "df081055e291c703534813da1dc4678d79450dc8db7bb72a6fe5bc3d8d93af7b",
+      "candidate_sha256": "f53ef41ec9664b25fdc6ec118370b8b3d9c2e92a37e93dcd19e2117f26c098d1",
+      "rows": 151947,
+      "baseline": {
+        "rows": 151947,
+        "positives": 20611,
+        "auc": 0.5913554069237661,
+        "logloss": 0.3936466683959223,
+        "gauc": 0.5564952103750347,
+        "gauc_weighting": "exposure_count_among_users_with_both_labels",
+        "users": 13744,
+        "valid_users": 7575,
+        "valid_rows": 114470,
+        "excluded_users": 6169,
+        "excluded_rows": 37477,
+        "valid_row_fraction": 0.7533547881827216
+      },
+      "candidate": {
+        "rows": 151947,
+        "positives": 20611,
+        "auc": 0.5899762863172346,
+        "logloss": 0.39446182730620843,
+        "gauc": 0.5566445125361181,
+        "gauc_weighting": "exposure_count_among_users_with_both_labels",
+        "users": 13744,
+        "valid_users": 7575,
+        "valid_rows": 114470,
+        "excluded_users": 6169,
+        "excluded_rows": 37477,
+        "valid_row_fraction": 0.7533547881827216
+      },
+      "candidate_minus_baseline": {
+        "auc": -0.0013791206065314476,
+        "gauc": 0.00014930216108344219,
+        "logloss": 0.0008151589102861623
+      },
+      "gauc_delta_user_bootstrap_95_percentile": [
+        -0.0019489823406791669,
+        0.0021787264912971915
+      ],
+      "bootstrap_replicates": 2000,
+      "bootstrap_seed": 2026,
+      "limitations": [
+        "conditional on these trained models and this cohort",
+        "does not measure training-seed or cohort-selection variability",
+        "validation comparison, not test evidence"
+      ]
+    },
+    "c5-vs-c0": {
+      "scope": "paired_single_seed_validation",
+      "baseline_sha256": "df081055e291c703534813da1dc4678d79450dc8db7bb72a6fe5bc3d8d93af7b",
+      "candidate_sha256": "caae7988becb2ece8055abb60a8e5d6d60106c332644f9f24ae56e34a3928f04",
+      "rows": 151947,
+      "baseline": {
+        "rows": 151947,
+        "positives": 20611,
+        "auc": 0.5913554069237661,
+        "logloss": 0.3936466683959223,
+        "gauc": 0.5564952103750347,
+        "gauc_weighting": "exposure_count_among_users_with_both_labels",
+        "users": 13744,
+        "valid_users": 7575,
+        "valid_rows": 114470,
+        "excluded_users": 6169,
+        "excluded_rows": 37477,
+        "valid_row_fraction": 0.7533547881827216
+      },
+      "candidate": {
+        "rows": 151947,
+        "positives": 20611,
+        "auc": 0.606047813164202,
+        "logloss": 0.39216336081830433,
+        "gauc": 0.5745176050778048,
+        "gauc_weighting": "exposure_count_among_users_with_both_labels",
+        "users": 13744,
+        "valid_users": 7575,
+        "valid_rows": 114470,
+        "excluded_users": 6169,
+        "excluded_rows": 37477,
+        "valid_row_fraction": 0.7533547881827216
+      },
+      "candidate_minus_baseline": {
+        "auc": 0.014692406240435885,
+        "gauc": 0.018022394702770117,
+        "logloss": -0.0014833075776179427
+      },
+      "gauc_delta_user_bootstrap_95_percentile": [
+        0.012550026663693446,
+        0.023794639597130445
+      ],
+      "bootstrap_replicates": 2000,
+      "bootstrap_seed": 2026,
+      "limitations": [
+        "conditional on these trained models and this cohort",
+        "does not measure training-seed or cohort-selection variability",
+        "validation comparison, not test evidence"
+      ]
+    },
+    "c5-joint-vs-c0": {
+      "scope": "paired_single_seed_validation",
+      "baseline_sha256": "df081055e291c703534813da1dc4678d79450dc8db7bb72a6fe5bc3d8d93af7b",
+      "candidate_sha256": "f8d3f05adde6862847c5d79cc6d4552e4fff51d54b861dcdab4530911c84079f",
+      "rows": 151947,
+      "baseline": {
+        "rows": 151947,
+        "positives": 20611,
+        "auc": 0.5913554069237661,
+        "logloss": 0.3936466683959223,
+        "gauc": 0.5564952103750347,
+        "gauc_weighting": "exposure_count_among_users_with_both_labels",
+        "users": 13744,
+        "valid_users": 7575,
+        "valid_rows": 114470,
+        "excluded_users": 6169,
+        "excluded_rows": 37477,
+        "valid_row_fraction": 0.7533547881827216
+      },
+      "candidate": {
+        "rows": 151947,
+        "positives": 20611,
+        "auc": 0.6011408632625251,
+        "logloss": 0.3922479172722183,
+        "gauc": 0.5713928574388856,
+        "gauc_weighting": "exposure_count_among_users_with_both_labels",
+        "users": 13744,
+        "valid_users": 7575,
+        "valid_rows": 114470,
+        "excluded_users": 6169,
+        "excluded_rows": 37477,
+        "valid_row_fraction": 0.7533547881827216
+      },
+      "candidate_minus_baseline": {
+        "auc": 0.009785456338759047,
+        "gauc": 0.014897647063850883,
+        "logloss": -0.0013987511237039674
+      },
+      "gauc_delta_user_bootstrap_95_percentile": [
+        0.009819292230482798,
+        0.020057902545847252
+      ],
+      "bootstrap_replicates": 2000,
+      "bootstrap_seed": 2026,
+      "limitations": [
+        "conditional on these trained models and this cohort",
+        "does not measure training-seed or cohort-selection variability",
+        "validation comparison, not test evidence"
+      ]
+    }
+  },
+  "test_evaluated": false,
+  "limitations": [
+    "exploratory multiple comparisons; intervals are not multiplicity-adjusted",
+    "bootstrap conditions on trained models and selected cohort",
+    "pretrained conditions use additional training compute"
+  ]
+}
