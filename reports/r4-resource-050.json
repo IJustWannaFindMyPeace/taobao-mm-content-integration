@@ -1,0 +1,50 @@
+{
+  "scope": "resource_probe_only",
+  "model": "r4",
+  "seed": 42,
+  "store_manifest_sha256": "7dd761c48f61b3ae219922f8387f6026eb6eb011ef6ef8050bb1472a52593f59",
+  "source_sha256": {
+    "c0.py": "b411d1cc6088559adab91ca71bacc02b191a687870bd57a2ecce6e6658faf456",
+    "enhanced_esu.py": "90b9e7344847cf4d2679bdf7373861037c831bbd07c3a4411fb26df46c31d1ec",
+    "feature_store.py": "3c5f23688388a747b54f36a8e9870c7f51cd82ded05c09a20a99af8b96ad33a3",
+    "metrics.py": "a3d47e8ea28aa10010890f2633ff3a39a0e5ec582bd42a6fe408858f34378d56",
+    "muse_model.py": "e1212eab6119b984d0e9adae485299a1e7fee7cd0cb5eaee453f5450bf9e1544",
+    "retrieval.py": "87b8c4a1f752ac7a828e34b90ea040085583c713f253535b20c009c2f1687513",
+    "search_model.py": "3c06f42df82af3933ee7c690a8a82f8c60a867811b78bf28a28868ec55850936",
+    "probe_scale.py": "828ee4fc76fdf7edaa487c9203a2a8c4cffc1b29082cad9c1f03d49f0fcaae79"
+  },
+  "vocabulary_sizes": {
+    "129_1": 277807,
+    "130_1": 13,
+    "130_2": 5,
+    "130_3": 43,
+    "130_4": 397,
+    "130_5": 8,
+    "205": 42853474,
+    "206": 20586,
+    "213": 440,
+    "214": 94
+  },
+  "steps": 200,
+  "batch_size": 32,
+  "history_length": 1000,
+  "k": 50,
+  "seconds": 11.791919099999973,
+  "post_warmup_rows_per_second": 600.8349603165208,
+  "peak_allocated_mib": 8016.216796875,
+  "peak_reserved_mib": 8026.0,
+  "process_peak_working_set_mib": 5436.6171875,
+  "parameters_updated": true,
+  "gate": {
+    "allocated_limit_mib": 9216,
+    "ram_limit_mib": 24576,
+    "passed": true
+  },
+  "gpu": "NVIDIA GeForce RTX 5070",
+  "torch": "2.12.1+cu132",
+  "evaluation_performed": false,
+  "limitations": [
+    "Bounded random-row probe; not full-epoch memory or throughput assurance.",
+    "Full candidate vocabulary, but only 200 or more sampled training steps."
+  ]
+}

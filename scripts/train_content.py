@@ -30,6 +30,7 @@ def main():
     if args.output_dir.exists() and any(args.output_dir.iterdir()):raise ValueError('Fresh output directory required')
     args.output_dir.mkdir(parents=True,exist_ok=True)
     cfg=json.loads(args.config.read_text())
+    implementation_hashes={p.name:sha256(p) for p in [Path(__file__),Path(__file__).parents[1]/'src/make.py']}
     torch.manual_seed(cfg['seed']); rng=np.random.default_rng(cfg['seed'])
     train=FeatureStore(args.store,'train'); val=FeatureStore(args.store,'validation')
     model=ContentMAKE().cuda()
@@ -76,7 +77,7 @@ def main():
         curves.append(record)
         result={'scope':'partial_training_resource_probe' if args.max_steps else 'single_seed_content_learning_curve',
                 'config':cfg,'store_manifest_sha256':sha256(args.store/'manifest.json'),
-                'implementation_sha256':{p.name:sha256(p) for p in [Path(__file__),Path(__file__).parents[1]/'src/make.py']},
+                'implementation_sha256':implementation_hashes,
                 'torch':torch.__version__,'gpu':torch.cuda.get_device_name(),'steps':steps,'epochs':curves,
                 'parameters_updated':not torch.equal(initial,model.output.weight),'test_evaluated':False,
                 'limitations':['single seed and one cohort','adapted DIN activation and layer widths','model-only checkpoints; no optimizer resume']}

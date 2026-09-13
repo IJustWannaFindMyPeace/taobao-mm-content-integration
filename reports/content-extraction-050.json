@@ -1,0 +1,38 @@
+{
+  "revision": "f185841b6e9612edd06f5112e06416f1bdf6c6d0",
+  "source_sha256": "2450616e96ac649d85af6e089bb4b77d8b6a761cde8f7bc7a332a5ea8f350458",
+  "output_sha256": "e6041474af4ab9b7c2b4254f69b4c5713d2ef4151c5a28d2c9097a41160afb81",
+  "source_rows": 35458467,
+  "requested_unique_items": 55162164,
+  "matched_unique_items": 27079087,
+  "missing_unique_items": 28083077,
+  "unique_coverage": 0.490899649984725,
+  "dimension": 128,
+  "storage": "int8",
+  "reference_dequantization_scale": 0.007874015748031496,
+  "zero_vectors": 0,
+  "target_coverage": {
+    "train": {
+      "exposures": 3052475,
+      "matched": 3052420,
+      "coverage": 0.999981981834413
+    },
+    "validation": {
+      "exposures": 768773,
+      "matched": 768760,
+      "coverage": 0.9999830899368214
+    },
+    "test": {
+      "exposures": 923211,
+      "matched": 923187,
+      "coverage": 0.9999740037759516
+    }
+  },
+  "process_peak_working_set_mib": 7981.44921875,
+  "seconds": 255.27007619998767,
+  "limitations": [
+    "missing content is not padding; downstream fallback remains to be specified",
+    "requested content union includes evaluation items but does not define trainable ID vocabulary",
+    "unique item coverage is not exposure-weighted history coverage"
+  ]
+}

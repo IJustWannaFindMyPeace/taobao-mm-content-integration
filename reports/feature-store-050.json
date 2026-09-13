@@ -1,0 +1,193 @@
+{
+  "format": "shared-feature-store-v1",
+  "revision": "f185841b6e9612edd06f5112e06416f1bdf6c6d0",
+  "fields": [
+    "129_1",
+    "130_1",
+    "130_2",
+    "130_3",
+    "130_4",
+    "130_5",
+    "205",
+    "206",
+    "213",
+    "214"
+  ],
+  "vocab_sizes": {
+    "129_1": 277807,
+    "130_1": 13,
+    "130_2": 5,
+    "130_3": 43,
+    "130_4": 397,
+    "130_5": 8,
+    "205": 42853474,
+    "206": 20586,
+    "213": 440,
+    "214": 94
+  },
+  "input_sha256": {
+    "train": "3bce3bd509fbb80d5ac57c961b4ee0c068454209bff116ac645201caa8c7e3f7",
+    "validation": "c33dee7f55877b66067d1c9be5dba2aa622e26037cb99c182a368934d38e67e5",
+    "test": "c8b326ca79b8bc387014b2d7cace03fa063b3fe0da6869fef60823a4662f0719",
+    "train_users": "63e0a97295e5f608e59a820eb330472fc88249d5ad0054820302834908f55c31",
+    "test_users": "758d86b4490a6215e625dbded15781dcab3a96756fee849e5839eb928fed61a5",
+    "content": "e6041474af4ab9b7c2b4254f69b4c5713d2ef4151c5a28d2c9097a41160afb81"
+  },
+  "arrays": {
+    "content_int8.npy": {
+      "bytes": 3466123392,
+      "sha256": "88acccec11c5fa565379a2d6ac8f36b6ef7c343d6f275286ee70a8ce3faa9a4b"
+    },
+    "test.content.npy": {
+      "bytes": 3692972,
+      "sha256": "6efabd0d40d0574dc5e25a1596756156918a7c40c6bdc95c6971899130485c1b"
+    },
+    "test.features.npy": {
+      "bytes": 36928568,
+      "sha256": "a3c0da95acadedaf20f037054848814208afdb4c0ae17c31f74c899ebb354246"
+    },
+    "test.labels.npy": {
+      "bytes": 3692972,
+      "sha256": "d9e22d4d40ad3f385aad32f4f0a7bc95668ceaba69e6d980500e6a633cdc1e04"
+    },
+    "test.source_rows.npy": {
+      "bytes": 7385816,
+      "sha256": "5970d754a7c8a316ef82ba3ec4634c81446779b660bbcd621d19ebe5e54dde03"
+    },
+    "test.user_rows.npy": {
+      "bytes": 3692972,
+      "sha256": "6204b5ca736b73af6f3cb47c8841098a4bec76178606030d0ea930f226c06f2c"
+    },
+    "test_users.category.npy": {
+      "bytes": 330168128,
+      "sha256": "308a63f50263080356fe5660f17f34b11f8e94cf20f4d3a2f7984929fe721ec8"
+    },
+    "test_users.content.npy": {
+      "bytes": 330168128,
+      "sha256": "2feda70b669e2f3657a2a92fc508f34c95d6d43701684ad41d609b633d85654e"
+    },
+    "test_users.item.npy": {
+      "bytes": 330168128,
+      "sha256": "e8d9067e3d79c3cf692709ef873a208dc8b9dd9c0f95afa19cb24461dd22f138"
+    },
+    "train.content.npy": {
+      "bytes": 12210028,
+      "sha256": "2f532b1d94716a6160223622035b7fcba41d52e13dba4a59100394b9517eb407"
+    },
+    "train.features.npy": {
+      "bytes": 122099128,
+      "sha256": "4ad32e8a19f03deea245b82c08a51af858dc2369678a5cafb2db11ef96516b7d"
+    },
+    "train.labels.npy": {
+      "bytes": 12210028,
+      "sha256": "29f495e898f16ba396519599989ae56d693102c7af55fb14f6ed99cb1b562449"
+    },
+    "train.source_rows.npy": {
+      "bytes": 24419928,
+      "sha256": "7fb17be0862d37b75da2c714a3fd1e278a961b2c8efabb2f51caac3872f4c7d9"
+    },
+    "train.user_rows.npy": {
+      "bytes": 12210028,
+      "sha256": "6219859b05388eef6d6e87973fac5661564ff82349cc381bd6b81e8bbe6adb37"
+    },
+    "train_users.category.npy": {
+      "bytes": 1388940128,
+      "sha256": "380f19b0b61236baf4761aaf280ea5ed8431886a17d866f4c88ec86329cc91fe"
+    },
+    "train_users.content.npy": {
+      "bytes": 1388940128,
+      "sha256": "6f43e89cd6e8193b4c391109e45c0731681cac95f72eef77eb6e3a9abed6c477"
+    },
+    "train_users.item.npy": {
+      "bytes": 1388940128,
+      "sha256": "c134f1c5584a55815a3c98fdb08c1bafd30281dc09558dc4e5e7eae349523036"
+    },
+    "validation.content.npy": {
+      "bytes": 3075220,
+      "sha256": "cce9409cfa096b1b9497d22dd8a290c0e8396f3367c93c8031d38d7f5d2820c7"
+    },
+    "validation.features.npy": {
+      "bytes": 30751048,
+      "sha256": "bbb07eabe4bd573434da6fe36a7e0c70c9da91c0e553a213747d44fdeebcb9a5"
+    },
+    "validation.labels.npy": {
+      "bytes": 3075220,
+      "sha256": "c4c7cd3bf180351d2d51c117b2bc586414b8018ccd9c89ba7c558949370240a0"
+    },
+    "validation.source_rows.npy": {
+      "bytes": 6150312,
+      "sha256": "b6397ac08a983090ddc55cb5ccc24004ff7a3287ce8c42f3361d1cac2c2a121f"
+    },
+    "validation.user_rows.npy": {
+      "bytes": 3075220,
+      "sha256": "818cdc205d6dfbe3e7bc18872a60145d9eff1155ce13f78002f87bb971b02180"
+    },
+    "vocab.129_1.npy": {
+      "bytes": 2222568,
+      "sha256": "78f7c8cb8beda27025dea867f0126b3b73dfa2baca5ef9e550a1fe8629845886"
+    },
+    "vocab.130_1.npy": {
+      "bytes": 216,
+      "sha256": "790d15daa3fbdd5bae9fb802999eb683a2dc7dae91f42e3e60511f8347a6f4cf"
+    },
+    "vocab.130_2.npy": {
+      "bytes": 152,
+      "sha256": "8ef8d40abc140ac61eaf66c206e286c07dcce697907f7736875c9c342ebbd7c3"
+    },
+    "vocab.130_3.npy": {
+      "bytes": 456,
+      "sha256": "160ce827befe533e1d0da55e729595a50e5f9e9dcbeddd66cdff3fd5ef86d922"
+    },
+    "vocab.130_4.npy": {
+      "bytes": 3288,
+      "sha256": "e11758a3f5624587f9145f60e589aa0b2cd1c3b6de9f83887527b6ebab92042f"
+    },
+    "vocab.130_5.npy": {
+      "bytes": 176,
+      "sha256": "30f42ce71296000b45ef920dcaa90408541e60940a514dc38844820be119bf53"
+    },
+    "vocab.205.npy": {
+      "bytes": 342827904,
+      "sha256": "0d934a5d93a890129deed1c1e6b1d90d4c83301b0e81c937ab1af3e615711eec"
+    },
+    "vocab.206.npy": {
+      "bytes": 164800,
+      "sha256": "9d52383db93ccc5fed7f7b53fa627e42dc24ced8ed7ad32ca3ed8f2f8adeabd5"
+    },
+    "vocab.213.npy": {
+      "bytes": 3632,
+      "sha256": "5c26fba867d6bc304c398a820c5814cda061ba85487d30335d0e44a469191d09"
+    },
+    "vocab.214.npy": {
+      "bytes": 864,
+      "sha256": "4e59195292a02e711117301523f40331899e4a5de65fb8f89675e4740597db91"
+    }
+  },
+  "splits": {
+    "train": {
+      "rows": 3052475,
+      "target_id_oov_exposures": 0,
+      "user_id_oov_exposures": 0,
+      "content_missing_exposures": 55
+    },
+    "validation": {
+      "rows": 768773,
+      "target_id_oov_exposures": 32628,
+      "user_id_oov_exposures": 768773,
+      "content_missing_exposures": 13
+    },
+    "test": {
+      "rows": 923211,
+      "target_id_oov_exposures": 43643,
+      "user_id_oov_exposures": 805959,
+      "content_missing_exposures": 24
+    }
+  },
+  "history_length": 1000,
+  "padding_index": 0,
+  "oov_index": 1,
+  "content_missing_index": 0,
+  "vocabulary_scope": "train targets and train-user histories only",
+  "seconds": 1528.1329895999806,
+  "process_peak_working_set_mib": 5962.0078125
+}
