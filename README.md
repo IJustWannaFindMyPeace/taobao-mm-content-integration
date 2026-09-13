@@ -67,4 +67,4 @@ MAKE 接入的双因素设计、运行入口与结果边界见[阶段 12](docs/s
 
 SimTier 与 MAKE 的单种子组合对照已完成，C6 验证 GAUC 为 0.57865，比较协议见[阶段 13](docs/stage-13-combined-fusion.md)。
 
-Vector 与 SimScore 逐行为融合对照已实现并启动串行训练，适配细节见[阶段 14](docs/stage-14-side-information.md)。
+Vector 与 SimScore 单种子融合对照已完成，当前指标排序不完全一致，适配细节见[阶段 14](docs/stage-14-side-information.md)。
