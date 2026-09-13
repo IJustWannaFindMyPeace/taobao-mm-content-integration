@@ -69,4 +69,4 @@ SimTier 与 MAKE 的单种子组合对照已完成，C6 验证 GAUC 为 0.57865�
 
 Vector 与 SimScore 单种子融合对照已完成，当前指标排序不完全一致，适配细节见[阶段 14](docs/stage-14-side-information.md)。
 
-现有低频诊断、5% 曝光清单及主表多种子预算见[阶段 15](docs/stage-15-frequency-and-budget.md)。5% 特征存储和资源检查尚未完成，未启动该规模训练。
+现有低频诊断、5% 曝光清单及主表多种子预算见[阶段 15](docs/stage-15-frequency-and-budget.md)。5% 商品属性与用户历史准备进展见[阶段 16](docs/stage-16-scale-preparation.md)；特征存储和资源检查尚未完成，未启动该规模训练。

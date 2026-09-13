@@ -1,0 +1,25 @@
+{
+  "revision": "f185841b6e9612edd06f5112e06416f1bdf6c6d0",
+  "item_source_sha256": "818975f265689215dac2ff8c5328ef7b59dbb54ad9371b7cc0f4f9ad6748d7fc",
+  "splits": {
+    "train": {
+      "rows": 3052475,
+      "target_attribute_coverage": 1.0,
+      "exposure_order_preserved": true,
+      "sha256": "3bce3bd509fbb80d5ac57c961b4ee0c068454209bff116ac645201caa8c7e3f7"
+    },
+    "validation": {
+      "rows": 768773,
+      "target_attribute_coverage": 1.0,
+      "exposure_order_preserved": true,
+      "sha256": "c33dee7f55877b66067d1c9be5dba2aa622e26037cb99c182a368934d38e67e5"
+    },
+    "test": {
+      "rows": 923211,
+      "target_attribute_coverage": 1.0,
+      "exposure_order_preserved": true,
+      "sha256": "c8b326ca79b8bc387014b2d7cace03fa063b3fe0da6869fef60823a4662f0719"
+    }
+  },
+  "history_join_complete": false
+}
