@@ -65,4 +65,4 @@ C1 内容兴趣模块与逐轮训练入口已实现，结构适配和运行协�
 
 MAKE 接入的双因素设计、运行入口与结果边界见[阶段 12](docs/stage-12-make-factorial.md)。C0 三轮诊断和四组 MAKE 单种子对照已完成：C0 多轮验证退步，C5 验证 GAUC 为 0.57452；归因与置信区间见阶段报告。
 
-SimTier 与 MAKE 的组合对照已实现并启动训练，比较协议见[阶段 13](docs/stage-13-combined-fusion.md)。
+SimTier 与 MAKE 的单种子组合对照已完成，C6 验证 GAUC 为 0.57865，比较协议见[阶段 13](docs/stage-13-combined-fusion.md)。
