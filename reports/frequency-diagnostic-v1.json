@@ -1,0 +1,273 @@
+{
+  "scope": "single_seed_validation_frequency_diagnostic",
+  "store_manifest_sha256": "eb8cac821d0991ef67769725928fe2aef8aff83d7fd7f3763635edac8d02799d",
+  "implementation_sha256": "5c75d0286ae99aaad06f482eac513876a151e9f3d508598e22c7a3d69613d455",
+  "prediction_sha256": {
+    "C0": "df081055e291c703534813da1dc4678d79450dc8db7bb72a6fe5bc3d8d93af7b",
+    "C6": "a9c5353f366f27d8d211f9ea70cd7f9e48aec573b9d434f66459321362dbacc6",
+    "C7": "b1475bad5194a9c82fb3186fdca998dbed62c4236d07c76983b398b1585c6a2e",
+    "R1": "3e1e16ca244e4bfc0ccf27bb708acfae0d3a8bd9e72098009d6bcbf4f32cce6e",
+    "R4": "fa372ce55db0a80c218a025b8f354c937431239caf3e40ef8b3ebdd869020e54"
+  },
+  "frequency_source": "raw target item IDs in selected training exposures only",
+  "training_rows": 609902,
+  "validation_rows": 151947,
+  "models": {
+    "C0": [
+      {
+        "training_target_exposure_frequency": "0",
+        "validation_rows": 62283,
+        "distinct_validation_targets": 59171,
+        "positives": 9247,
+        "auc": 0.5602326578738541,
+        "logloss": 0.4199564788645551
+      },
+      {
+        "training_target_exposure_frequency": "1",
+        "validation_rows": 24670,
+        "distinct_validation_targets": 21794,
+        "positives": 3571,
+        "auc": 0.5667422182704202,
+        "logloss": 0.4126474282359647
+      },
+      {
+        "training_target_exposure_frequency": "2-5",
+        "validation_rows": 32563,
+        "distinct_validation_targets": 23827,
+        "positives": 4384,
+        "auc": 0.5931023222112651,
+        "logloss": 0.39198931959234856
+      },
+      {
+        "training_target_exposure_frequency": "6-20",
+        "validation_rows": 21007,
+        "distinct_validation_targets": 8619,
+        "positives": 2480,
+        "auc": 0.6130164650719003,
+        "logloss": 0.35869725544997666
+      },
+      {
+        "training_target_exposure_frequency": "21-100",
+        "validation_rows": 9968,
+        "distinct_validation_targets": 1198,
+        "positives": 850,
+        "auc": 0.6478665987123079,
+        "logloss": 0.28773937551460677
+      },
+      {
+        "training_target_exposure_frequency": "101+",
+        "validation_rows": 1456,
+        "distinct_validation_targets": 38,
+        "positives": 79,
+        "auc": 0.6446503589715304,
+        "logloss": 0.21262454725272228
+      }
+    ],
+    "C6": [
+      {
+        "training_target_exposure_frequency": "0",
+        "validation_rows": 62283,
+        "distinct_validation_targets": 59171,
+        "positives": 9247,
+        "auc": 0.5870502950537329,
+        "logloss": 0.4184215406475173
+      },
+      {
+        "training_target_exposure_frequency": "1",
+        "validation_rows": 24670,
+        "distinct_validation_targets": 21794,
+        "positives": 3571,
+        "auc": 0.5931898850943775,
+        "logloss": 0.41017433192246966
+      },
+      {
+        "training_target_exposure_frequency": "2-5",
+        "validation_rows": 32563,
+        "distinct_validation_targets": 23827,
+        "positives": 4384,
+        "auc": 0.6089203983825507,
+        "logloss": 0.38975686345072763
+      },
+      {
+        "training_target_exposure_frequency": "6-20",
+        "validation_rows": 21007,
+        "distinct_validation_targets": 8619,
+        "positives": 2480,
+        "auc": 0.6288249538163134,
+        "logloss": 0.35571450572141045
+      },
+      {
+        "training_target_exposure_frequency": "21-100",
+        "validation_rows": 9968,
+        "distinct_validation_targets": 1198,
+        "positives": 850,
+        "auc": 0.6529545307923564,
+        "logloss": 0.28377640929935416
+      },
+      {
+        "training_target_exposure_frequency": "101+",
+        "validation_rows": 1456,
+        "distinct_validation_targets": 38,
+        "positives": 79,
+        "auc": 0.6551667080334244,
+        "logloss": 0.20750271303728032
+      }
+    ],
+    "C7": [
+      {
+        "training_target_exposure_frequency": "0",
+        "validation_rows": 62283,
+        "distinct_validation_targets": 59171,
+        "positives": 9247,
+        "auc": 0.5834821736213455,
+        "logloss": 0.41952829157705485
+      },
+      {
+        "training_target_exposure_frequency": "1",
+        "validation_rows": 24670,
+        "distinct_validation_targets": 21794,
+        "positives": 3571,
+        "auc": 0.5791898108487744,
+        "logloss": 0.41226937526166235
+      },
+      {
+        "training_target_exposure_frequency": "2-5",
+        "validation_rows": 32563,
+        "distinct_validation_targets": 23827,
+        "positives": 4384,
+        "auc": 0.600103608047407,
+        "logloss": 0.39165004409419757
+      },
+      {
+        "training_target_exposure_frequency": "6-20",
+        "validation_rows": 21007,
+        "distinct_validation_targets": 8619,
+        "positives": 2480,
+        "auc": 0.6175427928202432,
+        "logloss": 0.35806006798221596
+      },
+      {
+        "training_target_exposure_frequency": "21-100",
+        "validation_rows": 9968,
+        "distinct_validation_targets": 1198,
+        "positives": 850,
+        "auc": 0.6483925783518057,
+        "logloss": 0.28771617815527895
+      },
+      {
+        "training_target_exposure_frequency": "101+",
+        "validation_rows": 1456,
+        "distinct_validation_targets": 38,
+        "positives": 79,
+        "auc": 0.6601858746311464,
+        "logloss": 0.21177983594360508
+      }
+    ],
+    "R1": [
+      {
+        "training_target_exposure_frequency": "0",
+        "validation_rows": 62283,
+        "distinct_validation_targets": 59171,
+        "positives": 9247,
+        "auc": 0.5642984946581681,
+        "logloss": 0.42096092780281624
+      },
+      {
+        "training_target_exposure_frequency": "1",
+        "validation_rows": 24670,
+        "distinct_validation_targets": 21794,
+        "positives": 3571,
+        "auc": 0.5783960571311024,
+        "logloss": 0.41284954886548647
+      },
+      {
+        "training_target_exposure_frequency": "2-5",
+        "validation_rows": 32563,
+        "distinct_validation_targets": 23827,
+        "positives": 4384,
+        "auc": 0.5913674495981504,
+        "logloss": 0.3934298968394822
+      },
+      {
+        "training_target_exposure_frequency": "6-20",
+        "validation_rows": 21007,
+        "distinct_validation_targets": 8619,
+        "positives": 2480,
+        "auc": 0.615617007088173,
+        "logloss": 0.35952499120172415
+      },
+      {
+        "training_target_exposure_frequency": "21-100",
+        "validation_rows": 9968,
+        "distinct_validation_targets": 1198,
+        "positives": 850,
+        "auc": 0.6387692734474795,
+        "logloss": 0.2895677768429035
+      },
+      {
+        "training_target_exposure_frequency": "101+",
+        "validation_rows": 1456,
+        "distinct_validation_targets": 38,
+        "positives": 79,
+        "auc": 0.6493937471847623,
+        "logloss": 0.21350992239520067
+      }
+    ],
+    "R4": [
+      {
+        "training_target_exposure_frequency": "0",
+        "validation_rows": 62283,
+        "distinct_validation_targets": 59171,
+        "positives": 9247,
+        "auc": 0.5855579299550112,
+        "logloss": 0.41882288702108916
+      },
+      {
+        "training_target_exposure_frequency": "1",
+        "validation_rows": 24670,
+        "distinct_validation_targets": 21794,
+        "positives": 3571,
+        "auc": 0.5883502171736982,
+        "logloss": 0.4111279692912359
+      },
+      {
+        "training_target_exposure_frequency": "2-5",
+        "validation_rows": 32563,
+        "distinct_validation_targets": 23827,
+        "positives": 4384,
+        "auc": 0.6032335515162065,
+        "logloss": 0.3914510757856562
+      },
+      {
+        "training_target_exposure_frequency": "6-20",
+        "validation_rows": 21007,
+        "distinct_validation_targets": 8619,
+        "positives": 2480,
+        "auc": 0.6248718195937228,
+        "logloss": 0.35767388159497643
+      },
+      {
+        "training_target_exposure_frequency": "21-100",
+        "validation_rows": 9968,
+        "distinct_validation_targets": 1198,
+        "positives": 850,
+        "auc": 0.6432449711624066,
+        "logloss": 0.2886013988167119
+      },
+      {
+        "training_target_exposure_frequency": "101+",
+        "validation_rows": 1456,
+        "distinct_validation_targets": 38,
+        "positives": 79,
+        "auc": 0.6277819144535451,
+        "logloss": 0.2144218320667884
+      }
+    ]
+  },
+  "test_evaluated": false,
+  "limitations": [
+    "zero train-target frequency is not proof of a newly created item or no history interactions",
+    "fixed frequency bins; not original-paper quantile groups",
+    "descriptive AUC/logloss only; no subgroup confidence intervals or seed variability"
+  ]
+}

@@ -12,8 +12,8 @@ def mix64(ids, seed):
 
 
 def user_masks(ids, buckets=1):
-    if buckets not in (1, 5, 10):
-        raise ValueError("Supported nested cohort sizes: 1, 5, 10 per thousand")
+    if buckets not in (1, 5, 10, 50):
+        raise ValueError("Supported nested cohort sizes: 1, 5, 10, 50 per thousand")
     selected = mix64(ids, 42) % 1000 < buckets
     validation = mix64(ids, 2026) % 5 == 0
     return selected & ~validation, selected & validation

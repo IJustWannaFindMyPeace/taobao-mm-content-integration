@@ -10,9 +10,10 @@ class UserSplitContracts(unittest.TestCase):
     def test_nested_sizes_preserve_roles(self):
         ids = np.arange(-100000, 100000, dtype=np.int64)
         for role in [0, 1]:
-            a, b, c = [user_masks(ids, size)[role] for size in [1, 5, 10]]
+            a, b, c, d = [user_masks(ids, size)[role] for size in [1, 5, 10, 50]]
             self.assertFalse(np.any(a & ~b))
             self.assertFalse(np.any(b & ~c))
+            self.assertFalse(np.any(c & ~d))
 
     def test_known_mix_value(self):
         self.assertEqual(int(mix64([0], 0)[0]), 0xE220A8397B1DCDAF)

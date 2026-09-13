@@ -17,10 +17,12 @@ def main():
     parser.add_argument('--manifest', type=Path, required=True)
     parser.add_argument('--output-dir', type=Path, required=True)
     parser.add_argument('--report', type=Path, required=True)
-    parser.add_argument('--buckets', type=int, choices=[1, 5, 10], default=1)
+    parser.add_argument('--buckets', type=int, choices=[1, 5, 10, 50], default=1)
     args = parser.parse_args()
     manifest = json.loads(args.manifest.read_text(encoding='utf-8'))
     files = {e['path']: e for e in manifest['files']}
+    if args.output_dir.exists() and any(args.output_dir.iterdir()):
+        raise ValueError('Fresh output directory required')
     args.output_dir.mkdir(parents=True, exist_ok=True)
     stats, scans = {}, {}
     for original in ['train', 'test']:

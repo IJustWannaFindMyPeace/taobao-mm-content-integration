@@ -1,0 +1,126 @@
+{
+  "scope": "training_only_planning_scenarios",
+  "candidate_cohort": {
+    "train": {
+      "rows": 3052475,
+      "users": 277805,
+      "sha256": "2b28404bd04e2a928e2d1bca3d4e4532f53e813f1352cfbf7382ea3fe452c7f1"
+    },
+    "validation": {
+      "rows": 768773,
+      "users": 69430,
+      "sha256": "28d42a1faebd720e64da701b468e5b1b135945ea89af31348d7ba0e6067f61a1"
+    },
+    "test": {
+      "rows": 923211,
+      "users": 82542,
+      "sha256": "2c2cc9dd434e6500b6b3aaecf59564034a50cec4a094af5771c631d4ba1f81ed"
+    }
+  },
+  "candidate_cohort_report_sha256": "2d8ee14e4f38f21e3528008180605b46747d3bb1bf8e01db5de61c3a1b34766d",
+  "train_row_ratio_to_1_percent": 5.004861436755413,
+  "measured_1_percent_main_runs": {
+    "C0": {
+      "report_filename": "c0-seed42-epoch1.json",
+      "report_sha256": "2a93f140d580b6362dae4e7560fe9827dc633613c0b6f68edd84728de7acb241",
+      "seconds": 420.58947700000135,
+      "peak_allocated_mib": 2830.7451171875
+    },
+    "C2": {
+      "report_filename": "c2-seed42-epoch1.json",
+      "report_sha256": "7db19ee20fea4b89cde388a4c1b2c35a9112f6d4cf2972599b7883124924764d",
+      "seconds": 456.37365170000703,
+      "peak_allocated_mib": 2837.38623046875
+    },
+    "C3": {
+      "report_filename": "c3-seed42-epoch1.json",
+      "report_sha256": "612968b9b5ecc495211a29be5e5a36928e83a0cfb0aafc2e01e016410978e3b8",
+      "seconds": 419.085946999985,
+      "peak_allocated_mib": 2830.7958984375
+    },
+    "C5": {
+      "report_filename": "c5-seed42.json",
+      "report_sha256": "83db2ae83c889726ef98235b315e16f37fd1830f74f0c5bfcdb56499a3782c86",
+      "seconds": 456.83250250000856,
+      "peak_allocated_mib": 2852.1376953125
+    },
+    "C6": {
+      "report_filename": "c6-seed42-epoch1.json",
+      "report_sha256": "0de97f4e4404bc3710e92c0984aeca130e29c4d1b101afacabb736d99eda4ec3",
+      "seconds": 476.2048421000072,
+      "peak_allocated_mib": 2852.10107421875
+    },
+    "C7": {
+      "report_filename": "c7-seed42-epoch1.json",
+      "report_sha256": "fad8be303c6ba6d439fdde478e9f082b26b369f2c6f8e633cd23a7507c40390f",
+      "seconds": 460.2151535000012,
+      "peak_allocated_mib": 2836.7568359375
+    },
+    "R0": {
+      "report_filename": "r0-seed42-epoch1.json",
+      "report_sha256": "05f0fbb96654895d8ff7971d7994d0f608eea30019fa770890ad0b91cff23aae",
+      "seconds": 477.68757259999984,
+      "peak_allocated_mib": 2835.94384765625
+    },
+    "R1": {
+      "report_filename": "r1-seed42-epoch1.json",
+      "report_sha256": "662d32fc851a26a79282d83579aba83931a7d3a6d58f92bba515409e20965511",
+      "seconds": 435.292293800012,
+      "peak_allocated_mib": 2835.94384765625
+    },
+    "R2": {
+      "report_filename": "r2-seed42-epoch1.json",
+      "report_sha256": "74c754b1b7a1daafc23b72b6aa976d8c27d3eecb781d9831d91709f7754471a8",
+      "seconds": 477.388080100005,
+      "peak_allocated_mib": 2835.984375
+    },
+    "R3": {
+      "report_filename": "r3-seed42-epoch1.json",
+      "report_sha256": "0b71559e4c5bdb19041e0e0fd337f932fded11fef9c4819a5cc1778c7bf6a258",
+      "seconds": 444.2577544999949,
+      "peak_allocated_mib": 2835.9453125
+    },
+    "R4": {
+      "report_filename": "r4-seed42-epoch1.json",
+      "report_sha256": "15d1547812f76e3598ee22da9fa7f73fd72222e7d08205883c64789b32b6eada",
+      "seconds": 485.0578658999875,
+      "peak_allocated_mib": 2835.98583984375
+    },
+    "R5": {
+      "report_filename": "r5-seed42-epoch1.json",
+      "report_sha256": "007e5e073c4a103955fc0f1710fc493971d4f7e65be27d7756977128521ea84f",
+      "seconds": 428.5337197999761,
+      "peak_allocated_mib": 2835.958984375
+    }
+  },
+  "content_pretraining": {
+    "epochs": 3,
+    "seconds": 400.42475709997234,
+    "source_sha256": "d4e29db85b332bc6578bcc7d6874e623ce5d5cd1931aeb478cc6196511cb2de1"
+  },
+  "planned_seeds": [
+    42,
+    2026,
+    3407
+  ],
+  "one_percent_three_seed_training_hours": 4.864953014666631,
+  "candidate_linear_three_seed_training_hours": 24.34841573473202,
+  "candidate_sensitivity_hours_0_7_to_1_4_of_linear": [
+    17.04389101431241,
+    34.08778202862482
+  ],
+  "scope_includes": "12 main configurations plus one 3-epoch content pretraining per seed",
+  "scope_excludes": [
+    "validation and checkpoints",
+    "data preparation",
+    "MAKE factorial extras and epoch grids",
+    "history-length scans",
+    "DIN/SIM/TWIN/MISS and other supplementary baselines",
+    "failed runs"
+  ],
+  "limitations": [
+    "sensitivity range is a planning assumption, not a confidence interval",
+    "sample ratio does not predict vocabulary growth or GPU memory",
+    "candidate feature store and full-model resource gate are not yet complete"
+  ]
+}
