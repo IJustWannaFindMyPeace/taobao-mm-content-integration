@@ -8,6 +8,7 @@ sys.path.insert(0,str(Path(__file__).resolve().parents[1]/'src'))
 from c0 import C0
 from simtier import C3
 from make_fusion import MAKEFusion, C6
+from side_information import SideInformation
 from feature_store import FeatureStore
 from metrics import evaluate
 from fetch_source import sha256
@@ -36,7 +37,7 @@ def main():
     if args.max_steps is not None and args.max_steps<1:raise ValueError('Positive step limit required')
     if args.output_dir.exists() and any(args.output_dir.iterdir()):raise ValueError('Fresh run directory required')
     args.output_dir.mkdir(parents=True,exist_ok=True)
-    implementation_hashes={str(p.name):sha256(p) for p in [Path(__file__),Path(__file__).parents[1]/'src/c0.py',Path(__file__).parents[1]/'src/simtier.py',Path(__file__).parents[1]/'src/make.py',Path(__file__).parents[1]/'src/make_fusion.py']}
+    implementation_hashes={str(p.name):sha256(p) for p in [Path(__file__),Path(__file__).parents[1]/'src/c0.py',Path(__file__).parents[1]/'src/simtier.py',Path(__file__).parents[1]/'src/make.py',Path(__file__).parents[1]/'src/make_fusion.py',Path(__file__).parents[1]/'src/side_information.py']}
     torch.manual_seed(cfg['seed']);rng=np.random.default_rng(cfg['seed'])
     train=FeatureStore(args.store,'train');validation=FeatureStore(args.store,'validation')
     histograms={}
@@ -51,7 +52,10 @@ def main():
             if sha256(path)!=cache['splits'][split]['sha256']:raise ValueError('Histogram digest mismatch')
             histograms[split]=np.load(path,mmap_mode='r')
             if histograms[split].shape!=(len(store),cfg['simtier_bins']):raise ValueError('Histogram shape mismatch')
-    if cfg.get('make_fusion'):
+    if cfg.get('side_information'):
+        if histograms or cfg.get('make_fusion'):raise ValueError('Side-information controls must be standalone')
+        model=SideInformation(train.manifest['vocab_sizes'],cfg['embedding_width'],cfg['short_length'],cfg['side_information']).cuda()
+    elif cfg.get('make_fusion'):
         cls=C6 if histograms else MAKEFusion
         extra={'bins':cfg['simtier_bins']} if histograms else {}
         model=cls(train.manifest['vocab_sizes'],cfg['embedding_width'],cfg['short_length'],cfg['freeze_content'],**extra).cuda()
@@ -69,7 +73,7 @@ def main():
     else:
         model=C0(train.manifest['vocab_sizes'],cfg['embedding_width'],cfg['short_length']).cuda()
     def get_batch(store,split,indices):
-        batch=store.batch(indices,cfg['history_length'],with_content=bool(cfg.get('make_fusion')))
+        batch=store.batch(indices,cfg['history_length'],with_content=bool(cfg.get('make_fusion') or cfg.get('side_information')))
         if histograms:batch['histogram']=histograms[split][indices]
         return batch
     sparse=list(model.embeddings.parameters());sparse_ids={id(p) for p in sparse}
