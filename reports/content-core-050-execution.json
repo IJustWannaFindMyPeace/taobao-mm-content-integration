@@ -1,0 +1,27 @@
+{
+  "planned": [
+    "c0",
+    "c2",
+    "c3",
+    "c5",
+    "c6",
+    "c7"
+  ],
+  "completed": [
+    "c0",
+    "c2",
+    "c3",
+    "c5",
+    "c6",
+    "c7"
+  ],
+  "active": null,
+  "failed": null,
+  "store_manifest_sha256": "7dd761c48f61b3ae219922f8387f6026eb6eb011ef6ef8050bb1472a52593f59",
+  "content_report_sha256": "765a1105af7771f08ec9e94b56d7c960d6e0fe243c90f513a9e3bbcb447edbd9",
+  "selected_epoch": 3,
+  "selection": "maximum validation GAUC; earliest epoch on ties",
+  "checkpoint_sha256": "f64e73bcffe58b4cdfe8048c9db010dc4eb8fa9690dcd17523388b678d92f241",
+  "started": 1789346388.4659328,
+  "finished": 1789359708.9435573
+}

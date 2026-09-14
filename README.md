@@ -69,4 +69,4 @@ SimTier 与 MAKE 的单种子组合对照已完成，C6 验证 GAUC 为 0.57865�
 
 Vector 与 SimScore 单种子融合对照已完成，当前指标排序不完全一致，适配细节见[阶段 14](docs/stage-14-side-information.md)。
 
-低频诊断及初始预算见[阶段 15](docs/stage-15-frequency-and-budget.md)。5% 完整特征存储及两项 200 步资源测试已通过，显存峰值约 7.8 GiB；数据验证与资源限制见[阶段 16](docs/stage-16-scale-preparation.md)。该规模 C1 三轮预训练与保存预测审计已完成，第三轮验证 GAUC 为 0.58252；六组下游对照协议及运行入口见[阶段 17](docs/stage-17-five-percent-core-study.md)。阶段 15 的线性预算不再作为执行预算。
+低频诊断及初始预算见[阶段 15](docs/stage-15-frequency-and-budget.md)。5% 数据准备与资源限制见[阶段 16](docs/stage-16-scale-preparation.md)。该规模 C1 三轮预训练及六组下游对照已完成并通过保存预测审计；C6 验证 GAUC 为 0.58894，C7 相对 C6 的增量区间跨零。六组总用时约 3.70 小时、峰值分配显存约 7.8 GiB，结果、配对区间与局限见[阶段 17](docs/stage-17-five-percent-core-study.md)。阶段 15 的线性预算不再作为执行预算。

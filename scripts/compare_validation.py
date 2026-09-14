@@ -17,12 +17,13 @@ def main():
     for key in ['labels','source_rows','user_rows']:
         np.testing.assert_array_equal(a[key],b[key])
     labels=a['labels'];users=a['user_rows']
-    ma=evaluate(labels,a['logits'],users);mb=evaluate(labels,b['logits'],users)
+    a_logits=a['logits'];b_logits=b['logits']
+    ma=evaluate(labels,a_logits,users);mb=evaluate(labels,b_logits,users)
     groups={}
     for i,u in enumerate(users):groups.setdefault(int(u),[]).append(i)
     weights=[];numerators=[]
     for indices in groups.values():
-        av=auc(labels[indices],a['logits'][indices]);bv=auc(labels[indices],b['logits'][indices])
+        av=auc(labels[indices],a_logits[indices]);bv=auc(labels[indices],b_logits[indices])
         if av is None:weights.append(0);numerators.append(0.)
         else:weights.append(len(indices));numerators.append(len(indices)*(bv-av))
     weights=np.asarray(weights);numerators=np.asarray(numerators)

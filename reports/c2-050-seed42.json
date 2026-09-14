@@ -1,0 +1,79 @@
+{
+  "scope": "one_seed_validation_run",
+  "config": {
+    "experiment": "c2-vector-adapted",
+    "seed": 42,
+    "embedding_width": 16,
+    "history_length": 200,
+    "short_length": 50,
+    "batch_size": 32,
+    "epochs": 1,
+    "dense_learning_rate": 0.001,
+    "sparse_learning_rate": 0.001,
+    "weight_decay": 0.0,
+    "side_information": "vector"
+  },
+  "store_manifest_sha256": "7dd761c48f61b3ae219922f8387f6026eb6eb011ef6ef8050bb1472a52593f59",
+  "implementation_sha256": {
+    "train_c0.py": "b4c3a87e762bd8d9f1c9396354cf9952129affb2a26ec33e1e9afa7c6fcb6c49",
+    "c0.py": "b411d1cc6088559adab91ca71bacc02b191a687870bd57a2ecce6e6658faf456",
+    "simtier.py": "7c32c320b67de55edb1df9e8fcb11dd7a81b380464383aeed4a96924acbdb51d",
+    "make.py": "4c36b3a98c82bef9f4ea684c48ffa17bdb1737054d8b08764758e0b70b8955a3",
+    "make_fusion.py": "3471309aa96b783c349a5d7d26a21049d6b90889ff3224d2317e3d30ad87c7d8",
+    "side_information.py": "6765b70fffbf47f05b172fa1f0a378db052b4cb6ed5a98dd35fcf63e9780cebd"
+  },
+  "torch": "2.12.1+cu132",
+  "gpu": "NVIDIA GeForce RTX 5070",
+  "steps": 95390,
+  "epochs": [
+    {
+      "epoch": 1,
+      "rows": 3052475,
+      "online_train_logloss": 0.3841989594544375,
+      "training_seconds": 2182.4838954000006,
+      "training_peak_allocated_mib": 7978.29248046875,
+      "training_peak_reserved_mib": 7994.0,
+      "validation": {
+        "rows": 768773,
+        "positives": 104443,
+        "auc": 0.6062212647163088,
+        "logloss": 0.3904524930663608,
+        "gauc": 0.5758311668187432,
+        "gauc_weighting": "exposure_count_among_users_with_both_labels",
+        "users": 69430,
+        "valid_users": 38125,
+        "valid_rows": 578851,
+        "excluded_users": 31305,
+        "excluded_rows": 189922,
+        "valid_row_fraction": 0.7529543831534146
+      }
+    }
+  ],
+  "training_seconds": 2182.4838954000006,
+  "training_peak_allocated_mib": 7978.29248046875,
+  "training_peak_reserved_mib": 7994.0,
+  "parameters_updated": true,
+  "reload_max_abs_error": 0.0,
+  "validation": {
+    "rows": 768773,
+    "positives": 104443,
+    "auc": 0.6062212647163088,
+    "logloss": 0.3904524930663608,
+    "gauc": 0.5758311668187432,
+    "gauc_weighting": "exposure_count_among_users_with_both_labels",
+    "users": 69430,
+    "valid_users": 38125,
+    "valid_rows": 578851,
+    "excluded_users": 31305,
+    "excluded_rows": 189922,
+    "valid_row_fraction": 0.7529543831534146
+  },
+  "test_evaluated": false,
+  "content_checkpoint_sha256": null,
+  "histogram_cache_sha256": null,
+  "limitations": [
+    "single seed; no comparative model result",
+    "user-disjoint validation",
+    "local architecture and optimizer adaptation"
+  ]
+}
