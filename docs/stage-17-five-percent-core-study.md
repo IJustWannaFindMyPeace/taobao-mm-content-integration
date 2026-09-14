@@ -77,4 +77,4 @@ python scripts/run_content_core.py --store <store-050> --content-run <c1-run> --
 
 本轮支持 SimTier 和 MAKE 组合相对各单分支的 GAUC 收益，但 LogLoss 仍以 C3 最低。C2 排序指标改善而 LogLoss 恶化，说明内容融合的收益依赖评价维度。C7 的 GAUC 点估计最高，但对 C6 的区间跨零，不能认定其稳定优于组合模型。
 
-区间以固定模型和当前人群为条件，不涵盖训练随机种子、子集选择或检查点选择的不确定性，未做多重比较校正。MAKE 策略补充对照、其他种子、低频分组稳定性及保留测试评估仍未完成。MUSE 同规模核心队列已启动，见[对应实验协议](https://github.com/IJustWannaFindMyPeace/taobao-mm-muse-repro/blob/main/docs/stage-05-five-percent-core-study.md)。
+区间以固定模型和当前人群为条件，不涵盖训练随机种子、子集选择或检查点选择的不确定性，未做多重比较校正。MAKE 策略补充对照、其他种子、低频分组稳定性及保留测试评估仍未完成。MUSE 同规模核心训练与配对审计已完成，见[对应实验结果](https://github.com/IJustWannaFindMyPeace/taobao-mm-muse-repro/blob/main/docs/stage-05-five-percent-core-study.md)。两个项目的骨干与模块定义存在明确差异，跨项目数值不能直接用于单模块归因。
