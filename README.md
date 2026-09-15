@@ -71,4 +71,6 @@ Vector 与 SimScore 单种子融合对照已完成，当前指标排序不完全
 
 低频诊断及初始预算见[阶段 15](docs/stage-15-frequency-and-budget.md)。5% 数据准备与资源限制见[阶段 16](docs/stage-16-scale-preparation.md)。该规模 C1 三轮预训练及六组下游对照已完成并通过保存预测审计；C6 验证 GAUC 为 0.58894，C7 相对 C6 的增量区间跨零。六组总用时约 3.70 小时、峰值分配显存约 7.8 GiB，结果、配对区间与局限见[阶段 17](docs/stage-17-five-percent-core-study.md)。阶段 15 的线性预算不再作为执行预算。
 
-固定数据的三个种子核心对照、独立内容预训练和预测审计均已完成，种子绑定协议见[阶段 18](docs/stage-18-training-seed-validation.md)。C6 的 GAUC 均值为 0.589909、样本标准差为 0.000994；C7 的平均 LogLoss 更低。完整三种子汇总及正在运行的 5% MAKE 策略补充对照见[阶段 19](docs/stage-19-core-summary-and-make-controls.md)。
+固定数据的三个种子核心对照、独立内容预训练和预测审计均已完成，种子绑定协议见[阶段 18](docs/stage-18-training-seed-validation.md)。C6 的 GAUC 均值为 0.589909、样本标准差为 0.000994；C7 的平均 LogLoss 更低。完整三种子汇总及 5% MAKE 策略对照协议见[阶段 19](docs/stage-19-core-summary-and-make-controls.md)。
+
+5% MAKE 策略补充实验及预测审计已完成，C0 第一轮与原基线完全一致；预训练后继续联合训练相对冻结的 GAUC 差值置信区间跨零，见[阶段 20](docs/stage-20-make-strategy-evidence.md)。
