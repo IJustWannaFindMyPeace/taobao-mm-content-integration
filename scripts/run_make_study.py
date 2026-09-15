@@ -4,6 +4,7 @@ import json
 import subprocess
 import sys
 from pathlib import Path
+from fetch_source import sha256
 
 
 def main():
@@ -11,12 +12,28 @@ def main():
     parser.add_argument('--store',type=Path,required=True)
     parser.add_argument('--pretraining-run',type=Path,required=True)
     parser.add_argument('--output-dir',type=Path,required=True)
+    parser.add_argument('--supplement-only',action='store_true',help='Reuse the existing frozen pretrained control; run only missing controls and epoch diagnostic')
     args=parser.parse_args()
     root=Path(__file__).resolve().parents[1]
     if args.output_dir.exists() and any(args.output_dir.iterdir()):raise ValueError('Fresh study directory required')
     args.output_dir.mkdir(parents=True,exist_ok=True)
     jobs=[('c4-probe','c4',20),('c5-probe','c5',20),('c0-epochs3','c0-epochs3',None),
           ('c4','c4',None),('c4-frozen','c4-frozen',None),('c5','c5',None),('c5-joint','c5-joint',None)]
+    if args.supplement_only:
+        jobs=[('c0-epochs3','c0-epochs3',None),('c4','c4',None),('c4-frozen','c4-frozen',None),('c5-joint','c5-joint',None)]
+    pretraining=json.loads((args.pretraining_run/'report.json').read_text())
+    if pretraining['store_manifest_sha256']!=sha256(args.store/'manifest.json') or pretraining['test_evaluated'] or len(pretraining['epochs'])!=pretraining['config']['epochs']:
+        raise ValueError('Require complete same-store validation-only pretraining')
+    best=max(pretraining['epochs'],key=lambda e:(e['validation']['gauc'],-e['epoch']))
+    checkpoint=args.pretraining_run/f"epoch-{best['epoch']}.pt"
+    if sha256(checkpoint)!=best['checkpoint_sha256']:raise ValueError('Pretraining checkpoint digest mismatch')
+    snapshots=args.output_dir/'configs';snapshots.mkdir()
+    for config in {job[1] for job in jobs}:
+        cfg=json.loads((root/'configs'/f'{config}.json').read_text())
+        cfg['seed']=pretraining['config']['seed']
+        if cfg['history_length']!=pretraining['config']['history_length']:raise ValueError('History mismatch')
+        if cfg.get('pretrained_content'):cfg['content_checkpoint_sha256']=best['checkpoint_sha256']
+        (snapshots/f'{config}.json').write_text(json.dumps(cfg,indent=2),encoding='utf-8')
     status={'completed':[],'active':None,'failed':None,'planned':[job[0] for job in jobs]}
     def save():
         temporary=args.output_dir/'status.tmp'
@@ -24,11 +41,11 @@ def main():
         temporary.replace(args.output_dir/'status.json')
     for name,config,limit in jobs:
         status['active']=name;save()
-        cfg=json.loads((root/'configs'/f'{config}.json').read_text())
+        cfg=json.loads((snapshots/f'{config}.json').read_text())
         command=[sys.executable,str(root/'scripts/train_c0.py'),'--store',str(args.store.resolve()),
-                 '--config',str(root/'configs'/f'{config}.json'),'--output-dir',str((args.output_dir/name).resolve())]
+                 '--config',str((snapshots/f'{config}.json').resolve()),'--output-dir',str((args.output_dir/name).resolve())]
         if cfg.get('pretrained_content'):
-            command+=['--content-checkpoint',str((args.pretraining_run/'epoch-2.pt').resolve())]
+            command+=['--content-checkpoint',str(checkpoint.resolve())]
         if limit:command+=['--max-steps',str(limit)]
         print(f'Starting {name}',flush=True)
         with (args.output_dir/f'{name}.log').open('w',encoding='utf-8') as log:
