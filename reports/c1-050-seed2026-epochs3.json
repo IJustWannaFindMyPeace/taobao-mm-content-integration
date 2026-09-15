@@ -1,0 +1,101 @@
+{
+  "scope": "single_seed_content_learning_curve",
+  "config": {
+    "experiment": "C1-content-only-MAKE-adapted",
+    "seed": 2026,
+    "history_length": 200,
+    "batch_size": 32,
+    "epochs": 3,
+    "learning_rate": 0.001,
+    "weight_decay": 0.0
+  },
+  "store_manifest_sha256": "7dd761c48f61b3ae219922f8387f6026eb6eb011ef6ef8050bb1472a52593f59",
+  "implementation_sha256": {
+    "train_content.py": "2b0e02580ab0f3a6fd492304e62287365f5e1852620c6bf774ed6cff31b4eecd",
+    "make.py": "4c36b3a98c82bef9f4ea684c48ffa17bdb1737054d8b08764758e0b70b8955a3"
+  },
+  "torch": "2.12.1+cu132",
+  "gpu": "NVIDIA GeForce RTX 5070",
+  "steps": 286170,
+  "epochs": [
+    {
+      "epoch": 1,
+      "rows": 3052475,
+      "training_seconds": 670.8709187000059,
+      "training_peak_allocated_mib": 89.875,
+      "training_peak_reserved_mib": 104.0,
+      "online_train_logloss": 0.39184687305442245,
+      "validation": {
+        "rows": 768773,
+        "positives": 104443,
+        "auc": 0.6100270562503473,
+        "logloss": 0.3886705011816954,
+        "gauc": 0.5827589308078709,
+        "gauc_weighting": "exposure_count_among_users_with_both_labels",
+        "users": 69430,
+        "valid_users": 38125,
+        "valid_rows": 578851,
+        "excluded_users": 31305,
+        "excluded_rows": 189922,
+        "valid_row_fraction": 0.7529543831534146
+      },
+      "checkpoint_sha256": "f0afff5f2ecb485b9fbfeeb5b7d3c053ea53ea64353fc9e61e50cd1779d85609",
+      "reload_max_abs_error": 0.0
+    },
+    {
+      "epoch": 2,
+      "rows": 3052475,
+      "training_seconds": 627.9587827000069,
+      "training_peak_allocated_mib": 90.27001953125,
+      "training_peak_reserved_mib": 104.0,
+      "online_train_logloss": 0.3898873593070792,
+      "validation": {
+        "rows": 768773,
+        "positives": 104443,
+        "auc": 0.6114665592137634,
+        "logloss": 0.38814706767577745,
+        "gauc": 0.585197298950995,
+        "gauc_weighting": "exposure_count_among_users_with_both_labels",
+        "users": 69430,
+        "valid_users": 38125,
+        "valid_rows": 578851,
+        "excluded_users": 31305,
+        "excluded_rows": 189922,
+        "valid_row_fraction": 0.7529543831534146
+      },
+      "checkpoint_sha256": "732d1e4f78e7b434d094d0dead84f227d78c5a7500a3bf8df351082ac67e6ef9",
+      "reload_max_abs_error": 0.0
+    },
+    {
+      "epoch": 3,
+      "rows": 3052475,
+      "training_seconds": 632.7784195999993,
+      "training_peak_allocated_mib": 90.27001953125,
+      "training_peak_reserved_mib": 104.0,
+      "online_train_logloss": 0.38906945811611515,
+      "validation": {
+        "rows": 768773,
+        "positives": 104443,
+        "auc": 0.6103601615423114,
+        "logloss": 0.3881775823785482,
+        "gauc": 0.5822657116320911,
+        "gauc_weighting": "exposure_count_among_users_with_both_labels",
+        "users": 69430,
+        "valid_users": 38125,
+        "valid_rows": 578851,
+        "excluded_users": 31305,
+        "excluded_rows": 189922,
+        "valid_row_fraction": 0.7529543831534146
+      },
+      "checkpoint_sha256": "45104bb60371fd1e5d5821164020ff5caeabc1e81ea49e00f03a3bb8d957685e",
+      "reload_max_abs_error": 0.0
+    }
+  ],
+  "parameters_updated": true,
+  "test_evaluated": false,
+  "limitations": [
+    "single seed and one cohort",
+    "adapted DIN activation and layer widths",
+    "model-only checkpoints; no optimizer resume"
+  ]
+}
