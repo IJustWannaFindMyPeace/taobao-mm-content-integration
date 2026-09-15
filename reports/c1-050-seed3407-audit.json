@@ -1,0 +1,27 @@
+{
+  "scope": "three_epoch_saved_prediction_audit",
+  "seed": 3407,
+  "selected_epoch": 3,
+  "selected_checkpoint_sha256": "c2c3e6f60ba0f18b9225c8c07ddb611263120b6bce7ee21c1d8bc94f19260ec6",
+  "epochs": [
+    {
+      "epoch": 1,
+      "prediction_rows": 768773,
+      "metrics_recomputed_equal": true,
+      "checkpoint_sha256_verified": true
+    },
+    {
+      "epoch": 2,
+      "prediction_rows": 768773,
+      "metrics_recomputed_equal": true,
+      "checkpoint_sha256_verified": true
+    },
+    {
+      "epoch": 3,
+      "prediction_rows": 768773,
+      "metrics_recomputed_equal": true,
+      "checkpoint_sha256_verified": true
+    }
+  ],
+  "test_evaluated": false
+}
