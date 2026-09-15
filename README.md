@@ -71,4 +71,4 @@ Vector 与 SimScore 单种子融合对照已完成，当前指标排序不完全
 
 低频诊断及初始预算见[阶段 15](docs/stage-15-frequency-and-budget.md)。5% 数据准备与资源限制见[阶段 16](docs/stage-16-scale-preparation.md)。该规模 C1 三轮预训练及六组下游对照已完成并通过保存预测审计；C6 验证 GAUC 为 0.58894，C7 相对 C6 的增量区间跨零。六组总用时约 3.70 小时、峰值分配显存约 7.8 GiB，结果、配对区间与局限见[阶段 17](docs/stage-17-five-percent-core-study.md)。阶段 15 的线性预算不再作为执行预算。
 
-固定数据的 seed 2026 内容分支预训练与保存预测审计已完成，选用第二轮检查点；对应六组下游对照已启动。结果和独立预训练权重的种子绑定协议见[阶段 18](docs/stage-18-training-seed-validation.md)。
+固定数据的 seed 2026 内容预训练、六组下游对照和预测审计均已完成；C6 相对 C3/C5 的 GAUC 增量区间高于零，C7 与 C6 的区间跨零。seed 3407 的独立内容预训练已启动，结果与种子绑定协议见[阶段 18](docs/stage-18-training-seed-validation.md)。

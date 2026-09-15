@@ -1,0 +1,9 @@
+{
+  "experiment": "C1-content-only-MAKE-adapted",
+  "seed": 3407,
+  "history_length": 200,
+  "batch_size": 32,
+  "epochs": 3,
+  "learning_rate": 0.001,
+  "weight_decay": 0.0
+}
