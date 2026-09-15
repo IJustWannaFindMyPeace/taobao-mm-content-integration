@@ -42,7 +42,7 @@ C6−C3 的平均 GAUC 增量为 0.005221，C6−C5 为 0.001322，三个种子�
 python scripts/run_make_study.py --store <store-050> --pretraining-run <seed42-content-run> --output-dir <fresh-directory> --supplement-only
 ```
 
-队列按 C0 三轮、C4、C4-frozen、C5-joint 串行执行，已启动，尚无完整结果，预计约 4–5 小时。入口依据同一预训练报告选择检查点并保存最终配置快照；旧 1% 检查点不会被用于本轮。任一运行失败即停止后续任务。
+队列按 C0 三轮、C4、C4-frozen、C5-joint 串行执行，现已全部完成并通过预测审计。结果、第一轮基线一致性与配对区间见[阶段 20](stage-20-make-strategy-evidence.md)。入口依据同一预训练报告选择检查点并保存最终配置快照；本轮未使用旧 1% 检查点。
 
 ## 仍未完成
 
