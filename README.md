@@ -76,3 +76,5 @@ Vector 与 SimScore 单种子融合对照已完成，当前指标排序不完全
 5% MAKE 策略补充实验及预测审计已完成，C0 第一轮与原基线完全一致；预训练后继续联合训练相对冻结的 GAUC 差值置信区间跨零，见[阶段 20](docs/stage-20-make-strategy-evidence.md)。
 
 5% 数据上三个种子共 27 组预测的商品频次与内容覆盖率诊断已完成，分组差异与小样本局限见[共享分组分析](docs/stage-21-frequency-and-coverage.md)。
+
+核心与长度实验的 42 组产物已核验；独立基线和敏感性补充尚未齐全，最终测试协议尚未冻结。缺口与准入条件见[故事线证据审计](docs/stage-22-storyline-readiness.md)。

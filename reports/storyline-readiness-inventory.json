@@ -1,0 +1,428 @@
+{
+  "scope": "readiness_inventory_not_test_freeze",
+  "core_and_length_runs": [
+    {
+      "project": "content",
+      "model": "c0",
+      "seed": 42,
+      "report_sha256": "48a5008680a6114fced008d3d30fab5c53f327763e8b725377b23be5514ed94e",
+      "checkpoint_present": true,
+      "validation_predictions_present": true,
+      "validation_rows": 768773,
+      "test_evaluated": false
+    },
+    {
+      "project": "content",
+      "model": "c2",
+      "seed": 42,
+      "report_sha256": "880cec7eca75db96237b440e0e52bd5057e451b297a6bfda8aafe2a52cc1b3c1",
+      "checkpoint_present": true,
+      "validation_predictions_present": true,
+      "validation_rows": 768773,
+      "test_evaluated": false
+    },
+    {
+      "project": "content",
+      "model": "c3",
+      "seed": 42,
+      "report_sha256": "ddc5853059d4d64c677cc5ad626e3444c1d8f7830adaee617e410bc454c12a84",
+      "checkpoint_present": true,
+      "validation_predictions_present": true,
+      "validation_rows": 768773,
+      "test_evaluated": false
+    },
+    {
+      "project": "content",
+      "model": "c5",
+      "seed": 42,
+      "report_sha256": "09127937a7c1d19d8d81352e64c8abdd7aa56fcb35cc3a0cbe772b89db334606",
+      "checkpoint_present": true,
+      "validation_predictions_present": true,
+      "validation_rows": 768773,
+      "test_evaluated": false
+    },
+    {
+      "project": "content",
+      "model": "c6",
+      "seed": 42,
+      "report_sha256": "bd84038a34f252a6baa85913082c489469e7fe6eb822d8db89a6aa5f1cff03d0",
+      "checkpoint_present": true,
+      "validation_predictions_present": true,
+      "validation_rows": 768773,
+      "test_evaluated": false
+    },
+    {
+      "project": "content",
+      "model": "c7",
+      "seed": 42,
+      "report_sha256": "e73a7d2b9c98f31ea2a3486dfaf64800c30b382309759eedbc3a827e2f58f98b",
+      "checkpoint_present": true,
+      "validation_predictions_present": true,
+      "validation_rows": 768773,
+      "test_evaluated": false
+    },
+    {
+      "project": "muse",
+      "model": "r0",
+      "seed": 42,
+      "report_sha256": "1ea2109f18ed93e6bfe8eaca9ecea4b7b4ba1ea4948b16d3d478d03eea9c38eb",
+      "checkpoint_present": true,
+      "validation_predictions_present": true,
+      "validation_rows": 768773,
+      "test_evaluated": false
+    },
+    {
+      "project": "muse",
+      "model": "r1",
+      "seed": 42,
+      "report_sha256": "36c9fda55bc8be04145f3025bad6f53c09df16af6a7f9cc649d7aee4a14390cd",
+      "checkpoint_present": true,
+      "validation_predictions_present": true,
+      "validation_rows": 768773,
+      "test_evaluated": false
+    },
+    {
+      "project": "muse",
+      "model": "r2",
+      "seed": 42,
+      "report_sha256": "ae1bcc2f0e18f6d00f9d89e3633061ea3964a6391c62a5876fd8a61cbc5b6223",
+      "checkpoint_present": true,
+      "validation_predictions_present": true,
+      "validation_rows": 768773,
+      "test_evaluated": false
+    },
+    {
+      "project": "muse",
+      "model": "r3",
+      "seed": 42,
+      "report_sha256": "e31e94ebfb96c72ffade824dc75adc0d55d5f984c1a99d7ef7bc0fafd6fff5b8",
+      "checkpoint_present": true,
+      "validation_predictions_present": true,
+      "validation_rows": 768773,
+      "test_evaluated": false
+    },
+    {
+      "project": "muse",
+      "model": "r4",
+      "seed": 42,
+      "report_sha256": "fdc1c6f97a9bffb1febacebf300534001adaf7d9ef086443aa80af6873619925",
+      "checkpoint_present": true,
+      "validation_predictions_present": true,
+      "validation_rows": 768773,
+      "test_evaluated": false
+    },
+    {
+      "project": "muse",
+      "model": "r5",
+      "seed": 42,
+      "report_sha256": "d17de13959e290adce5224e1440c721b5b2e06cb0efd6594983b30dcc5c0b754",
+      "checkpoint_present": true,
+      "validation_predictions_present": true,
+      "validation_rows": 768773,
+      "test_evaluated": false
+    },
+    {
+      "project": "muse",
+      "model": "r1-l1000",
+      "seed": 42,
+      "report_sha256": "379eb9e631304680ed22e9c1358d731111aa043c09397743e2760763a37f312c",
+      "checkpoint_present": true,
+      "validation_predictions_present": true,
+      "validation_rows": 768773,
+      "test_evaluated": false
+    },
+    {
+      "project": "muse",
+      "model": "r4-l1000",
+      "seed": 42,
+      "report_sha256": "eb9682a77d439fb48258bcbd23ff07be36aa3e3f49ad19309704d8d6e04fc245",
+      "checkpoint_present": true,
+      "validation_predictions_present": true,
+      "validation_rows": 768773,
+      "test_evaluated": false
+    },
+    {
+      "project": "content",
+      "model": "c0",
+      "seed": 2026,
+      "report_sha256": "69b6096dcfe0a0ccb056e119670d9f16f70b2433d97997eb7a9a86c0a486f730",
+      "checkpoint_present": true,
+      "validation_predictions_present": true,
+      "validation_rows": 768773,
+      "test_evaluated": false
+    },
+    {
+      "project": "content",
+      "model": "c2",
+      "seed": 2026,
+      "report_sha256": "2b5cf70aedc4bbc6f25eb719ace1a759f68594b4025fc5b85b3d53824c0a4031",
+      "checkpoint_present": true,
+      "validation_predictions_present": true,
+      "validation_rows": 768773,
+      "test_evaluated": false
+    },
+    {
+      "project": "content",
+      "model": "c3",
+      "seed": 2026,
+      "report_sha256": "5c1e049ff2ad538f4a5e9d107b28e1a50b37d45e28487ad76b192893e7c1e47f",
+      "checkpoint_present": true,
+      "validation_predictions_present": true,
+      "validation_rows": 768773,
+      "test_evaluated": false
+    },
+    {
+      "project": "content",
+      "model": "c5",
+      "seed": 2026,
+      "report_sha256": "6dda91b3c1eeaf7024038e0758e4617255848f3ed61ff3c358fbba785598bf05",
+      "checkpoint_present": true,
+      "validation_predictions_present": true,
+      "validation_rows": 768773,
+      "test_evaluated": false
+    },
+    {
+      "project": "content",
+      "model": "c6",
+      "seed": 2026,
+      "report_sha256": "efbd602472c27e5449fb6b3cb30fe6e13e1629070f31ecde965e17756f21ea79",
+      "checkpoint_present": true,
+      "validation_predictions_present": true,
+      "validation_rows": 768773,
+      "test_evaluated": false
+    },
+    {
+      "project": "content",
+      "model": "c7",
+      "seed": 2026,
+      "report_sha256": "3a25b883b6bdb61b2078272101c4cbec9a0ac4948dc5cec8de621a10bb930878",
+      "checkpoint_present": true,
+      "validation_predictions_present": true,
+      "validation_rows": 768773,
+      "test_evaluated": false
+    },
+    {
+      "project": "muse",
+      "model": "r0",
+      "seed": 2026,
+      "report_sha256": "b87d429da6ce8eff334e7e17a423b157cfa5c8256c0b049c83aa1d518ca34e4c",
+      "checkpoint_present": true,
+      "validation_predictions_present": true,
+      "validation_rows": 768773,
+      "test_evaluated": false
+    },
+    {
+      "project": "muse",
+      "model": "r1",
+      "seed": 2026,
+      "report_sha256": "4531f4ca893237d0d1625383f4d7483db6a76840e7747a18ff99a6449003b149",
+      "checkpoint_present": true,
+      "validation_predictions_present": true,
+      "validation_rows": 768773,
+      "test_evaluated": false
+    },
+    {
+      "project": "muse",
+      "model": "r2",
+      "seed": 2026,
+      "report_sha256": "9080e8f8155b8a9007acdbc85d4898071afcf9a17bf7c6751fb6a2d0c1a034e8",
+      "checkpoint_present": true,
+      "validation_predictions_present": true,
+      "validation_rows": 768773,
+      "test_evaluated": false
+    },
+    {
+      "project": "muse",
+      "model": "r3",
+      "seed": 2026,
+      "report_sha256": "1cae865b5eaa9232da11399c1abc2f2829790dc5f5a3950a39df2b2735ab8e31",
+      "checkpoint_present": true,
+      "validation_predictions_present": true,
+      "validation_rows": 768773,
+      "test_evaluated": false
+    },
+    {
+      "project": "muse",
+      "model": "r4",
+      "seed": 2026,
+      "report_sha256": "32a47c365ca9dd4749df3e1a3e0978c297bed5ab327173707e0a0397fe021587",
+      "checkpoint_present": true,
+      "validation_predictions_present": true,
+      "validation_rows": 768773,
+      "test_evaluated": false
+    },
+    {
+      "project": "muse",
+      "model": "r5",
+      "seed": 2026,
+      "report_sha256": "0c9c3a6cbcd6f26be42295a8af53eaa462d4b3c4f5599ddb0436954325361fab",
+      "checkpoint_present": true,
+      "validation_predictions_present": true,
+      "validation_rows": 768773,
+      "test_evaluated": false
+    },
+    {
+      "project": "muse",
+      "model": "r1-l1000",
+      "seed": 2026,
+      "report_sha256": "e18876e706616f08b5480cd635b2ae7b23f3f763b49209c63518c12c467a4364",
+      "checkpoint_present": true,
+      "validation_predictions_present": true,
+      "validation_rows": 768773,
+      "test_evaluated": false
+    },
+    {
+      "project": "muse",
+      "model": "r4-l1000",
+      "seed": 2026,
+      "report_sha256": "30d21960977e0bb89ed6c42e3142884913d14cee6c58a0d8b7f65ea783adc374",
+      "checkpoint_present": true,
+      "validation_predictions_present": true,
+      "validation_rows": 768773,
+      "test_evaluated": false
+    },
+    {
+      "project": "content",
+      "model": "c0",
+      "seed": 3407,
+      "report_sha256": "f37757d36901cc3a5df746c48f6ae8912eab4cadaedc0cb9762f488486e22ff5",
+      "checkpoint_present": true,
+      "validation_predictions_present": true,
+      "validation_rows": 768773,
+      "test_evaluated": false
+    },
+    {
+      "project": "content",
+      "model": "c2",
+      "seed": 3407,
+      "report_sha256": "169abb1c046ee16ab58587cd924ce7a2871e472e83ce944da0d1ad393c158980",
+      "checkpoint_present": true,
+      "validation_predictions_present": true,
+      "validation_rows": 768773,
+      "test_evaluated": false
+    },
+    {
+      "project": "content",
+      "model": "c3",
+      "seed": 3407,
+      "report_sha256": "543ea563020dfa9674f5f0c0d15ff866c9f260b6f8fdd2ea337517f3a348daca",
+      "checkpoint_present": true,
+      "validation_predictions_present": true,
+      "validation_rows": 768773,
+      "test_evaluated": false
+    },
+    {
+      "project": "content",
+      "model": "c5",
+      "seed": 3407,
+      "report_sha256": "250eb0471c46108f7f96ef36a0bfc655d8c1e2ec1eba2f94de85a36eef988e75",
+      "checkpoint_present": true,
+      "validation_predictions_present": true,
+      "validation_rows": 768773,
+      "test_evaluated": false
+    },
+    {
+      "project": "content",
+      "model": "c6",
+      "seed": 3407,
+      "report_sha256": "43507789ffceedf10d666f1b243b3b7aa078429173e659a195a72fa36bf5b495",
+      "checkpoint_present": true,
+      "validation_predictions_present": true,
+      "validation_rows": 768773,
+      "test_evaluated": false
+    },
+    {
+      "project": "content",
+      "model": "c7",
+      "seed": 3407,
+      "report_sha256": "e2a7cdb7ad981ac6a7776c0aad4fe891e247e99a98abc230e387e79dd7afc1ef",
+      "checkpoint_present": true,
+      "validation_predictions_present": true,
+      "validation_rows": 768773,
+      "test_evaluated": false
+    },
+    {
+      "project": "muse",
+      "model": "r0",
+      "seed": 3407,
+      "report_sha256": "a14b26397a0478ac54c7802b850b041c17e64f67b7c63a0d3da796c26f7b4167",
+      "checkpoint_present": true,
+      "validation_predictions_present": true,
+      "validation_rows": 768773,
+      "test_evaluated": false
+    },
+    {
+      "project": "muse",
+      "model": "r1",
+      "seed": 3407,
+      "report_sha256": "8d5d4502ed0437d7addaee71c815f546d98e22648c4f82b5ba6d2a8a2bd183cb",
+      "checkpoint_present": true,
+      "validation_predictions_present": true,
+      "validation_rows": 768773,
+      "test_evaluated": false
+    },
+    {
+      "project": "muse",
+      "model": "r2",
+      "seed": 3407,
+      "report_sha256": "910639962f1a47856bd56647e81aab9d4c16726fef385253ccbc69889de9c748",
+      "checkpoint_present": true,
+      "validation_predictions_present": true,
+      "validation_rows": 768773,
+      "test_evaluated": false
+    },
+    {
+      "project": "muse",
+      "model": "r3",
+      "seed": 3407,
+      "report_sha256": "b4592213a9015fa73b6119943e0723355cb6df2a3a57df9b5f1d90d70abd26f4",
+      "checkpoint_present": true,
+      "validation_predictions_present": true,
+      "validation_rows": 768773,
+      "test_evaluated": false
+    },
+    {
+      "project": "muse",
+      "model": "r4",
+      "seed": 3407,
+      "report_sha256": "fa0eecbc936b409f24e5662292492265b48109bb3b31680b34bd8addb1170b96",
+      "checkpoint_present": true,
+      "validation_predictions_present": true,
+      "validation_rows": 768773,
+      "test_evaluated": false
+    },
+    {
+      "project": "muse",
+      "model": "r5",
+      "seed": 3407,
+      "report_sha256": "4512a1b8789287831dc406e11aca5cbc4c8b0e0c1a4dee31cdaf06494cf2ede4",
+      "checkpoint_present": true,
+      "validation_predictions_present": true,
+      "validation_rows": 768773,
+      "test_evaluated": false
+    },
+    {
+      "project": "muse",
+      "model": "r1-l1000",
+      "seed": 3407,
+      "report_sha256": "5ba2af1058dae432921873d2aacae6fcb1f5187c58e3a0d66f3aa8d03b13b44f",
+      "checkpoint_present": true,
+      "validation_predictions_present": true,
+      "validation_rows": 768773,
+      "test_evaluated": false
+    },
+    {
+      "project": "muse",
+      "model": "r4-l1000",
+      "seed": 3407,
+      "report_sha256": "9771af731fb3aeb3578ac505da5ffa7f9f74eab35ed85afa39659f06637848f9",
+      "checkpoint_present": true,
+      "validation_predictions_present": true,
+      "validation_rows": 768773,
+      "test_evaluated": false
+    }
+  ],
+  "run_count": 42,
+  "status": "additional_controls_required",
+  "note": "Checkpoint presence is checked here; immutable checkpoint hashes and validation replay are required at final freeze."
+}
