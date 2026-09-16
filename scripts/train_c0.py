@@ -37,6 +37,27 @@ def main():
     if args.max_steps is not None and args.max_steps<1:raise ValueError('Positive step limit required')
     if args.output_dir.exists() and any(args.output_dir.iterdir()):raise ValueError('Fresh run directory required')
     args.output_dir.mkdir(parents=True,exist_ok=True)
+    limits=cfg.get('resource_limits')
+    resource_samples=[]
+    if limits:
+        import psutil
+        process=psutil.Process()
+        def check_resources(step):
+            sample={'step':step,'allocated_gib':torch.cuda.max_memory_allocated()/2**30,
+                    'process_rss_gib':process.memory_info().rss/2**30,
+                    'system_available_gib':psutil.virtual_memory().available/2**30}
+            if 'min_device_free_gib' in limits:
+                free,total=torch.cuda.mem_get_info()
+                sample.update(device_free_gib=free/2**30,device_total_gib=total/2**30,
+                              reserved_gib=torch.cuda.memory_reserved()/2**30)
+            resource_samples.append(sample)
+            if (sample['allocated_gib']>limits['max_allocated_gib'] or
+                sample['process_rss_gib']>limits['max_process_rss_gib'] or
+                sample['system_available_gib']<limits['min_system_available_gib'] or
+                sample.get('device_free_gib',float('inf'))<limits.get('min_device_free_gib',0)):
+                (args.output_dir/'resource_failure.json').write_text(json.dumps({'limits':limits,'sample':sample},indent=2))
+                raise RuntimeError('Resource gate exceeded; batch and data scale were not changed')
+        check_resources(0)
     implementation_hashes={str(p.name):sha256(p) for p in [Path(__file__),Path(__file__).parents[1]/'src/c0.py',Path(__file__).parents[1]/'src/simtier.py',Path(__file__).parents[1]/'src/make.py',Path(__file__).parents[1]/'src/make_fusion.py',Path(__file__).parents[1]/'src/side_information.py']}
     torch.manual_seed(cfg['seed']);rng=np.random.default_rng(cfg['seed'])
     train=FeatureStore(args.store,'train');validation=FeatureStore(args.store,'validation')
@@ -102,6 +123,7 @@ def main():
             for optimizer in optimizers:optimizer.step()
             if before is not None:update_verified=not torch.equal(before,model.tower[-1].weight)
             seen+=len(batch['labels']);loss_sum+=loss.item()*len(batch['labels']);steps+=1
+            if limits and (steps==1 or steps%100==0):check_resources(steps)
             if steps%100==0:
                 print(f'epoch={epoch+1} steps={steps} rows={seen} logloss={loss_sum/seen:.6f}',flush=True)
                 (args.output_dir/'progress.json').write_text(json.dumps({'epoch':epoch+1,'steps':steps,'rows':seen}))
@@ -114,6 +136,7 @@ def main():
         model.eval();epoch_predictions=[]
         with torch.no_grad():
             for start in range(0,len(validation),cfg['batch_size']):
+                if limits and start%(100*cfg['batch_size'])==0:check_resources(steps)
                 b=get_batch(validation,'validation',np.arange(start,min(start+cfg['batch_size'],len(validation))))
                 epoch_predictions.append(model(*tensors(b)).cpu().numpy())
         epoch_logits=np.concatenate(epoch_predictions)
@@ -147,6 +170,13 @@ def main():
         'training_seconds':training_seconds,'training_peak_allocated_mib':peak,'training_peak_reserved_mib':reserved,
         'parameters_updated':update_verified,'reload_max_abs_error':error,'validation':metrics,
         'test_evaluated':False,'content_checkpoint_sha256':checkpoint_digest,'histogram_cache_sha256':sha256(args.hist_cache/'manifest.json') if histograms else None,'limitations':['single seed; no comparative model result','user-disjoint validation','local architecture and optimizer adaptation']}
+    if limits:
+        result['resource_monitor']={'limits':limits,'sample_count':len(resource_samples),
+            'max_process_rss_gib':max(s['process_rss_gib'] for s in resource_samples),
+            'min_system_available_gib':min(s['system_available_gib'] for s in resource_samples),
+            'min_device_free_gib':min((s['device_free_gib'] for s in resource_samples if 'device_free_gib' in s),default=None),
+            'warning_allocated_exceeded':any(s['allocated_gib']>limits.get('warning_allocated_gib',float('inf')) for s in resource_samples),
+            'policy':'checked at first and every 100 training steps, every 100 validation batches; stop without automatic changes'}
     (args.output_dir/'report.json').write_text(json.dumps(result,indent=2),encoding='utf-8')
     print(json.dumps(result,indent=2),flush=True)
 
