@@ -80,3 +80,5 @@ Vector 与 SimScore 单种子融合对照已完成，当前指标排序不完全
 5% 数据上三个种子共 27 组预测的商品频次与内容覆盖率诊断已完成，分组差异与小样本局限见[共享分组分析](docs/stage-21-frequency-and-coverage.md)。
 
 核心与长度实验的 42 组产物已核验；独立基线和敏感性补充尚未齐全，最终测试协议尚未冻结。缺口与准入条件见[故事线证据审计](docs/stage-22-storyline-readiness.md)。
+
+C6、R4 与 ID 检索的 batch 32–256 首轮资源扫描全部通过，较大批次短测吞吐明显提高；加长复测与条件扩展已启动，尚未确定新训练协议。见[资源扫描证据](https://github.com/IJustWannaFindMyPeace/taobao-mm-muse-repro/blob/main/docs/stage-10-batch-resource-scan.md)。
