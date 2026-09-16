@@ -6,6 +6,8 @@
 
 [实施路线](docs/roadmap.md) · [方法覆盖与适配边界](docs/reproduction-scope.md) · [真实数据检查](docs/stage-01-real-data.md) · [后续 MUSE 项目](https://github.com/IJustWannaFindMyPeace/taobao-mm-muse-repro)
 
+共同研究主线、原文与补充消融的区别、跨项目比较边界见[两项目研究主线](docs/research-storyline.md)。
+
 ## 当前状态
 
 |工作项|状态与证据|
@@ -19,8 +21,8 @@
 |扩容与属性|0.5% / 1% 嵌套曝光子集完成，1% 目标属性覆盖 100%；见 [阶段 5](docs/stage-05-scale-and-items.md)|
 |历史与环境|源文件全部校验、选中用户历史覆盖 100%、独立 CUDA 环境通过；见 [阶段 7](docs/stage-07-environment-and-features.md)|
 |统一输入|训练词表、memmap 特征与完整性核验完成；见 [阶段 8](docs/stage-08-feature-store.md)|
-|正式实验协议|数据输入已版本化；公共模型、优化器与缺失内容分支待冻结|
-|模型与结果|C0 与 C3 单种子一轮训练及验证完成；其余对照待实现，见 [SimTier 对照](docs/stage-10-simtier.md)|
+|正式实验协议|5% 数据与已运行模型配置已版本化；最终规模与测试协议尚未冻结|
+|模型与结果|5% 六组核心模型三种子、MAKE 策略补充及分组诊断完成；见[最新证据审计](docs/stage-22-storyline-readiness.md)|
 
 ## 实验设计
 
