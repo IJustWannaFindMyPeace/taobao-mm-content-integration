@@ -74,3 +74,5 @@ Vector 与 SimScore 单种子融合对照已完成，当前指标排序不完全
 固定数据的三个种子核心对照、独立内容预训练和预测审计均已完成，种子绑定协议见[阶段 18](docs/stage-18-training-seed-validation.md)。C6 的 GAUC 均值为 0.589909、样本标准差为 0.000994；C7 的平均 LogLoss 更低。完整三种子汇总及 5% MAKE 策略对照协议见[阶段 19](docs/stage-19-core-summary-and-make-controls.md)。
 
 5% MAKE 策略补充实验及预测审计已完成，C0 第一轮与原基线完全一致；预训练后继续联合训练相对冻结的 GAUC 差值置信区间跨零，见[阶段 20](docs/stage-20-make-strategy-evidence.md)。
+
+5% 数据上三个种子共 27 组预测的商品频次与内容覆盖率诊断已完成，分组差异与小样本局限见[共享分组分析](docs/stage-21-frequency-and-coverage.md)。

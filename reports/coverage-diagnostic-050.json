@@ -1,0 +1,2366 @@
+{
+  "scope": "supplied_models_validation_content_coverage_diagnostic",
+  "store_manifest_sha256": "7dd761c48f61b3ae219922f8387f6026eb6eb011ef6ef8050bb1472a52593f59",
+  "implementation_sha256": "b1a18847c462d27fac5a879cd6f81d655b4aee4f510753208f7ed986cc7a1933",
+  "group_definition": "non-padding history records with content / non-padding records; repeated behaviors counted",
+  "test_evaluated": false,
+  "models": {
+    "C0-seed42": {
+      "target_available": {
+        "rows": 768760,
+        "users": 69430,
+        "positives": 104441,
+        "auc": 0.6046657974218138,
+        "logloss": 0.3891055696312546
+      },
+      "target_missing": {
+        "rows": 13,
+        "users": 12,
+        "positives": 2,
+        "auc": 0.7272727272727273,
+        "logloss": 0.4220022626817246
+      },
+      "history_L200_empty": {
+        "rows": 392,
+        "users": 63,
+        "positives": 35,
+        "auc": 0.6752300920368147,
+        "logloss": 0.3019038034675812
+      },
+      "history_L200_0": {
+        "rows": 32,
+        "users": 5,
+        "positives": 2,
+        "auc": 0.55,
+        "logloss": 0.2550939942907596
+      },
+      "history_L200_(0,0.5]": {
+        "rows": 3898,
+        "users": 569,
+        "positives": 537,
+        "auc": 0.6052845183856671,
+        "logloss": 0.39365027954776494
+      },
+      "history_L200_(0.5,0.9]": {
+        "rows": 197437,
+        "users": 21795,
+        "positives": 26093,
+        "auc": 0.5995999700051824,
+        "logloss": 0.38392399411272965
+      },
+      "history_L200_(0.9,1]": {
+        "rows": 567014,
+        "users": 46998,
+        "positives": 77776,
+        "auc": 0.6068948293927077,
+        "logloss": 0.3909471794789005
+      },
+      "history_L1000_empty": {
+        "rows": 392,
+        "users": 63,
+        "positives": 35,
+        "auc": 0.6752300920368147,
+        "logloss": 0.3019038034675812
+      },
+      "history_L1000_0": {
+        "rows": 29,
+        "users": 4,
+        "positives": 2,
+        "auc": 0.5740740740740741,
+        "logloss": 0.2630457374861969
+      },
+      "history_L1000_(0,0.5]": {
+        "rows": 5311,
+        "users": 816,
+        "positives": 728,
+        "auc": 0.633281171697602,
+        "logloss": 0.3880716174195277
+      },
+      "history_L1000_(0.5,0.9]": {
+        "rows": 233915,
+        "users": 27506,
+        "positives": 30622,
+        "auc": 0.6006247240260241,
+        "logloss": 0.38126571447336566
+      },
+      "history_L1000_(0.9,1]": {
+        "rows": 529126,
+        "users": 41041,
+        "positives": 73056,
+        "auc": 0.6063323382101792,
+        "logloss": 0.3926540959254304
+      }
+    },
+    "C3-seed42": {
+      "target_available": {
+        "rows": 768760,
+        "users": 69430,
+        "positives": 104441,
+        "auc": 0.6136184283066664,
+        "logloss": 0.3875492832086141
+      },
+      "target_missing": {
+        "rows": 13,
+        "users": 12,
+        "positives": 2,
+        "auc": 0.3181818181818182,
+        "logloss": 0.43489407219351006
+      },
+      "history_L200_empty": {
+        "rows": 392,
+        "users": 63,
+        "positives": 35,
+        "auc": 0.7099639855942377,
+        "logloss": 0.2939442251556172
+      },
+      "history_L200_0": {
+        "rows": 32,
+        "users": 5,
+        "positives": 2,
+        "auc": 0.55,
+        "logloss": 0.2475156043076603
+      },
+      "history_L200_(0,0.5]": {
+        "rows": 3898,
+        "users": 569,
+        "positives": 537,
+        "auc": 0.6168106392916447,
+        "logloss": 0.39031934466032586
+      },
+      "history_L200_(0.5,0.9]": {
+        "rows": 197437,
+        "users": 21795,
+        "positives": 26093,
+        "auc": 0.611320674165095,
+        "logloss": 0.3816904910999865
+      },
+      "history_L200_(0.9,1]": {
+        "rows": 567014,
+        "users": 46998,
+        "positives": 77776,
+        "auc": 0.6147353796531478,
+        "logloss": 0.38964400111813796
+      },
+      "history_L1000_empty": {
+        "rows": 392,
+        "users": 63,
+        "positives": 35,
+        "auc": 0.7099639855942377,
+        "logloss": 0.2939442251556172
+      },
+      "history_L1000_0": {
+        "rows": 29,
+        "users": 4,
+        "positives": 2,
+        "auc": 0.5740740740740741,
+        "logloss": 0.25850457076172645
+      },
+      "history_L1000_(0,0.5]": {
+        "rows": 5311,
+        "users": 816,
+        "positives": 728,
+        "auc": 0.6473550723768922,
+        "logloss": 0.38433870097843337
+      },
+      "history_L1000_(0.5,0.9]": {
+        "rows": 233915,
+        "users": 27506,
+        "positives": 30622,
+        "auc": 0.6129704708011589,
+        "logloss": 0.3791225795046829
+      },
+      "history_L1000_(0.9,1]": {
+        "rows": 529126,
+        "users": 41041,
+        "positives": 73056,
+        "auc": 0.6137812476826792,
+        "logloss": 0.39138435228630847
+      }
+    },
+    "C5-seed42": {
+      "target_available": {
+        "rows": 768760,
+        "users": 69430,
+        "positives": 104441,
+        "auc": 0.6173691473959487,
+        "logloss": 0.38804205043632234
+      },
+      "target_missing": {
+        "rows": 13,
+        "users": 12,
+        "positives": 2,
+        "auc": 0.5,
+        "logloss": 0.45542872751216645
+      },
+      "history_L200_empty": {
+        "rows": 392,
+        "users": 63,
+        "positives": 35,
+        "auc": 0.69671868747499,
+        "logloss": 0.2916231291527101
+      },
+      "history_L200_0": {
+        "rows": 32,
+        "users": 5,
+        "positives": 2,
+        "auc": 0.6666666666666666,
+        "logloss": 0.2330564051445086
+      },
+      "history_L200_(0,0.5]": {
+        "rows": 3898,
+        "users": 569,
+        "positives": 537,
+        "auc": 0.6145193220293907,
+        "logloss": 0.39195304027110883
+      },
+      "history_L200_(0.5,0.9]": {
+        "rows": 197437,
+        "users": 21795,
+        "positives": 26093,
+        "auc": 0.6149557489521962,
+        "logloss": 0.3823213730779607
+      },
+      "history_L200_(0.9,1]": {
+        "rows": 567014,
+        "users": 46998,
+        "positives": 77776,
+        "auc": 0.6181509681253398,
+        "logloss": 0.39008408135940603
+      },
+      "history_L1000_empty": {
+        "rows": 392,
+        "users": 63,
+        "positives": 35,
+        "auc": 0.69671868747499,
+        "logloss": 0.2916231291527101
+      },
+      "history_L1000_0": {
+        "rows": 29,
+        "users": 4,
+        "positives": 2,
+        "auc": 0.6296296296296297,
+        "logloss": 0.24734760953495685
+      },
+      "history_L1000_(0,0.5]": {
+        "rows": 5311,
+        "users": 816,
+        "positives": 728,
+        "auc": 0.6173861595528626,
+        "logloss": 0.3905337503804283
+      },
+      "history_L1000_(0.5,0.9]": {
+        "rows": 233915,
+        "users": 27506,
+        "positives": 30622,
+        "auc": 0.6180881945317278,
+        "logloss": 0.3796784178507028
+      },
+      "history_L1000_(0.9,1]": {
+        "rows": 529126,
+        "users": 41041,
+        "positives": 73056,
+        "auc": 0.616914535008266,
+        "logloss": 0.39179521713119914
+      }
+    },
+    "C6-seed42": {
+      "target_available": {
+        "rows": 768760,
+        "users": 69430,
+        "positives": 104441,
+        "auc": 0.6186149914222943,
+        "logloss": 0.3875953582971609
+      },
+      "target_missing": {
+        "rows": 13,
+        "users": 12,
+        "positives": 2,
+        "auc": 0.6818181818181818,
+        "logloss": 0.44774936397696263
+      },
+      "history_L200_empty": {
+        "rows": 392,
+        "users": 63,
+        "positives": 35,
+        "auc": 0.6824329731892758,
+        "logloss": 0.2899302333274414
+      },
+      "history_L200_0": {
+        "rows": 32,
+        "users": 5,
+        "positives": 2,
+        "auc": 0.43333333333333335,
+        "logloss": 0.2365939106862142
+      },
+      "history_L200_(0,0.5]": {
+        "rows": 3898,
+        "users": 569,
+        "positives": 537,
+        "auc": 0.6221113362443673,
+        "logloss": 0.39017827968852437
+      },
+      "history_L200_(0.5,0.9]": {
+        "rows": 197437,
+        "users": 21795,
+        "positives": 26093,
+        "auc": 0.6165429332648777,
+        "logloss": 0.3819402814551327
+      },
+      "history_L200_(0.9,1]": {
+        "rows": 567014,
+        "users": 46998,
+        "positives": 77776,
+        "auc": 0.6193686082877773,
+        "logloss": 0.38962414763262976
+      },
+      "history_L1000_empty": {
+        "rows": 392,
+        "users": 63,
+        "positives": 35,
+        "auc": 0.6824329731892758,
+        "logloss": 0.2899302333274414
+      },
+      "history_L1000_0": {
+        "rows": 29,
+        "users": 4,
+        "positives": 2,
+        "auc": 0.4444444444444444,
+        "logloss": 0.2516798877859167
+      },
+      "history_L1000_(0,0.5]": {
+        "rows": 5311,
+        "users": 816,
+        "positives": 728,
+        "auc": 0.6296244122449665,
+        "logloss": 0.38813327168020184
+      },
+      "history_L1000_(0.5,0.9]": {
+        "rows": 233915,
+        "users": 27506,
+        "positives": 30622,
+        "auc": 0.6200040379145354,
+        "logloss": 0.3792070273049681
+      },
+      "history_L1000_(0.9,1]": {
+        "rows": 529126,
+        "users": 41041,
+        "positives": 73056,
+        "auc": 0.6178898817008249,
+        "logloss": 0.3913795379930524
+      }
+    },
+    "C7-seed42": {
+      "target_available": {
+        "rows": 768760,
+        "users": 69430,
+        "positives": 104441,
+        "auc": 0.6158584499099063,
+        "logloss": 0.3877297309512087
+      },
+      "target_missing": {
+        "rows": 13,
+        "users": 12,
+        "positives": 2,
+        "auc": 0.5454545454545454,
+        "logloss": 0.4349683022070074
+      },
+      "history_L200_empty": {
+        "rows": 392,
+        "users": 63,
+        "positives": 35,
+        "auc": 0.6952380952380952,
+        "logloss": 0.28992791695792547
+      },
+      "history_L200_0": {
+        "rows": 32,
+        "users": 5,
+        "positives": 2,
+        "auc": 0.5166666666666667,
+        "logloss": 0.24718883163752634
+      },
+      "history_L200_(0,0.5]": {
+        "rows": 3898,
+        "users": 569,
+        "positives": 537,
+        "auc": 0.6130779335980634,
+        "logloss": 0.390192318346903
+      },
+      "history_L200_(0.5,0.9]": {
+        "rows": 197437,
+        "users": 21795,
+        "positives": 26093,
+        "auc": 0.6122631350340962,
+        "logloss": 0.3822244832938492
+      },
+      "history_L200_(0.9,1]": {
+        "rows": 567014,
+        "users": 46998,
+        "positives": 77776,
+        "auc": 0.6171603427127433,
+        "logloss": 0.38970638432722293
+      },
+      "history_L1000_empty": {
+        "rows": 392,
+        "users": 63,
+        "positives": 35,
+        "auc": 0.6952380952380952,
+        "logloss": 0.28992791695792547
+      },
+      "history_L1000_0": {
+        "rows": 29,
+        "users": 4,
+        "positives": 2,
+        "auc": 0.5,
+        "logloss": 0.259002365899837
+      },
+      "history_L1000_(0,0.5]": {
+        "rows": 5311,
+        "users": 816,
+        "positives": 728,
+        "auc": 0.6437374266580027,
+        "logloss": 0.38450247371066887
+      },
+      "history_L1000_(0.5,0.9]": {
+        "rows": 233915,
+        "users": 27506,
+        "positives": 30622,
+        "auc": 0.6147457441422395,
+        "logloss": 0.3797867066696359
+      },
+      "history_L1000_(0.9,1]": {
+        "rows": 529126,
+        "users": 41041,
+        "positives": 73056,
+        "auc": 0.6161791983707123,
+        "logloss": 0.3913542324766048
+      }
+    },
+    "R1-L200-seed42": {
+      "target_available": {
+        "rows": 768760,
+        "users": 69430,
+        "positives": 104441,
+        "auc": 0.6031226993644141,
+        "logloss": 0.38959853406882655
+      },
+      "target_missing": {
+        "rows": 13,
+        "users": 12,
+        "positives": 2,
+        "auc": 0.4090909090909091,
+        "logloss": 0.43865599538481614
+      },
+      "history_L200_empty": {
+        "rows": 392,
+        "users": 63,
+        "positives": 35,
+        "auc": 0.6576230492196878,
+        "logloss": 0.30576667657860906
+      },
+      "history_L200_0": {
+        "rows": 32,
+        "users": 5,
+        "positives": 2,
+        "auc": 0.5,
+        "logloss": 0.2940293483559178
+      },
+      "history_L200_(0,0.5]": {
+        "rows": 3898,
+        "users": 569,
+        "positives": 537,
+        "auc": 0.619699233789713,
+        "logloss": 0.3922991586611203
+      },
+      "history_L200_(0.5,0.9]": {
+        "rows": 197437,
+        "users": 21795,
+        "positives": 26093,
+        "auc": 0.5990414503036946,
+        "logloss": 0.38450748038505217
+      },
+      "history_L200_(0.9,1]": {
+        "rows": 567014,
+        "users": 46998,
+        "positives": 77776,
+        "auc": 0.605079630726541,
+        "logloss": 0.3914171723750742
+      },
+      "history_L1000_empty": {
+        "rows": 392,
+        "users": 63,
+        "positives": 35,
+        "auc": 0.6576230492196878,
+        "logloss": 0.30576667657860906
+      },
+      "history_L1000_0": {
+        "rows": 29,
+        "users": 4,
+        "positives": 2,
+        "auc": 0.48148148148148145,
+        "logloss": 0.30318970801067213
+      },
+      "history_L1000_(0,0.5]": {
+        "rows": 5311,
+        "users": 816,
+        "positives": 728,
+        "auc": 0.640745001234855,
+        "logloss": 0.38746079760885666
+      },
+      "history_L1000_(0.5,0.9]": {
+        "rows": 233915,
+        "users": 27506,
+        "positives": 30622,
+        "auc": 0.6000029427628752,
+        "logloss": 0.38197686264029085
+      },
+      "history_L1000_(0.9,1]": {
+        "rows": 529126,
+        "users": 41041,
+        "positives": 73056,
+        "auc": 0.6045059953917845,
+        "logloss": 0.3930574124487092
+      }
+    },
+    "R1-L1000-seed42": {
+      "target_available": {
+        "rows": 768760,
+        "users": 69430,
+        "positives": 104441,
+        "auc": 0.6058342605191845,
+        "logloss": 0.38947916854982106
+      },
+      "target_missing": {
+        "rows": 13,
+        "users": 12,
+        "positives": 2,
+        "auc": 0.45454545454545453,
+        "logloss": 0.43241224652759946
+      },
+      "history_L200_empty": {
+        "rows": 392,
+        "users": 63,
+        "positives": 35,
+        "auc": 0.6520208083233293,
+        "logloss": 0.3136745844307545
+      },
+      "history_L200_0": {
+        "rows": 32,
+        "users": 5,
+        "positives": 2,
+        "auc": 0.5,
+        "logloss": 0.3139214602803694
+      },
+      "history_L200_(0,0.5]": {
+        "rows": 3898,
+        "users": 569,
+        "positives": 537,
+        "auc": 0.6060175404478028,
+        "logloss": 0.3943853986795843
+      },
+      "history_L200_(0.5,0.9]": {
+        "rows": 197437,
+        "users": 21795,
+        "positives": 26093,
+        "auc": 0.6018790671398248,
+        "logloss": 0.38437636264673913
+      },
+      "history_L200_(0.9,1]": {
+        "rows": 567014,
+        "users": 46998,
+        "positives": 77776,
+        "auc": 0.6076854777728525,
+        "logloss": 0.39127991699288234
+      },
+      "history_L1000_empty": {
+        "rows": 392,
+        "users": 63,
+        "positives": 35,
+        "auc": 0.6520208083233293,
+        "logloss": 0.3136745844307545
+      },
+      "history_L1000_0": {
+        "rows": 29,
+        "users": 4,
+        "positives": 2,
+        "auc": 0.4444444444444444,
+        "logloss": 0.32914075736852105
+      },
+      "history_L1000_(0,0.5]": {
+        "rows": 5311,
+        "users": 816,
+        "positives": 728,
+        "auc": 0.6273531181888153,
+        "logloss": 0.38991158519138114
+      },
+      "history_L1000_(0.5,0.9]": {
+        "rows": 233915,
+        "users": 27506,
+        "positives": 30622,
+        "auc": 0.6036686970839509,
+        "logloss": 0.38183837921149655
+      },
+      "history_L1000_(0.9,1]": {
+        "rows": 529126,
+        "users": 41041,
+        "positives": 73056,
+        "auc": 0.6069458528048306,
+        "logloss": 0.39291317484360266
+      }
+    },
+    "R4-L200-seed42": {
+      "target_available": {
+        "rows": 768760,
+        "users": 69430,
+        "positives": 104441,
+        "auc": 0.6147999059779774,
+        "logloss": 0.3876318561610589
+      },
+      "target_missing": {
+        "rows": 13,
+        "users": 12,
+        "positives": 2,
+        "auc": 0.2727272727272727,
+        "logloss": 0.44331118886062804
+      },
+      "history_L200_empty": {
+        "rows": 392,
+        "users": 63,
+        "positives": 35,
+        "auc": 0.6725090036014406,
+        "logloss": 0.294111716785649
+      },
+      "history_L200_0": {
+        "rows": 32,
+        "users": 5,
+        "positives": 2,
+        "auc": 0.4166666666666667,
+        "logloss": 0.26239982921303684
+      },
+      "history_L200_(0,0.5]": {
+        "rows": 3898,
+        "users": 569,
+        "positives": 537,
+        "auc": 0.5829763798461596,
+        "logloss": 0.3994388002363471
+      },
+      "history_L200_(0.5,0.9]": {
+        "rows": 197437,
+        "users": 21795,
+        "positives": 26093,
+        "auc": 0.6134095566905918,
+        "logloss": 0.38198819825979113
+      },
+      "history_L200_(0.9,1]": {
+        "rows": 567014,
+        "users": 46998,
+        "positives": 77776,
+        "auc": 0.6159501913597867,
+        "logloss": 0.3895888352971467
+      },
+      "history_L1000_empty": {
+        "rows": 392,
+        "users": 63,
+        "positives": 35,
+        "auc": 0.6725090036014406,
+        "logloss": 0.294111716785649
+      },
+      "history_L1000_0": {
+        "rows": 29,
+        "users": 4,
+        "positives": 2,
+        "auc": 0.42592592592592593,
+        "logloss": 0.27317067856805594
+      },
+      "history_L1000_(0,0.5]": {
+        "rows": 5311,
+        "users": 816,
+        "positives": 728,
+        "auc": 0.6244398193994528,
+        "logloss": 0.39040946650322333
+      },
+      "history_L1000_(0.5,0.9]": {
+        "rows": 233915,
+        "users": 27506,
+        "positives": 30622,
+        "auc": 0.6152011382794553,
+        "logloss": 0.37957282429289707
+      },
+      "history_L1000_(0.9,1]": {
+        "rows": 529126,
+        "users": 41041,
+        "positives": 73056,
+        "auc": 0.6149625198859198,
+        "logloss": 0.3912436228310473
+      }
+    },
+    "R4-L1000-seed42": {
+      "target_available": {
+        "rows": 768760,
+        "users": 69430,
+        "positives": 104441,
+        "auc": 0.618263218022668,
+        "logloss": 0.38723648459239957
+      },
+      "target_missing": {
+        "rows": 13,
+        "users": 12,
+        "positives": 2,
+        "auc": 0.22727272727272727,
+        "logloss": 0.4458299225311091
+      },
+      "history_L200_empty": {
+        "rows": 392,
+        "users": 63,
+        "positives": 35,
+        "auc": 0.6974789915966386,
+        "logloss": 0.2983547773232223
+      },
+      "history_L200_0": {
+        "rows": 32,
+        "users": 5,
+        "positives": 2,
+        "auc": 0.55,
+        "logloss": 0.2663653533453445
+      },
+      "history_L200_(0,0.5]": {
+        "rows": 3898,
+        "users": 569,
+        "positives": 537,
+        "auc": 0.5796547870551517,
+        "logloss": 0.4020856006076547
+      },
+      "history_L200_(0.5,0.9]": {
+        "rows": 197437,
+        "users": 21795,
+        "positives": 26093,
+        "auc": 0.6182693622319358,
+        "logloss": 0.3813003526976974
+      },
+      "history_L200_(0.9,1]": {
+        "rows": 567014,
+        "users": 46998,
+        "positives": 77776,
+        "auc": 0.6188243176311037,
+        "logloss": 0.38927100479615023
+      },
+      "history_L1000_empty": {
+        "rows": 392,
+        "users": 63,
+        "positives": 35,
+        "auc": 0.6974789915966386,
+        "logloss": 0.2983547773232223
+      },
+      "history_L1000_0": {
+        "rows": 29,
+        "users": 4,
+        "positives": 2,
+        "auc": 0.5,
+        "logloss": 0.2825562006210424
+      },
+      "history_L1000_(0,0.5]": {
+        "rows": 5311,
+        "users": 816,
+        "positives": 728,
+        "auc": 0.613289408060846,
+        "logloss": 0.3938196851080585
+      },
+      "history_L1000_(0.5,0.9]": {
+        "rows": 233915,
+        "users": 27506,
+        "positives": 30622,
+        "auc": 0.6198198566905097,
+        "logloss": 0.3787083781349954
+      },
+      "history_L1000_(0.9,1]": {
+        "rows": 529126,
+        "users": 41041,
+        "positives": 73056,
+        "auc": 0.6177578152752475,
+        "logloss": 0.39101352014956925
+      }
+    },
+    "C0-seed2026": {
+      "target_available": {
+        "rows": 768760,
+        "users": 69430,
+        "positives": 104441,
+        "auc": 0.6041529853904783,
+        "logloss": 0.3905094221579661
+      },
+      "target_missing": {
+        "rows": 13,
+        "users": 12,
+        "positives": 2,
+        "auc": 0.5454545454545454,
+        "logloss": 0.42351424970025386
+      },
+      "history_L200_empty": {
+        "rows": 392,
+        "users": 63,
+        "positives": 35,
+        "auc": 0.6512204881952781,
+        "logloss": 0.3092402355242015
+      },
+      "history_L200_0": {
+        "rows": 32,
+        "users": 5,
+        "positives": 2,
+        "auc": 0.6,
+        "logloss": 0.26723644030849314
+      },
+      "history_L200_(0,0.5]": {
+        "rows": 3898,
+        "users": 569,
+        "positives": 537,
+        "auc": 0.608411912965958,
+        "logloss": 0.3972506322813276
+      },
+      "history_L200_(0.5,0.9]": {
+        "rows": 197437,
+        "users": 21795,
+        "positives": 26093,
+        "auc": 0.5995969059544611,
+        "logloss": 0.38616035345901284
+      },
+      "history_L200_(0.9,1]": {
+        "rows": 567014,
+        "users": 46998,
+        "positives": 77776,
+        "auc": 0.6063787893658489,
+        "logloss": 0.3920413440487695
+      },
+      "history_L1000_empty": {
+        "rows": 392,
+        "users": 63,
+        "positives": 35,
+        "auc": 0.6512204881952781,
+        "logloss": 0.3092402355242015
+      },
+      "history_L1000_0": {
+        "rows": 29,
+        "users": 4,
+        "positives": 2,
+        "auc": 0.5555555555555556,
+        "logloss": 0.27720203383869463
+      },
+      "history_L1000_(0,0.5]": {
+        "rows": 5311,
+        "users": 816,
+        "positives": 728,
+        "auc": 0.625651445979288,
+        "logloss": 0.39203751553732585
+      },
+      "history_L1000_(0.5,0.9]": {
+        "rows": 233915,
+        "users": 27506,
+        "positives": 30622,
+        "auc": 0.6001689038810162,
+        "logloss": 0.3834888445560483
+      },
+      "history_L1000_(0.9,1]": {
+        "rows": 529126,
+        "users": 41041,
+        "positives": 73056,
+        "auc": 0.606112231347578,
+        "logloss": 0.39366495638609805
+      }
+    },
+    "C3-seed2026": {
+      "target_available": {
+        "rows": 768760,
+        "users": 69430,
+        "positives": 104441,
+        "auc": 0.6108883282889058,
+        "logloss": 0.38841869192224726
+      },
+      "target_missing": {
+        "rows": 13,
+        "users": 12,
+        "positives": 2,
+        "auc": 0.22727272727272727,
+        "logloss": 0.43997537968917955
+      },
+      "history_L200_empty": {
+        "rows": 392,
+        "users": 63,
+        "positives": 35,
+        "auc": 0.7038015206082433,
+        "logloss": 0.29080450956173226
+      },
+      "history_L200_0": {
+        "rows": 32,
+        "users": 5,
+        "positives": 2,
+        "auc": 0.5,
+        "logloss": 0.2504381060834905
+      },
+      "history_L200_(0,0.5]": {
+        "rows": 3898,
+        "users": 569,
+        "positives": 537,
+        "auc": 0.6156925451711687,
+        "logloss": 0.3938262418325874
+      },
+      "history_L200_(0.5,0.9]": {
+        "rows": 197437,
+        "users": 21795,
+        "positives": 26093,
+        "auc": 0.61061084025868,
+        "logloss": 0.38304769593228505
+      },
+      "history_L200_(0.9,1]": {
+        "rows": 567014,
+        "users": 46998,
+        "positives": 77776,
+        "auc": 0.6119903830832456,
+        "logloss": 0.39032817754498816
+      },
+      "history_L1000_empty": {
+        "rows": 392,
+        "users": 63,
+        "positives": 35,
+        "auc": 0.7038015206082433,
+        "logloss": 0.29080450956173226
+      },
+      "history_L1000_0": {
+        "rows": 29,
+        "users": 4,
+        "positives": 2,
+        "auc": 0.48148148148148145,
+        "logloss": 0.26339877100300285
+      },
+      "history_L1000_(0,0.5]": {
+        "rows": 5311,
+        "users": 816,
+        "positives": 728,
+        "auc": 0.637980664328035,
+        "logloss": 0.3871783943355743
+      },
+      "history_L1000_(0.5,0.9]": {
+        "rows": 233915,
+        "users": 27506,
+        "positives": 30622,
+        "auc": 0.6120524410368084,
+        "logloss": 0.38043875008080463
+      },
+      "history_L1000_(0.9,1]": {
+        "rows": 529126,
+        "users": 41041,
+        "positives": 73056,
+        "auc": 0.6109837157531501,
+        "logloss": 0.39203933405749825
+      }
+    },
+    "C5-seed2026": {
+      "target_available": {
+        "rows": 768760,
+        "users": 69430,
+        "positives": 104441,
+        "auc": 0.6193071557102511,
+        "logloss": 0.38883092209259235
+      },
+      "target_missing": {
+        "rows": 13,
+        "users": 12,
+        "positives": 2,
+        "auc": 0.4090909090909091,
+        "logloss": 0.43504798612936807
+      },
+      "history_L200_empty": {
+        "rows": 392,
+        "users": 63,
+        "positives": 35,
+        "auc": 0.6801920768307322,
+        "logloss": 0.2997994053626693
+      },
+      "history_L200_0": {
+        "rows": 32,
+        "users": 5,
+        "positives": 2,
+        "auc": 0.6333333333333333,
+        "logloss": 0.2512589286160925
+      },
+      "history_L200_(0,0.5]": {
+        "rows": 3898,
+        "users": 569,
+        "positives": 537,
+        "auc": 0.6095059054540055,
+        "logloss": 0.39395364336565003
+      },
+      "history_L200_(0.5,0.9]": {
+        "rows": 197437,
+        "users": 21795,
+        "positives": 26093,
+        "auc": 0.617562144365906,
+        "logloss": 0.3836865022589115
+      },
+      "history_L200_(0.9,1]": {
+        "rows": 567014,
+        "users": 46998,
+        "positives": 77776,
+        "auc": 0.6200577473102337,
+        "logloss": 0.39065739186470017
+      },
+      "history_L1000_empty": {
+        "rows": 392,
+        "users": 63,
+        "positives": 35,
+        "auc": 0.6801920768307322,
+        "logloss": 0.2997994053626693
+      },
+      "history_L1000_0": {
+        "rows": 29,
+        "users": 4,
+        "positives": 2,
+        "auc": 0.5925925925925926,
+        "logloss": 0.2637892376687953
+      },
+      "history_L1000_(0,0.5]": {
+        "rows": 5311,
+        "users": 816,
+        "positives": 728,
+        "auc": 0.6263372101387593,
+        "logloss": 0.39022636732384663
+      },
+      "history_L1000_(0.5,0.9]": {
+        "rows": 233915,
+        "users": 27506,
+        "positives": 30622,
+        "auc": 0.6203279568426657,
+        "logloss": 0.3810353288411031
+      },
+      "history_L1000_(0.9,1]": {
+        "rows": 529126,
+        "users": 41041,
+        "positives": 73056,
+        "auc": 0.6188003881611059,
+        "logloss": 0.392337123585314
+      }
+    },
+    "C6-seed2026": {
+      "target_available": {
+        "rows": 768760,
+        "users": 69430,
+        "positives": 104441,
+        "auc": 0.619851978817899,
+        "logloss": 0.38801713840180246
+      },
+      "target_missing": {
+        "rows": 13,
+        "users": 12,
+        "positives": 2,
+        "auc": 0.4090909090909091,
+        "logloss": 0.43982239177006893
+      },
+      "history_L200_empty": {
+        "rows": 392,
+        "users": 63,
+        "positives": 35,
+        "auc": 0.6744297719087635,
+        "logloss": 0.29343799199511283
+      },
+      "history_L200_0": {
+        "rows": 32,
+        "users": 5,
+        "positives": 2,
+        "auc": 0.6666666666666666,
+        "logloss": 0.24182690579397365
+      },
+      "history_L200_(0,0.5]": {
+        "rows": 3898,
+        "users": 569,
+        "positives": 537,
+        "auc": 0.616182334666957,
+        "logloss": 0.39413205238484283
+      },
+      "history_L200_(0.5,0.9]": {
+        "rows": 197437,
+        "users": 21795,
+        "positives": 26093,
+        "auc": 0.6185056348982034,
+        "logloss": 0.38329175057994036
+      },
+      "history_L200_(0.9,1]": {
+        "rows": 567014,
+        "users": 46998,
+        "positives": 77776,
+        "auc": 0.6206184994900386,
+        "logloss": 0.38969532807931967
+      },
+      "history_L1000_empty": {
+        "rows": 392,
+        "users": 63,
+        "positives": 35,
+        "auc": 0.6744297719087635,
+        "logloss": 0.29343799199511283
+      },
+      "history_L1000_0": {
+        "rows": 29,
+        "users": 4,
+        "positives": 2,
+        "auc": 0.6296296296296297,
+        "logloss": 0.25476380170511426
+      },
+      "history_L1000_(0,0.5]": {
+        "rows": 5311,
+        "users": 816,
+        "positives": 728,
+        "auc": 0.6347091976319557,
+        "logloss": 0.3886459333597084
+      },
+      "history_L1000_(0.5,0.9]": {
+        "rows": 233915,
+        "users": 27506,
+        "positives": 30622,
+        "auc": 0.621152287783461,
+        "logloss": 0.3804326410847202
+      },
+      "history_L1000_(0.9,1]": {
+        "rows": 529126,
+        "users": 41041,
+        "positives": 73056,
+        "auc": 0.6193108942602678,
+        "logloss": 0.39144241139982794
+      }
+    },
+    "C7-seed2026": {
+      "target_available": {
+        "rows": 768760,
+        "users": 69430,
+        "positives": 104441,
+        "auc": 0.614861257371266,
+        "logloss": 0.38767035213483686
+      },
+      "target_missing": {
+        "rows": 13,
+        "users": 12,
+        "positives": 2,
+        "auc": 0.36363636363636365,
+        "logloss": 0.4437563784091965
+      },
+      "history_L200_empty": {
+        "rows": 392,
+        "users": 63,
+        "positives": 35,
+        "auc": 0.6993197278911565,
+        "logloss": 0.2906796857804454
+      },
+      "history_L200_0": {
+        "rows": 32,
+        "users": 5,
+        "positives": 2,
+        "auc": 0.5833333333333334,
+        "logloss": 0.241600752422565
+      },
+      "history_L200_(0,0.5]": {
+        "rows": 3898,
+        "users": 569,
+        "positives": 537,
+        "auc": 0.6030211811794508,
+        "logloss": 0.3921538304929578
+      },
+      "history_L200_(0.5,0.9]": {
+        "rows": 197437,
+        "users": 21795,
+        "positives": 26093,
+        "auc": 0.6138326507853737,
+        "logloss": 0.3819221329041498
+      },
+      "history_L200_(0.9,1]": {
+        "rows": 567014,
+        "users": 46998,
+        "positives": 77776,
+        "auc": 0.6155980206043756,
+        "logloss": 0.38971767062847634
+      },
+      "history_L1000_empty": {
+        "rows": 392,
+        "users": 63,
+        "positives": 35,
+        "auc": 0.6993197278911565,
+        "logloss": 0.2906796857804454
+      },
+      "history_L1000_0": {
+        "rows": 29,
+        "users": 4,
+        "positives": 2,
+        "auc": 0.5740740740740741,
+        "logloss": 0.25312074127227807
+      },
+      "history_L1000_(0,0.5]": {
+        "rows": 5311,
+        "users": 816,
+        "positives": 728,
+        "auc": 0.6450293787600138,
+        "logloss": 0.3843758857793217
+      },
+      "history_L1000_(0.5,0.9]": {
+        "rows": 233915,
+        "users": 27506,
+        "positives": 30622,
+        "auc": 0.6148509562600923,
+        "logloss": 0.3796560127456276
+      },
+      "history_L1000_(0.9,1]": {
+        "rows": 529126,
+        "users": 41041,
+        "positives": 73056,
+        "auc": 0.6149537675204818,
+        "logloss": 0.3913269906430722
+      }
+    },
+    "R1-L200-seed2026": {
+      "target_available": {
+        "rows": 768760,
+        "users": 69430,
+        "positives": 104441,
+        "auc": 0.6038665774502573,
+        "logloss": 0.3904772641061359
+      },
+      "target_missing": {
+        "rows": 13,
+        "users": 12,
+        "positives": 2,
+        "auc": 0.45454545454545453,
+        "logloss": 0.4376271173692507
+      },
+      "history_L200_empty": {
+        "rows": 392,
+        "users": 63,
+        "positives": 35,
+        "auc": 0.6630652260904362,
+        "logloss": 0.3134582834382861
+      },
+      "history_L200_0": {
+        "rows": 32,
+        "users": 5,
+        "positives": 2,
+        "auc": 0.5,
+        "logloss": 0.31817449521571867
+      },
+      "history_L200_(0,0.5]": {
+        "rows": 3898,
+        "users": 569,
+        "positives": 537,
+        "auc": 0.6033763339699488,
+        "logloss": 0.39617458676283773
+      },
+      "history_L200_(0.5,0.9]": {
+        "rows": 197437,
+        "users": 21795,
+        "positives": 26093,
+        "auc": 0.5997111854956686,
+        "logloss": 0.38593691894912785
+      },
+      "history_L200_(0.9,1]": {
+        "rows": 567014,
+        "users": 46998,
+        "positives": 77776,
+        "auc": 0.605930230842974,
+        "logloss": 0.3920774751065118
+      },
+      "history_L1000_empty": {
+        "rows": 392,
+        "users": 63,
+        "positives": 35,
+        "auc": 0.6630652260904362,
+        "logloss": 0.3134582834382861
+      },
+      "history_L1000_0": {
+        "rows": 29,
+        "users": 4,
+        "positives": 2,
+        "auc": 0.4444444444444444,
+        "logloss": 0.33231542691511556
+      },
+      "history_L1000_(0,0.5]": {
+        "rows": 5311,
+        "users": 816,
+        "positives": 728,
+        "auc": 0.6242647816944129,
+        "logloss": 0.39115335102679616
+      },
+      "history_L1000_(0.5,0.9]": {
+        "rows": 233915,
+        "users": 27506,
+        "positives": 30622,
+        "auc": 0.6016424880455893,
+        "logloss": 0.3832751653836242
+      },
+      "history_L1000_(0.9,1]": {
+        "rows": 529126,
+        "users": 41041,
+        "positives": 73056,
+        "auc": 0.6051815740107875,
+        "logloss": 0.3937157730942285
+      }
+    },
+    "R1-L1000-seed2026": {
+      "target_available": {
+        "rows": 768760,
+        "users": 69430,
+        "positives": 104441,
+        "auc": 0.6045199471871429,
+        "logloss": 0.39137603555000916
+      },
+      "target_missing": {
+        "rows": 13,
+        "users": 12,
+        "positives": 2,
+        "auc": 0.45454545454545453,
+        "logloss": 0.44344973315866415
+      },
+      "history_L200_empty": {
+        "rows": 392,
+        "users": 63,
+        "positives": 35,
+        "auc": 0.6202480992396959,
+        "logloss": 0.3205587680149551
+      },
+      "history_L200_0": {
+        "rows": 32,
+        "users": 5,
+        "positives": 2,
+        "auc": 0.4666666666666667,
+        "logloss": 0.3182347352272681
+      },
+      "history_L200_(0,0.5]": {
+        "rows": 3898,
+        "users": 569,
+        "positives": 537,
+        "auc": 0.6076860936905251,
+        "logloss": 0.39767654048972334
+      },
+      "history_L200_(0.5,0.9]": {
+        "rows": 197437,
+        "users": 21795,
+        "positives": 26093,
+        "auc": 0.6008821504243477,
+        "logloss": 0.3872688407616594
+      },
+      "history_L200_(0.9,1]": {
+        "rows": 567014,
+        "users": 46998,
+        "positives": 77776,
+        "auc": 0.6064724203182545,
+        "logloss": 0.392817147582032
+      },
+      "history_L1000_empty": {
+        "rows": 392,
+        "users": 63,
+        "positives": 35,
+        "auc": 0.6202480992396959,
+        "logloss": 0.3205587680149551
+      },
+      "history_L1000_0": {
+        "rows": 29,
+        "users": 4,
+        "positives": 2,
+        "auc": 0.4074074074074074,
+        "logloss": 0.3349954481947675
+      },
+      "history_L1000_(0,0.5]": {
+        "rows": 5311,
+        "users": 816,
+        "positives": 728,
+        "auc": 0.6129194011312711,
+        "logloss": 0.3938245103945329
+      },
+      "history_L1000_(0.5,0.9]": {
+        "rows": 233915,
+        "users": 27506,
+        "positives": 30622,
+        "auc": 0.6034680875730134,
+        "logloss": 0.3844616160949409
+      },
+      "history_L1000_(0.9,1]": {
+        "rows": 529126,
+        "users": 41041,
+        "positives": 73056,
+        "auc": 0.6055785505849212,
+        "logloss": 0.39446500668525675
+      }
+    },
+    "R4-L200-seed2026": {
+      "target_available": {
+        "rows": 768760,
+        "users": 69430,
+        "positives": 104441,
+        "auc": 0.6159888364965909,
+        "logloss": 0.3885195116164482
+      },
+      "target_missing": {
+        "rows": 13,
+        "users": 12,
+        "positives": 2,
+        "auc": 0.18181818181818182,
+        "logloss": 0.4442022713830919
+      },
+      "history_L200_empty": {
+        "rows": 392,
+        "users": 63,
+        "positives": 35,
+        "auc": 0.6741896758703482,
+        "logloss": 0.305646645290297
+      },
+      "history_L200_0": {
+        "rows": 32,
+        "users": 5,
+        "positives": 2,
+        "auc": 0.4666666666666667,
+        "logloss": 0.3023110524499847
+      },
+      "history_L200_(0,0.5]": {
+        "rows": 3898,
+        "users": 569,
+        "positives": 537,
+        "auc": 0.5832966268241749,
+        "logloss": 0.40655149212573294
+      },
+      "history_L200_(0.5,0.9]": {
+        "rows": 197437,
+        "users": 21795,
+        "positives": 26093,
+        "auc": 0.6156779960776,
+        "logloss": 0.3832181025020581
+      },
+      "history_L200_(0.9,1]": {
+        "rows": 567014,
+        "users": 46998,
+        "positives": 77776,
+        "auc": 0.6168166569568007,
+        "logloss": 0.39030496023228983
+      },
+      "history_L1000_empty": {
+        "rows": 392,
+        "users": 63,
+        "positives": 35,
+        "auc": 0.6741896758703482,
+        "logloss": 0.305646645290297
+      },
+      "history_L1000_0": {
+        "rows": 29,
+        "users": 4,
+        "positives": 2,
+        "auc": 0.42592592592592593,
+        "logloss": 0.31568788867914105
+      },
+      "history_L1000_(0,0.5]": {
+        "rows": 5311,
+        "users": 816,
+        "positives": 728,
+        "auc": 0.6218849882389049,
+        "logloss": 0.39570295426174656
+      },
+      "history_L1000_(0.5,0.9]": {
+        "rows": 233915,
+        "users": 27506,
+        "positives": 30622,
+        "auc": 0.6177130645515218,
+        "logloss": 0.3808061564366503
+      },
+      "history_L1000_(0.9,1]": {
+        "rows": 529126,
+        "users": 41041,
+        "positives": 73056,
+        "auc": 0.6157024041867301,
+        "logloss": 0.39192407001942836
+      }
+    },
+    "R4-L1000-seed2026": {
+      "target_available": {
+        "rows": 768760,
+        "users": 69430,
+        "positives": 104441,
+        "auc": 0.6174805598563362,
+        "logloss": 0.3881777884710313
+      },
+      "target_missing": {
+        "rows": 13,
+        "users": 12,
+        "positives": 2,
+        "auc": 0.36363636363636365,
+        "logloss": 0.43572949613792217
+      },
+      "history_L200_empty": {
+        "rows": 392,
+        "users": 63,
+        "positives": 35,
+        "auc": 0.6997999199679872,
+        "logloss": 0.30267878132728443
+      },
+      "history_L200_0": {
+        "rows": 32,
+        "users": 5,
+        "positives": 2,
+        "auc": 0.48333333333333334,
+        "logloss": 0.29322386417358326
+      },
+      "history_L200_(0,0.5]": {
+        "rows": 3898,
+        "users": 569,
+        "positives": 537,
+        "auc": 0.5869024526596844,
+        "logloss": 0.40462749000026593
+      },
+      "history_L200_(0.5,0.9]": {
+        "rows": 197437,
+        "users": 21795,
+        "positives": 26093,
+        "auc": 0.6176087384473768,
+        "logloss": 0.38302033574606287
+      },
+      "history_L200_(0.9,1]": {
+        "rows": 567014,
+        "users": 46998,
+        "positives": 77776,
+        "auc": 0.6183290932076951,
+        "logloss": 0.3899261110268698
+      },
+      "history_L1000_empty": {
+        "rows": 392,
+        "users": 63,
+        "positives": 35,
+        "auc": 0.6997999199679872,
+        "logloss": 0.30267878132728443
+      },
+      "history_L1000_0": {
+        "rows": 29,
+        "users": 4,
+        "positives": 2,
+        "auc": 0.42592592592592593,
+        "logloss": 0.31226133558228747
+      },
+      "history_L1000_(0,0.5]": {
+        "rows": 5311,
+        "users": 816,
+        "positives": 728,
+        "auc": 0.6121666490829702,
+        "logloss": 0.39595443886330717
+      },
+      "history_L1000_(0.5,0.9]": {
+        "rows": 233915,
+        "users": 27506,
+        "positives": 30622,
+        "auc": 0.6197176233341544,
+        "logloss": 0.38029824984201366
+      },
+      "history_L1000_(0.9,1]": {
+        "rows": 529126,
+        "users": 41041,
+        "positives": 73056,
+        "auc": 0.6171267023684974,
+        "logloss": 0.39165177358668823
+      }
+    },
+    "C0-seed3407": {
+      "target_available": {
+        "rows": 768760,
+        "users": 69430,
+        "positives": 104441,
+        "auc": 0.602068949749823,
+        "logloss": 0.38929751501092175
+      },
+      "target_missing": {
+        "rows": 13,
+        "users": 12,
+        "positives": 2,
+        "auc": 0.7272727272727273,
+        "logloss": 0.41625262814586456
+      },
+      "history_L200_empty": {
+        "rows": 392,
+        "users": 63,
+        "positives": 35,
+        "auc": 0.6881952781112445,
+        "logloss": 0.30622521292620997
+      },
+      "history_L200_0": {
+        "rows": 32,
+        "users": 5,
+        "positives": 2,
+        "auc": 0.6333333333333333,
+        "logloss": 0.26583225955523593
+      },
+      "history_L200_(0,0.5]": {
+        "rows": 3898,
+        "users": 569,
+        "positives": 537,
+        "auc": 0.6162316460528452,
+        "logloss": 0.39406291265420657
+      },
+      "history_L200_(0.5,0.9]": {
+        "rows": 197437,
+        "users": 21795,
+        "positives": 26093,
+        "auc": 0.5966628562914145,
+        "logloss": 0.3841991360748542
+      },
+      "history_L200_(0.9,1]": {
+        "rows": 567014,
+        "users": 46998,
+        "positives": 77776,
+        "auc": 0.604963872916495,
+        "logloss": 0.39110505198364093
+      },
+      "history_L1000_empty": {
+        "rows": 392,
+        "users": 63,
+        "positives": 35,
+        "auc": 0.6881952781112445,
+        "logloss": 0.30622521292620997
+      },
+      "history_L1000_0": {
+        "rows": 29,
+        "users": 4,
+        "positives": 2,
+        "auc": 0.6111111111111112,
+        "logloss": 0.2747128170641507
+      },
+      "history_L1000_(0,0.5]": {
+        "rows": 5311,
+        "users": 816,
+        "positives": 728,
+        "auc": 0.6296245621060153,
+        "logloss": 0.38943144806133917
+      },
+      "history_L1000_(0.5,0.9]": {
+        "rows": 233915,
+        "users": 27506,
+        "positives": 30622,
+        "auc": 0.5980197995461586,
+        "logloss": 0.38145379092237364
+      },
+      "history_L1000_(0.9,1]": {
+        "rows": 529126,
+        "users": 41041,
+        "positives": 73056,
+        "auc": 0.6043593881009209,
+        "logloss": 0.3928321950623091
+      }
+    },
+    "C3-seed3407": {
+      "target_available": {
+        "rows": 768760,
+        "users": 69430,
+        "positives": 104441,
+        "auc": 0.6129134560108951,
+        "logloss": 0.3878199615206215
+      },
+      "target_missing": {
+        "rows": 13,
+        "users": 12,
+        "positives": 2,
+        "auc": 0.5454545454545454,
+        "logloss": 0.4212167123455257
+      },
+      "history_L200_empty": {
+        "rows": 392,
+        "users": 63,
+        "positives": 35,
+        "auc": 0.713405362144858,
+        "logloss": 0.2860356613996476
+      },
+      "history_L200_0": {
+        "rows": 32,
+        "users": 5,
+        "positives": 2,
+        "auc": 0.6333333333333333,
+        "logloss": 0.23568718390702356
+      },
+      "history_L200_(0,0.5]": {
+        "rows": 3898,
+        "users": 569,
+        "positives": 537,
+        "auc": 0.6080722738698966,
+        "logloss": 0.3923092004760512
+      },
+      "history_L200_(0.5,0.9]": {
+        "rows": 197437,
+        "users": 21795,
+        "positives": 26093,
+        "auc": 0.6116400073437729,
+        "logloss": 0.3823634717441913
+      },
+      "history_L200_(0.9,1]": {
+        "rows": 567014,
+        "users": 46998,
+        "positives": 77776,
+        "auc": 0.6141223597189343,
+        "logloss": 0.3897687948313202
+      },
+      "history_L1000_empty": {
+        "rows": 392,
+        "users": 63,
+        "positives": 35,
+        "auc": 0.713405362144858,
+        "logloss": 0.2860356613996476
+      },
+      "history_L1000_0": {
+        "rows": 29,
+        "users": 4,
+        "positives": 2,
+        "auc": 0.6296296296296297,
+        "logloss": 0.24825391211355002
+      },
+      "history_L1000_(0,0.5]": {
+        "rows": 5311,
+        "users": 816,
+        "positives": 728,
+        "auc": 0.6434742706562475,
+        "logloss": 0.38559417694140824
+      },
+      "history_L1000_(0.5,0.9]": {
+        "rows": 233915,
+        "users": 27506,
+        "positives": 30622,
+        "auc": 0.613205731355394,
+        "logloss": 0.37979264965817905
+      },
+      "history_L1000_(0.9,1]": {
+        "rows": 529126,
+        "users": 41041,
+        "positives": 73056,
+        "auc": 0.6131156138994002,
+        "logloss": 0.39147487701342343
+      }
+    },
+    "C5-seed3407": {
+      "target_available": {
+        "rows": 768760,
+        "users": 69430,
+        "positives": 104441,
+        "auc": 0.6171252269167825,
+        "logloss": 0.3878428891686324
+      },
+      "target_missing": {
+        "rows": 13,
+        "users": 12,
+        "positives": 2,
+        "auc": 0.5454545454545454,
+        "logloss": 0.4425922209168619
+      },
+      "history_L200_empty": {
+        "rows": 392,
+        "users": 63,
+        "positives": 35,
+        "auc": 0.6763505402160864,
+        "logloss": 0.29589788568165026
+      },
+      "history_L200_0": {
+        "rows": 32,
+        "users": 5,
+        "positives": 2,
+        "auc": 0.6666666666666666,
+        "logloss": 0.2436541556539865
+      },
+      "history_L200_(0,0.5]": {
+        "rows": 3898,
+        "users": 569,
+        "positives": 537,
+        "auc": 0.6076475864846911,
+        "logloss": 0.3913120104562019
+      },
+      "history_L200_(0.5,0.9]": {
+        "rows": 197437,
+        "users": 21795,
+        "positives": 26093,
+        "auc": 0.616080287551652,
+        "logloss": 0.38185446028894676
+      },
+      "history_L200_(0.9,1]": {
+        "rows": 567014,
+        "users": 46998,
+        "positives": 77776,
+        "auc": 0.6176729640098306,
+        "logloss": 0.3899771980571108
+      },
+      "history_L1000_empty": {
+        "rows": 392,
+        "users": 63,
+        "positives": 35,
+        "auc": 0.6763505402160864,
+        "logloss": 0.29589788568165026
+      },
+      "history_L1000_0": {
+        "rows": 29,
+        "users": 4,
+        "positives": 2,
+        "auc": 0.6481481481481481,
+        "logloss": 0.2563274015198738
+      },
+      "history_L1000_(0,0.5]": {
+        "rows": 5311,
+        "users": 816,
+        "positives": 728,
+        "auc": 0.6236677352758522,
+        "logloss": 0.3880480967509451
+      },
+      "history_L1000_(0.5,0.9]": {
+        "rows": 233915,
+        "users": 27506,
+        "positives": 30622,
+        "auc": 0.6176802873320907,
+        "logloss": 0.37927348411499556
+      },
+      "history_L1000_(0.9,1]": {
+        "rows": 529126,
+        "users": 41041,
+        "positives": 73056,
+        "auc": 0.6168328860066848,
+        "logloss": 0.39170584554853677
+      }
+    },
+    "C6-seed3407": {
+      "target_available": {
+        "rows": 768760,
+        "users": 69430,
+        "positives": 104441,
+        "auc": 0.6182974031887177,
+        "logloss": 0.3877812058143713
+      },
+      "target_missing": {
+        "rows": 13,
+        "users": 12,
+        "positives": 2,
+        "auc": 0.6818181818181818,
+        "logloss": 0.4380957252486649
+      },
+      "history_L200_empty": {
+        "rows": 392,
+        "users": 63,
+        "positives": 35,
+        "auc": 0.7089235694277711,
+        "logloss": 0.2849681185669403
+      },
+      "history_L200_0": {
+        "rows": 32,
+        "users": 5,
+        "positives": 2,
+        "auc": 0.7,
+        "logloss": 0.22716386831214813
+      },
+      "history_L200_(0,0.5]": {
+        "rows": 3898,
+        "users": 569,
+        "positives": 537,
+        "auc": 0.6176691560605633,
+        "logloss": 0.39165685433956077
+      },
+      "history_L200_(0.5,0.9]": {
+        "rows": 197437,
+        "users": 21795,
+        "positives": 26093,
+        "auc": 0.6171103396976036,
+        "logloss": 0.3824236096629938
+      },
+      "history_L200_(0.9,1]": {
+        "rows": 567014,
+        "users": 46998,
+        "positives": 77776,
+        "auc": 0.6189763758779014,
+        "logloss": 0.3897014000373394
+      },
+      "history_L1000_empty": {
+        "rows": 392,
+        "users": 63,
+        "positives": 35,
+        "auc": 0.7089235694277711,
+        "logloss": 0.2849681185669403
+      },
+      "history_L1000_0": {
+        "rows": 29,
+        "users": 4,
+        "positives": 2,
+        "auc": 0.6666666666666666,
+        "logloss": 0.24107053204912418
+      },
+      "history_L1000_(0,0.5]": {
+        "rows": 5311,
+        "users": 816,
+        "positives": 728,
+        "auc": 0.63137418985117,
+        "logloss": 0.3873262532204521
+      },
+      "history_L1000_(0.5,0.9]": {
+        "rows": 233915,
+        "users": 27506,
+        "positives": 30622,
+        "auc": 0.6191938824151471,
+        "logloss": 0.3797552963466824
+      },
+      "history_L1000_(0.9,1]": {
+        "rows": 529126,
+        "users": 41041,
+        "positives": 73056,
+        "auc": 0.6179434101002134,
+        "logloss": 0.39141929635396605
+      }
+    },
+    "C7-seed3407": {
+      "target_available": {
+        "rows": 768760,
+        "users": 69430,
+        "positives": 104441,
+        "auc": 0.6126590877854803,
+        "logloss": 0.38748339713628555
+      },
+      "target_missing": {
+        "rows": 13,
+        "users": 12,
+        "positives": 2,
+        "auc": 0.6363636363636364,
+        "logloss": 0.432722523662984
+      },
+      "history_L200_empty": {
+        "rows": 392,
+        "users": 63,
+        "positives": 35,
+        "auc": 0.7195678271308523,
+        "logloss": 0.2872049074706311
+      },
+      "history_L200_0": {
+        "rows": 32,
+        "users": 5,
+        "positives": 2,
+        "auc": 0.5333333333333333,
+        "logloss": 0.2449953971551619
+      },
+      "history_L200_(0,0.5]": {
+        "rows": 3898,
+        "users": 569,
+        "positives": 537,
+        "auc": 0.5923743543117266,
+        "logloss": 0.39278355152129163
+      },
+      "history_L200_(0.5,0.9]": {
+        "rows": 197437,
+        "users": 21795,
+        "positives": 26093,
+        "auc": 0.6115765048422496,
+        "logloss": 0.38118482295206707
+      },
+      "history_L200_(0.9,1]": {
+        "rows": 567014,
+        "users": 46998,
+        "positives": 77776,
+        "auc": 0.6133766049062738,
+        "logloss": 0.38971855972840846
+      },
+      "history_L1000_empty": {
+        "rows": 392,
+        "users": 63,
+        "positives": 35,
+        "auc": 0.7195678271308523,
+        "logloss": 0.2872049074706311
+      },
+      "history_L1000_0": {
+        "rows": 29,
+        "users": 4,
+        "positives": 2,
+        "auc": 0.5555555555555556,
+        "logloss": 0.25741106739318825
+      },
+      "history_L1000_(0,0.5]": {
+        "rows": 5311,
+        "users": 816,
+        "positives": 728,
+        "auc": 0.6349428310070903,
+        "logloss": 0.38579019147604526
+      },
+      "history_L1000_(0.5,0.9]": {
+        "rows": 233915,
+        "users": 27506,
+        "positives": 30622,
+        "auc": 0.6128120974247449,
+        "logloss": 0.37881227649564847
+      },
+      "history_L1000_(0.9,1]": {
+        "rows": 529126,
+        "users": 41041,
+        "positives": 73056,
+        "auc": 0.6126628810294844,
+        "logloss": 0.3914162357684308
+      }
+    },
+    "R1-L200-seed3407": {
+      "target_available": {
+        "rows": 768760,
+        "users": 69430,
+        "positives": 104441,
+        "auc": 0.6026932451315467,
+        "logloss": 0.3895852993152807
+      },
+      "target_missing": {
+        "rows": 13,
+        "users": 12,
+        "positives": 2,
+        "auc": 0.36363636363636365,
+        "logloss": 0.4474764021795598
+      },
+      "history_L200_empty": {
+        "rows": 392,
+        "users": 63,
+        "positives": 35,
+        "auc": 0.6591436574629852,
+        "logloss": 0.3115301745235657
+      },
+      "history_L200_0": {
+        "rows": 32,
+        "users": 5,
+        "positives": 2,
+        "auc": 0.6166666666666667,
+        "logloss": 0.2961440795311025
+      },
+      "history_L200_(0,0.5]": {
+        "rows": 3898,
+        "users": 569,
+        "positives": 537,
+        "auc": 0.6154908671434911,
+        "logloss": 0.39286664245334657
+      },
+      "history_L200_(0.5,0.9]": {
+        "rows": 197437,
+        "users": 21795,
+        "positives": 26093,
+        "auc": 0.598288308358671,
+        "logloss": 0.3843678393610006
+      },
+      "history_L200_(0.9,1]": {
+        "rows": 567014,
+        "users": 46998,
+        "positives": 77776,
+        "auc": 0.6049075243336379,
+        "logloss": 0.39144004942326677
+      },
+      "history_L1000_empty": {
+        "rows": 392,
+        "users": 63,
+        "positives": 35,
+        "auc": 0.6591436574629852,
+        "logloss": 0.3115301745235657
+      },
+      "history_L1000_0": {
+        "rows": 29,
+        "users": 4,
+        "positives": 2,
+        "auc": 0.5925925925925926,
+        "logloss": 0.3047056750105161
+      },
+      "history_L1000_(0,0.5]": {
+        "rows": 5311,
+        "users": 816,
+        "positives": 728,
+        "auc": 0.6313427190309145,
+        "logloss": 0.3884522986804533
+      },
+      "history_L1000_(0.5,0.9]": {
+        "rows": 233915,
+        "users": 27506,
+        "positives": 30622,
+        "auc": 0.6008242137404616,
+        "logloss": 0.3816050966714943
+      },
+      "history_L1000_(0.9,1]": {
+        "rows": 529126,
+        "users": 41041,
+        "positives": 73056,
+        "auc": 0.6038365777066875,
+        "logloss": 0.3931884452014273
+      }
+    },
+    "R1-L1000-seed3407": {
+      "target_available": {
+        "rows": 768760,
+        "users": 69430,
+        "positives": 104441,
+        "auc": 0.6047797527411889,
+        "logloss": 0.38936761587082164
+      },
+      "target_missing": {
+        "rows": 13,
+        "users": 12,
+        "positives": 2,
+        "auc": 0.5,
+        "logloss": 0.428446767522147
+      },
+      "history_L200_empty": {
+        "rows": 392,
+        "users": 63,
+        "positives": 35,
+        "auc": 0.6685874349739896,
+        "logloss": 0.30800788669529283
+      },
+      "history_L200_0": {
+        "rows": 32,
+        "users": 5,
+        "positives": 2,
+        "auc": 0.35,
+        "logloss": 0.311190020204176
+      },
+      "history_L200_(0,0.5]": {
+        "rows": 3898,
+        "users": 569,
+        "positives": 537,
+        "auc": 0.599462727518025,
+        "logloss": 0.3943568813307078
+      },
+      "history_L200_(0.5,0.9]": {
+        "rows": 197437,
+        "users": 21795,
+        "positives": 26093,
+        "auc": 0.6003381563899862,
+        "logloss": 0.384260744613354
+      },
+      "history_L200_(0.9,1]": {
+        "rows": 567014,
+        "users": 46998,
+        "positives": 77776,
+        "auc": 0.6068581666656307,
+        "logloss": 0.3911731090501216
+      },
+      "history_L1000_empty": {
+        "rows": 392,
+        "users": 63,
+        "positives": 35,
+        "auc": 0.6685874349739896,
+        "logloss": 0.30800788669529283
+      },
+      "history_L1000_0": {
+        "rows": 29,
+        "users": 4,
+        "positives": 2,
+        "auc": 0.2777777777777778,
+        "logloss": 0.32742827794438295
+      },
+      "history_L1000_(0,0.5]": {
+        "rows": 5311,
+        "users": 816,
+        "positives": 728,
+        "auc": 0.6198761008792647,
+        "logloss": 0.39011289388368803
+      },
+      "history_L1000_(0.5,0.9]": {
+        "rows": 233915,
+        "users": 27506,
+        "positives": 30622,
+        "auc": 0.6031877286644813,
+        "logloss": 0.3815268590352363
+      },
+      "history_L1000_(0.9,1]": {
+        "rows": 529126,
+        "users": 41041,
+        "positives": 73056,
+        "auc": 0.6058417680178321,
+        "logloss": 0.39289099167786523
+      }
+    },
+    "R4-L200-seed3407": {
+      "target_available": {
+        "rows": 768760,
+        "users": 69430,
+        "positives": 104441,
+        "auc": 0.6122092478310689,
+        "logloss": 0.3878672494640963
+      },
+      "target_missing": {
+        "rows": 13,
+        "users": 12,
+        "positives": 2,
+        "auc": 0.3181818181818182,
+        "logloss": 0.4370504253275795
+      },
+      "history_L200_empty": {
+        "rows": 392,
+        "users": 63,
+        "positives": 35,
+        "auc": 0.6513005202080833,
+        "logloss": 0.2996223061149865
+      },
+      "history_L200_0": {
+        "rows": 32,
+        "users": 5,
+        "positives": 2,
+        "auc": 0.65,
+        "logloss": 0.2703135111763494
+      },
+      "history_L200_(0,0.5]": {
+        "rows": 3898,
+        "users": 569,
+        "positives": 537,
+        "auc": 0.5705283022422275,
+        "logloss": 0.408756633797046
+      },
+      "history_L200_(0.5,0.9]": {
+        "rows": 197437,
+        "users": 21795,
+        "positives": 26093,
+        "auc": 0.6104111952891791,
+        "logloss": 0.38218680680882566
+      },
+      "history_L200_(0.9,1]": {
+        "rows": 567014,
+        "users": 46998,
+        "positives": 77776,
+        "auc": 0.6138495188762193,
+        "logloss": 0.3897703697664223
+      },
+      "history_L1000_empty": {
+        "rows": 392,
+        "users": 63,
+        "positives": 35,
+        "auc": 0.6513005202080833,
+        "logloss": 0.2996223061149865
+      },
+      "history_L1000_0": {
+        "rows": 29,
+        "users": 4,
+        "positives": 2,
+        "auc": 0.6481481481481481,
+        "logloss": 0.2789629706298483
+      },
+      "history_L1000_(0,0.5]": {
+        "rows": 5311,
+        "users": 816,
+        "positives": 728,
+        "auc": 0.6010114421908007,
+        "logloss": 0.399736049054922
+      },
+      "history_L1000_(0.5,0.9]": {
+        "rows": 233915,
+        "users": 27506,
+        "positives": 30622,
+        "auc": 0.6136266477760118,
+        "logloss": 0.3794556992596829
+      },
+      "history_L1000_(0.9,1]": {
+        "rows": 529126,
+        "users": 41041,
+        "positives": 73056,
+        "auc": 0.612547551806685,
+        "logloss": 0.39153923344258856
+      }
+    },
+    "R4-L1000-seed3407": {
+      "target_available": {
+        "rows": 768760,
+        "users": 69430,
+        "positives": 104441,
+        "auc": 0.6155863866697805,
+        "logloss": 0.3875449524600545
+      },
+      "target_missing": {
+        "rows": 13,
+        "users": 12,
+        "positives": 2,
+        "auc": 0.45454545454545453,
+        "logloss": 0.4399388703755246
+      },
+      "history_L200_empty": {
+        "rows": 392,
+        "users": 63,
+        "positives": 35,
+        "auc": 0.6901160464185674,
+        "logloss": 0.29750605976067457
+      },
+      "history_L200_0": {
+        "rows": 32,
+        "users": 5,
+        "positives": 2,
+        "auc": 0.43333333333333335,
+        "logloss": 0.2953287990857675
+      },
+      "history_L200_(0,0.5]": {
+        "rows": 3898,
+        "users": 569,
+        "positives": 537,
+        "auc": 0.5762040981640096,
+        "logloss": 0.4102155994027914
+      },
+      "history_L200_(0.5,0.9]": {
+        "rows": 197437,
+        "users": 21795,
+        "positives": 26093,
+        "auc": 0.6145721234944128,
+        "logloss": 0.3818213749738059
+      },
+      "history_L200_(0.9,1]": {
+        "rows": 567014,
+        "users": 46998,
+        "positives": 77776,
+        "auc": 0.6167878661962752,
+        "logloss": 0.3894507309243405
+      },
+      "history_L1000_empty": {
+        "rows": 392,
+        "users": 63,
+        "positives": 35,
+        "auc": 0.6901160464185674,
+        "logloss": 0.29750605976067457
+      },
+      "history_L1000_0": {
+        "rows": 29,
+        "users": 4,
+        "positives": 2,
+        "auc": 0.37037037037037035,
+        "logloss": 0.31376106243322516
+      },
+      "history_L1000_(0,0.5]": {
+        "rows": 5311,
+        "users": 816,
+        "positives": 728,
+        "auc": 0.602996501643676,
+        "logloss": 0.40061184567338837
+      },
+      "history_L1000_(0.5,0.9]": {
+        "rows": 233915,
+        "users": 27506,
+        "positives": 30622,
+        "auc": 0.6175269173786413,
+        "logloss": 0.37892154216819207
+      },
+      "history_L1000_(0.9,1]": {
+        "rows": 529126,
+        "users": 41041,
+        "positives": 73056,
+        "auc": 0.6153406621284851,
+        "logloss": 0.3912980525690017
+      }
+    }
+  },
+  "prediction_sha256": {
+    "C0-seed42": "57c9d9ae58d2c61df09201fab68d64702ad6862862d2eba7d2c8b43430a99944",
+    "C3-seed42": "0b5809267111f1f2220883d72485a36a9bdc93bb8e13a4e73877c4e445fa3c40",
+    "C5-seed42": "ef5b62bc08bf2863d66da8ee04ff755f115129197c30d36a836e33c391f3f58f",
+    "C6-seed42": "6ab72f6831e0584fefc1aeb4749bc0bfd64a35679e7f20c7c92f804214414f60",
+    "C7-seed42": "1b15b95b3f7294735d74f0a5cec38014e9282fa5e6c9e81312e08835acefd58d",
+    "R1-L200-seed42": "e5991bf0b75ddc7979a239702cae6403bd223207e3233c1a7e68103d591c0ff9",
+    "R1-L1000-seed42": "d66b9dbf165b3a1c88f60bf454b38dc4f773565e8fe91c28e1d4a0e53f6aa57d",
+    "R4-L200-seed42": "73f83e3e5f6c1d7d4b12e4aca5d0f976baf4392c261c93dad621cbc0e0e3a932",
+    "R4-L1000-seed42": "56e039e831a053d767cc1a95c79aa7dae944447ff107477222bd7d169ea7a215",
+    "C0-seed2026": "6d0323d48c768bec22e105426f853d7158fa5c828581079b6d22871cf8d05787",
+    "C3-seed2026": "906047e138db62b94b7a615a173c2039c1600260c443a8ffb170bb1fbc77d52b",
+    "C5-seed2026": "2d8149da51d365b4dfebd3df0ee4a7f8f17200d0493c88f26a415c7ccb2c693d",
+    "C6-seed2026": "2a450783e96426a37f85068246badc72237c0cbb515a4aedb3f215c22db9a995",
+    "C7-seed2026": "aec3aaca9af76862db40f49f87536eada9e55ae753b14aac463506f3b4afc594",
+    "R1-L200-seed2026": "101e7dec03ebdcc1076d6bd8337e809a58c306a693a21ea3422c09c2efe853ef",
+    "R1-L1000-seed2026": "774b031857f6dee6d7f090640ecc4c8daffe3e93d183377e1ed9ad2c5641aecb",
+    "R4-L200-seed2026": "57dc72b6173966a1182e15d69220b35fa56434610c021f2fb9df519fb1916d4f",
+    "R4-L1000-seed2026": "a16475b8bba9a4dc0b40fba2125db48d69736b52261f82c6508c0aaef93e200e",
+    "C0-seed3407": "713d8d9819a39bc92f33507ba4636e3bd37ea4e565f820916e6c2111114b9235",
+    "C3-seed3407": "b3c700dd8dfab34bf1a956e872e3b866e3ca3dcb5e35964b979b8f75265a5575",
+    "C5-seed3407": "e11a897eec8b7191edde6d42011507fc49fb523442b961910668633cc1fc2272",
+    "C6-seed3407": "cf6b173cd04bfac9d538979dcdf1461a56224efa72d65de8cd20098da1746c31",
+    "C7-seed3407": "cc862352145d016a3bb8496208f03e1df4613d7db4d9c975513d26b844accbaa",
+    "R1-L200-seed3407": "837455af54795fc2ccf894037a22da85e68d102d12836a0faab6b798e960371c",
+    "R1-L1000-seed3407": "26c1dabd991cf242050325306d23a46c990fb415f81d554ccfb29635f6a33677",
+    "R4-L200-seed3407": "bcaa8a52465028cc5cc37ce86d5079b5e8f840020b6e993570d480fcf14e2ce7",
+    "R4-L1000-seed3407": "a05296fca85f6f1fd3809a71bea49bdd6fb84a3c12f518cce37701af28d65a96"
+  },
+  "limitations": [
+    "descriptive AUC and LogLoss; no subgroup confidence intervals",
+    "history coverage uses fixed pre-retrieval windows, not selected top-K",
+    "groups differ in users, labels and history lengths; not causal effects of coverage",
+    "target-missing subgroup may be too small for reliable inference"
+  ]
+}

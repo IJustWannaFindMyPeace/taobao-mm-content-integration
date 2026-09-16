@@ -47,13 +47,13 @@ def main():
                     'logloss':float(np.mean(np.logaddexp(0,s)-y*s)) if len(y) else None})
             results[name]=values
         digests[name]=sha256(Path(path))
-    report={'scope':'single_seed_validation_frequency_diagnostic','store_manifest_sha256':sha256(args.store/'manifest.json'),
+    report={'scope':'supplied_models_validation_frequency_diagnostic','store_manifest_sha256':sha256(args.store/'manifest.json'),
             'implementation_sha256':sha256(Path(__file__)),'prediction_sha256':digests,
             'frequency_source':'raw target item IDs in selected training exposures only',
             'training_rows':len(train),'validation_rows':len(labels),'models':results,'test_evaluated':False,
             'limitations':['zero train-target frequency is not proof of a newly created item or no history interactions',
                            'fixed frequency bins; not original-paper quantile groups',
-                           'descriptive AUC/logloss only; no subgroup confidence intervals or seed variability']}
+                           'descriptive AUC/logloss only; no subgroup confidence intervals or automatic seed aggregation']}
     args.report.write_text(json.dumps(report,indent=2),encoding='utf-8')
     print('Frequency report completed; all prediction rows and labels aligned.')
 

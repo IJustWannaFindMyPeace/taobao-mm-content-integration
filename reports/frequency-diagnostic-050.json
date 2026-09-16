@@ -1,0 +1,1395 @@
+{
+  "scope": "supplied_models_validation_frequency_diagnostic",
+  "store_manifest_sha256": "7dd761c48f61b3ae219922f8387f6026eb6eb011ef6ef8050bb1472a52593f59",
+  "implementation_sha256": "89eeec171d5355b175f1b9560129f3832f8512e63161007a9b3f238f71388a0d",
+  "prediction_sha256": {
+    "C0-seed42": "57c9d9ae58d2c61df09201fab68d64702ad6862862d2eba7d2c8b43430a99944",
+    "C3-seed42": "0b5809267111f1f2220883d72485a36a9bdc93bb8e13a4e73877c4e445fa3c40",
+    "C5-seed42": "ef5b62bc08bf2863d66da8ee04ff755f115129197c30d36a836e33c391f3f58f",
+    "C6-seed42": "6ab72f6831e0584fefc1aeb4749bc0bfd64a35679e7f20c7c92f804214414f60",
+    "C7-seed42": "1b15b95b3f7294735d74f0a5cec38014e9282fa5e6c9e81312e08835acefd58d",
+    "R1-L200-seed42": "e5991bf0b75ddc7979a239702cae6403bd223207e3233c1a7e68103d591c0ff9",
+    "R1-L1000-seed42": "d66b9dbf165b3a1c88f60bf454b38dc4f773565e8fe91c28e1d4a0e53f6aa57d",
+    "R4-L200-seed42": "73f83e3e5f6c1d7d4b12e4aca5d0f976baf4392c261c93dad621cbc0e0e3a932",
+    "R4-L1000-seed42": "56e039e831a053d767cc1a95c79aa7dae944447ff107477222bd7d169ea7a215",
+    "C0-seed2026": "6d0323d48c768bec22e105426f853d7158fa5c828581079b6d22871cf8d05787",
+    "C3-seed2026": "906047e138db62b94b7a615a173c2039c1600260c443a8ffb170bb1fbc77d52b",
+    "C5-seed2026": "2d8149da51d365b4dfebd3df0ee4a7f8f17200d0493c88f26a415c7ccb2c693d",
+    "C6-seed2026": "2a450783e96426a37f85068246badc72237c0cbb515a4aedb3f215c22db9a995",
+    "C7-seed2026": "aec3aaca9af76862db40f49f87536eada9e55ae753b14aac463506f3b4afc594",
+    "R1-L200-seed2026": "101e7dec03ebdcc1076d6bd8337e809a58c306a693a21ea3422c09c2efe853ef",
+    "R1-L1000-seed2026": "774b031857f6dee6d7f090640ecc4c8daffe3e93d183377e1ed9ad2c5641aecb",
+    "R4-L200-seed2026": "57dc72b6173966a1182e15d69220b35fa56434610c021f2fb9df519fb1916d4f",
+    "R4-L1000-seed2026": "a16475b8bba9a4dc0b40fba2125db48d69736b52261f82c6508c0aaef93e200e",
+    "C0-seed3407": "713d8d9819a39bc92f33507ba4636e3bd37ea4e565f820916e6c2111114b9235",
+    "C3-seed3407": "b3c700dd8dfab34bf1a956e872e3b866e3ca3dcb5e35964b979b8f75265a5575",
+    "C5-seed3407": "e11a897eec8b7191edde6d42011507fc49fb523442b961910668633cc1fc2272",
+    "C6-seed3407": "cf6b173cd04bfac9d538979dcdf1461a56224efa72d65de8cd20098da1746c31",
+    "C7-seed3407": "cc862352145d016a3bb8496208f03e1df4613d7db4d9c975513d26b844accbaa",
+    "R1-L200-seed3407": "837455af54795fc2ccf894037a22da85e68d102d12836a0faab6b798e960371c",
+    "R1-L1000-seed3407": "26c1dabd991cf242050325306d23a46c990fb415f81d554ccfb29635f6a33677",
+    "R4-L200-seed3407": "bcaa8a52465028cc5cc37ce86d5079b5e8f840020b6e993570d480fcf14e2ce7",
+    "R4-L1000-seed3407": "a05296fca85f6f1fd3809a71bea49bdd6fb84a3c12f518cce37701af28d65a96"
+  },
+  "frequency_source": "raw target item IDs in selected training exposures only",
+  "training_rows": 3052475,
+  "validation_rows": 768773,
+  "models": {
+    "C0-seed42": [
+      {
+        "training_target_exposure_frequency": "0",
+        "validation_rows": 137978,
+        "distinct_validation_targets": 128274,
+        "positives": 21162,
+        "auc": 0.5748242618034116,
+        "logloss": 0.4242396748170437
+      },
+      {
+        "training_target_exposure_frequency": "1",
+        "validation_rows": 84277,
+        "distinct_validation_targets": 71428,
+        "positives": 12091,
+        "auc": 0.5716516317032413,
+        "logloss": 0.4082052085794988
+      },
+      {
+        "training_target_exposure_frequency": "2-5",
+        "validation_rows": 170886,
+        "distinct_validation_targets": 118234,
+        "positives": 25273,
+        "auc": 0.5800700652610115,
+        "logloss": 0.41401919838896234
+      },
+      {
+        "training_target_exposure_frequency": "6-20",
+        "validation_rows": 180136,
+        "distinct_validation_targets": 68175,
+        "positives": 25064,
+        "auc": 0.5950576092372326,
+        "logloss": 0.3966243598769291
+      },
+      {
+        "training_target_exposure_frequency": "21-100",
+        "validation_rows": 137301,
+        "distinct_validation_targets": 15112,
+        "positives": 16093,
+        "auc": 0.6293757825770178,
+        "logloss": 0.35125853321910294
+      },
+      {
+        "training_target_exposure_frequency": "101+",
+        "validation_rows": 58195,
+        "distinct_validation_targets": 1215,
+        "positives": 4760,
+        "auc": 0.6675828325154334,
+        "logloss": 0.2710142319370198
+      }
+    ],
+    "C3-seed42": [
+      {
+        "training_target_exposure_frequency": "0",
+        "validation_rows": 137978,
+        "distinct_validation_targets": 128274,
+        "positives": 21162,
+        "auc": 0.594593046422067,
+        "logloss": 0.42132599689596417
+      },
+      {
+        "training_target_exposure_frequency": "1",
+        "validation_rows": 84277,
+        "distinct_validation_targets": 71428,
+        "positives": 12091,
+        "auc": 0.5844668277769449,
+        "logloss": 0.4064651081587781
+      },
+      {
+        "training_target_exposure_frequency": "2-5",
+        "validation_rows": 170886,
+        "distinct_validation_targets": 118234,
+        "positives": 25273,
+        "auc": 0.5914858250442714,
+        "logloss": 0.4121641524789315
+      },
+      {
+        "training_target_exposure_frequency": "6-20",
+        "validation_rows": 180136,
+        "distinct_validation_targets": 68175,
+        "positives": 25064,
+        "auc": 0.6009893756537535,
+        "logloss": 0.3956489669535897
+      },
+      {
+        "training_target_exposure_frequency": "21-100",
+        "validation_rows": 137301,
+        "distinct_validation_targets": 15112,
+        "positives": 16093,
+        "auc": 0.6319690885382105,
+        "logloss": 0.35046411152652185
+      },
+      {
+        "training_target_exposure_frequency": "101+",
+        "validation_rows": 58195,
+        "distinct_validation_targets": 1215,
+        "positives": 4760,
+        "auc": 0.6685078372136728,
+        "logloss": 0.2702274012202854
+      }
+    ],
+    "C5-seed42": [
+      {
+        "training_target_exposure_frequency": "0",
+        "validation_rows": 137978,
+        "distinct_validation_targets": 128274,
+        "positives": 21162,
+        "auc": 0.59483766000468,
+        "logloss": 0.42298882201451204
+      },
+      {
+        "training_target_exposure_frequency": "1",
+        "validation_rows": 84277,
+        "distinct_validation_targets": 71428,
+        "positives": 12091,
+        "auc": 0.5949803242990601,
+        "logloss": 0.40651597726132155
+      },
+      {
+        "training_target_exposure_frequency": "2-5",
+        "validation_rows": 170886,
+        "distinct_validation_targets": 118234,
+        "positives": 25273,
+        "auc": 0.5966551488643724,
+        "logloss": 0.41264395348461275
+      },
+      {
+        "training_target_exposure_frequency": "6-20",
+        "validation_rows": 180136,
+        "distinct_validation_targets": 68175,
+        "positives": 25064,
+        "auc": 0.6068170864602713,
+        "logloss": 0.3955445774677873
+      },
+      {
+        "training_target_exposure_frequency": "21-100",
+        "validation_rows": 137301,
+        "distinct_validation_targets": 15112,
+        "positives": 16093,
+        "auc": 0.6341304577356314,
+        "logloss": 0.35034117975570506
+      },
+      {
+        "training_target_exposure_frequency": "101+",
+        "validation_rows": 58195,
+        "distinct_validation_targets": 1215,
+        "positives": 4760,
+        "auc": 0.6652969818038565,
+        "logloss": 0.2719295747704648
+      }
+    ],
+    "C6-seed42": [
+      {
+        "training_target_exposure_frequency": "0",
+        "validation_rows": 137978,
+        "distinct_validation_targets": 128274,
+        "positives": 21162,
+        "auc": 0.5973605447710717,
+        "logloss": 0.4226029351022918
+      },
+      {
+        "training_target_exposure_frequency": "1",
+        "validation_rows": 84277,
+        "distinct_validation_targets": 71428,
+        "positives": 12091,
+        "auc": 0.5948361671421967,
+        "logloss": 0.4062746547948652
+      },
+      {
+        "training_target_exposure_frequency": "2-5",
+        "validation_rows": 170886,
+        "distinct_validation_targets": 118234,
+        "positives": 25273,
+        "auc": 0.5985812726459625,
+        "logloss": 0.41206120422926146
+      },
+      {
+        "training_target_exposure_frequency": "6-20",
+        "validation_rows": 180136,
+        "distinct_validation_targets": 68175,
+        "positives": 25064,
+        "auc": 0.6078142468950556,
+        "logloss": 0.3951911751519865
+      },
+      {
+        "training_target_exposure_frequency": "21-100",
+        "validation_rows": 137301,
+        "distinct_validation_targets": 15112,
+        "positives": 16093,
+        "auc": 0.6346193933614932,
+        "logloss": 0.3499811709571863
+      },
+      {
+        "training_target_exposure_frequency": "101+",
+        "validation_rows": 58195,
+        "distinct_validation_targets": 1215,
+        "positives": 4760,
+        "auc": 0.6662351376407211,
+        "logloss": 0.2709459283078247
+      }
+    ],
+    "C7-seed42": [
+      {
+        "training_target_exposure_frequency": "0",
+        "validation_rows": 137978,
+        "distinct_validation_targets": 128274,
+        "positives": 21162,
+        "auc": 0.596786938794733,
+        "logloss": 0.42213021179144594
+      },
+      {
+        "training_target_exposure_frequency": "1",
+        "validation_rows": 84277,
+        "distinct_validation_targets": 71428,
+        "positives": 12091,
+        "auc": 0.5883445791623736,
+        "logloss": 0.40694355433723733
+      },
+      {
+        "training_target_exposure_frequency": "2-5",
+        "validation_rows": 170886,
+        "distinct_validation_targets": 118234,
+        "positives": 25273,
+        "auc": 0.5934079396709985,
+        "logloss": 0.4123636145970158
+      },
+      {
+        "training_target_exposure_frequency": "6-20",
+        "validation_rows": 180136,
+        "distinct_validation_targets": 68175,
+        "positives": 25064,
+        "auc": 0.6036548598454239,
+        "logloss": 0.3954722399633477
+      },
+      {
+        "training_target_exposure_frequency": "21-100",
+        "validation_rows": 137301,
+        "distinct_validation_targets": 15112,
+        "positives": 16093,
+        "auc": 0.6356279059489389,
+        "logloss": 0.35006390892735784
+      },
+      {
+        "training_target_exposure_frequency": "101+",
+        "validation_rows": 58195,
+        "distinct_validation_targets": 1215,
+        "positives": 4760,
+        "auc": 0.6685104812019315,
+        "logloss": 0.2709170451214358
+      }
+    ],
+    "R1-L200-seed42": [
+      {
+        "training_target_exposure_frequency": "0",
+        "validation_rows": 137978,
+        "distinct_validation_targets": 128274,
+        "positives": 21162,
+        "auc": 0.5748013774496313,
+        "logloss": 0.42452459556502276
+      },
+      {
+        "training_target_exposure_frequency": "1",
+        "validation_rows": 84277,
+        "distinct_validation_targets": 71428,
+        "positives": 12091,
+        "auc": 0.5699462571376787,
+        "logloss": 0.40889526628073836
+      },
+      {
+        "training_target_exposure_frequency": "2-5",
+        "validation_rows": 170886,
+        "distinct_validation_targets": 118234,
+        "positives": 25273,
+        "auc": 0.5780983937954723,
+        "logloss": 0.414433453203626
+      },
+      {
+        "training_target_exposure_frequency": "6-20",
+        "validation_rows": 180136,
+        "distinct_validation_targets": 68175,
+        "positives": 25064,
+        "auc": 0.593173237757729,
+        "logloss": 0.3971105277711657
+      },
+      {
+        "training_target_exposure_frequency": "21-100",
+        "validation_rows": 137301,
+        "distinct_validation_targets": 15112,
+        "positives": 16093,
+        "auc": 0.6272798317008808,
+        "logloss": 0.35170956150014887
+      },
+      {
+        "training_target_exposure_frequency": "101+",
+        "validation_rows": 58195,
+        "distinct_validation_targets": 1215,
+        "positives": 4760,
+        "auc": 0.6617685490028331,
+        "logloss": 0.27206974752478963
+      }
+    ],
+    "R1-L1000-seed42": [
+      {
+        "training_target_exposure_frequency": "0",
+        "validation_rows": 137978,
+        "distinct_validation_targets": 128274,
+        "positives": 21162,
+        "auc": 0.5777576406197799,
+        "logloss": 0.42435856914577014
+      },
+      {
+        "training_target_exposure_frequency": "1",
+        "validation_rows": 84277,
+        "distinct_validation_targets": 71428,
+        "positives": 12091,
+        "auc": 0.5753203927054495,
+        "logloss": 0.4083972109640083
+      },
+      {
+        "training_target_exposure_frequency": "2-5",
+        "validation_rows": 170886,
+        "distinct_validation_targets": 118234,
+        "positives": 25273,
+        "auc": 0.5826396586698482,
+        "logloss": 0.41394213828007687
+      },
+      {
+        "training_target_exposure_frequency": "6-20",
+        "validation_rows": 180136,
+        "distinct_validation_targets": 68175,
+        "positives": 25064,
+        "auc": 0.5948563919967854,
+        "logloss": 0.39703635599281906
+      },
+      {
+        "training_target_exposure_frequency": "21-100",
+        "validation_rows": 137301,
+        "distinct_validation_targets": 15112,
+        "positives": 16093,
+        "auc": 0.6291228499342457,
+        "logloss": 0.3519706018469112
+      },
+      {
+        "training_target_exposure_frequency": "101+",
+        "validation_rows": 58195,
+        "distinct_validation_targets": 1215,
+        "positives": 4760,
+        "auc": 0.6632820071979386,
+        "logloss": 0.2726628696988068
+      }
+    ],
+    "R4-L200-seed42": [
+      {
+        "training_target_exposure_frequency": "0",
+        "validation_rows": 137978,
+        "distinct_validation_targets": 128274,
+        "positives": 21162,
+        "auc": 0.5976219356555215,
+        "logloss": 0.4216296306604943
+      },
+      {
+        "training_target_exposure_frequency": "1",
+        "validation_rows": 84277,
+        "distinct_validation_targets": 71428,
+        "positives": 12091,
+        "auc": 0.5866764192686019,
+        "logloss": 0.4066375257556085
+      },
+      {
+        "training_target_exposure_frequency": "2-5",
+        "validation_rows": 170886,
+        "distinct_validation_targets": 118234,
+        "positives": 25273,
+        "auc": 0.5921832696239886,
+        "logloss": 0.4122609197006064
+      },
+      {
+        "training_target_exposure_frequency": "6-20",
+        "validation_rows": 180136,
+        "distinct_validation_targets": 68175,
+        "positives": 25064,
+        "auc": 0.6021297941158377,
+        "logloss": 0.39556903255001613
+      },
+      {
+        "training_target_exposure_frequency": "21-100",
+        "validation_rows": 137301,
+        "distinct_validation_targets": 15112,
+        "positives": 16093,
+        "auc": 0.6335051497355831,
+        "logloss": 0.35032776131524573
+      },
+      {
+        "training_target_exposure_frequency": "101+",
+        "validation_rows": 58195,
+        "distinct_validation_targets": 1215,
+        "positives": 4760,
+        "auc": 0.6681055657034031,
+        "logloss": 0.27063545188967475
+      }
+    ],
+    "R4-L1000-seed42": [
+      {
+        "training_target_exposure_frequency": "0",
+        "validation_rows": 137978,
+        "distinct_validation_targets": 128274,
+        "positives": 21162,
+        "auc": 0.5992983887667408,
+        "logloss": 0.42134267782546264
+      },
+      {
+        "training_target_exposure_frequency": "1",
+        "validation_rows": 84277,
+        "distinct_validation_targets": 71428,
+        "positives": 12091,
+        "auc": 0.5917207075694602,
+        "logloss": 0.40597657705406026
+      },
+      {
+        "training_target_exposure_frequency": "2-5",
+        "validation_rows": 170886,
+        "distinct_validation_targets": 118234,
+        "positives": 25273,
+        "auc": 0.5989517126858629,
+        "logloss": 0.41140242775902675
+      },
+      {
+        "training_target_exposure_frequency": "6-20",
+        "validation_rows": 180136,
+        "distinct_validation_targets": 68175,
+        "positives": 25064,
+        "auc": 0.6064287232104303,
+        "logloss": 0.3949932348707582
+      },
+      {
+        "training_target_exposure_frequency": "21-100",
+        "validation_rows": 137301,
+        "distinct_validation_targets": 15112,
+        "positives": 16093,
+        "auc": 0.6344461323441661,
+        "logloss": 0.350393006184974
+      },
+      {
+        "training_target_exposure_frequency": "101+",
+        "validation_rows": 58195,
+        "distinct_validation_targets": 1215,
+        "positives": 4760,
+        "auc": 0.6683129683987378,
+        "logloss": 0.27119994724543767
+      }
+    ],
+    "C0-seed2026": [
+      {
+        "training_target_exposure_frequency": "0",
+        "validation_rows": 137978,
+        "distinct_validation_targets": 128274,
+        "positives": 21162,
+        "auc": 0.5735788902263105,
+        "logloss": 0.42630707041359023
+      },
+      {
+        "training_target_exposure_frequency": "1",
+        "validation_rows": 84277,
+        "distinct_validation_targets": 71428,
+        "positives": 12091,
+        "auc": 0.5710195030200965,
+        "logloss": 0.41058888690475764
+      },
+      {
+        "training_target_exposure_frequency": "2-5",
+        "validation_rows": 170886,
+        "distinct_validation_targets": 118234,
+        "positives": 25273,
+        "auc": 0.579523781498648,
+        "logloss": 0.415300018349087
+      },
+      {
+        "training_target_exposure_frequency": "6-20",
+        "validation_rows": 180136,
+        "distinct_validation_targets": 68175,
+        "positives": 25064,
+        "auc": 0.5936813352431889,
+        "logloss": 0.39783042397190344
+      },
+      {
+        "training_target_exposure_frequency": "21-100",
+        "validation_rows": 137301,
+        "distinct_validation_targets": 15112,
+        "positives": 16093,
+        "auc": 0.6297404213417898,
+        "logloss": 0.35218929245701447
+      },
+      {
+        "training_target_exposure_frequency": "101+",
+        "validation_rows": 58195,
+        "distinct_validation_targets": 1215,
+        "positives": 4760,
+        "auc": 0.6662938675985038,
+        "logloss": 0.2715155983909281
+      }
+    ],
+    "C3-seed2026": [
+      {
+        "training_target_exposure_frequency": "0",
+        "validation_rows": 137978,
+        "distinct_validation_targets": 128274,
+        "positives": 21162,
+        "auc": 0.5943806581874685,
+        "logloss": 0.4223726084583309
+      },
+      {
+        "training_target_exposure_frequency": "1",
+        "validation_rows": 84277,
+        "distinct_validation_targets": 71428,
+        "positives": 12091,
+        "auc": 0.5836396924262658,
+        "logloss": 0.40741501535763464
+      },
+      {
+        "training_target_exposure_frequency": "2-5",
+        "validation_rows": 170886,
+        "distinct_validation_targets": 118234,
+        "positives": 25273,
+        "auc": 0.5882779541544902,
+        "logloss": 0.4129675980032213
+      },
+      {
+        "training_target_exposure_frequency": "6-20",
+        "validation_rows": 180136,
+        "distinct_validation_targets": 68175,
+        "positives": 25064,
+        "auc": 0.5969786618594409,
+        "logloss": 0.3964722597335287
+      },
+      {
+        "training_target_exposure_frequency": "21-100",
+        "validation_rows": 137301,
+        "distinct_validation_targets": 15112,
+        "positives": 16093,
+        "auc": 0.6279507687301012,
+        "logloss": 0.35125808724030866
+      },
+      {
+        "training_target_exposure_frequency": "101+",
+        "validation_rows": 58195,
+        "distinct_validation_targets": 1215,
+        "positives": 4760,
+        "auc": 0.6640451565673523,
+        "logloss": 0.27107544797671246
+      }
+    ],
+    "C5-seed2026": [
+      {
+        "training_target_exposure_frequency": "0",
+        "validation_rows": 137978,
+        "distinct_validation_targets": 128274,
+        "positives": 21162,
+        "auc": 0.5980071548354919,
+        "logloss": 0.42418116293148694
+      },
+      {
+        "training_target_exposure_frequency": "1",
+        "validation_rows": 84277,
+        "distinct_validation_targets": 71428,
+        "positives": 12091,
+        "auc": 0.5953273049116815,
+        "logloss": 0.408458185535091
+      },
+      {
+        "training_target_exposure_frequency": "2-5",
+        "validation_rows": 170886,
+        "distinct_validation_targets": 118234,
+        "positives": 25273,
+        "auc": 0.597766972913699,
+        "logloss": 0.41323405296250554
+      },
+      {
+        "training_target_exposure_frequency": "6-20",
+        "validation_rows": 180136,
+        "distinct_validation_targets": 68175,
+        "positives": 25064,
+        "auc": 0.6079133391999766,
+        "logloss": 0.3960526306678646
+      },
+      {
+        "training_target_exposure_frequency": "21-100",
+        "validation_rows": 137301,
+        "distinct_validation_targets": 15112,
+        "positives": 16093,
+        "auc": 0.6375255217324005,
+        "logloss": 0.3509930454049147
+      },
+      {
+        "training_target_exposure_frequency": "101+",
+        "validation_rows": 58195,
+        "distinct_validation_targets": 1215,
+        "positives": 4760,
+        "auc": 0.6704075948710166,
+        "logloss": 0.2718630313728333
+      }
+    ],
+    "C6-seed2026": [
+      {
+        "training_target_exposure_frequency": "0",
+        "validation_rows": 137978,
+        "distinct_validation_targets": 128274,
+        "positives": 21162,
+        "auc": 0.5999996809543705,
+        "logloss": 0.4231252575499123
+      },
+      {
+        "training_target_exposure_frequency": "1",
+        "validation_rows": 84277,
+        "distinct_validation_targets": 71428,
+        "positives": 12091,
+        "auc": 0.5958202775783947,
+        "logloss": 0.4073295929496597
+      },
+      {
+        "training_target_exposure_frequency": "2-5",
+        "validation_rows": 170886,
+        "distinct_validation_targets": 118234,
+        "positives": 25273,
+        "auc": 0.5990053297654206,
+        "logloss": 0.41255778886149963
+      },
+      {
+        "training_target_exposure_frequency": "6-20",
+        "validation_rows": 180136,
+        "distinct_validation_targets": 68175,
+        "positives": 25064,
+        "auc": 0.6080277851782392,
+        "logloss": 0.3954563847224011
+      },
+      {
+        "training_target_exposure_frequency": "21-100",
+        "validation_rows": 137301,
+        "distinct_validation_targets": 15112,
+        "positives": 16093,
+        "auc": 0.6365902632589713,
+        "logloss": 0.3502361841393087
+      },
+      {
+        "training_target_exposure_frequency": "101+",
+        "validation_rows": 58195,
+        "distinct_validation_targets": 1215,
+        "positives": 4760,
+        "auc": 0.6685260895787154,
+        "logloss": 0.27086897797698223
+      }
+    ],
+    "C7-seed2026": [
+      {
+        "training_target_exposure_frequency": "0",
+        "validation_rows": 137978,
+        "distinct_validation_targets": 128274,
+        "positives": 21162,
+        "auc": 0.5980109923229572,
+        "logloss": 0.42193021200318376
+      },
+      {
+        "training_target_exposure_frequency": "1",
+        "validation_rows": 84277,
+        "distinct_validation_targets": 71428,
+        "positives": 12091,
+        "auc": 0.5880169706648547,
+        "logloss": 0.40671599718207074
+      },
+      {
+        "training_target_exposure_frequency": "2-5",
+        "validation_rows": 170886,
+        "distinct_validation_targets": 118234,
+        "positives": 25273,
+        "auc": 0.5918881720222234,
+        "logloss": 0.4124121789574315
+      },
+      {
+        "training_target_exposure_frequency": "6-20",
+        "validation_rows": 180136,
+        "distinct_validation_targets": 68175,
+        "positives": 25064,
+        "auc": 0.6026776879634277,
+        "logloss": 0.3954963077037128
+      },
+      {
+        "training_target_exposure_frequency": "21-100",
+        "validation_rows": 137301,
+        "distinct_validation_targets": 15112,
+        "positives": 16093,
+        "auc": 0.6333511615027173,
+        "logloss": 0.3501677149663607
+      },
+      {
+        "training_target_exposure_frequency": "101+",
+        "validation_rows": 58195,
+        "distinct_validation_targets": 1215,
+        "positives": 4760,
+        "auc": 0.6677043635831801,
+        "logloss": 0.27047632826490137
+      }
+    ],
+    "R1-L200-seed2026": [
+      {
+        "training_target_exposure_frequency": "0",
+        "validation_rows": 137978,
+        "distinct_validation_targets": 128274,
+        "positives": 21162,
+        "auc": 0.5760294060024247,
+        "logloss": 0.42574952546079
+      },
+      {
+        "training_target_exposure_frequency": "1",
+        "validation_rows": 84277,
+        "distinct_validation_targets": 71428,
+        "positives": 12091,
+        "auc": 0.5724848136790359,
+        "logloss": 0.4103053782106023
+      },
+      {
+        "training_target_exposure_frequency": "2-5",
+        "validation_rows": 170886,
+        "distinct_validation_targets": 118234,
+        "positives": 25273,
+        "auc": 0.5803918503453173,
+        "logloss": 0.4150175595839524
+      },
+      {
+        "training_target_exposure_frequency": "6-20",
+        "validation_rows": 180136,
+        "distinct_validation_targets": 68175,
+        "positives": 25064,
+        "auc": 0.5925293907522454,
+        "logloss": 0.3979853739884178
+      },
+      {
+        "training_target_exposure_frequency": "21-100",
+        "validation_rows": 137301,
+        "distinct_validation_targets": 15112,
+        "positives": 16093,
+        "auc": 0.6271194587669979,
+        "logloss": 0.3524595736914632
+      },
+      {
+        "training_target_exposure_frequency": "101+",
+        "validation_rows": 58195,
+        "distinct_validation_targets": 1215,
+        "positives": 4760,
+        "auc": 0.6631539241503657,
+        "logloss": 0.272538540768495
+      }
+    ],
+    "R1-L1000-seed2026": [
+      {
+        "training_target_exposure_frequency": "0",
+        "validation_rows": 137978,
+        "distinct_validation_targets": 128274,
+        "positives": 21162,
+        "auc": 0.5750544827348605,
+        "logloss": 0.42741435320258947
+      },
+      {
+        "training_target_exposure_frequency": "1",
+        "validation_rows": 84277,
+        "distinct_validation_targets": 71428,
+        "positives": 12091,
+        "auc": 0.574547314928032,
+        "logloss": 0.41166543291125957
+      },
+      {
+        "training_target_exposure_frequency": "2-5",
+        "validation_rows": 170886,
+        "distinct_validation_targets": 118234,
+        "positives": 25273,
+        "auc": 0.583141077342611,
+        "logloss": 0.41563315234450565
+      },
+      {
+        "training_target_exposure_frequency": "6-20",
+        "validation_rows": 180136,
+        "distinct_validation_targets": 68175,
+        "positives": 25064,
+        "auc": 0.5932581413805174,
+        "logloss": 0.39858006903932414
+      },
+      {
+        "training_target_exposure_frequency": "21-100",
+        "validation_rows": 137301,
+        "distinct_validation_targets": 15112,
+        "positives": 16093,
+        "auc": 0.6274807031921655,
+        "logloss": 0.35315023569570647
+      },
+      {
+        "training_target_exposure_frequency": "101+",
+        "validation_rows": 58195,
+        "distinct_validation_targets": 1215,
+        "positives": 4760,
+        "auc": 0.6608481383570551,
+        "logloss": 0.273217869594294
+      }
+    ],
+    "R4-L200-seed2026": [
+      {
+        "training_target_exposure_frequency": "0",
+        "validation_rows": 137978,
+        "distinct_validation_targets": 128274,
+        "positives": 21162,
+        "auc": 0.5996797567055357,
+        "logloss": 0.4230468335017537
+      },
+      {
+        "training_target_exposure_frequency": "1",
+        "validation_rows": 84277,
+        "distinct_validation_targets": 71428,
+        "positives": 12091,
+        "auc": 0.5887892286677066,
+        "logloss": 0.4082886419970852
+      },
+      {
+        "training_target_exposure_frequency": "2-5",
+        "validation_rows": 170886,
+        "distinct_validation_targets": 118234,
+        "positives": 25273,
+        "auc": 0.5941871607927445,
+        "logloss": 0.4129694831003823
+      },
+      {
+        "training_target_exposure_frequency": "6-20",
+        "validation_rows": 180136,
+        "distinct_validation_targets": 68175,
+        "positives": 25064,
+        "auc": 0.6026471522265361,
+        "logloss": 0.3961791730195992
+      },
+      {
+        "training_target_exposure_frequency": "21-100",
+        "validation_rows": 137301,
+        "distinct_validation_targets": 15112,
+        "positives": 16093,
+        "auc": 0.6342090404655439,
+        "logloss": 0.35092687312275717
+      },
+      {
+        "training_target_exposure_frequency": "101+",
+        "validation_rows": 58195,
+        "distinct_validation_targets": 1215,
+        "positives": 4760,
+        "auc": 0.6685565829213692,
+        "logloss": 0.2712276191857936
+      }
+    ],
+    "R4-L1000-seed2026": [
+      {
+        "training_target_exposure_frequency": "0",
+        "validation_rows": 137978,
+        "distinct_validation_targets": 128274,
+        "positives": 21162,
+        "auc": 0.598122146169813,
+        "logloss": 0.4231698065472076
+      },
+      {
+        "training_target_exposure_frequency": "1",
+        "validation_rows": 84277,
+        "distinct_validation_targets": 71428,
+        "positives": 12091,
+        "auc": 0.5932122292455038,
+        "logloss": 0.40742463823734487
+      },
+      {
+        "training_target_exposure_frequency": "2-5",
+        "validation_rows": 170886,
+        "distinct_validation_targets": 118234,
+        "positives": 25273,
+        "auc": 0.5986627644113683,
+        "logloss": 0.4121358272620547
+      },
+      {
+        "training_target_exposure_frequency": "6-20",
+        "validation_rows": 180136,
+        "distinct_validation_targets": 68175,
+        "positives": 25064,
+        "auc": 0.6044980852679954,
+        "logloss": 0.39580012823949107
+      },
+      {
+        "training_target_exposure_frequency": "21-100",
+        "validation_rows": 137301,
+        "distinct_validation_targets": 15112,
+        "positives": 16093,
+        "auc": 0.6349614662530788,
+        "logloss": 0.35082430719509844
+      },
+      {
+        "training_target_exposure_frequency": "101+",
+        "validation_rows": 58195,
+        "distinct_validation_targets": 1215,
+        "positives": 4760,
+        "auc": 0.6661762052065141,
+        "logloss": 0.271534466254727
+      }
+    ],
+    "C0-seed3407": [
+      {
+        "training_target_exposure_frequency": "0",
+        "validation_rows": 137978,
+        "distinct_validation_targets": 128274,
+        "positives": 21162,
+        "auc": 0.5722390557389794,
+        "logloss": 0.42447683044592066
+      },
+      {
+        "training_target_exposure_frequency": "1",
+        "validation_rows": 84277,
+        "distinct_validation_targets": 71428,
+        "positives": 12091,
+        "auc": 0.5689977544776345,
+        "logloss": 0.40837456340725736
+      },
+      {
+        "training_target_exposure_frequency": "2-5",
+        "validation_rows": 170886,
+        "distinct_validation_targets": 118234,
+        "positives": 25273,
+        "auc": 0.5760338306682695,
+        "logloss": 0.41440763694844834
+      },
+      {
+        "training_target_exposure_frequency": "6-20",
+        "validation_rows": 180136,
+        "distinct_validation_targets": 68175,
+        "positives": 25064,
+        "auc": 0.592129152979598,
+        "logloss": 0.396968057599313
+      },
+      {
+        "training_target_exposure_frequency": "21-100",
+        "validation_rows": 137301,
+        "distinct_validation_targets": 15112,
+        "positives": 16093,
+        "auc": 0.6265024797411807,
+        "logloss": 0.3513964963150312
+      },
+      {
+        "training_target_exposure_frequency": "101+",
+        "validation_rows": 58195,
+        "distinct_validation_targets": 1215,
+        "positives": 4760,
+        "auc": 0.6680370814930258,
+        "logloss": 0.2702110133274157
+      }
+    ],
+    "C3-seed3407": [
+      {
+        "training_target_exposure_frequency": "0",
+        "validation_rows": 137978,
+        "distinct_validation_targets": 128274,
+        "positives": 21162,
+        "auc": 0.596109533768181,
+        "logloss": 0.4216767061785204
+      },
+      {
+        "training_target_exposure_frequency": "1",
+        "validation_rows": 84277,
+        "distinct_validation_targets": 71428,
+        "positives": 12091,
+        "auc": 0.5856491105510124,
+        "logloss": 0.4067972327214477
+      },
+      {
+        "training_target_exposure_frequency": "2-5",
+        "validation_rows": 170886,
+        "distinct_validation_targets": 118234,
+        "positives": 25273,
+        "auc": 0.5889174848699628,
+        "logloss": 0.4125252346541172
+      },
+      {
+        "training_target_exposure_frequency": "6-20",
+        "validation_rows": 180136,
+        "distinct_validation_targets": 68175,
+        "positives": 25064,
+        "auc": 0.6005405568729195,
+        "logloss": 0.39573894296512996
+      },
+      {
+        "training_target_exposure_frequency": "21-100",
+        "validation_rows": 137301,
+        "distinct_validation_targets": 15112,
+        "positives": 16093,
+        "auc": 0.6312073427994843,
+        "logloss": 0.3507029636435954
+      },
+      {
+        "training_target_exposure_frequency": "101+",
+        "validation_rows": 58195,
+        "distinct_validation_targets": 1215,
+        "positives": 4760,
+        "auc": 0.6674938883572518,
+        "logloss": 0.27058519457665875
+      }
+    ],
+    "C5-seed3407": [
+      {
+        "training_target_exposure_frequency": "0",
+        "validation_rows": 137978,
+        "distinct_validation_targets": 128274,
+        "positives": 21162,
+        "auc": 0.5956389060691609,
+        "logloss": 0.42243584397078876
+      },
+      {
+        "training_target_exposure_frequency": "1",
+        "validation_rows": 84277,
+        "distinct_validation_targets": 71428,
+        "positives": 12091,
+        "auc": 0.5914950507282115,
+        "logloss": 0.4067707510757468
+      },
+      {
+        "training_target_exposure_frequency": "2-5",
+        "validation_rows": 170886,
+        "distinct_validation_targets": 118234,
+        "positives": 25273,
+        "auc": 0.5944307874654946,
+        "logloss": 0.41279396689631576
+      },
+      {
+        "training_target_exposure_frequency": "6-20",
+        "validation_rows": 180136,
+        "distinct_validation_targets": 68175,
+        "positives": 25064,
+        "auc": 0.6068578783907501,
+        "logloss": 0.3953896922250152
+      },
+      {
+        "training_target_exposure_frequency": "21-100",
+        "validation_rows": 137301,
+        "distinct_validation_targets": 15112,
+        "positives": 16093,
+        "auc": 0.6351276607280245,
+        "logloss": 0.3503100021839937
+      },
+      {
+        "training_target_exposure_frequency": "101+",
+        "validation_rows": 58195,
+        "distinct_validation_targets": 1215,
+        "positives": 4760,
+        "auc": 0.6688728471645045,
+        "logloss": 0.2703503853043026
+      }
+    ],
+    "C6-seed3407": [
+      {
+        "training_target_exposure_frequency": "0",
+        "validation_rows": 137978,
+        "distinct_validation_targets": 128274,
+        "positives": 21162,
+        "auc": 0.5972550236754106,
+        "logloss": 0.4224756011362544
+      },
+      {
+        "training_target_exposure_frequency": "1",
+        "validation_rows": 84277,
+        "distinct_validation_targets": 71428,
+        "positives": 12091,
+        "auc": 0.5933603248720659,
+        "logloss": 0.4069476595362506
+      },
+      {
+        "training_target_exposure_frequency": "2-5",
+        "validation_rows": 170886,
+        "distinct_validation_targets": 118234,
+        "positives": 25273,
+        "auc": 0.5959481546212468,
+        "logloss": 0.41249320822653013
+      },
+      {
+        "training_target_exposure_frequency": "6-20",
+        "validation_rows": 180136,
+        "distinct_validation_targets": 68175,
+        "positives": 25064,
+        "auc": 0.6080406192493482,
+        "logloss": 0.3951715882441787
+      },
+      {
+        "training_target_exposure_frequency": "21-100",
+        "validation_rows": 137301,
+        "distinct_validation_targets": 15112,
+        "positives": 16093,
+        "auc": 0.6360895304958482,
+        "logloss": 0.35032743881090705
+      },
+      {
+        "training_target_exposure_frequency": "101+",
+        "validation_rows": 58195,
+        "distinct_validation_targets": 1215,
+        "positives": 4760,
+        "auc": 0.6682858168999798,
+        "logloss": 0.27070121750736437
+      }
+    ],
+    "C7-seed3407": [
+      {
+        "training_target_exposure_frequency": "0",
+        "validation_rows": 137978,
+        "distinct_validation_targets": 128274,
+        "positives": 21162,
+        "auc": 0.5938687657165267,
+        "logloss": 0.4212371788873812
+      },
+      {
+        "training_target_exposure_frequency": "1",
+        "validation_rows": 84277,
+        "distinct_validation_targets": 71428,
+        "positives": 12091,
+        "auc": 0.5851121215469471,
+        "logloss": 0.4057165915543901
+      },
+      {
+        "training_target_exposure_frequency": "2-5",
+        "validation_rows": 170886,
+        "distinct_validation_targets": 118234,
+        "positives": 25273,
+        "auc": 0.5885211554285731,
+        "logloss": 0.41252006398727764
+      },
+      {
+        "training_target_exposure_frequency": "6-20",
+        "validation_rows": 180136,
+        "distinct_validation_targets": 68175,
+        "positives": 25064,
+        "auc": 0.6003376872128523,
+        "logloss": 0.39577386062218145
+      },
+      {
+        "training_target_exposure_frequency": "21-100",
+        "validation_rows": 137301,
+        "distinct_validation_targets": 15112,
+        "positives": 16093,
+        "auc": 0.6327698848185992,
+        "logloss": 0.3500494876004238
+      },
+      {
+        "training_target_exposure_frequency": "101+",
+        "validation_rows": 58195,
+        "distinct_validation_targets": 1215,
+        "positives": 4760,
+        "auc": 0.6690162338913296,
+        "logloss": 0.2701976563579878
+      }
+    ],
+    "R1-L200-seed3407": [
+      {
+        "training_target_exposure_frequency": "0",
+        "validation_rows": 137978,
+        "distinct_validation_targets": 128274,
+        "positives": 21162,
+        "auc": 0.5749567575658773,
+        "logloss": 0.4245075002014461
+      },
+      {
+        "training_target_exposure_frequency": "1",
+        "validation_rows": 84277,
+        "distinct_validation_targets": 71428,
+        "positives": 12091,
+        "auc": 0.571082595872498,
+        "logloss": 0.408641485226138
+      },
+      {
+        "training_target_exposure_frequency": "2-5",
+        "validation_rows": 170886,
+        "distinct_validation_targets": 118234,
+        "positives": 25273,
+        "auc": 0.578316067073513,
+        "logloss": 0.4143782296194166
+      },
+      {
+        "training_target_exposure_frequency": "6-20",
+        "validation_rows": 180136,
+        "distinct_validation_targets": 68175,
+        "positives": 25064,
+        "auc": 0.5910916023664932,
+        "logloss": 0.3973886624886965
+      },
+      {
+        "training_target_exposure_frequency": "21-100",
+        "validation_rows": 137301,
+        "distinct_validation_targets": 15112,
+        "positives": 16093,
+        "auc": 0.625673437285111,
+        "logloss": 0.3517692180421136
+      },
+      {
+        "training_target_exposure_frequency": "101+",
+        "validation_rows": 58195,
+        "distinct_validation_targets": 1215,
+        "positives": 4760,
+        "auc": 0.661274361059105,
+        "logloss": 0.27146541665843077
+      }
+    ],
+    "R1-L1000-seed3407": [
+      {
+        "training_target_exposure_frequency": "0",
+        "validation_rows": 137978,
+        "distinct_validation_targets": 128274,
+        "positives": 21162,
+        "auc": 0.5774125899601072,
+        "logloss": 0.4243328296994301
+      },
+      {
+        "training_target_exposure_frequency": "1",
+        "validation_rows": 84277,
+        "distinct_validation_targets": 71428,
+        "positives": 12091,
+        "auc": 0.5732122332784968,
+        "logloss": 0.40854217223015815
+      },
+      {
+        "training_target_exposure_frequency": "2-5",
+        "validation_rows": 170886,
+        "distinct_validation_targets": 118234,
+        "positives": 25273,
+        "auc": 0.5810096149421994,
+        "logloss": 0.4141176214897815
+      },
+      {
+        "training_target_exposure_frequency": "6-20",
+        "validation_rows": 180136,
+        "distinct_validation_targets": 68175,
+        "positives": 25064,
+        "auc": 0.5938849561785058,
+        "logloss": 0.39697924199113777
+      },
+      {
+        "training_target_exposure_frequency": "21-100",
+        "validation_rows": 137301,
+        "distinct_validation_targets": 15112,
+        "positives": 16093,
+        "auc": 0.627352695934929,
+        "logloss": 0.3515967657370764
+      },
+      {
+        "training_target_exposure_frequency": "101+",
+        "validation_rows": 58195,
+        "distinct_validation_targets": 1215,
+        "positives": 4760,
+        "auc": 0.6637144044480335,
+        "logloss": 0.2715829577427079
+      }
+    ],
+    "R4-L200-seed3407": [
+      {
+        "training_target_exposure_frequency": "0",
+        "validation_rows": 137978,
+        "distinct_validation_targets": 128274,
+        "positives": 21162,
+        "auc": 0.5939276530366944,
+        "logloss": 0.42185536494617354
+      },
+      {
+        "training_target_exposure_frequency": "1",
+        "validation_rows": 84277,
+        "distinct_validation_targets": 71428,
+        "positives": 12091,
+        "auc": 0.5856215538662249,
+        "logloss": 0.4063772870625623
+      },
+      {
+        "training_target_exposure_frequency": "2-5",
+        "validation_rows": 170886,
+        "distinct_validation_targets": 118234,
+        "positives": 25273,
+        "auc": 0.5884663610639778,
+        "logloss": 0.4126291865362932
+      },
+      {
+        "training_target_exposure_frequency": "6-20",
+        "validation_rows": 180136,
+        "distinct_validation_targets": 68175,
+        "positives": 25064,
+        "auc": 0.5993307156893376,
+        "logloss": 0.39596893679633327
+      },
+      {
+        "training_target_exposure_frequency": "21-100",
+        "validation_rows": 137301,
+        "distinct_validation_targets": 15112,
+        "positives": 16093,
+        "auc": 0.6315346205024559,
+        "logloss": 0.3505222363789144
+      },
+      {
+        "training_target_exposure_frequency": "101+",
+        "validation_rows": 58195,
+        "distinct_validation_targets": 1215,
+        "positives": 4760,
+        "auc": 0.6660152384150066,
+        "logloss": 0.27080720063556285
+      }
+    ],
+    "R4-L1000-seed3407": [
+      {
+        "training_target_exposure_frequency": "0",
+        "validation_rows": 137978,
+        "distinct_validation_targets": 128274,
+        "positives": 21162,
+        "auc": 0.5961441087758109,
+        "logloss": 0.42192660226767253
+      },
+      {
+        "training_target_exposure_frequency": "1",
+        "validation_rows": 84277,
+        "distinct_validation_targets": 71428,
+        "positives": 12091,
+        "auc": 0.5895352137836756,
+        "logloss": 0.40617042618277
+      },
+      {
+        "training_target_exposure_frequency": "2-5",
+        "validation_rows": 170886,
+        "distinct_validation_targets": 118234,
+        "positives": 25273,
+        "auc": 0.5958170326490059,
+        "logloss": 0.41186384194220216
+      },
+      {
+        "training_target_exposure_frequency": "6-20",
+        "validation_rows": 180136,
+        "distinct_validation_targets": 68175,
+        "positives": 25064,
+        "auc": 0.6029555381094805,
+        "logloss": 0.3954411917685852
+      },
+      {
+        "training_target_exposure_frequency": "21-100",
+        "validation_rows": 137301,
+        "distinct_validation_targets": 15112,
+        "positives": 16093,
+        "auc": 0.6327575158061184,
+        "logloss": 0.3504883800374841
+      },
+      {
+        "training_target_exposure_frequency": "101+",
+        "validation_rows": 58195,
+        "distinct_validation_targets": 1215,
+        "positives": 4760,
+        "auc": 0.666842881440028,
+        "logloss": 0.2706417912419364
+      }
+    ]
+  },
+  "test_evaluated": false,
+  "limitations": [
+    "zero train-target frequency is not proof of a newly created item or no history interactions",
+    "fixed frequency bins; not original-paper quantile groups",
+    "descriptive AUC/logloss only; no subgroup confidence intervals or automatic seed aggregation"
+  ]
+}
