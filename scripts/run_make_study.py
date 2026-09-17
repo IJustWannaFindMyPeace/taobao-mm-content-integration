@@ -12,6 +12,7 @@ def main():
     parser.add_argument('--store',type=Path,required=True)
     parser.add_argument('--pretraining-run',type=Path,required=True)
     parser.add_argument('--output-dir',type=Path,required=True)
+    parser.add_argument('--protocol',type=Path,help='Explicit common downstream protocol; diagnostic epochs remain unchanged')
     parser.add_argument('--supplement-only',action='store_true',help='Reuse the existing frozen pretrained control; run only missing controls and epoch diagnostic')
     args=parser.parse_args()
     root=Path(__file__).resolve().parents[1]
@@ -22,6 +23,9 @@ def main():
     if args.supplement_only:
         jobs=[('c0-epochs3','c0-epochs3',None),('c4','c4',None),('c4-frozen','c4-frozen',None),('c5-joint','c5-joint',None)]
     pretraining=json.loads((args.pretraining_run/'report.json').read_text())
+    protocol=json.loads(args.protocol.read_text()) if args.protocol else None
+    if protocol and (protocol['store_manifest_sha256']!=sha256(args.store/'manifest.json') or pretraining['config']['seed'] not in protocol['training_seeds']):
+        raise ValueError('Common protocol data or seed mismatch')
     if pretraining['store_manifest_sha256']!=sha256(args.store/'manifest.json') or pretraining['test_evaluated'] or len(pretraining['epochs'])!=pretraining['config']['epochs']:
         raise ValueError('Require complete same-store validation-only pretraining')
     best=max(pretraining['epochs'],key=lambda e:(e['validation']['gauc'],-e['epoch']))
@@ -30,11 +34,17 @@ def main():
     snapshots=args.output_dir/'configs';snapshots.mkdir()
     for config in {job[1] for job in jobs}:
         cfg=json.loads((root/'configs'/f'{config}.json').read_text())
+        if protocol:
+            for key in ['batch_size','dense_learning_rate','sparse_learning_rate','weight_decay','embedding_width','resource_limits']:
+                cfg[key]=protocol[key]
         cfg['seed']=pretraining['config']['seed']
         if cfg['history_length']!=pretraining['config']['history_length']:raise ValueError('History mismatch')
         if cfg.get('pretrained_content'):cfg['content_checkpoint_sha256']=best['checkpoint_sha256']
         (snapshots/f'{config}.json').write_text(json.dumps(cfg,indent=2),encoding='utf-8')
     status={'completed':[],'active':None,'failed':None,'planned':[job[0] for job in jobs]}
+    if protocol:
+        status['protocol_sha256']=sha256(args.protocol)
+        (args.output_dir/'protocol.json').write_text(json.dumps(protocol,indent=2),encoding='utf-8')
     def save():
         temporary=args.output_dir/'status.tmp'
         temporary.write_text(json.dumps(status,indent=2),encoding='utf-8')
