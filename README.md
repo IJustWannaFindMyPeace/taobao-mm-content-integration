@@ -14,6 +14,8 @@
 
 共同协议核心矩阵已完成三个种子、36 组预测审计，见[核心结果与局限](docs/shared-core-three-seed-results.md)。
 
+最新收尾状态见[证据清单](https://github.com/IJustWannaFindMyPeace/taobao-mm-content-integration/blob/main/docs/completion-checklist.md)。长历史与类目/ID 检索三种子已全部完成并审计。
+
 ## 当前状态
 
 |工作项|状态与证据|
