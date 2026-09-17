@@ -1,0 +1,245 @@
+{
+  "scope": "supplied_models_validation_history_length_diagnostic",
+  "store_manifest_sha256": "7dd761c48f61b3ae219922f8387f6026eb6eb011ef6ef8050bb1472a52593f59",
+  "implementation_sha256": "4ae429dbb2a56274f610756898faaa66be25e43aa0bbbadf88257019450ff96e",
+  "group_definition": "non-padding records in supplied 1000-position history; OOV and repeated behaviors count; pre-retrieval",
+  "test_evaluated": false,
+  "models": {
+    "content-retrieval-enhanced-L200-seed42": {
+      "0": {
+        "rows": 392,
+        "users": 63,
+        "positives": 35,
+        "auc": 0.6725090036014406,
+        "logloss": 0.294111716785649
+      },
+      "1-50": {
+        "rows": 1786,
+        "users": 264,
+        "positives": 175,
+        "auc": 0.5893375897845171,
+        "logloss": 0.3190999826561915
+      },
+      "51-200": {
+        "rows": 4080,
+        "users": 535,
+        "positives": 552,
+        "auc": 0.6165207326892109,
+        "logloss": 0.38859551353675376
+      },
+      "201-500": {
+        "rows": 6263,
+        "users": 750,
+        "positives": 811,
+        "auc": 0.616880602645394,
+        "logloss": 0.3783457920716241
+      },
+      "501-1000": {
+        "rows": 756252,
+        "users": 67818,
+        "positives": 102870,
+        "auc": 0.614664879763926,
+        "logloss": 0.3879148419241897
+      }
+    },
+    "content-retrieval-enhanced-L1000-seed42": {
+      "0": {
+        "rows": 392,
+        "users": 63,
+        "positives": 35,
+        "auc": 0.6974789915966386,
+        "logloss": 0.2983547773232223
+      },
+      "1-50": {
+        "rows": 1786,
+        "users": 264,
+        "positives": 175,
+        "auc": 0.5722514853241111,
+        "logloss": 0.3191059946339771
+      },
+      "51-200": {
+        "rows": 4080,
+        "users": 535,
+        "positives": 552,
+        "auc": 0.6081046247001216,
+        "logloss": 0.3923489857572661
+      },
+      "201-500": {
+        "rows": 6263,
+        "users": 750,
+        "positives": 811,
+        "auc": 0.6175789967911864,
+        "logloss": 0.3761524956428926
+      },
+      "501-1000": {
+        "rows": 756252,
+        "users": 67818,
+        "positives": 102870,
+        "auc": 0.6182801935418172,
+        "logloss": 0.38750867483724727
+      }
+    },
+    "content-retrieval-enhanced-L200-seed2026": {
+      "0": {
+        "rows": 392,
+        "users": 63,
+        "positives": 35,
+        "auc": 0.6741896758703482,
+        "logloss": 0.305646645290297
+      },
+      "1-50": {
+        "rows": 1786,
+        "users": 264,
+        "positives": 175,
+        "auc": 0.5994076438769176,
+        "logloss": 0.3232804297647476
+      },
+      "51-200": {
+        "rows": 4080,
+        "users": 535,
+        "positives": 552,
+        "auc": 0.6086514919977652,
+        "logloss": 0.39622868972137326
+      },
+      "201-500": {
+        "rows": 6263,
+        "users": 750,
+        "positives": 811,
+        "auc": 0.6181157968252016,
+        "logloss": 0.3807262471342513
+      },
+      "501-1000": {
+        "rows": 756252,
+        "users": 67818,
+        "positives": 102870,
+        "auc": 0.6159942330561549,
+        "logloss": 0.38874044697721133
+      }
+    },
+    "content-retrieval-enhanced-L1000-seed2026": {
+      "0": {
+        "rows": 392,
+        "users": 63,
+        "positives": 35,
+        "auc": 0.6997999199679872,
+        "logloss": 0.30267878132728443
+      },
+      "1-50": {
+        "rows": 1786,
+        "users": 264,
+        "positives": 175,
+        "auc": 0.6108149330495699,
+        "logloss": 0.31718272616421933
+      },
+      "51-200": {
+        "rows": 4080,
+        "users": 535,
+        "positives": 552,
+        "auc": 0.5996787603930461,
+        "logloss": 0.3952371181188367
+      },
+      "201-500": {
+        "rows": 6263,
+        "users": 750,
+        "positives": 811,
+        "auc": 0.6228341413415862,
+        "logloss": 0.37766627734464403
+      },
+      "501-1000": {
+        "rows": 756252,
+        "users": 67818,
+        "positives": 102870,
+        "auc": 0.6174196864398942,
+        "logloss": 0.3884395563652009
+      }
+    },
+    "content-retrieval-enhanced-L200-seed3407": {
+      "0": {
+        "rows": 392,
+        "users": 63,
+        "positives": 35,
+        "auc": 0.6513005202080833,
+        "logloss": 0.2996223061149865
+      },
+      "1-50": {
+        "rows": 1786,
+        "users": 264,
+        "positives": 175,
+        "auc": 0.5992586680854838,
+        "logloss": 0.319848678699789
+      },
+      "51-200": {
+        "rows": 4080,
+        "users": 535,
+        "positives": 552,
+        "auc": 0.6066961204771764,
+        "logloss": 0.39717812759769655
+      },
+      "201-500": {
+        "rows": 6263,
+        "users": 750,
+        "positives": 811,
+        "auc": 0.6110982700270402,
+        "logloss": 0.3793541032624388
+      },
+      "501-1000": {
+        "rows": 756252,
+        "users": 67818,
+        "positives": 102870,
+        "auc": 0.6122088483635094,
+        "logloss": 0.38809474244043224
+      }
+    },
+    "content-retrieval-enhanced-L1000-seed3407": {
+      "0": {
+        "rows": 392,
+        "users": 63,
+        "positives": 35,
+        "auc": 0.6901160464185674,
+        "logloss": 0.29750605976067457
+      },
+      "1-50": {
+        "rows": 1786,
+        "users": 264,
+        "positives": 175,
+        "auc": 0.5970949720670391,
+        "logloss": 0.3171405997334121
+      },
+      "51-200": {
+        "rows": 4080,
+        "users": 535,
+        "positives": 552,
+        "auc": 0.6098494651483782,
+        "logloss": 0.3976749062205757
+      },
+      "201-500": {
+        "rows": 6263,
+        "users": 750,
+        "positives": 811,
+        "auc": 0.6197588776118539,
+        "logloss": 0.37564785390193856
+      },
+      "501-1000": {
+        "rows": 756252,
+        "users": 67818,
+        "positives": 102870,
+        "auc": 0.6154756072655847,
+        "logloss": 0.3878026705986741
+      }
+    }
+  },
+  "prediction_sha256": {
+    "content-retrieval-enhanced-L200-seed42": "73f83e3e5f6c1d7d4b12e4aca5d0f976baf4392c261c93dad621cbc0e0e3a932",
+    "content-retrieval-enhanced-L1000-seed42": "56e039e831a053d767cc1a95c79aa7dae944447ff107477222bd7d169ea7a215",
+    "content-retrieval-enhanced-L200-seed2026": "57dc72b6173966a1182e15d69220b35fa56434610c021f2fb9df519fb1916d4f",
+    "content-retrieval-enhanced-L1000-seed2026": "a16475b8bba9a4dc0b40fba2125db48d69736b52261f82c6508c0aaef93e200e",
+    "content-retrieval-enhanced-L200-seed3407": "bcaa8a52465028cc5cc37ce86d5079b5e8f840020b6e993570d480fcf14e2ce7",
+    "content-retrieval-enhanced-L1000-seed3407": "a05296fca85f6f1fd3809a71bea49bdd6fb84a3c12f518cce37701af28d65a96"
+  },
+  "limitations": [
+    "descriptive AUC and LogLoss; no subgroup confidence intervals",
+    "available history is capped at 1000, not true lifetime length",
+    "groups differ in users and labels; not causal effects of history length",
+    "small history groups may be too small for reliable inference"
+  ]
+}

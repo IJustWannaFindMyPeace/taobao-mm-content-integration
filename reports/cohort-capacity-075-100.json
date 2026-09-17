@@ -1,0 +1,31 @@
+{
+  "scope": "exact_train_history_item_vocabulary_lower_bound",
+  "revision": "f185841b6e9612edd06f5112e06416f1bdf6c6d0",
+  "source_sha256": {
+    "train_samples.parquet": "688e88f3a9eef3db0531e9a7244c479146893574308323022b211bf1a2ac7978",
+    "train_user_features.parquet": "ce4c3554f12d20707c84c921123c7b24a508a51477054c9c468f0cc5679771d6"
+  },
+  "script_sha256": "bab4a13b5e3075b1b7c2f9510bf15db793951db717be612b585a134807a2e569",
+  "candidates": {
+    "75": {
+      "training_users": 416305,
+      "training_exposures": 4564733,
+      "unique_nonpadding_history_items": 54393613,
+      "item_weight_and_two_adam_states_gib": 9.726336300373077
+    },
+    "100": {
+      "training_users": 554854,
+      "training_exposures": 6083300,
+      "unique_nonpadding_history_items": 64315211,
+      "item_weight_and_two_adam_states_gib": 11.500456273555756
+    }
+  },
+  "seconds": 761.1299249000149,
+  "test_read": false,
+  "labels_read": false,
+  "limitations": [
+    "excludes target-only items and other embedding fields",
+    "excludes activations, gradients, CUDA workspace and allocator overhead",
+    "capacity evidence only; no model-quality or final scale decision"
+  ]
+}
