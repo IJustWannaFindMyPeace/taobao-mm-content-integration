@@ -1,0 +1,25 @@
+{
+  "protocol_id": "shared-downstream-050-b256-v1",
+  "store_manifest_sha256": "7dd761c48f61b3ae219922f8387f6026eb6eb011ef6ef8050bb1472a52593f59",
+  "cohort_buckets_per_thousand": 50,
+  "batch_size": 256,
+  "dense_learning_rate": 0.001,
+  "sparse_learning_rate": 0.001,
+  "weight_decay": 0.0,
+  "epochs": 1,
+  "embedding_width": 16,
+  "training_seeds": [
+    42,
+    2026,
+    3407
+  ],
+  "resource_limits": {
+    "warning_allocated_gib": 9,
+    "max_allocated_gib": 10.5,
+    "min_device_free_gib": 1,
+    "max_process_rss_gib": 24,
+    "min_system_available_gib": 4
+  },
+  "scope": "downstream main comparisons; pretraining and explicit epoch sensitivity are separate stages",
+  "test_evaluated": false
+}
