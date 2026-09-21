@@ -1,0 +1,187 @@
+{
+  "scope": "pretraining_trajectory_prefix_audit",
+  "store_manifest_sha256": "7dd761c48f61b3ae219922f8387f6026eb6eb011ef6ef8050bb1472a52593f59",
+  "prefix": [
+    {
+      "epoch": 1,
+      "max_prediction_error": 0.0,
+      "all_weights_exact": true
+    },
+    {
+      "epoch": 2,
+      "max_prediction_error": 0.0,
+      "all_weights_exact": true
+    },
+    {
+      "epoch": 3,
+      "max_prediction_error": 0.0,
+      "all_weights_exact": true
+    }
+  ],
+  "epochs": [
+    {
+      "run": "reference",
+      "epoch": 1,
+      "prediction_sha256": "93aca9a5b543d9e1c3227ad438b77c6ccfaa559b4dd32b2d7366f4ce3f75474e",
+      "checkpoint_sha256": "524675e329bfabaad786be99620714577ef8ff4f3a6ee9f0f9fc9baefd482aab",
+      "metrics": {
+        "rows": 768773,
+        "positives": 104443,
+        "auc": 0.6091585452449976,
+        "logloss": 0.3884952254092059,
+        "gauc": 0.5807173140094717,
+        "gauc_weighting": "exposure_count_among_users_with_both_labels",
+        "users": 69430,
+        "valid_users": 38125,
+        "valid_rows": 578851,
+        "excluded_users": 31305,
+        "excluded_rows": 189922,
+        "valid_row_fraction": 0.7529543831534146
+      }
+    },
+    {
+      "run": "reference",
+      "epoch": 2,
+      "prediction_sha256": "7521a4e1dc5caa1edaf5301ba1fedb422ecbaa43b393bc56d0da6ca4cfa581e8",
+      "checkpoint_sha256": "7211f540413f09b87f357643eaa453edd5702e891ae5d47afdd5a5c8b7849b97",
+      "metrics": {
+        "rows": 768773,
+        "positives": 104443,
+        "auc": 0.6101905588291023,
+        "logloss": 0.38866440212756215,
+        "gauc": 0.5821678598667556,
+        "gauc_weighting": "exposure_count_among_users_with_both_labels",
+        "users": 69430,
+        "valid_users": 38125,
+        "valid_rows": 578851,
+        "excluded_users": 31305,
+        "excluded_rows": 189922,
+        "valid_row_fraction": 0.7529543831534146
+      }
+    },
+    {
+      "run": "reference",
+      "epoch": 3,
+      "prediction_sha256": "4a8787ae7ed7ced40a6b89db7a0fcfd9fad3d824602770ab916727a2d61251a4",
+      "checkpoint_sha256": "f64e73bcffe58b4cdfe8048c9db010dc4eb8fa9690dcd17523388b678d92f241",
+      "metrics": {
+        "rows": 768773,
+        "positives": 104443,
+        "auc": 0.6099636122678792,
+        "logloss": 0.3887750850364924,
+        "gauc": 0.5825247919488462,
+        "gauc_weighting": "exposure_count_among_users_with_both_labels",
+        "users": 69430,
+        "valid_users": 38125,
+        "valid_rows": 578851,
+        "excluded_users": 31305,
+        "excluded_rows": 189922,
+        "valid_row_fraction": 0.7529543831534146
+      }
+    },
+    {
+      "run": "extended",
+      "epoch": 1,
+      "prediction_sha256": "93aca9a5b543d9e1c3227ad438b77c6ccfaa559b4dd32b2d7366f4ce3f75474e",
+      "checkpoint_sha256": "524675e329bfabaad786be99620714577ef8ff4f3a6ee9f0f9fc9baefd482aab",
+      "metrics": {
+        "rows": 768773,
+        "positives": 104443,
+        "auc": 0.6091585452449976,
+        "logloss": 0.3884952254092059,
+        "gauc": 0.5807173140094717,
+        "gauc_weighting": "exposure_count_among_users_with_both_labels",
+        "users": 69430,
+        "valid_users": 38125,
+        "valid_rows": 578851,
+        "excluded_users": 31305,
+        "excluded_rows": 189922,
+        "valid_row_fraction": 0.7529543831534146
+      }
+    },
+    {
+      "run": "extended",
+      "epoch": 2,
+      "prediction_sha256": "7521a4e1dc5caa1edaf5301ba1fedb422ecbaa43b393bc56d0da6ca4cfa581e8",
+      "checkpoint_sha256": "7211f540413f09b87f357643eaa453edd5702e891ae5d47afdd5a5c8b7849b97",
+      "metrics": {
+        "rows": 768773,
+        "positives": 104443,
+        "auc": 0.6101905588291023,
+        "logloss": 0.38866440212756215,
+        "gauc": 0.5821678598667556,
+        "gauc_weighting": "exposure_count_among_users_with_both_labels",
+        "users": 69430,
+        "valid_users": 38125,
+        "valid_rows": 578851,
+        "excluded_users": 31305,
+        "excluded_rows": 189922,
+        "valid_row_fraction": 0.7529543831534146
+      }
+    },
+    {
+      "run": "extended",
+      "epoch": 3,
+      "prediction_sha256": "4a8787ae7ed7ced40a6b89db7a0fcfd9fad3d824602770ab916727a2d61251a4",
+      "checkpoint_sha256": "f64e73bcffe58b4cdfe8048c9db010dc4eb8fa9690dcd17523388b678d92f241",
+      "metrics": {
+        "rows": 768773,
+        "positives": 104443,
+        "auc": 0.6099636122678792,
+        "logloss": 0.3887750850364924,
+        "gauc": 0.5825247919488462,
+        "gauc_weighting": "exposure_count_among_users_with_both_labels",
+        "users": 69430,
+        "valid_users": 38125,
+        "valid_rows": 578851,
+        "excluded_users": 31305,
+        "excluded_rows": 189922,
+        "valid_row_fraction": 0.7529543831534146
+      }
+    },
+    {
+      "run": "extended",
+      "epoch": 4,
+      "prediction_sha256": "2af3952c71955ad858d236ef4eeb6b11770188317f6d0517a8827b5f79210afe",
+      "checkpoint_sha256": "053264fca3e8b985e472e77636487c5a92f5192ea16fbe3132cdf4841970ef6a",
+      "metrics": {
+        "rows": 768773,
+        "positives": 104443,
+        "auc": 0.6099848463041604,
+        "logloss": 0.389754995574333,
+        "gauc": 0.5817481528156764,
+        "gauc_weighting": "exposure_count_among_users_with_both_labels",
+        "users": 69430,
+        "valid_users": 38125,
+        "valid_rows": 578851,
+        "excluded_users": 31305,
+        "excluded_rows": 189922,
+        "valid_row_fraction": 0.7529543831534146
+      }
+    },
+    {
+      "run": "extended",
+      "epoch": 5,
+      "prediction_sha256": "55b686a4d7773dbcc657696e68e633d7d91049a4acfd788d9667de0552a055f6",
+      "checkpoint_sha256": "ef5ef9e1961bdd894d2bdbef5fc23e0232a6d5ea2151af2f8aeeeb9b28c74856",
+      "metrics": {
+        "rows": 768773,
+        "positives": 104443,
+        "auc": 0.6103823709821008,
+        "logloss": 0.38917532069490046,
+        "gauc": 0.5831921017378925,
+        "gauc_weighting": "exposure_count_among_users_with_both_labels",
+        "users": 69430,
+        "valid_users": 38125,
+        "valid_rows": 578851,
+        "excluded_users": 31305,
+        "excluded_rows": 189922,
+        "valid_row_fraction": 0.7529543831534146
+      }
+    }
+  ],
+  "reference_report_sha256": "765a1105af7771f08ec9e94b56d7c960d6e0fe243c90f513a9e3bbcb447edbd9",
+  "extended_report_sha256": "de44a0dfca146bb96ea47c6c6e02b8ebcd6bc10ed0b54e01178054c3743b527e",
+  "script_sha256": "eaefaac2cd2a8b0944ecf0f2ea15d6213d8754ec27726d78dab1005281940d84",
+  "test_evaluated": false
+}
