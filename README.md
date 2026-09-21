@@ -10,11 +10,13 @@
 
 阅读入口：[实验导读：研究问题、方法名称与当前阶段](docs/experiment-guide.md)。配置编号仅用于索引，方法效果与资源调参分别报告。
 
-本轮两个项目共同主规模已选定为 **5% 用户队列**，见[规模决策与证据边界](docs/shared-scale-decision.md)；共同下游协议已选定为 batch=256、两类学习率均为 0.001，核心对照待统一运行。下述阶段记录保留各自时点的状态。
+本轮两个项目共同主规模已选定为 **5% 用户队列**，见[规模决策与证据边界](docs/shared-scale-decision.md)；共同下游协议已选定为 batch=256、两类学习率均为 0.001，共同核心与检索对照已完成三个种子。下述阶段记录保留各自时点的状态。
 
 共同协议核心矩阵已完成三个种子、36 组预测审计，见[核心结果与局限](docs/shared-core-three-seed-results.md)。
 
 最新收尾状态见[证据清单](https://github.com/IJustWannaFindMyPeace/taobao-mm-content-integration/blob/main/docs/completion-checklist.md)。长历史与类目/ID 检索三种子已全部完成并审计。
+
+最新范围核验：[两项目故事线审计](docs/storyline-audit-2026-09-22.md)。当前结果是下游适配复现的验证证据，复杂检索比较尚缺，保留测试集未评估。
 
 ## 当前状态
 
@@ -29,8 +31,8 @@
 |扩容与属性|0.5% / 1% 嵌套曝光子集完成，1% 目标属性覆盖 100%；见 [阶段 5](docs/stage-05-scale-and-items.md)|
 |历史与环境|源文件全部校验、选中用户历史覆盖 100%、独立 CUDA 环境通过；见 [阶段 7](docs/stage-07-environment-and-features.md)|
 |统一输入|训练词表、memmap 特征与完整性核验完成；见 [阶段 8](docs/stage-08-feature-store.md)|
-|正式实验协议|5% 数据与已运行模型配置已版本化；最终规模与测试协议尚未冻结|
-|模型与结果|5% 六组核心模型三种子、MAKE 策略补充及分组诊断完成；见[最新证据审计](docs/stage-22-storyline-readiness.md)|
+|正式实验协议|5% 数据与已运行模型配置已版本化；共同规模与训练协议已选定，最终测试清单尚未冻结|
+|模型与结果|5% 六组核心模型三种子、MAKE 策略补充及分组诊断完成；见[最新证据审计](docs/storyline-audit-2026-09-22.md)|
 
 ## 实验设计
 
@@ -68,6 +70,10 @@ MAKE（Multimodal Knowledge Extractor）用于提取多模态知识。优先完�
 ## 数据来源与统计口径
 
 官方数据定义、p90 覆盖率口径和指定版本的差异核验见[数据集契约](docs/dataset-contract.md)。
+
+## 历史阶段记录
+
+以下为各阶段当时的协议与状态，含旧 batch=32 结果；不替代上方共同协议最新结论。
 
 ## 内容分支预训练
 
