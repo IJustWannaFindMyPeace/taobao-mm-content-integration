@@ -1,0 +1,2773 @@
+{
+  "scope": "supplied_models_test_frequency_diagnostic",
+  "store_manifest_sha256": "7dd761c48f61b3ae219922f8387f6026eb6eb011ef6ef8050bb1472a52593f59",
+  "implementation_sha256": "2f2aa98130fcb397152b52233628e5cbadbf2cd98b0ec868c14204380e5d4b21",
+  "prediction_sha256": {
+    "c0-seed42": "d14a44364ecd730b29d208c44c94169caed462f72ec4005f4d5b30e502dbd4d4",
+    "c2-seed42": "d9c7c684f28bc79dcd5519ca5c2bad80e30d14d6ffe4b049171c15bcd17aab70",
+    "c3-seed42": "47e76b5f102b4c2a6d4acadc3545cbb0910fa75b3dc4feff668be214960c2f7a",
+    "c5-seed42": "f967291bd528f34aac88dd16fe99486d8219024cedd79c13b8f23a51660040c8",
+    "c6-seed42": "4dfd24f63ced1b87116bb69f03f4e0fca5e6dd76459caa217b894517aca082fd",
+    "c7-seed42": "b7d6d108e0cc9fd73aacf6eccaca9bb398bca7e2661f099cd520ea578f6e1c1f",
+    "r0-seed42": "2417b1116e60ee077d1a3da63c0a47a4c5567285c8f3fe9d78dcc20584ae6a8f",
+    "r1-seed42": "b7d702acc8805de18640802cf9e2915e449683be020e67830368ddebf1563a0a",
+    "r2-seed42": "adff2bfec9ea59ba6c7fe14319afa521ead900907638b422b91f7bfa5aa0dff3",
+    "r3-seed42": "34ebceec446c16e587f0038ad644ddf334dc94b31283950d8eda63a8b7a1c3fd",
+    "r4-seed42": "6d0744a226266f4b7b6a8a7bb49dfcf2f8bad70d86a58c9c06a731b9791360fe",
+    "r5-seed42": "0500f34d9c7cb63ceacec3baea3ea576a15877ef1c8d631c1111d1706b765116",
+    "r1-l1000-seed42": "62eedce0ba17fcc6a153f969a46993804e9a47926b4889fb526ea451f85bb5a1",
+    "r4-l1000-seed42": "0ee68264593bfa615477ffaf1ff2dacea02ca3d8cc924f9e9aa2fc1b42966841",
+    "b1-hard-enhanced-seed42": "906fc2a3689b948c07bd900d45ba5098a0023a007a2b6623fcfc1f557ee9870a",
+    "b2-soft-enhanced-seed42": "8577f8f49318d3d8bafa50dabbe4863f112c303fdf28dd72d20a30dd1184fb77",
+    "g-id-item-seed42": "56bc9ede259893e8b6272d15bb29b4f91a4f236823fc0f855783faf9e82cbc04",
+    "content-id-cosine-l1000-seed42": "27eb75b226521974e5c807718e0856300e0ad5921431207d14e23b6e216a5573",
+    "c0-seed2026": "d856a591c3df891e0b9caa35330b06b88ff1295374f94fb90ef47d86656139ce",
+    "c2-seed2026": "af06e3da85d8ed1d9905d553c188a980dbd0743f94d936b8f8b6f4eb3a8338f1",
+    "c3-seed2026": "3be98fb7bf4bd2431522264125c152db2db6cd0333f376fc76eb8724c2958b14",
+    "c5-seed2026": "6c141d36f04228f34d3af2ea7b54cb3e07a103e3964cd09d7c0e45abed5b7752",
+    "c6-seed2026": "3659c0c77fdfcc18b42d4aeead1495ba5f00cc59fb1378183657b72971be8972",
+    "c7-seed2026": "e1626ada4981b2faaddc4c5f295b2ba503fbcae613a1e09698bc1a4c0111a004",
+    "r0-seed2026": "9122b64add53b407beed22b2398a5b0e3ad52d349a404ae52a96044eea568079",
+    "r1-seed2026": "19e355e0f4ea380ec6a7879de26ea481933cc01581a0fee9ac744dd6434acaba",
+    "r2-seed2026": "ad58cf9caad13464211026337c881b228ce3fff809d088925854c832417a0fb4",
+    "r3-seed2026": "50d5dd1394f668eb980c67ab5efaaf49a3e72711eef8fcee0af2de8551fce6c6",
+    "r4-seed2026": "98373450b5ab2836018fc26ca4acb1ce2a6596aece1bf0decbc9403b467f8e4f",
+    "r5-seed2026": "784e79a322dceeda90098f6b287546f56d8468cfe55da32029b1d20c7b11e1e8",
+    "r1-l1000-seed2026": "76a6cd58cafa5d245d701ec5cd5c639502e7182a72945d7d2aa4ee9833f0dc47",
+    "r4-l1000-seed2026": "3e766b251953c5c99339f39976484e21624f04cde2619bf6b8d3cca6f7a1d08c",
+    "b1-hard-enhanced-seed2026": "7b04b3a17699515efdb9f66317e864e2fee25c02dcafabb2beb707e02b512b0a",
+    "b2-soft-enhanced-seed2026": "1b9677a5f3683b49a525fc16ee050fb7189b50a205b457ca053569ce7e9c1020",
+    "g-id-item-seed2026": "53e6df5e40116e534694b53b762e2d558db60a00dc997696734380b76fb8f71f",
+    "content-id-cosine-l1000-seed2026": "38a33c05ca2a6a3c8c01602b9c2a442a82350f39ce40536683461e0867f7d3a0",
+    "c0-seed3407": "b3ee2141a17e9d9aaea68edb894f8e70b3d7158e90f078fa58a302ea3024a4ba",
+    "c2-seed3407": "73a0b86e2f1730ea6963da32f10b571abd563526d455798898122911a700a0ff",
+    "c3-seed3407": "d14051c4e82b8d89308d0aa05ebebccfd836cbef21d02e088b44f7cbf08755e4",
+    "c5-seed3407": "3ebeea6c7ae467bb3db1c06c2dbd52f54bc81525c527ed272c234b56be8c44f1",
+    "c6-seed3407": "699d0baf05ebcf5d152d46d050ac903f5df72c9405cd2ebc28c8e4061712754f",
+    "c7-seed3407": "b70a7c7210b8220d2bce46ec54a772fc576d151ce6165600be085c811451fc8f",
+    "r0-seed3407": "781cf2d1a830eafc49c749ac94b8f63e95f73abcf5edf9703ffe0936ba06af7b",
+    "r1-seed3407": "691d9b53e0fdd2a281d3ea79aaba73231e46735749480192e8741251d46e7f30",
+    "r2-seed3407": "8d9544e0f71f4fb5c40e48be18e97f48d5ff047dac9860d1c46cf78598ff3523",
+    "r3-seed3407": "9e933bca74eac9367bce0505f11a7734f50801978638ff4a46bc084fa6cfe429",
+    "r4-seed3407": "ba4be01e0a704907cbb51aad2b119667a608230d2d53ea26cefe693609b54531",
+    "r5-seed3407": "a69515d2bd1ccddd018ec2252a9d19fc5a0a5d458dc396a76d6a10fd3777e834",
+    "r1-l1000-seed3407": "7221a7d3d9d51d4cd614e11294627439673010a5c70b862b371ba6ad79a55280",
+    "r4-l1000-seed3407": "7e00694dd17458de3c9b9b314428dd374a1a4434101cb128f89670442d51c0ca",
+    "b1-hard-enhanced-seed3407": "a6264ec39b2a2ac384ec1f40ef88fc5437d3f09d029fbae3f1acedf390048b68",
+    "b2-soft-enhanced-seed3407": "e6e857159d8c422e8fa44c88a0080984e8e5f2f0504fb5e7e77c0d9e90fd2134",
+    "g-id-item-seed3407": "3a567219ae2031291754a7da3b07c428e151b474081b73bdda21359ca3667586",
+    "content-id-cosine-l1000-seed3407": "3c24a1a0c13dac19ae0281d0969214eb911ce0487f34275cdd9333b7da6f8bdc"
+  },
+  "frequency_source": "raw target item IDs in selected training exposures only",
+  "training_rows": 3052475,
+  "test_rows": 923211,
+  "models": {
+    "c0-seed42": [
+      {
+        "training_target_exposure_frequency": "0",
+        "test_rows": 183862,
+        "distinct_test_targets": 163413,
+        "positives": 27604,
+        "auc": 0.5765518442899572,
+        "logloss": 0.418332499642965
+      },
+      {
+        "training_target_exposure_frequency": "1",
+        "test_rows": 102012,
+        "distinct_test_targets": 80724,
+        "positives": 15367,
+        "auc": 0.5809274563861743,
+        "logloss": 0.4184276707310984
+      },
+      {
+        "training_target_exposure_frequency": "2-5",
+        "test_rows": 201868,
+        "distinct_test_targets": 126199,
+        "positives": 29900,
+        "auc": 0.5846984787478544,
+        "logloss": 0.4137234940586293
+      },
+      {
+        "training_target_exposure_frequency": "6-20",
+        "test_rows": 209630,
+        "distinct_test_targets": 67921,
+        "positives": 29162,
+        "auc": 0.6010807735336083,
+        "logloss": 0.39559807371071903
+      },
+      {
+        "training_target_exposure_frequency": "21-100",
+        "test_rows": 159573,
+        "distinct_test_targets": 14866,
+        "positives": 19304,
+        "auc": 0.6231955171301798,
+        "logloss": 0.35891600083205805
+      },
+      {
+        "training_target_exposure_frequency": "101+",
+        "test_rows": 66266,
+        "distinct_test_targets": 1206,
+        "positives": 5385,
+        "auc": 0.6654742099512914,
+        "logloss": 0.2699809608012519
+      }
+    ],
+    "c2-seed42": [
+      {
+        "training_target_exposure_frequency": "0",
+        "test_rows": 183862,
+        "distinct_test_targets": 163413,
+        "positives": 27604,
+        "auc": 0.5807864623130455,
+        "logloss": 0.4181749463152978
+      },
+      {
+        "training_target_exposure_frequency": "1",
+        "test_rows": 102012,
+        "distinct_test_targets": 80724,
+        "positives": 15367,
+        "auc": 0.5865178934456097,
+        "logloss": 0.4179339475669006
+      },
+      {
+        "training_target_exposure_frequency": "2-5",
+        "test_rows": 201868,
+        "distinct_test_targets": 126199,
+        "positives": 29900,
+        "auc": 0.5875383952781758,
+        "logloss": 0.41339035549924785
+      },
+      {
+        "training_target_exposure_frequency": "6-20",
+        "test_rows": 209630,
+        "distinct_test_targets": 67921,
+        "positives": 29162,
+        "auc": 0.603325332030327,
+        "logloss": 0.3953372844600785
+      },
+      {
+        "training_target_exposure_frequency": "21-100",
+        "test_rows": 159573,
+        "distinct_test_targets": 14866,
+        "positives": 19304,
+        "auc": 0.6238625926165425,
+        "logloss": 0.3590856460319857
+      },
+      {
+        "training_target_exposure_frequency": "101+",
+        "test_rows": 66266,
+        "distinct_test_targets": 1206,
+        "positives": 5385,
+        "auc": 0.6653588548474636,
+        "logloss": 0.27088446300709057
+      }
+    ],
+    "c3-seed42": [
+      {
+        "training_target_exposure_frequency": "0",
+        "test_rows": 183862,
+        "distinct_test_targets": 163413,
+        "positives": 27604,
+        "auc": 0.5983992602334883,
+        "logloss": 0.41546084404092903
+      },
+      {
+        "training_target_exposure_frequency": "1",
+        "test_rows": 102012,
+        "distinct_test_targets": 80724,
+        "positives": 15367,
+        "auc": 0.597425682939599,
+        "logloss": 0.41607782715073754
+      },
+      {
+        "training_target_exposure_frequency": "2-5",
+        "test_rows": 201868,
+        "distinct_test_targets": 126199,
+        "positives": 29900,
+        "auc": 0.5960212780311932,
+        "logloss": 0.41188302841926694
+      },
+      {
+        "training_target_exposure_frequency": "6-20",
+        "test_rows": 209630,
+        "distinct_test_targets": 67921,
+        "positives": 29162,
+        "auc": 0.6085283970969918,
+        "logloss": 0.39426708439573055
+      },
+      {
+        "training_target_exposure_frequency": "21-100",
+        "test_rows": 159573,
+        "distinct_test_targets": 14866,
+        "positives": 19304,
+        "auc": 0.6272181548674738,
+        "logloss": 0.3582770626594946
+      },
+      {
+        "training_target_exposure_frequency": "101+",
+        "test_rows": 66266,
+        "distinct_test_targets": 1206,
+        "positives": 5385,
+        "auc": 0.6674446063455418,
+        "logloss": 0.2694124449757918
+      }
+    ],
+    "c5-seed42": [
+      {
+        "training_target_exposure_frequency": "0",
+        "test_rows": 183862,
+        "distinct_test_targets": 163413,
+        "positives": 27604,
+        "auc": 0.5992290269944671,
+        "logloss": 0.41622794119676365
+      },
+      {
+        "training_target_exposure_frequency": "1",
+        "test_rows": 102012,
+        "distinct_test_targets": 80724,
+        "positives": 15367,
+        "auc": 0.5999207873960921,
+        "logloss": 0.41649516310947776
+      },
+      {
+        "training_target_exposure_frequency": "2-5",
+        "test_rows": 201868,
+        "distinct_test_targets": 126199,
+        "positives": 29900,
+        "auc": 0.5982669431654392,
+        "logloss": 0.4121418664655281
+      },
+      {
+        "training_target_exposure_frequency": "6-20",
+        "test_rows": 209630,
+        "distinct_test_targets": 67921,
+        "positives": 29162,
+        "auc": 0.6110574047038316,
+        "logloss": 0.39419634503413387
+      },
+      {
+        "training_target_exposure_frequency": "21-100",
+        "test_rows": 159573,
+        "distinct_test_targets": 14866,
+        "positives": 19304,
+        "auc": 0.6285496349907537,
+        "logloss": 0.3582369705365278
+      },
+      {
+        "training_target_exposure_frequency": "101+",
+        "test_rows": 66266,
+        "distinct_test_targets": 1206,
+        "positives": 5385,
+        "auc": 0.6701553147877245,
+        "logloss": 0.26900256902787967
+      }
+    ],
+    "c6-seed42": [
+      {
+        "training_target_exposure_frequency": "0",
+        "test_rows": 183862,
+        "distinct_test_targets": 163413,
+        "positives": 27604,
+        "auc": 0.6017283229980526,
+        "logloss": 0.4155747249045385
+      },
+      {
+        "training_target_exposure_frequency": "1",
+        "test_rows": 102012,
+        "distinct_test_targets": 80724,
+        "positives": 15367,
+        "auc": 0.601675043205791,
+        "logloss": 0.41591895168154247
+      },
+      {
+        "training_target_exposure_frequency": "2-5",
+        "test_rows": 201868,
+        "distinct_test_targets": 126199,
+        "positives": 29900,
+        "auc": 0.5994117858358652,
+        "logloss": 0.4116759259165751
+      },
+      {
+        "training_target_exposure_frequency": "6-20",
+        "test_rows": 209630,
+        "distinct_test_targets": 67921,
+        "positives": 29162,
+        "auc": 0.6120015188865486,
+        "logloss": 0.39386093418727686
+      },
+      {
+        "training_target_exposure_frequency": "21-100",
+        "test_rows": 159573,
+        "distinct_test_targets": 14866,
+        "positives": 19304,
+        "auc": 0.6284448403423961,
+        "logloss": 0.3580505409568972
+      },
+      {
+        "training_target_exposure_frequency": "101+",
+        "test_rows": 66266,
+        "distinct_test_targets": 1206,
+        "positives": 5385,
+        "auc": 0.6707048029538788,
+        "logloss": 0.26898908921100306
+      }
+    ],
+    "c7-seed42": [
+      {
+        "training_target_exposure_frequency": "0",
+        "test_rows": 183862,
+        "distinct_test_targets": 163413,
+        "positives": 27604,
+        "auc": 0.598759699335882,
+        "logloss": 0.41529659976497957
+      },
+      {
+        "training_target_exposure_frequency": "1",
+        "test_rows": 102012,
+        "distinct_test_targets": 80724,
+        "positives": 15367,
+        "auc": 0.599607374900375,
+        "logloss": 0.41580467180875297
+      },
+      {
+        "training_target_exposure_frequency": "2-5",
+        "test_rows": 201868,
+        "distinct_test_targets": 126199,
+        "positives": 29900,
+        "auc": 0.5974917592780736,
+        "logloss": 0.4117660415255735
+      },
+      {
+        "training_target_exposure_frequency": "6-20",
+        "test_rows": 209630,
+        "distinct_test_targets": 67921,
+        "positives": 29162,
+        "auc": 0.6097384651296186,
+        "logloss": 0.394232680232999
+      },
+      {
+        "training_target_exposure_frequency": "21-100",
+        "test_rows": 159573,
+        "distinct_test_targets": 14866,
+        "positives": 19304,
+        "auc": 0.6290324861253138,
+        "logloss": 0.35795975983724326
+      },
+      {
+        "training_target_exposure_frequency": "101+",
+        "test_rows": 66266,
+        "distinct_test_targets": 1206,
+        "positives": 5385,
+        "auc": 0.6664637409994019,
+        "logloss": 0.2698893265682108
+      }
+    ],
+    "r0-seed42": [
+      {
+        "training_target_exposure_frequency": "0",
+        "test_rows": 183862,
+        "distinct_test_targets": 163413,
+        "positives": 27604,
+        "auc": 0.5725153744175827,
+        "logloss": 0.41901072212364776
+      },
+      {
+        "training_target_exposure_frequency": "1",
+        "test_rows": 102012,
+        "distinct_test_targets": 80724,
+        "positives": 15367,
+        "auc": 0.5765154642951401,
+        "logloss": 0.41926384529077404
+      },
+      {
+        "training_target_exposure_frequency": "2-5",
+        "test_rows": 201868,
+        "distinct_test_targets": 126199,
+        "positives": 29900,
+        "auc": 0.5785817246430229,
+        "logloss": 0.4145745442283406
+      },
+      {
+        "training_target_exposure_frequency": "6-20",
+        "test_rows": 209630,
+        "distinct_test_targets": 67921,
+        "positives": 29162,
+        "auc": 0.5959316116323105,
+        "logloss": 0.3965201017803248
+      },
+      {
+        "training_target_exposure_frequency": "21-100",
+        "test_rows": 159573,
+        "distinct_test_targets": 14866,
+        "positives": 19304,
+        "auc": 0.6210020452768248,
+        "logloss": 0.35959667690021174
+      },
+      {
+        "training_target_exposure_frequency": "101+",
+        "test_rows": 66266,
+        "distinct_test_targets": 1206,
+        "positives": 5385,
+        "auc": 0.6623865388980439,
+        "logloss": 0.270738421729301
+      }
+    ],
+    "r1-seed42": [
+      {
+        "training_target_exposure_frequency": "0",
+        "test_rows": 183862,
+        "distinct_test_targets": 163413,
+        "positives": 27604,
+        "auc": 0.5770131744446686,
+        "logloss": 0.4184070586257406
+      },
+      {
+        "training_target_exposure_frequency": "1",
+        "test_rows": 102012,
+        "distinct_test_targets": 80724,
+        "positives": 15367,
+        "auc": 0.5801718808245494,
+        "logloss": 0.4186483894369003
+      },
+      {
+        "training_target_exposure_frequency": "2-5",
+        "test_rows": 201868,
+        "distinct_test_targets": 126199,
+        "positives": 29900,
+        "auc": 0.5819413780451337,
+        "logloss": 0.4141609697124427
+      },
+      {
+        "training_target_exposure_frequency": "6-20",
+        "test_rows": 209630,
+        "distinct_test_targets": 67921,
+        "positives": 29162,
+        "auc": 0.597793749647346,
+        "logloss": 0.3961257025672219
+      },
+      {
+        "training_target_exposure_frequency": "21-100",
+        "test_rows": 159573,
+        "distinct_test_targets": 14866,
+        "positives": 19304,
+        "auc": 0.6209394428112295,
+        "logloss": 0.3595222760350387
+      },
+      {
+        "training_target_exposure_frequency": "101+",
+        "test_rows": 66266,
+        "distinct_test_targets": 1206,
+        "positives": 5385,
+        "auc": 0.6608023534106606,
+        "logloss": 0.2708261921944966
+      }
+    ],
+    "r2-seed42": [
+      {
+        "training_target_exposure_frequency": "0",
+        "test_rows": 183862,
+        "distinct_test_targets": 163413,
+        "positives": 27604,
+        "auc": 0.5987203514591732,
+        "logloss": 0.4151561409899007
+      },
+      {
+        "training_target_exposure_frequency": "1",
+        "test_rows": 102012,
+        "distinct_test_targets": 80724,
+        "positives": 15367,
+        "auc": 0.5988159109096645,
+        "logloss": 0.41576849451907527
+      },
+      {
+        "training_target_exposure_frequency": "2-5",
+        "test_rows": 201868,
+        "distinct_test_targets": 126199,
+        "positives": 29900,
+        "auc": 0.5950448990743241,
+        "logloss": 0.41200214404757923
+      },
+      {
+        "training_target_exposure_frequency": "6-20",
+        "test_rows": 209630,
+        "distinct_test_targets": 67921,
+        "positives": 29162,
+        "auc": 0.6079897966770064,
+        "logloss": 0.39442571154511613
+      },
+      {
+        "training_target_exposure_frequency": "21-100",
+        "test_rows": 159573,
+        "distinct_test_targets": 14866,
+        "positives": 19304,
+        "auc": 0.6262923406564351,
+        "logloss": 0.358460893605978
+      },
+      {
+        "training_target_exposure_frequency": "101+",
+        "test_rows": 66266,
+        "distinct_test_targets": 1206,
+        "positives": 5385,
+        "auc": 0.6646681181793723,
+        "logloss": 0.2699220735475658
+      }
+    ],
+    "r3-seed42": [
+      {
+        "training_target_exposure_frequency": "0",
+        "test_rows": 183862,
+        "distinct_test_targets": 163413,
+        "positives": 27604,
+        "auc": 0.5851372333225888,
+        "logloss": 0.4173728414791008
+      },
+      {
+        "training_target_exposure_frequency": "1",
+        "test_rows": 102012,
+        "distinct_test_targets": 80724,
+        "positives": 15367,
+        "auc": 0.5877222919868156,
+        "logloss": 0.41780333646992995
+      },
+      {
+        "training_target_exposure_frequency": "2-5",
+        "test_rows": 201868,
+        "distinct_test_targets": 126199,
+        "positives": 29900,
+        "auc": 0.586662036193558,
+        "logloss": 0.41360854539724917
+      },
+      {
+        "training_target_exposure_frequency": "6-20",
+        "test_rows": 209630,
+        "distinct_test_targets": 67921,
+        "positives": 29162,
+        "auc": 0.6016192962384245,
+        "logloss": 0.3956238439510365
+      },
+      {
+        "training_target_exposure_frequency": "21-100",
+        "test_rows": 159573,
+        "distinct_test_targets": 14866,
+        "positives": 19304,
+        "auc": 0.6230420116094084,
+        "logloss": 0.3591556140715278
+      },
+      {
+        "training_target_exposure_frequency": "101+",
+        "test_rows": 66266,
+        "distinct_test_targets": 1206,
+        "positives": 5385,
+        "auc": 0.6632030136511343,
+        "logloss": 0.2703770985364272
+      }
+    ],
+    "r4-seed42": [
+      {
+        "training_target_exposure_frequency": "0",
+        "test_rows": 183862,
+        "distinct_test_targets": 163413,
+        "positives": 27604,
+        "auc": 0.5984223644555658,
+        "logloss": 0.4153422805018883
+      },
+      {
+        "training_target_exposure_frequency": "1",
+        "test_rows": 102012,
+        "distinct_test_targets": 80724,
+        "positives": 15367,
+        "auc": 0.598627434789428,
+        "logloss": 0.4158793377413364
+      },
+      {
+        "training_target_exposure_frequency": "2-5",
+        "test_rows": 201868,
+        "distinct_test_targets": 126199,
+        "positives": 29900,
+        "auc": 0.5949497009165896,
+        "logloss": 0.41207246109348694
+      },
+      {
+        "training_target_exposure_frequency": "6-20",
+        "test_rows": 209630,
+        "distinct_test_targets": 67921,
+        "positives": 29162,
+        "auc": 0.607749253597293,
+        "logloss": 0.3944885194737263
+      },
+      {
+        "training_target_exposure_frequency": "21-100",
+        "test_rows": 159573,
+        "distinct_test_targets": 14866,
+        "positives": 19304,
+        "auc": 0.6260873032893163,
+        "logloss": 0.35852429902295724
+      },
+      {
+        "training_target_exposure_frequency": "101+",
+        "test_rows": 66266,
+        "distinct_test_targets": 1206,
+        "positives": 5385,
+        "auc": 0.664458390500353,
+        "logloss": 0.2699942941745676
+      }
+    ],
+    "r5-seed42": [
+      {
+        "training_target_exposure_frequency": "0",
+        "test_rows": 183862,
+        "distinct_test_targets": 163413,
+        "positives": 27604,
+        "auc": 0.5980892258536621,
+        "logloss": 0.4154646936045417
+      },
+      {
+        "training_target_exposure_frequency": "1",
+        "test_rows": 102012,
+        "distinct_test_targets": 80724,
+        "positives": 15367,
+        "auc": 0.5978488873135585,
+        "logloss": 0.4160694809177111
+      },
+      {
+        "training_target_exposure_frequency": "2-5",
+        "test_rows": 201868,
+        "distinct_test_targets": 126199,
+        "positives": 29900,
+        "auc": 0.5939564267537368,
+        "logloss": 0.4121507709800554
+      },
+      {
+        "training_target_exposure_frequency": "6-20",
+        "test_rows": 209630,
+        "distinct_test_targets": 67921,
+        "positives": 29162,
+        "auc": 0.6066718027006898,
+        "logloss": 0.39460187562313537
+      },
+      {
+        "training_target_exposure_frequency": "21-100",
+        "test_rows": 159573,
+        "distinct_test_targets": 14866,
+        "positives": 19304,
+        "auc": 0.6268651809887388,
+        "logloss": 0.3584033835060514
+      },
+      {
+        "training_target_exposure_frequency": "101+",
+        "test_rows": 66266,
+        "distinct_test_targets": 1206,
+        "positives": 5385,
+        "auc": 0.6664118413446924,
+        "logloss": 0.2700847990017897
+      }
+    ],
+    "r1-l1000-seed42": [
+      {
+        "training_target_exposure_frequency": "0",
+        "test_rows": 183862,
+        "distinct_test_targets": 163413,
+        "positives": 27604,
+        "auc": 0.5804086758884304,
+        "logloss": 0.4181209365393229
+      },
+      {
+        "training_target_exposure_frequency": "1",
+        "test_rows": 102012,
+        "distinct_test_targets": 80724,
+        "positives": 15367,
+        "auc": 0.5833912969885402,
+        "logloss": 0.4182605348884194
+      },
+      {
+        "training_target_exposure_frequency": "2-5",
+        "test_rows": 201868,
+        "distinct_test_targets": 126199,
+        "positives": 29900,
+        "auc": 0.5863416965923816,
+        "logloss": 0.4135646731360816
+      },
+      {
+        "training_target_exposure_frequency": "6-20",
+        "test_rows": 209630,
+        "distinct_test_targets": 67921,
+        "positives": 29162,
+        "auc": 0.599718997320118,
+        "logloss": 0.3959865552343509
+      },
+      {
+        "training_target_exposure_frequency": "21-100",
+        "test_rows": 159573,
+        "distinct_test_targets": 14866,
+        "positives": 19304,
+        "auc": 0.6229586443234432,
+        "logloss": 0.3593263130624161
+      },
+      {
+        "training_target_exposure_frequency": "101+",
+        "test_rows": 66266,
+        "distinct_test_targets": 1206,
+        "positives": 5385,
+        "auc": 0.664484808537934,
+        "logloss": 0.27101815323047596
+      }
+    ],
+    "r4-l1000-seed42": [
+      {
+        "training_target_exposure_frequency": "0",
+        "test_rows": 183862,
+        "distinct_test_targets": 163413,
+        "positives": 27604,
+        "auc": 0.6026005623562066,
+        "logloss": 0.4147467799261316
+      },
+      {
+        "training_target_exposure_frequency": "1",
+        "test_rows": 102012,
+        "distinct_test_targets": 80724,
+        "positives": 15367,
+        "auc": 0.6037568248202331,
+        "logloss": 0.4151596943229208
+      },
+      {
+        "training_target_exposure_frequency": "2-5",
+        "test_rows": 201868,
+        "distinct_test_targets": 126199,
+        "positives": 29900,
+        "auc": 0.5994628560435293,
+        "logloss": 0.41137630823979204
+      },
+      {
+        "training_target_exposure_frequency": "6-20",
+        "test_rows": 209630,
+        "distinct_test_targets": 67921,
+        "positives": 29162,
+        "auc": 0.608565732775373,
+        "logloss": 0.39440770736378916
+      },
+      {
+        "training_target_exposure_frequency": "21-100",
+        "test_rows": 159573,
+        "distinct_test_targets": 14866,
+        "positives": 19304,
+        "auc": 0.6299366325531929,
+        "logloss": 0.3578367292503192
+      },
+      {
+        "training_target_exposure_frequency": "101+",
+        "test_rows": 66266,
+        "distinct_test_targets": 1206,
+        "positives": 5385,
+        "auc": 0.6693291006518843,
+        "logloss": 0.2692878129588428
+      }
+    ],
+    "b1-hard-enhanced-seed42": [
+      {
+        "training_target_exposure_frequency": "0",
+        "test_rows": 183862,
+        "distinct_test_targets": 163413,
+        "positives": 27604,
+        "auc": 0.5921821406134818,
+        "logloss": 0.41622756952789586
+      },
+      {
+        "training_target_exposure_frequency": "1",
+        "test_rows": 102012,
+        "distinct_test_targets": 80724,
+        "positives": 15367,
+        "auc": 0.5924443829520134,
+        "logloss": 0.4168277713679739
+      },
+      {
+        "training_target_exposure_frequency": "2-5",
+        "test_rows": 201868,
+        "distinct_test_targets": 126199,
+        "positives": 29900,
+        "auc": 0.5917232932151646,
+        "logloss": 0.4125560135522702
+      },
+      {
+        "training_target_exposure_frequency": "6-20",
+        "test_rows": 209630,
+        "distinct_test_targets": 67921,
+        "positives": 29162,
+        "auc": 0.603574373900337,
+        "logloss": 0.39521825618805834
+      },
+      {
+        "training_target_exposure_frequency": "21-100",
+        "test_rows": 159573,
+        "distinct_test_targets": 14866,
+        "positives": 19304,
+        "auc": 0.6270364108011905,
+        "logloss": 0.3584128902293383
+      },
+      {
+        "training_target_exposure_frequency": "101+",
+        "test_rows": 66266,
+        "distinct_test_targets": 1206,
+        "positives": 5385,
+        "auc": 0.6661390166185196,
+        "logloss": 0.2696894263764237
+      }
+    ],
+    "b2-soft-enhanced-seed42": [
+      {
+        "training_target_exposure_frequency": "0",
+        "test_rows": 183862,
+        "distinct_test_targets": 163413,
+        "positives": 27604,
+        "auc": 0.5938507802914329,
+        "logloss": 0.4159787769221759
+      },
+      {
+        "training_target_exposure_frequency": "1",
+        "test_rows": 102012,
+        "distinct_test_targets": 80724,
+        "positives": 15367,
+        "auc": 0.5956978437234866,
+        "logloss": 0.41644944462713546
+      },
+      {
+        "training_target_exposure_frequency": "2-5",
+        "test_rows": 201868,
+        "distinct_test_targets": 126199,
+        "positives": 29900,
+        "auc": 0.5928185217705588,
+        "logloss": 0.4124135470196166
+      },
+      {
+        "training_target_exposure_frequency": "6-20",
+        "test_rows": 209630,
+        "distinct_test_targets": 67921,
+        "positives": 29162,
+        "auc": 0.6051268581037617,
+        "logloss": 0.39495676850235484
+      },
+      {
+        "training_target_exposure_frequency": "21-100",
+        "test_rows": 159573,
+        "distinct_test_targets": 14866,
+        "positives": 19304,
+        "auc": 0.627838188393016,
+        "logloss": 0.35825088116752196
+      },
+      {
+        "training_target_exposure_frequency": "101+",
+        "test_rows": 66266,
+        "distinct_test_targets": 1206,
+        "positives": 5385,
+        "auc": 0.6666798726352277,
+        "logloss": 0.2699045751907818
+      }
+    ],
+    "g-id-item-seed42": [
+      {
+        "training_target_exposure_frequency": "0",
+        "test_rows": 183862,
+        "distinct_test_targets": 163413,
+        "positives": 27604,
+        "auc": 0.5904290092174552,
+        "logloss": 0.41644393068528507
+      },
+      {
+        "training_target_exposure_frequency": "1",
+        "test_rows": 102012,
+        "distinct_test_targets": 80724,
+        "positives": 15367,
+        "auc": 0.5938396072655479,
+        "logloss": 0.4165696697803785
+      },
+      {
+        "training_target_exposure_frequency": "2-5",
+        "test_rows": 201868,
+        "distinct_test_targets": 126199,
+        "positives": 29900,
+        "auc": 0.5902913559285511,
+        "logloss": 0.4127136529463584
+      },
+      {
+        "training_target_exposure_frequency": "6-20",
+        "test_rows": 209630,
+        "distinct_test_targets": 67921,
+        "positives": 29162,
+        "auc": 0.6041030554705705,
+        "logloss": 0.39510648593861925
+      },
+      {
+        "training_target_exposure_frequency": "21-100",
+        "test_rows": 159573,
+        "distinct_test_targets": 14866,
+        "positives": 19304,
+        "auc": 0.6266648314572718,
+        "logloss": 0.3584790076883651
+      },
+      {
+        "training_target_exposure_frequency": "101+",
+        "test_rows": 66266,
+        "distinct_test_targets": 1206,
+        "positives": 5385,
+        "auc": 0.6671453147781163,
+        "logloss": 0.26995147482381227
+      }
+    ],
+    "content-id-cosine-l1000-seed42": [
+      {
+        "training_target_exposure_frequency": "0",
+        "test_rows": 183862,
+        "distinct_test_targets": 163413,
+        "positives": 27604,
+        "auc": 0.5962335800715365,
+        "logloss": 0.41629776235275895
+      },
+      {
+        "training_target_exposure_frequency": "1",
+        "test_rows": 102012,
+        "distinct_test_targets": 80724,
+        "positives": 15367,
+        "auc": 0.5994912761007828,
+        "logloss": 0.4160016116914677
+      },
+      {
+        "training_target_exposure_frequency": "2-5",
+        "test_rows": 201868,
+        "distinct_test_targets": 126199,
+        "positives": 29900,
+        "auc": 0.5958225112737783,
+        "logloss": 0.41190995183665985
+      },
+      {
+        "training_target_exposure_frequency": "6-20",
+        "test_rows": 209630,
+        "distinct_test_targets": 67921,
+        "positives": 29162,
+        "auc": 0.6070956516379848,
+        "logloss": 0.39463316142287846
+      },
+      {
+        "training_target_exposure_frequency": "21-100",
+        "test_rows": 159573,
+        "distinct_test_targets": 14866,
+        "positives": 19304,
+        "auc": 0.6286972649751241,
+        "logloss": 0.3581511843713268
+      },
+      {
+        "training_target_exposure_frequency": "101+",
+        "test_rows": 66266,
+        "distinct_test_targets": 1206,
+        "positives": 5385,
+        "auc": 0.6680432703114744,
+        "logloss": 0.2696254445132074
+      }
+    ],
+    "c0-seed2026": [
+      {
+        "training_target_exposure_frequency": "0",
+        "test_rows": 183862,
+        "distinct_test_targets": 163413,
+        "positives": 27604,
+        "auc": 0.5758586171256022,
+        "logloss": 0.4205129162380449
+      },
+      {
+        "training_target_exposure_frequency": "1",
+        "test_rows": 102012,
+        "distinct_test_targets": 80724,
+        "positives": 15367,
+        "auc": 0.5820562976716367,
+        "logloss": 0.4197528928118073
+      },
+      {
+        "training_target_exposure_frequency": "2-5",
+        "test_rows": 201868,
+        "distinct_test_targets": 126199,
+        "positives": 29900,
+        "auc": 0.5843699815661434,
+        "logloss": 0.41479196614824104
+      },
+      {
+        "training_target_exposure_frequency": "6-20",
+        "test_rows": 209630,
+        "distinct_test_targets": 67921,
+        "positives": 29162,
+        "auc": 0.6016087200399491,
+        "logloss": 0.39649959049262384
+      },
+      {
+        "training_target_exposure_frequency": "21-100",
+        "test_rows": 159573,
+        "distinct_test_targets": 14866,
+        "positives": 19304,
+        "auc": 0.6251116730458852,
+        "logloss": 0.3597576548116896
+      },
+      {
+        "training_target_exposure_frequency": "101+",
+        "test_rows": 66266,
+        "distinct_test_targets": 1206,
+        "positives": 5385,
+        "auc": 0.6678922092212799,
+        "logloss": 0.2707352558501301
+      }
+    ],
+    "c2-seed2026": [
+      {
+        "training_target_exposure_frequency": "0",
+        "test_rows": 183862,
+        "distinct_test_targets": 163413,
+        "positives": 27604,
+        "auc": 0.579695489740179,
+        "logloss": 0.4212667549924129
+      },
+      {
+        "training_target_exposure_frequency": "1",
+        "test_rows": 102012,
+        "distinct_test_targets": 80724,
+        "positives": 15367,
+        "auc": 0.5874042748188987,
+        "logloss": 0.42003483412270937
+      },
+      {
+        "training_target_exposure_frequency": "2-5",
+        "test_rows": 201868,
+        "distinct_test_targets": 126199,
+        "positives": 29900,
+        "auc": 0.5866718934564166,
+        "logloss": 0.4152023748176512
+      },
+      {
+        "training_target_exposure_frequency": "6-20",
+        "test_rows": 209630,
+        "distinct_test_targets": 67921,
+        "positives": 29162,
+        "auc": 0.6029231143218322,
+        "logloss": 0.3969328031794221
+      },
+      {
+        "training_target_exposure_frequency": "21-100",
+        "test_rows": 159573,
+        "distinct_test_targets": 14866,
+        "positives": 19304,
+        "auc": 0.6242485796642758,
+        "logloss": 0.3604538765363962
+      },
+      {
+        "training_target_exposure_frequency": "101+",
+        "test_rows": 66266,
+        "distinct_test_targets": 1206,
+        "positives": 5385,
+        "auc": 0.6644339429110203,
+        "logloss": 0.27254318178888154
+      }
+    ],
+    "c3-seed2026": [
+      {
+        "training_target_exposure_frequency": "0",
+        "test_rows": 183862,
+        "distinct_test_targets": 163413,
+        "positives": 27604,
+        "auc": 0.5986797682305572,
+        "logloss": 0.419569419652994
+      },
+      {
+        "training_target_exposure_frequency": "1",
+        "test_rows": 102012,
+        "distinct_test_targets": 80724,
+        "positives": 15367,
+        "auc": 0.5985000312229221,
+        "logloss": 0.4189877987404642
+      },
+      {
+        "training_target_exposure_frequency": "2-5",
+        "test_rows": 201868,
+        "distinct_test_targets": 126199,
+        "positives": 29900,
+        "auc": 0.5963800867167633,
+        "logloss": 0.41422860580078374
+      },
+      {
+        "training_target_exposure_frequency": "6-20",
+        "test_rows": 209630,
+        "distinct_test_targets": 67921,
+        "positives": 29162,
+        "auc": 0.6090225852928999,
+        "logloss": 0.3961986217436887
+      },
+      {
+        "training_target_exposure_frequency": "21-100",
+        "test_rows": 159573,
+        "distinct_test_targets": 14866,
+        "positives": 19304,
+        "auc": 0.628579435163323,
+        "logloss": 0.3600179128276157
+      },
+      {
+        "training_target_exposure_frequency": "101+",
+        "test_rows": 66266,
+        "distinct_test_targets": 1206,
+        "positives": 5385,
+        "auc": 0.6683427189657184,
+        "logloss": 0.2716390913746037
+      }
+    ],
+    "c5-seed2026": [
+      {
+        "training_target_exposure_frequency": "0",
+        "test_rows": 183862,
+        "distinct_test_targets": 163413,
+        "positives": 27604,
+        "auc": 0.6001102236682422,
+        "logloss": 0.4178580011254708
+      },
+      {
+        "training_target_exposure_frequency": "1",
+        "test_rows": 102012,
+        "distinct_test_targets": 80724,
+        "positives": 15367,
+        "auc": 0.6025911521655536,
+        "logloss": 0.4174094211563255
+      },
+      {
+        "training_target_exposure_frequency": "2-5",
+        "test_rows": 201868,
+        "distinct_test_targets": 126199,
+        "positives": 29900,
+        "auc": 0.6021191710980218,
+        "logloss": 0.41251745701415127
+      },
+      {
+        "training_target_exposure_frequency": "6-20",
+        "test_rows": 209630,
+        "distinct_test_targets": 67921,
+        "positives": 29162,
+        "auc": 0.6125779778046906,
+        "logloss": 0.39472952340590756
+      },
+      {
+        "training_target_exposure_frequency": "21-100",
+        "test_rows": 159573,
+        "distinct_test_targets": 14866,
+        "positives": 19304,
+        "auc": 0.630927433310108,
+        "logloss": 0.35869086473963546
+      },
+      {
+        "training_target_exposure_frequency": "101+",
+        "test_rows": 66266,
+        "distinct_test_targets": 1206,
+        "positives": 5385,
+        "auc": 0.672603846854871,
+        "logloss": 0.2697287337730535
+      }
+    ],
+    "c6-seed2026": [
+      {
+        "training_target_exposure_frequency": "0",
+        "test_rows": 183862,
+        "distinct_test_targets": 163413,
+        "positives": 27604,
+        "auc": 0.6019032966795972,
+        "logloss": 0.41882093371805873
+      },
+      {
+        "training_target_exposure_frequency": "1",
+        "test_rows": 102012,
+        "distinct_test_targets": 80724,
+        "positives": 15367,
+        "auc": 0.6031928865377564,
+        "logloss": 0.4182127711095864
+      },
+      {
+        "training_target_exposure_frequency": "2-5",
+        "test_rows": 201868,
+        "distinct_test_targets": 126199,
+        "positives": 29900,
+        "auc": 0.6026217284299918,
+        "logloss": 0.41327520954975927
+      },
+      {
+        "training_target_exposure_frequency": "6-20",
+        "test_rows": 209630,
+        "distinct_test_targets": 67921,
+        "positives": 29162,
+        "auc": 0.6128290162325015,
+        "logloss": 0.3955149936465879
+      },
+      {
+        "training_target_exposure_frequency": "21-100",
+        "test_rows": 159573,
+        "distinct_test_targets": 14866,
+        "positives": 19304,
+        "auc": 0.6315299408634047,
+        "logloss": 0.3593361064139808
+      },
+      {
+        "training_target_exposure_frequency": "101+",
+        "test_rows": 66266,
+        "distinct_test_targets": 1206,
+        "positives": 5385,
+        "auc": 0.6725426256988514,
+        "logloss": 0.2706447216487663
+      }
+    ],
+    "c7-seed2026": [
+      {
+        "training_target_exposure_frequency": "0",
+        "test_rows": 183862,
+        "distinct_test_targets": 163413,
+        "positives": 27604,
+        "auc": 0.5997272590128823,
+        "logloss": 0.41877740083150594
+      },
+      {
+        "training_target_exposure_frequency": "1",
+        "test_rows": 102012,
+        "distinct_test_targets": 80724,
+        "positives": 15367,
+        "auc": 0.5997065931564409,
+        "logloss": 0.4180540514319002
+      },
+      {
+        "training_target_exposure_frequency": "2-5",
+        "test_rows": 201868,
+        "distinct_test_targets": 126199,
+        "positives": 29900,
+        "auc": 0.5979106231788631,
+        "logloss": 0.41294776114326864
+      },
+      {
+        "training_target_exposure_frequency": "6-20",
+        "test_rows": 209630,
+        "distinct_test_targets": 67921,
+        "positives": 29162,
+        "auc": 0.6105218984496545,
+        "logloss": 0.3948209667496044
+      },
+      {
+        "training_target_exposure_frequency": "21-100",
+        "test_rows": 159573,
+        "distinct_test_targets": 14866,
+        "positives": 19304,
+        "auc": 0.6306922717009523,
+        "logloss": 0.3586204715660001
+      },
+      {
+        "training_target_exposure_frequency": "101+",
+        "test_rows": 66266,
+        "distinct_test_targets": 1206,
+        "positives": 5385,
+        "auc": 0.6687602038755087,
+        "logloss": 0.2704813806075981
+      }
+    ],
+    "r0-seed2026": [
+      {
+        "training_target_exposure_frequency": "0",
+        "test_rows": 183862,
+        "distinct_test_targets": 163413,
+        "positives": 27604,
+        "auc": 0.5729517277899547,
+        "logloss": 0.42159648855267007
+      },
+      {
+        "training_target_exposure_frequency": "1",
+        "test_rows": 102012,
+        "distinct_test_targets": 80724,
+        "positives": 15367,
+        "auc": 0.5773084525367442,
+        "logloss": 0.4212208864695239
+      },
+      {
+        "training_target_exposure_frequency": "2-5",
+        "test_rows": 201868,
+        "distinct_test_targets": 126199,
+        "positives": 29900,
+        "auc": 0.578651931179076,
+        "logloss": 0.4162842103022508
+      },
+      {
+        "training_target_exposure_frequency": "6-20",
+        "test_rows": 209630,
+        "distinct_test_targets": 67921,
+        "positives": 29162,
+        "auc": 0.5958802880785263,
+        "logloss": 0.3980329843959361
+      },
+      {
+        "training_target_exposure_frequency": "21-100",
+        "test_rows": 159573,
+        "distinct_test_targets": 14866,
+        "positives": 19304,
+        "auc": 0.6226171894062164,
+        "logloss": 0.3608727716943181
+      },
+      {
+        "training_target_exposure_frequency": "101+",
+        "test_rows": 66266,
+        "distinct_test_targets": 1206,
+        "positives": 5385,
+        "auc": 0.6640022561327419,
+        "logloss": 0.2722525114662032
+      }
+    ],
+    "r1-seed2026": [
+      {
+        "training_target_exposure_frequency": "0",
+        "test_rows": 183862,
+        "distinct_test_targets": 163413,
+        "positives": 27604,
+        "auc": 0.5781330375829693,
+        "logloss": 0.42027467121827755
+      },
+      {
+        "training_target_exposure_frequency": "1",
+        "test_rows": 102012,
+        "distinct_test_targets": 80724,
+        "positives": 15367,
+        "auc": 0.5817081086726522,
+        "logloss": 0.4198833254766372
+      },
+      {
+        "training_target_exposure_frequency": "2-5",
+        "test_rows": 201868,
+        "distinct_test_targets": 126199,
+        "positives": 29900,
+        "auc": 0.5821305730404226,
+        "logloss": 0.41522804630254
+      },
+      {
+        "training_target_exposure_frequency": "6-20",
+        "test_rows": 209630,
+        "distinct_test_targets": 67921,
+        "positives": 29162,
+        "auc": 0.598918840227701,
+        "logloss": 0.39702741448021284
+      },
+      {
+        "training_target_exposure_frequency": "21-100",
+        "test_rows": 159573,
+        "distinct_test_targets": 14866,
+        "positives": 19304,
+        "auc": 0.6227224303656295,
+        "logloss": 0.36042587304171836
+      },
+      {
+        "training_target_exposure_frequency": "101+",
+        "test_rows": 66266,
+        "distinct_test_targets": 1206,
+        "positives": 5385,
+        "auc": 0.6628547582748798,
+        "logloss": 0.2720705005073805
+      }
+    ],
+    "r2-seed2026": [
+      {
+        "training_target_exposure_frequency": "0",
+        "test_rows": 183862,
+        "distinct_test_targets": 163413,
+        "positives": 27604,
+        "auc": 0.5985083246392472,
+        "logloss": 0.4179734530969331
+      },
+      {
+        "training_target_exposure_frequency": "1",
+        "test_rows": 102012,
+        "distinct_test_targets": 80724,
+        "positives": 15367,
+        "auc": 0.5982367999656681,
+        "logloss": 0.4177981493573064
+      },
+      {
+        "training_target_exposure_frequency": "2-5",
+        "test_rows": 201868,
+        "distinct_test_targets": 126199,
+        "positives": 29900,
+        "auc": 0.5944665316709774,
+        "logloss": 0.41348840965433065
+      },
+      {
+        "training_target_exposure_frequency": "6-20",
+        "test_rows": 209630,
+        "distinct_test_targets": 67921,
+        "positives": 29162,
+        "auc": 0.6076977129540693,
+        "logloss": 0.3954791980905312
+      },
+      {
+        "training_target_exposure_frequency": "21-100",
+        "test_rows": 159573,
+        "distinct_test_targets": 14866,
+        "positives": 19304,
+        "auc": 0.6276619193465098,
+        "logloss": 0.359415466544866
+      },
+      {
+        "training_target_exposure_frequency": "101+",
+        "test_rows": 66266,
+        "distinct_test_targets": 1206,
+        "positives": 5385,
+        "auc": 0.6650196312007182,
+        "logloss": 0.2713781484621862
+      }
+    ],
+    "r3-seed2026": [
+      {
+        "training_target_exposure_frequency": "0",
+        "test_rows": 183862,
+        "distinct_test_targets": 163413,
+        "positives": 27604,
+        "auc": 0.583184451114051,
+        "logloss": 0.42012526229576136
+      },
+      {
+        "training_target_exposure_frequency": "1",
+        "test_rows": 102012,
+        "distinct_test_targets": 80724,
+        "positives": 15367,
+        "auc": 0.5858685512991896,
+        "logloss": 0.41977202501808414
+      },
+      {
+        "training_target_exposure_frequency": "2-5",
+        "test_rows": 201868,
+        "distinct_test_targets": 126199,
+        "positives": 29900,
+        "auc": 0.5837553737539098,
+        "logloss": 0.4152418069855622
+      },
+      {
+        "training_target_exposure_frequency": "6-20",
+        "test_rows": 209630,
+        "distinct_test_targets": 67921,
+        "positives": 29162,
+        "auc": 0.6014204069693128,
+        "logloss": 0.39672886839679666
+      },
+      {
+        "training_target_exposure_frequency": "21-100",
+        "test_rows": 159573,
+        "distinct_test_targets": 14866,
+        "positives": 19304,
+        "auc": 0.6237666950138139,
+        "logloss": 0.36041687794635174
+      },
+      {
+        "training_target_exposure_frequency": "101+",
+        "test_rows": 66266,
+        "distinct_test_targets": 1206,
+        "positives": 5385,
+        "auc": 0.6639729220757721,
+        "logloss": 0.27204578025473947
+      }
+    ],
+    "r4-seed2026": [
+      {
+        "training_target_exposure_frequency": "0",
+        "test_rows": 183862,
+        "distinct_test_targets": 163413,
+        "positives": 27604,
+        "auc": 0.5981976826104863,
+        "logloss": 0.41729938590980636
+      },
+      {
+        "training_target_exposure_frequency": "1",
+        "test_rows": 102012,
+        "distinct_test_targets": 80724,
+        "positives": 15367,
+        "auc": 0.5979339945137407,
+        "logloss": 0.4173218501390537
+      },
+      {
+        "training_target_exposure_frequency": "2-5",
+        "test_rows": 201868,
+        "distinct_test_targets": 126199,
+        "positives": 29900,
+        "auc": 0.5941880160795258,
+        "logloss": 0.41308794686532646
+      },
+      {
+        "training_target_exposure_frequency": "6-20",
+        "test_rows": 209630,
+        "distinct_test_targets": 67921,
+        "positives": 29162,
+        "auc": 0.6075260664620097,
+        "logloss": 0.395113933272042
+      },
+      {
+        "training_target_exposure_frequency": "21-100",
+        "test_rows": 159573,
+        "distinct_test_targets": 14866,
+        "positives": 19304,
+        "auc": 0.6275754166192017,
+        "logloss": 0.35901251367786835
+      },
+      {
+        "training_target_exposure_frequency": "101+",
+        "test_rows": 66266,
+        "distinct_test_targets": 1206,
+        "positives": 5385,
+        "auc": 0.6655862433552086,
+        "logloss": 0.2708192200406629
+      }
+    ],
+    "r5-seed2026": [
+      {
+        "training_target_exposure_frequency": "0",
+        "test_rows": 183862,
+        "distinct_test_targets": 163413,
+        "positives": 27604,
+        "auc": 0.5969393667435475,
+        "logloss": 0.41796460970085036
+      },
+      {
+        "training_target_exposure_frequency": "1",
+        "test_rows": 102012,
+        "distinct_test_targets": 80724,
+        "positives": 15367,
+        "auc": 0.5967272759868189,
+        "logloss": 0.41789687633397543
+      },
+      {
+        "training_target_exposure_frequency": "2-5",
+        "test_rows": 201868,
+        "distinct_test_targets": 126199,
+        "positives": 29900,
+        "auc": 0.5924647030271168,
+        "logloss": 0.4135387462384616
+      },
+      {
+        "training_target_exposure_frequency": "6-20",
+        "test_rows": 209630,
+        "distinct_test_targets": 67921,
+        "positives": 29162,
+        "auc": 0.6057108171057713,
+        "logloss": 0.3955573409547364
+      },
+      {
+        "training_target_exposure_frequency": "21-100",
+        "test_rows": 159573,
+        "distinct_test_targets": 14866,
+        "positives": 19304,
+        "auc": 0.6278117162569202,
+        "logloss": 0.3590500864786654
+      },
+      {
+        "training_target_exposure_frequency": "101+",
+        "test_rows": 66266,
+        "distinct_test_targets": 1206,
+        "positives": 5385,
+        "auc": 0.6670411174137495,
+        "logloss": 0.27057592132515806
+      }
+    ],
+    "r1-l1000-seed2026": [
+      {
+        "training_target_exposure_frequency": "0",
+        "test_rows": 183862,
+        "distinct_test_targets": 163413,
+        "positives": 27604,
+        "auc": 0.5794328125647032,
+        "logloss": 0.4207250926926247
+      },
+      {
+        "training_target_exposure_frequency": "1",
+        "test_rows": 102012,
+        "distinct_test_targets": 80724,
+        "positives": 15367,
+        "auc": 0.5841512808234446,
+        "logloss": 0.42006995445164974
+      },
+      {
+        "training_target_exposure_frequency": "2-5",
+        "test_rows": 201868,
+        "distinct_test_targets": 126199,
+        "positives": 29900,
+        "auc": 0.5853782122333097,
+        "logloss": 0.4151456416365983
+      },
+      {
+        "training_target_exposure_frequency": "6-20",
+        "test_rows": 209630,
+        "distinct_test_targets": 67921,
+        "positives": 29162,
+        "auc": 0.598397814551699,
+        "logloss": 0.3974593873625592
+      },
+      {
+        "training_target_exposure_frequency": "21-100",
+        "test_rows": 159573,
+        "distinct_test_targets": 14866,
+        "positives": 19304,
+        "auc": 0.6227544166683554,
+        "logloss": 0.3606292456856724
+      },
+      {
+        "training_target_exposure_frequency": "101+",
+        "test_rows": 66266,
+        "distinct_test_targets": 1206,
+        "positives": 5385,
+        "auc": 0.6627556563188699,
+        "logloss": 0.2720817204227794
+      }
+    ],
+    "r4-l1000-seed2026": [
+      {
+        "training_target_exposure_frequency": "0",
+        "test_rows": 183862,
+        "distinct_test_targets": 163413,
+        "positives": 27604,
+        "auc": 0.6030686343770082,
+        "logloss": 0.41678040748563655
+      },
+      {
+        "training_target_exposure_frequency": "1",
+        "test_rows": 102012,
+        "distinct_test_targets": 80724,
+        "positives": 15367,
+        "auc": 0.6045325250750444,
+        "logloss": 0.4165095416907734
+      },
+      {
+        "training_target_exposure_frequency": "2-5",
+        "test_rows": 201868,
+        "distinct_test_targets": 126199,
+        "positives": 29900,
+        "auc": 0.5989327798832916,
+        "logloss": 0.41238389422158844
+      },
+      {
+        "training_target_exposure_frequency": "6-20",
+        "test_rows": 209630,
+        "distinct_test_targets": 67921,
+        "positives": 29162,
+        "auc": 0.6087631210396455,
+        "logloss": 0.39500630677952053
+      },
+      {
+        "training_target_exposure_frequency": "21-100",
+        "test_rows": 159573,
+        "distinct_test_targets": 14866,
+        "positives": 19304,
+        "auc": 0.6305446611053535,
+        "logloss": 0.358428561545523
+      },
+      {
+        "training_target_exposure_frequency": "101+",
+        "test_rows": 66266,
+        "distinct_test_targets": 1206,
+        "positives": 5385,
+        "auc": 0.6681621347043261,
+        "logloss": 0.2700245348158984
+      }
+    ],
+    "b1-hard-enhanced-seed2026": [
+      {
+        "training_target_exposure_frequency": "0",
+        "test_rows": 183862,
+        "distinct_test_targets": 163413,
+        "positives": 27604,
+        "auc": 0.5932407091071384,
+        "logloss": 0.4185975445961857
+      },
+      {
+        "training_target_exposure_frequency": "1",
+        "test_rows": 102012,
+        "distinct_test_targets": 80724,
+        "positives": 15367,
+        "auc": 0.5943271031828067,
+        "logloss": 0.41838299860952427
+      },
+      {
+        "training_target_exposure_frequency": "2-5",
+        "test_rows": 201868,
+        "distinct_test_targets": 126199,
+        "positives": 29900,
+        "auc": 0.5914886226013271,
+        "logloss": 0.41373994678203646
+      },
+      {
+        "training_target_exposure_frequency": "6-20",
+        "test_rows": 209630,
+        "distinct_test_targets": 67921,
+        "positives": 29162,
+        "auc": 0.6042170576384202,
+        "logloss": 0.3960306888747904
+      },
+      {
+        "training_target_exposure_frequency": "21-100",
+        "test_rows": 159573,
+        "distinct_test_targets": 14866,
+        "positives": 19304,
+        "auc": 0.6287026576387859,
+        "logloss": 0.35907925118491274
+      },
+      {
+        "training_target_exposure_frequency": "101+",
+        "test_rows": 66266,
+        "distinct_test_targets": 1206,
+        "positives": 5385,
+        "auc": 0.6682465803076544,
+        "logloss": 0.2704199654585029
+      }
+    ],
+    "b2-soft-enhanced-seed2026": [
+      {
+        "training_target_exposure_frequency": "0",
+        "test_rows": 183862,
+        "distinct_test_targets": 163413,
+        "positives": 27604,
+        "auc": 0.5946260744900086,
+        "logloss": 0.41867470608348173
+      },
+      {
+        "training_target_exposure_frequency": "1",
+        "test_rows": 102012,
+        "distinct_test_targets": 80724,
+        "positives": 15367,
+        "auc": 0.5976024438454649,
+        "logloss": 0.41809399869498937
+      },
+      {
+        "training_target_exposure_frequency": "2-5",
+        "test_rows": 201868,
+        "distinct_test_targets": 126199,
+        "positives": 29900,
+        "auc": 0.5927782742383121,
+        "logloss": 0.4136282132312412
+      },
+      {
+        "training_target_exposure_frequency": "6-20",
+        "test_rows": 209630,
+        "distinct_test_targets": 67921,
+        "positives": 29162,
+        "auc": 0.6043926679841353,
+        "logloss": 0.3960325409935476
+      },
+      {
+        "training_target_exposure_frequency": "21-100",
+        "test_rows": 159573,
+        "distinct_test_targets": 14866,
+        "positives": 19304,
+        "auc": 0.6295529453830758,
+        "logloss": 0.35895624790248337
+      },
+      {
+        "training_target_exposure_frequency": "101+",
+        "test_rows": 66266,
+        "distinct_test_targets": 1206,
+        "positives": 5385,
+        "auc": 0.6676522339415598,
+        "logloss": 0.27039081637200324
+      }
+    ],
+    "g-id-item-seed2026": [
+      {
+        "training_target_exposure_frequency": "0",
+        "test_rows": 183862,
+        "distinct_test_targets": 163413,
+        "positives": 27604,
+        "auc": 0.5911886441105565,
+        "logloss": 0.41939136565014
+      },
+      {
+        "training_target_exposure_frequency": "1",
+        "test_rows": 102012,
+        "distinct_test_targets": 80724,
+        "positives": 15367,
+        "auc": 0.5943983381602091,
+        "logloss": 0.418630488503931
+      },
+      {
+        "training_target_exposure_frequency": "2-5",
+        "test_rows": 201868,
+        "distinct_test_targets": 126199,
+        "positives": 29900,
+        "auc": 0.5919706347715932,
+        "logloss": 0.414071853114906
+      },
+      {
+        "training_target_exposure_frequency": "6-20",
+        "test_rows": 209630,
+        "distinct_test_targets": 67921,
+        "positives": 29162,
+        "auc": 0.6050018009055872,
+        "logloss": 0.3962855648799725
+      },
+      {
+        "training_target_exposure_frequency": "21-100",
+        "test_rows": 159573,
+        "distinct_test_targets": 14866,
+        "positives": 19304,
+        "auc": 0.6283339670371738,
+        "logloss": 0.35971936101954805
+      },
+      {
+        "training_target_exposure_frequency": "101+",
+        "test_rows": 66266,
+        "distinct_test_targets": 1206,
+        "positives": 5385,
+        "auc": 0.667623006642622,
+        "logloss": 0.27086345938532164
+      }
+    ],
+    "content-id-cosine-l1000-seed2026": [
+      {
+        "training_target_exposure_frequency": "0",
+        "test_rows": 183862,
+        "distinct_test_targets": 163413,
+        "positives": 27604,
+        "auc": 0.5982308412083754,
+        "logloss": 0.4189583717407569
+      },
+      {
+        "training_target_exposure_frequency": "1",
+        "test_rows": 102012,
+        "distinct_test_targets": 80724,
+        "positives": 15367,
+        "auc": 0.6016115259924601,
+        "logloss": 0.4173043983440142
+      },
+      {
+        "training_target_exposure_frequency": "2-5",
+        "test_rows": 201868,
+        "distinct_test_targets": 126199,
+        "positives": 29900,
+        "auc": 0.5959633959666448,
+        "logloss": 0.41294794795595785
+      },
+      {
+        "training_target_exposure_frequency": "6-20",
+        "test_rows": 209630,
+        "distinct_test_targets": 67921,
+        "positives": 29162,
+        "auc": 0.6069135857078768,
+        "logloss": 0.3953901775255266
+      },
+      {
+        "training_target_exposure_frequency": "21-100",
+        "test_rows": 159573,
+        "distinct_test_targets": 14866,
+        "positives": 19304,
+        "auc": 0.6299085565040521,
+        "logloss": 0.3587673759218386
+      },
+      {
+        "training_target_exposure_frequency": "101+",
+        "test_rows": 66266,
+        "distinct_test_targets": 1206,
+        "positives": 5385,
+        "auc": 0.6683422187280826,
+        "logloss": 0.2702077833931563
+      }
+    ],
+    "c0-seed3407": [
+      {
+        "training_target_exposure_frequency": "0",
+        "test_rows": 183862,
+        "distinct_test_targets": 163413,
+        "positives": 27604,
+        "auc": 0.575526612793982,
+        "logloss": 0.41865118455866573
+      },
+      {
+        "training_target_exposure_frequency": "1",
+        "test_rows": 102012,
+        "distinct_test_targets": 80724,
+        "positives": 15367,
+        "auc": 0.580425609077833,
+        "logloss": 0.41852179400649725
+      },
+      {
+        "training_target_exposure_frequency": "2-5",
+        "test_rows": 201868,
+        "distinct_test_targets": 126199,
+        "positives": 29900,
+        "auc": 0.5822503343742571,
+        "logloss": 0.41404898999089396
+      },
+      {
+        "training_target_exposure_frequency": "6-20",
+        "test_rows": 209630,
+        "distinct_test_targets": 67921,
+        "positives": 29162,
+        "auc": 0.5999814005938613,
+        "logloss": 0.39579000701575906
+      },
+      {
+        "training_target_exposure_frequency": "21-100",
+        "test_rows": 159573,
+        "distinct_test_targets": 14866,
+        "positives": 19304,
+        "auc": 0.623519947782707,
+        "logloss": 0.3589835807674045
+      },
+      {
+        "training_target_exposure_frequency": "101+",
+        "test_rows": 66266,
+        "distinct_test_targets": 1206,
+        "positives": 5385,
+        "auc": 0.6663028459693436,
+        "logloss": 0.2691973693330661
+      }
+    ],
+    "c2-seed3407": [
+      {
+        "training_target_exposure_frequency": "0",
+        "test_rows": 183862,
+        "distinct_test_targets": 163413,
+        "positives": 27604,
+        "auc": 0.5780186070412914,
+        "logloss": 0.41901615454962543
+      },
+      {
+        "training_target_exposure_frequency": "1",
+        "test_rows": 102012,
+        "distinct_test_targets": 80724,
+        "positives": 15367,
+        "auc": 0.5848478326889089,
+        "logloss": 0.41845379889099954
+      },
+      {
+        "training_target_exposure_frequency": "2-5",
+        "test_rows": 201868,
+        "distinct_test_targets": 126199,
+        "positives": 29900,
+        "auc": 0.5850185981945152,
+        "logloss": 0.4140336700210376
+      },
+      {
+        "training_target_exposure_frequency": "6-20",
+        "test_rows": 209630,
+        "distinct_test_targets": 67921,
+        "positives": 29162,
+        "auc": 0.602823094804038,
+        "logloss": 0.3956794584869153
+      },
+      {
+        "training_target_exposure_frequency": "21-100",
+        "test_rows": 159573,
+        "distinct_test_targets": 14866,
+        "positives": 19304,
+        "auc": 0.6241792788397459,
+        "logloss": 0.35928111444271926
+      },
+      {
+        "training_target_exposure_frequency": "101+",
+        "test_rows": 66266,
+        "distinct_test_targets": 1206,
+        "positives": 5385,
+        "auc": 0.6641700538321276,
+        "logloss": 0.2701097303483765
+      }
+    ],
+    "c3-seed3407": [
+      {
+        "training_target_exposure_frequency": "0",
+        "test_rows": 183862,
+        "distinct_test_targets": 163413,
+        "positives": 27604,
+        "auc": 0.5978907279744408,
+        "logloss": 0.4152588266361469
+      },
+      {
+        "training_target_exposure_frequency": "1",
+        "test_rows": 102012,
+        "distinct_test_targets": 80724,
+        "positives": 15367,
+        "auc": 0.5967884953703348,
+        "logloss": 0.4159166964203508
+      },
+      {
+        "training_target_exposure_frequency": "2-5",
+        "test_rows": 201868,
+        "distinct_test_targets": 126199,
+        "positives": 29900,
+        "auc": 0.5944521136895035,
+        "logloss": 0.41217032058183006
+      },
+      {
+        "training_target_exposure_frequency": "6-20",
+        "test_rows": 209630,
+        "distinct_test_targets": 67921,
+        "positives": 29162,
+        "auc": 0.6078581908832523,
+        "logloss": 0.39451263119451546
+      },
+      {
+        "training_target_exposure_frequency": "21-100",
+        "test_rows": 159573,
+        "distinct_test_targets": 14866,
+        "positives": 19304,
+        "auc": 0.6281038673746336,
+        "logloss": 0.35812443772542396
+      },
+      {
+        "training_target_exposure_frequency": "101+",
+        "test_rows": 66266,
+        "distinct_test_targets": 1206,
+        "positives": 5385,
+        "auc": 0.6666241891708404,
+        "logloss": 0.2688762836087086
+      }
+    ],
+    "c5-seed3407": [
+      {
+        "training_target_exposure_frequency": "0",
+        "test_rows": 183862,
+        "distinct_test_targets": 163413,
+        "positives": 27604,
+        "auc": 0.5994921568347826,
+        "logloss": 0.4160205030977529
+      },
+      {
+        "training_target_exposure_frequency": "1",
+        "test_rows": 102012,
+        "distinct_test_targets": 80724,
+        "positives": 15367,
+        "auc": 0.5996513990514638,
+        "logloss": 0.41657710121277436
+      },
+      {
+        "training_target_exposure_frequency": "2-5",
+        "test_rows": 201868,
+        "distinct_test_targets": 126199,
+        "positives": 29900,
+        "auc": 0.5987947663398215,
+        "logloss": 0.4124236581316304
+      },
+      {
+        "training_target_exposure_frequency": "6-20",
+        "test_rows": 209630,
+        "distinct_test_targets": 67921,
+        "positives": 29162,
+        "auc": 0.6124147435521707,
+        "logloss": 0.39437246973534945
+      },
+      {
+        "training_target_exposure_frequency": "21-100",
+        "test_rows": 159573,
+        "distinct_test_targets": 14866,
+        "positives": 19304,
+        "auc": 0.6304749091687387,
+        "logloss": 0.358372298139234
+      },
+      {
+        "training_target_exposure_frequency": "101+",
+        "test_rows": 66266,
+        "distinct_test_targets": 1206,
+        "positives": 5385,
+        "auc": 0.6715014008865218,
+        "logloss": 0.2684822104290112
+      }
+    ],
+    "c6-seed3407": [
+      {
+        "training_target_exposure_frequency": "0",
+        "test_rows": 183862,
+        "distinct_test_targets": 163413,
+        "positives": 27604,
+        "auc": 0.5991799388832312,
+        "logloss": 0.4157661430472261
+      },
+      {
+        "training_target_exposure_frequency": "1",
+        "test_rows": 102012,
+        "distinct_test_targets": 80724,
+        "positives": 15367,
+        "auc": 0.5992189192409254,
+        "logloss": 0.41651269350226633
+      },
+      {
+        "training_target_exposure_frequency": "2-5",
+        "test_rows": 201868,
+        "distinct_test_targets": 126199,
+        "positives": 29900,
+        "auc": 0.5976443685602859,
+        "logloss": 0.41249188915556473
+      },
+      {
+        "training_target_exposure_frequency": "6-20",
+        "test_rows": 209630,
+        "distinct_test_targets": 67921,
+        "positives": 29162,
+        "auc": 0.611710203479716,
+        "logloss": 0.394269248782804
+      },
+      {
+        "training_target_exposure_frequency": "21-100",
+        "test_rows": 159573,
+        "distinct_test_targets": 14866,
+        "positives": 19304,
+        "auc": 0.6298912685520592,
+        "logloss": 0.358305238773113
+      },
+      {
+        "training_target_exposure_frequency": "101+",
+        "test_rows": 66266,
+        "distinct_test_targets": 1206,
+        "positives": 5385,
+        "auc": 0.6704484631929647,
+        "logloss": 0.26857082323878334
+      }
+    ],
+    "c7-seed3407": [
+      {
+        "training_target_exposure_frequency": "0",
+        "test_rows": 183862,
+        "distinct_test_targets": 163413,
+        "positives": 27604,
+        "auc": 0.5976583439878466,
+        "logloss": 0.4149997664390836
+      },
+      {
+        "training_target_exposure_frequency": "1",
+        "test_rows": 102012,
+        "distinct_test_targets": 80724,
+        "positives": 15367,
+        "auc": 0.5962511614433185,
+        "logloss": 0.41626944086121936
+      },
+      {
+        "training_target_exposure_frequency": "2-5",
+        "test_rows": 201868,
+        "distinct_test_targets": 126199,
+        "positives": 29900,
+        "auc": 0.5947387429083796,
+        "logloss": 0.4124282782864929
+      },
+      {
+        "training_target_exposure_frequency": "6-20",
+        "test_rows": 209630,
+        "distinct_test_targets": 67921,
+        "positives": 29162,
+        "auc": 0.608418365718259,
+        "logloss": 0.39479516555733885
+      },
+      {
+        "training_target_exposure_frequency": "21-100",
+        "test_rows": 159573,
+        "distinct_test_targets": 14866,
+        "positives": 19304,
+        "auc": 0.6292515083363726,
+        "logloss": 0.35831226497580176
+      },
+      {
+        "training_target_exposure_frequency": "101+",
+        "test_rows": 66266,
+        "distinct_test_targets": 1206,
+        "positives": 5385,
+        "auc": 0.6669633899408648,
+        "logloss": 0.2687943277074242
+      }
+    ],
+    "r0-seed3407": [
+      {
+        "training_target_exposure_frequency": "0",
+        "test_rows": 183862,
+        "distinct_test_targets": 163413,
+        "positives": 27604,
+        "auc": 0.5724543466191514,
+        "logloss": 0.41896341519329156
+      },
+      {
+        "training_target_exposure_frequency": "1",
+        "test_rows": 102012,
+        "distinct_test_targets": 80724,
+        "positives": 15367,
+        "auc": 0.5755563255711736,
+        "logloss": 0.4191834508594002
+      },
+      {
+        "training_target_exposure_frequency": "2-5",
+        "test_rows": 201868,
+        "distinct_test_targets": 126199,
+        "positives": 29900,
+        "auc": 0.5753937418783988,
+        "logloss": 0.41481654598547363
+      },
+      {
+        "training_target_exposure_frequency": "6-20",
+        "test_rows": 209630,
+        "distinct_test_targets": 67921,
+        "positives": 29162,
+        "auc": 0.5947550292419799,
+        "logloss": 0.3965107877693718
+      },
+      {
+        "training_target_exposure_frequency": "21-100",
+        "test_rows": 159573,
+        "distinct_test_targets": 14866,
+        "positives": 19304,
+        "auc": 0.6216645405813813,
+        "logloss": 0.35931947199913844
+      },
+      {
+        "training_target_exposure_frequency": "101+",
+        "test_rows": 66266,
+        "distinct_test_targets": 1206,
+        "positives": 5385,
+        "auc": 0.6626354025464871,
+        "logloss": 0.26977329865883787
+      }
+    ],
+    "r1-seed3407": [
+      {
+        "training_target_exposure_frequency": "0",
+        "test_rows": 183862,
+        "distinct_test_targets": 163413,
+        "positives": 27604,
+        "auc": 0.5776944482433515,
+        "logloss": 0.41843666810090974
+      },
+      {
+        "training_target_exposure_frequency": "1",
+        "test_rows": 102012,
+        "distinct_test_targets": 80724,
+        "positives": 15367,
+        "auc": 0.5803847738744133,
+        "logloss": 0.41868009096381414
+      },
+      {
+        "training_target_exposure_frequency": "2-5",
+        "test_rows": 201868,
+        "distinct_test_targets": 126199,
+        "positives": 29900,
+        "auc": 0.5804413650731317,
+        "logloss": 0.41443784565496594
+      },
+      {
+        "training_target_exposure_frequency": "6-20",
+        "test_rows": 209630,
+        "distinct_test_targets": 67921,
+        "positives": 29162,
+        "auc": 0.5973110831528035,
+        "logloss": 0.39628215060768035
+      },
+      {
+        "training_target_exposure_frequency": "21-100",
+        "test_rows": 159573,
+        "distinct_test_targets": 14866,
+        "positives": 19304,
+        "auc": 0.6207732387530197,
+        "logloss": 0.35969691986150526
+      },
+      {
+        "training_target_exposure_frequency": "101+",
+        "test_rows": 66266,
+        "distinct_test_targets": 1206,
+        "positives": 5385,
+        "auc": 0.6610644733564514,
+        "logloss": 0.2701866530493668
+      }
+    ],
+    "r2-seed3407": [
+      {
+        "training_target_exposure_frequency": "0",
+        "test_rows": 183862,
+        "distinct_test_targets": 163413,
+        "positives": 27604,
+        "auc": 0.5978033605305405,
+        "logloss": 0.4149622607850552
+      },
+      {
+        "training_target_exposure_frequency": "1",
+        "test_rows": 102012,
+        "distinct_test_targets": 80724,
+        "positives": 15367,
+        "auc": 0.5973582478870039,
+        "logloss": 0.41580141083362004
+      },
+      {
+        "training_target_exposure_frequency": "2-5",
+        "test_rows": 201868,
+        "distinct_test_targets": 126199,
+        "positives": 29900,
+        "auc": 0.5924782900808799,
+        "logloss": 0.4125528524356509
+      },
+      {
+        "training_target_exposure_frequency": "6-20",
+        "test_rows": 209630,
+        "distinct_test_targets": 67921,
+        "positives": 29162,
+        "auc": 0.6063321022855303,
+        "logloss": 0.39492129779124147
+      },
+      {
+        "training_target_exposure_frequency": "21-100",
+        "test_rows": 159573,
+        "distinct_test_targets": 14866,
+        "positives": 19304,
+        "auc": 0.6268181929471688,
+        "logloss": 0.3587054272353239
+      },
+      {
+        "training_target_exposure_frequency": "101+",
+        "test_rows": 66266,
+        "distinct_test_targets": 1206,
+        "positives": 5385,
+        "auc": 0.6635425758733527,
+        "logloss": 0.2694262118759089
+      }
+    ],
+    "r3-seed3407": [
+      {
+        "training_target_exposure_frequency": "0",
+        "test_rows": 183862,
+        "distinct_test_targets": 163413,
+        "positives": 27604,
+        "auc": 0.5833686216004764,
+        "logloss": 0.41762927150529594
+      },
+      {
+        "training_target_exposure_frequency": "1",
+        "test_rows": 102012,
+        "distinct_test_targets": 80724,
+        "positives": 15367,
+        "auc": 0.5857744664527605,
+        "logloss": 0.4180089815015108
+      },
+      {
+        "training_target_exposure_frequency": "2-5",
+        "test_rows": 201868,
+        "distinct_test_targets": 126199,
+        "positives": 29900,
+        "auc": 0.5833104085126517,
+        "logloss": 0.41402085769010305
+      },
+      {
+        "training_target_exposure_frequency": "6-20",
+        "test_rows": 209630,
+        "distinct_test_targets": 67921,
+        "positives": 29162,
+        "auc": 0.5999897338831497,
+        "logloss": 0.395840799512075
+      },
+      {
+        "training_target_exposure_frequency": "21-100",
+        "test_rows": 159573,
+        "distinct_test_targets": 14866,
+        "positives": 19304,
+        "auc": 0.6223423640947641,
+        "logloss": 0.3593731202130168
+      },
+      {
+        "training_target_exposure_frequency": "101+",
+        "test_rows": 66266,
+        "distinct_test_targets": 1206,
+        "positives": 5385,
+        "auc": 0.6632596457368918,
+        "logloss": 0.26951000088264543
+      }
+    ],
+    "r4-seed3407": [
+      {
+        "training_target_exposure_frequency": "0",
+        "test_rows": 183862,
+        "distinct_test_targets": 163413,
+        "positives": 27604,
+        "auc": 0.5972499874431585,
+        "logloss": 0.41551697194565834
+      },
+      {
+        "training_target_exposure_frequency": "1",
+        "test_rows": 102012,
+        "distinct_test_targets": 80724,
+        "positives": 15367,
+        "auc": 0.5976039143964625,
+        "logloss": 0.4160395820079473
+      },
+      {
+        "training_target_exposure_frequency": "2-5",
+        "test_rows": 201868,
+        "distinct_test_targets": 126199,
+        "positives": 29900,
+        "auc": 0.592722919672074,
+        "logloss": 0.4124778911655102
+      },
+      {
+        "training_target_exposure_frequency": "6-20",
+        "test_rows": 209630,
+        "distinct_test_targets": 67921,
+        "positives": 29162,
+        "auc": 0.6068055336908013,
+        "logloss": 0.3947438230939001
+      },
+      {
+        "training_target_exposure_frequency": "21-100",
+        "test_rows": 159573,
+        "distinct_test_targets": 14866,
+        "positives": 19304,
+        "auc": 0.6269767369633749,
+        "logloss": 0.35865172889393165
+      },
+      {
+        "training_target_exposure_frequency": "101+",
+        "test_rows": 66266,
+        "distinct_test_targets": 1206,
+        "positives": 5385,
+        "auc": 0.6640362128124981,
+        "logloss": 0.2695189635873622
+      }
+    ],
+    "r5-seed3407": [
+      {
+        "training_target_exposure_frequency": "0",
+        "test_rows": 183862,
+        "distinct_test_targets": 163413,
+        "positives": 27604,
+        "auc": 0.5983070369303974,
+        "logloss": 0.4152029960377026
+      },
+      {
+        "training_target_exposure_frequency": "1",
+        "test_rows": 102012,
+        "distinct_test_targets": 80724,
+        "positives": 15367,
+        "auc": 0.5970037260555309,
+        "logloss": 0.4159816981279556
+      },
+      {
+        "training_target_exposure_frequency": "2-5",
+        "test_rows": 201868,
+        "distinct_test_targets": 126199,
+        "positives": 29900,
+        "auc": 0.5925122952990866,
+        "logloss": 0.4122519177252244
+      },
+      {
+        "training_target_exposure_frequency": "6-20",
+        "test_rows": 209630,
+        "distinct_test_targets": 67921,
+        "positives": 29162,
+        "auc": 0.6067849441112861,
+        "logloss": 0.3944841045648239
+      },
+      {
+        "training_target_exposure_frequency": "21-100",
+        "test_rows": 159573,
+        "distinct_test_targets": 14866,
+        "positives": 19304,
+        "auc": 0.6286027127684866,
+        "logloss": 0.3581294682655411
+      },
+      {
+        "training_target_exposure_frequency": "101+",
+        "test_rows": 66266,
+        "distinct_test_targets": 1206,
+        "positives": 5385,
+        "auc": 0.6680174241919221,
+        "logloss": 0.2686900187638683
+      }
+    ],
+    "r1-l1000-seed3407": [
+      {
+        "training_target_exposure_frequency": "0",
+        "test_rows": 183862,
+        "distinct_test_targets": 163413,
+        "positives": 27604,
+        "auc": 0.5818392926857714,
+        "logloss": 0.41782535946364313
+      },
+      {
+        "training_target_exposure_frequency": "1",
+        "test_rows": 102012,
+        "distinct_test_targets": 80724,
+        "positives": 15367,
+        "auc": 0.5836662637384471,
+        "logloss": 0.418203890107578
+      },
+      {
+        "training_target_exposure_frequency": "2-5",
+        "test_rows": 201868,
+        "distinct_test_targets": 126199,
+        "positives": 29900,
+        "auc": 0.584705983352429,
+        "logloss": 0.4137113033356252
+      },
+      {
+        "training_target_exposure_frequency": "6-20",
+        "test_rows": 209630,
+        "distinct_test_targets": 67921,
+        "positives": 29162,
+        "auc": 0.5990648710209333,
+        "logloss": 0.39599259235509293
+      },
+      {
+        "training_target_exposure_frequency": "21-100",
+        "test_rows": 159573,
+        "distinct_test_targets": 14866,
+        "positives": 19304,
+        "auc": 0.6230558561155732,
+        "logloss": 0.35906189648555065
+      },
+      {
+        "training_target_exposure_frequency": "101+",
+        "test_rows": 66266,
+        "distinct_test_targets": 1206,
+        "positives": 5385,
+        "auc": 0.6627731310835969,
+        "logloss": 0.26979963726342077
+      }
+    ],
+    "r4-l1000-seed3407": [
+      {
+        "training_target_exposure_frequency": "0",
+        "test_rows": 183862,
+        "distinct_test_targets": 163413,
+        "positives": 27604,
+        "auc": 0.6024837652062396,
+        "logloss": 0.4147256857342431
+      },
+      {
+        "training_target_exposure_frequency": "1",
+        "test_rows": 102012,
+        "distinct_test_targets": 80724,
+        "positives": 15367,
+        "auc": 0.6029079766700464,
+        "logloss": 0.41529563307683703
+      },
+      {
+        "training_target_exposure_frequency": "2-5",
+        "test_rows": 201868,
+        "distinct_test_targets": 126199,
+        "positives": 29900,
+        "auc": 0.5987479356624489,
+        "logloss": 0.4114556006988518
+      },
+      {
+        "training_target_exposure_frequency": "6-20",
+        "test_rows": 209630,
+        "distinct_test_targets": 67921,
+        "positives": 29162,
+        "auc": 0.6087683870499139,
+        "logloss": 0.39438294260122614
+      },
+      {
+        "training_target_exposure_frequency": "21-100",
+        "test_rows": 159573,
+        "distinct_test_targets": 14866,
+        "positives": 19304,
+        "auc": 0.6304241384701659,
+        "logloss": 0.35784625288568617
+      },
+      {
+        "training_target_exposure_frequency": "101+",
+        "test_rows": 66266,
+        "distinct_test_targets": 1206,
+        "positives": 5385,
+        "auc": 0.6674685491218946,
+        "logloss": 0.2688160138452523
+      }
+    ],
+    "b1-hard-enhanced-seed3407": [
+      {
+        "training_target_exposure_frequency": "0",
+        "test_rows": 183862,
+        "distinct_test_targets": 163413,
+        "positives": 27604,
+        "auc": 0.5929087437244007,
+        "logloss": 0.41607069826958537
+      },
+      {
+        "training_target_exposure_frequency": "1",
+        "test_rows": 102012,
+        "distinct_test_targets": 80724,
+        "positives": 15367,
+        "auc": 0.5940772563429838,
+        "logloss": 0.41652356185456696
+      },
+      {
+        "training_target_exposure_frequency": "2-5",
+        "test_rows": 201868,
+        "distinct_test_targets": 126199,
+        "positives": 29900,
+        "auc": 0.5900921651986587,
+        "logloss": 0.41271477159635583
+      },
+      {
+        "training_target_exposure_frequency": "6-20",
+        "test_rows": 209630,
+        "distinct_test_targets": 67921,
+        "positives": 29162,
+        "auc": 0.6039254134147163,
+        "logloss": 0.39514111030753435
+      },
+      {
+        "training_target_exposure_frequency": "21-100",
+        "test_rows": 159573,
+        "distinct_test_targets": 14866,
+        "positives": 19304,
+        "auc": 0.6283406713050674,
+        "logloss": 0.3582400200393609
+      },
+      {
+        "training_target_exposure_frequency": "101+",
+        "test_rows": 66266,
+        "distinct_test_targets": 1206,
+        "positives": 5385,
+        "auc": 0.6670055639388571,
+        "logloss": 0.2688884156035781
+      }
+    ],
+    "b2-soft-enhanced-seed3407": [
+      {
+        "training_target_exposure_frequency": "0",
+        "test_rows": 183862,
+        "distinct_test_targets": 163413,
+        "positives": 27604,
+        "auc": 0.5937340981334047,
+        "logloss": 0.41614481632475875
+      },
+      {
+        "training_target_exposure_frequency": "1",
+        "test_rows": 102012,
+        "distinct_test_targets": 80724,
+        "positives": 15367,
+        "auc": 0.5965462900632628,
+        "logloss": 0.41620734931556935
+      },
+      {
+        "training_target_exposure_frequency": "2-5",
+        "test_rows": 201868,
+        "distinct_test_targets": 126199,
+        "positives": 29900,
+        "auc": 0.5913852589865051,
+        "logloss": 0.4125301932774532
+      },
+      {
+        "training_target_exposure_frequency": "6-20",
+        "test_rows": 209630,
+        "distinct_test_targets": 67921,
+        "positives": 29162,
+        "auc": 0.6049791006656816,
+        "logloss": 0.39494778710144757
+      },
+      {
+        "training_target_exposure_frequency": "21-100",
+        "test_rows": 159573,
+        "distinct_test_targets": 14866,
+        "positives": 19304,
+        "auc": 0.6289359804537783,
+        "logloss": 0.3580399701553293
+      },
+      {
+        "training_target_exposure_frequency": "101+",
+        "test_rows": 66266,
+        "distinct_test_targets": 1206,
+        "positives": 5385,
+        "auc": 0.6669958291314516,
+        "logloss": 0.2688753706754202
+      }
+    ],
+    "g-id-item-seed3407": [
+      {
+        "training_target_exposure_frequency": "0",
+        "test_rows": 183862,
+        "distinct_test_targets": 163413,
+        "positives": 27604,
+        "auc": 0.5912603083155703,
+        "logloss": 0.4162714468847969
+      },
+      {
+        "training_target_exposure_frequency": "1",
+        "test_rows": 102012,
+        "distinct_test_targets": 80724,
+        "positives": 15367,
+        "auc": 0.5941394693623373,
+        "logloss": 0.41636010906422033
+      },
+      {
+        "training_target_exposure_frequency": "2-5",
+        "test_rows": 201868,
+        "distinct_test_targets": 126199,
+        "positives": 29900,
+        "auc": 0.5890034714594176,
+        "logloss": 0.41277429131446713
+      },
+      {
+        "training_target_exposure_frequency": "6-20",
+        "test_rows": 209630,
+        "distinct_test_targets": 67921,
+        "positives": 29162,
+        "auc": 0.6038770195708016,
+        "logloss": 0.395072788829688
+      },
+      {
+        "training_target_exposure_frequency": "21-100",
+        "test_rows": 159573,
+        "distinct_test_targets": 14866,
+        "positives": 19304,
+        "auc": 0.6276509218506291,
+        "logloss": 0.3582604259059561
+      },
+      {
+        "training_target_exposure_frequency": "101+",
+        "test_rows": 66266,
+        "distinct_test_targets": 1206,
+        "positives": 5385,
+        "auc": 0.6656701048395902,
+        "logloss": 0.269198663635547
+      }
+    ],
+    "content-id-cosine-l1000-seed3407": [
+      {
+        "training_target_exposure_frequency": "0",
+        "test_rows": 183862,
+        "distinct_test_targets": 163413,
+        "positives": 27604,
+        "auc": 0.5966856660103761,
+        "logloss": 0.4157159545834577
+      },
+      {
+        "training_target_exposure_frequency": "1",
+        "test_rows": 102012,
+        "distinct_test_targets": 80724,
+        "positives": 15367,
+        "auc": 0.6007050815118795,
+        "logloss": 0.41544148372777323
+      },
+      {
+        "training_target_exposure_frequency": "2-5",
+        "test_rows": 201868,
+        "distinct_test_targets": 126199,
+        "positives": 29900,
+        "auc": 0.5947562903123923,
+        "logloss": 0.412115888017634
+      },
+      {
+        "training_target_exposure_frequency": "6-20",
+        "test_rows": 209630,
+        "distinct_test_targets": 67921,
+        "positives": 29162,
+        "auc": 0.6070101612465949,
+        "logloss": 0.3946899425852008
+      },
+      {
+        "training_target_exposure_frequency": "21-100",
+        "test_rows": 159573,
+        "distinct_test_targets": 14866,
+        "positives": 19304,
+        "auc": 0.6294417721981869,
+        "logloss": 0.35812730790089664
+      },
+      {
+        "training_target_exposure_frequency": "101+",
+        "test_rows": 66266,
+        "distinct_test_targets": 1206,
+        "positives": 5385,
+        "auc": 0.6678472137610127,
+        "logloss": 0.2688092616170695
+      }
+    ]
+  },
+  "test_evaluated": true,
+  "post_hoc": true,
+  "limitations": [
+    "zero train-target frequency is not proof of a newly created item or no history interactions",
+    "fixed frequency bins; not original-paper quantile groups",
+    "descriptive AUC/logloss only; no subgroup confidence intervals or automatic seed aggregation"
+  ]
+}

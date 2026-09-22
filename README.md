@@ -12,6 +12,10 @@
 - [方法覆盖与适配边界](docs/reproduction-scope.md)
 - [后续 MUSE 项目](https://github.com/IJustWannaFindMyPeace/taobao-mm-muse-repro)
 
+## 后续补充研究
+
+第一轮冻结实验完成后，已补[测试集低频分组](docs/posthoc-test-frequency-v1.md)，明确标为事后描述性分析。MAKE 训练策略正在追加两个种子；DIN/TWIN/MISS 的基线补充正在核对结构规格，不宣称已完成。
+
 ## 完成状态
 
 两个项目共 54 个固定模型、三个训练种子、66 项配对比较全部完成。每组评估完整 923,211 条保留测试曝光；测试前所有模型的完整验证回放与原预测逐元素一致。测试结果未用于重新训练、调参或替换主表模型。
