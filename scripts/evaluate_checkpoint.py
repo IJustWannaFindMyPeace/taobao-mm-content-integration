@@ -1,4 +1,4 @@
-"""Read-only full validation replay, without optimizer construction or training."""
+"""Read-only validation replay or hash-gated test evaluation; never train."""
 import argparse
 import hashlib
 import json
@@ -22,6 +22,9 @@ def main():
     p.add_argument('--store',type=Path,required=True)
     p.add_argument('--output-dir',type=Path,required=True)
     p.add_argument('--hist-cache',type=Path)
+    p.add_argument('--split',choices=['validation','test'],default='validation')
+    p.add_argument('--freeze',type=Path)
+    p.add_argument('--model-id')
     args=p.parse_args()
     if args.output_dir.exists() and any(args.output_dir.iterdir()):raise ValueError('Fresh output required')
     sys.path.insert(0,str(args.project.resolve()/'src'))
@@ -41,7 +44,20 @@ def main():
     # Old MUSE references do not instantiate BaselineModel; existing baseline
     # variants have dedicated forward/gradient regression tests after extension.
     weights_hash=digest(args.run/'model.pt')
-    store=FeatureStore(args.store,'validation')
+    freeze_hash=None
+    if args.split=='test':
+        if args.freeze is None or args.model_id is None:raise ValueError('Test requires frozen inventory and model id')
+        frozen=json.loads(args.freeze.read_text());entry=frozen['models'][args.model_id]
+        if (frozen['evaluator_sha256']!=digest(Path(__file__)) or entry['model_sha256']!=weights_hash
+            or entry['training_report_sha256']!=digest(args.run/'report.json') or entry['config']!=cfg
+            or entry['family']!=args.family or frozen['source_sha256'][args.family]!=source_hashes
+            or frozen['store_manifest_sha256']!=digest(args.store/'manifest.json')):
+            raise ValueError('Frozen artifact mismatch')
+        if not frozen['all_54_validation_replays_passed'] or not frozen['updated_entry_validation_regressions_passed']:
+            raise ValueError('Replay gates not met')
+        freeze_hash=digest(args.freeze)
+    store=FeatureStore(args.store,args.split)
+    if len(store)!=store.manifest['splits'][args.split]['rows']:raise ValueError('Split row count mismatch')
     width=cfg['embedding_width'];short=cfg['short_length'];bins=cfg.get('simtier_bins')
     cache=None
     if args.family=='content':
@@ -56,7 +72,7 @@ def main():
             model=cls(store.manifest['vocab_sizes'],width,short,cfg['freeze_content'],**({'bins':bins} if bins else {}))
         elif bins:model=C3(store.manifest['vocab_sizes'],width,short,bins)
         else:model=C0(store.manifest['vocab_sizes'],width,short)
-        if bins:
+        if bins and args.split=='validation':
             if args.hist_cache is None:raise ValueError('Validation histogram parity cache required')
             meta=json.loads((args.hist_cache/'manifest.json').read_text())
             if (meta['store_manifest_sha256']!=r['store_manifest_sha256'] or meta['bins']!=bins
@@ -99,32 +115,46 @@ def main():
             inputs=list(base)
             if bins:
                 counts=histogram(ct[0],ct[1],base[3],ct[2],ct[3],bins=bins)
-                np.testing.assert_array_equal(counts.cpu().numpy(),cache[start:end])
+                if cache is not None:np.testing.assert_array_equal(counts.cpu().numpy(),cache[start:end])
                 inputs.append(counts)
             if args.family=='muse' or cfg.get('make_fusion') or cfg.get('side_information'):inputs.extend(ct)
             logits[start:end]=model(*inputs).cpu().numpy()
             if start%(100*cfg['batch_size'])==0:
                 guard()
                 (args.output_dir/'progress.json').write_text(json.dumps({'rows':end,'total':len(store)}))
+    guard()
+    if not np.isfinite(logits).all():raise ValueError('Nonfinite evaluation logits')
     metrics=evaluate(store.labels,logits,store.user_rows)
-    with np.load(args.run/'validation_predictions.npz') as old:
-        for key,value in [('source_rows',store.source_rows),('labels',store.labels),('user_rows',store.user_rows)]:
-            np.testing.assert_array_equal(old[key],value)
-        error=float(np.max(np.abs(logits-old['logits'])))
-        # Exact replay is the gate. Any numerical discrepancy requires inspection,
-        # not an automatic relaxation of tolerance or silent checkpoint replacement.
-        np.testing.assert_array_equal(logits,old['logits'])
-    if metrics!=r['validation']:raise ValueError('Validation metric replay mismatch')
-    result={'scope':'read_only_full_validation_replay','family':args.family,'config':cfg,
+    error=None
+    if args.split=='validation':
+        with np.load(args.run/'validation_predictions.npz') as old:
+            for key,value in [('source_rows',store.source_rows),('labels',store.labels),('user_rows',store.user_rows)]:
+                np.testing.assert_array_equal(old[key],value)
+            error=float(np.max(np.abs(logits-old['logits'])))
+            # Exact replay remains the gate; never silently relax tolerance.
+            np.testing.assert_array_equal(logits,old['logits'])
+        if metrics!=r['validation']:raise ValueError('Validation metric replay mismatch')
+    else:
+        np.savez(args.output_dir/'test_predictions.npz',logits=logits,labels=store.labels,
+                 source_rows=store.source_rows,user_rows=store.user_rows)
+        with np.load(args.output_dir/'test_predictions.npz') as saved:
+            np.testing.assert_array_equal(saved['logits'],logits)
+            for key,value in [('source_rows',store.source_rows),('labels',store.labels),('user_rows',store.user_rows)]:
+                np.testing.assert_array_equal(saved[key],value)
+            if evaluate(saved['labels'],saved['logits'],saved['user_rows'])!=metrics:
+                raise ValueError('Saved test metric mismatch')
+    result={'scope':'read_only_full_'+args.split+'_evaluation','family':args.family,'config':cfg,
             'rows':len(store),'metrics':metrics,'max_abs_logit_error':error,
-            'histogram_online_equals_cache':True if bins else None,
+            'histogram_online_equals_cache':True if cache is not None else None,
             'model_sha256':weights_hash,'training_report_sha256':digest(args.run/'report.json'),
-            'original_predictions_sha256':digest(args.run/'validation_predictions.npz'),
+            'original_predictions_sha256':digest(args.run/'validation_predictions.npz') if args.split=='validation' else None,
+            'test_predictions_sha256':digest(args.output_dir/'test_predictions.npz') if args.split=='test' else None,
+            'freeze_sha256':freeze_hash,'model_id':args.model_id,
             'store_manifest_sha256':r['store_manifest_sha256'],'source_sha256':source_hashes,
             'evaluator_sha256':digest(Path(__file__)),'seconds':time.perf_counter()-started,
             'peak_allocated_gib':torch.cuda.max_memory_allocated()/2**30,'peak_process_rss_gib':peak_rss,
             'min_device_free_gib':minimum_free,'min_system_available_gib':minimum_ram,
-            'optimizer_created':False,'test_evaluated':False}
+            'optimizer_created':False,'test_evaluated':args.split=='test'}
     (args.output_dir/'report.json').write_text(json.dumps(result,indent=2),encoding='utf-8')
     print(json.dumps({'rows':len(store),'max_abs_logit_error':error,'seconds':result['seconds']}),flush=True)
 

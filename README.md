@@ -16,11 +16,14 @@
 
 最新收尾状态见[证据清单](https://github.com/IJustWannaFindMyPeace/taobao-mm-content-integration/blob/main/docs/completion-checklist.md)。长历史与类目/ID 检索三种子已全部完成并审计。
 
-最新范围核验：[两项目故事线审计](docs/storyline-audit-2026-09-22.md)。当前结果是下游适配复现的验证证据，复杂检索比较尚缺，保留测试集未评估。
+最新范围核验：[两项目故事线审计](docs/storyline-audit-2026-09-22.md)。当前结果是下游适配复现的验证证据，复杂检索比较尚缺，保留测试集评估已启动，完整结果待汇总。
 
 ## 当前状态
 
-最终主表候选为两个项目共 54 个模型，完整验证回放队列已启动；首组逐预测和在线分桶核验通过。范围与测试准入条件见[最终评估协议](docs/final-evaluation-protocol-v1.md)。
+最终测试：54 个模型的验证回放全部通过，配置与权重已冻结，完整保留测试集评估队列已启动，尚待最终汇总。见[冻结清单](reports/final-test-freeze-v1.json)。
+
+
+最终主表为两个项目共 54 个模型，全部验证回放通过；范围与测试准入条件见[最终评估协议](docs/final-evaluation-protocol-v1.md)。
 
 |工作项|状态与证据|
 |---|---|
