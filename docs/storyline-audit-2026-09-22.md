@@ -41,3 +41,8 @@
 [CIKM 原文 §4、§6 与图 6](https://arxiv.org/html/2407.19467v1)；[MUSE 原文 §3、§7](https://arxiv.org/html/2512.07216v1)。本报告区分原文机制、本地实现与实验观察，不以论文结论代替本地证据。
 
 [内容融合与共同核心结果](https://github.com/IJustWannaFindMyPeace/taobao-mm-content-integration/blob/main/docs/shared-core-three-seed-results.md) · [长历史与检索结果](https://github.com/IJustWannaFindMyPeace/taobao-mm-muse-repro/blob/main/docs/shared-retrieval-three-seed-results.md) · [收尾清单](https://github.com/IJustWannaFindMyPeace/taobao-mm-content-integration/blob/main/docs/completion-checklist.md)
+
+
+## 后续证据更新
+
+等权内容＋商品 ID 余弦融合的三种子补充已完成，融合减纯内容 GAUC 均为负，配对区间均不跨零。此前“复杂检索未完成”的缺口已补其中这一项；可学习评分、TWIN/MISS 仍未覆盖，不改写为所有复杂检索均已验证。结果见[受控融合检索报告](https://github.com/IJustWannaFindMyPeace/taobao-mm-muse-repro/blob/main/docs/shared-fused-retrieval-v1.md)。最终只读测试评估仍待完成。
