@@ -6,6 +6,8 @@
 
 ## 阅读入口
 
+- [最新论文覆盖审计：已做、适配与可补缺口](docs/paper-coverage-audit-2026-09-23.md)
+
 - [两项目最终故事线：痛点、改进、证据与局限](docs/final-storyline.md)
 - [本项目最终测试结果](docs/final-test-results.md)
 - [共同评估协议与冻结清单](docs/final-evaluation-protocol-v1.md)
