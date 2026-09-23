@@ -8,7 +8,7 @@
 
 ## 审计后的执行更新
 
-8/9 组数量对齐诊断已补，见[结果](posthoc-paper-groups-v1.md)。它复用冻结测试预测，不代表精确还原原分组。用户第 2–9 组长度均为 1000，真实长度趋势仍未闭环；需确认未截断长度是否可恢复。G3 六次训练和配对统计已完成，见 MUSE 项目 `docs/post-main-g3-results.md`；G1 两阶段适配的六次训练及三个种子配对统计已完成：相对原始内容余弦，GAUC 三个区间均低于零，见 MUSE 项目 `docs/post-main-g1-results.md`。该证据限于本地两阶段训练方案。原始选中历史列表本身最多 1000 条，现有字段无法恢复更早历史，见[核验说明](paper-groups-protocol.md)。以下审计清单保留发现时点的状态。
+8/9 组数量对齐诊断已补，见[结果](posthoc-paper-groups-v1.md)。它复用冻结测试预测，不代表精确还原原分组。用户第 2–9 组长度均为 1000，真实长度趋势仍未闭环；需确认未截断长度是否可恢复。G3 六次训练和配对统计已完成，见 MUSE 项目 `docs/post-main-g3-results.md`；G1 两阶段适配的六次训练及三个种子配对统计已完成：相对原始内容余弦，GAUC 三个区间均低于零，见 MUSE 项目 `docs/post-main-g1-results.md`。该证据限于本地两阶段训练方案。原始选中历史列表本身最多 1000 条，现有字段无法恢复更早历史，见[核验说明](paper-groups-protocol.md)。MAKE 固定 P0（随机联合）/P1/P3/P5 的三种子扩展已启动，协议见内容集成项目 `docs/post-main-make-epochs-protocol.md`；SimTier 分桶敏感性尚未启动。以下审计清单保留发现时点的状态。
 
 ## 状态定义
 
