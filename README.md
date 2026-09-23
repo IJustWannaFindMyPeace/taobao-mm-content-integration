@@ -54,4 +54,4 @@
 
 不宣称复现 SCL 图文编码器训练、CLIP 对照、私有工业网络和线上收益。SimTier 分桶、MAKE 结构及训练策略的本地适配均单列。两项目共享研究协议，但 MAKE 不是 MUSE 必需的前置模块，完整模型分数差不是单一模块的升级收益。
 
-[MAKE 固定轮数三种子扩展](docs/post-main-make-epochs-protocol.md)正在执行，区分随机联合零轮、精确预训练轮次与主实验验证选点。
+[MAKE 固定轮数三种子结果](docs/post-main-make-epochs-results.md)已完成：收益不随预训练轮数单调增加，保留种子差异。[SimTier 分桶敏感性](docs/post-main-simtier-boundaries-protocol.md)正在执行。
