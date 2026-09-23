@@ -14,7 +14,7 @@
 
 ## 后续补充研究
 
-第一轮冻结实验完成后，已补[测试集低频分组](docs/posthoc-test-frequency-v1.md)，明确标为事后描述性分析。MAKE 训练策略已补齐三个种子的验证证据；DIN/TWIN/MISS 的基线补充正在核对结构规格，不宣称已完成。
+第一轮冻结实验完成后，已补[测试集低频分组](docs/posthoc-test-frequency-v1.md)，明确标为事后描述性分析。MAKE 训练策略已补齐三个种子的验证证据；DIN/TWIN/MISS 的本地适配补充已完成，共 21 次验证训练和 12 项配对比较；原始工业完整模型仍不在覆盖范围。见[统一收尾说明](docs/study-completion.md)。
 
 ## 完成状态
 
