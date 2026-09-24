@@ -1,5 +1,8 @@
 # TAOBAO-MM · Content Integration
 
+[当前复现状态与两项目故事线](docs/current-reproduction-status.md)汇总已完成证据、适配边界及剩余工作。
+
+
 基于 TAOBAO-MM 固定内容向量，研究内容表示如何融入 CTR 推荐模型。对应 CIKM 2024 论文 [Enhancing Taobao Display Advertising with Multimodal Representations: Challenges, Approaches and Insights](https://arxiv.org/html/2407.19467v1)，为非官方下游适配复现。
 
 **研究主线：ID 信息不足 → 内容融合方式 → 内容与 ID 的优化差异 → MAKE 与统计特征的互补性。**
@@ -54,4 +57,4 @@
 
 不宣称复现 SCL 图文编码器训练、CLIP 对照、私有工业网络和线上收益。SimTier 分桶、MAKE 结构及训练策略的本地适配均单列。两项目共享研究协议，但 MAKE 不是 MUSE 必需的前置模块，完整模型分数差不是单一模块的升级收益。
 
-[MAKE 固定轮数三种子结果](docs/post-main-make-epochs-results.md)已完成：收益不随预训练轮数单调增加，保留种子差异。[SimTier 分桶敏感性](docs/post-main-simtier-boundaries-protocol.md)正在执行。
+[MAKE 固定轮数三种子结果](docs/post-main-make-epochs-results.md)已完成：收益不随预训练轮数单调增加，保留种子差异。[SimTier 分桶敏感性结果](docs/post-main-simtier-boundaries-results.md)已完成。

@@ -1,5 +1,7 @@
 # 论文覆盖审计：2026-09-23
 
+当前进展请见[当前复现状态](current-reproduction-status.md)。本页表格保留审计发现时点，不作为待办实时列表。
+
 ## 结论
 
 **未达到“除无法复现部分外都已复现”。**已完成的是既定公共协议的下游适配实验及一批追加对照。仍有可利用现有数据实现的论文实验未完成，也有部分机制仅作适配、诊断仅覆盖一个种子。不得把这些全部列为外部条件受限。
@@ -8,7 +10,7 @@
 
 ## 审计后的执行更新
 
-8/9 组数量对齐诊断已补，见[结果](posthoc-paper-groups-v1.md)。它复用冻结测试预测，不代表精确还原原分组。用户第 2–9 组长度均为 1000，真实长度趋势仍未闭环；需确认未截断长度是否可恢复。G3 六次训练和配对统计已完成，见 MUSE 项目 `docs/post-main-g3-results.md`；G1 两阶段适配的六次训练及三个种子配对统计已完成：相对原始内容余弦，GAUC 三个区间均低于零，见 MUSE 项目 `docs/post-main-g1-results.md`。该证据限于本地两阶段训练方案。原始选中历史列表本身最多 1000 条，现有字段无法恢复更早历史，见[核验说明](paper-groups-protocol.md)。MAKE 固定 P0（随机联合）/P1/P3/P5 的三种子扩展已完成，结果见内容集成项目 `docs/post-main-make-epochs-results.md`；SimTier 两种新分桶在 C3/C6 上的三种子敏感性实验已启动，见该项目 `docs/post-main-simtier-boundaries-protocol.md`。以下审计清单保留发现时点的状态。
+8/9 组数量对齐诊断已补，见[结果](posthoc-paper-groups-v1.md)。它复用冻结测试预测，不代表精确还原原分组。用户第 2–9 组长度均为 1000，真实长度趋势仍未闭环；需确认未截断长度是否可恢复。G3 六次训练和配对统计已完成，见 MUSE 项目 `docs/post-main-g3-results.md`；G1 两阶段适配的六次训练及三个种子配对统计已完成：相对原始内容余弦，GAUC 三个区间均低于零，见 MUSE 项目 `docs/post-main-g1-results.md`。该证据限于本地两阶段训练方案。原始选中历史列表本身最多 1000 条，现有字段无法恢复更早历史，见[核验说明](paper-groups-protocol.md)。MAKE 固定 P0（随机联合）/P1/P3/P5 的三种子扩展已完成，结果见内容集成项目 `docs/post-main-make-epochs-results.md`；SimTier 两种新分桶在 C3/C6 上的三种子敏感性实验已完成，见该项目 `docs/post-main-simtier-boundaries-results.md`。以下审计清单保留发现时点的状态。
 
 ## 状态定义
 
