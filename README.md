@@ -1,5 +1,8 @@
 # TAOBAO-MM · Content Integration
 
+[2026-09-25 整体收尾审计](docs/cross-project-completion-audit.md)：公共协议、127份测试指标、159项比较及产物覆盖核验通过；差异、例外与本次修正单列。
+
+
 **最新结果：**主实验54份模型及补充73份检查点的测试评估已完成，追加93项统计比较全部归档。先读[结果与故事线](docs/supplementary-test-results.md)和[当前覆盖范围](docs/current-reproduction-status.md)。追加测试单独标注，不混作新的盲测。
 
 

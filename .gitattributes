@@ -1,0 +1,24 @@
+# Reproduce immutable experiment file hashes on checkout.
+# Mixed-ending legacy files are stored byte-for-byte; code is unchanged.
+scripts/cache_simtier_boundaries.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+scripts/compare_supplementary_test.py text eol=crlf
+scripts/compare_test.py text eol=crlf
+scripts/compare_validation.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+scripts/evaluate_checkpoint.py text eol=lf
+scripts/evaluate_supplementary.py text eol=crlf
+scripts/fetch_source.py text eol=crlf
+scripts/freeze_supplementary_test.py text eol=crlf
+scripts/replay_supplementary.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+scripts/run_frozen_test.py text eol=lf
+scripts/run_supplementary_test.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+scripts/supplementary_test_contract.py -text whitespace=blank-at-eol,blank-at-eof,space-before-tab,cr-at-eol
+src/c0.py text eol=crlf
+src/feature_store.py text eol=crlf
+src/id_probe.py text eol=crlf
+src/item_join.py text eol=crlf
+src/make.py text eol=lf
+src/make_fusion.py text eol=lf
+src/metrics.py text eol=crlf
+src/side_information.py text eol=lf
+src/simtier.py text eol=crlf
+src/user_split.py text eol=crlf
