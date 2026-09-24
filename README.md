@@ -60,3 +60,5 @@
 [MAKE 固定轮数三种子结果](docs/post-main-make-epochs-results.md)已完成：收益不随预训练轮数单调增加，保留种子差异。[SimTier 分桶敏感性结果](docs/post-main-simtier-boundaries-results.md)已完成。
 
 [本轮补充工作收尾核验](docs/reproduction-closeout.md)：96项产物一致性检查通过；完成范围与原论文限制分别说明。
+
+[两论文结果阅读指南](docs/storyline-reading-guide.md)：按问题、方法、证据与局限理解完整迭代路径，无需先记实验代号。
