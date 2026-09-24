@@ -1,0 +1,48 @@
+{
+  "scope": "pre_test_design_and_artifact_audit",
+  "candidate_models": 73,
+  "original_reference_models": 54,
+  "mapped_existing_pairs": 90,
+  "additional_final_id_epoch_pairs": 3,
+  "total_pairs": 93,
+  "unmapped_pairs": 0,
+  "test_input_files_verified": 9,
+  "replays_verified_at_audit": 9,
+  "models_retrained": false,
+  "new_test_inference_performed": false,
+  "ready_for_test": false,
+  "blocking_gates": [
+    "all 73 exact validation replays",
+    "test evaluator using the same replayed forward path",
+    "freeze test evaluator plus all helper dependency hashes",
+    "explicit test-labelled paired statistics",
+    "crash-safe and single-writer orchestration; verify completed output provenance before skipping"
+  ],
+  "findings": [
+    {
+      "id": "A1",
+      "issue": "73 candidate records were not a complete comparison contract",
+      "resolution": "93 pair definitions mapped and fixed in pre-test contract"
+    },
+    {
+      "id": "A2",
+      "issue": "replay report does not fingerprint all script helpers",
+      "resolution": "helper snapshot recorded; final test freeze must enforce it"
+    },
+    {
+      "id": "A3",
+      "issue": "existing comparison script always labels output as validation",
+      "resolution": "do not directly publish its output as test evidence; test adapter required"
+    },
+    {
+      "id": "A4",
+      "issue": "ID epoch2 weights were not saved",
+      "resolution": "explicitly excluded, retain validation-only diagnosis; epoch3 vs epoch1 test pair included"
+    },
+    {
+      "id": "A5",
+      "issue": "current resume runner has no single-writer lock",
+      "resolution": "avoid concurrent launches; test orchestration must add lock before execution"
+    }
+  ]
+}

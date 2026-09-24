@@ -1,0 +1,528 @@
+{
+  "scope": "proposed_supplementary_test_comparison_contract",
+  "candidate_inventory_sha256": "5a75de3f68deddd9e447d08e99f37f74efb2287d1988a93aa6d1147a3b397f71",
+  "comparisons": [
+    {
+      "baseline": "shared-make-strategy-v1-seed42--c4",
+      "candidate": "shared-make-strategy-v1-seed42--c5-joint",
+      "source": "content/post-main-make-three-seed-summary.json/audits/42/comparisons/c5-joint-vs-c4"
+    },
+    {
+      "baseline": "shared-make-strategy-v1-seed42--c4-frozen",
+      "candidate": "main:c5-seed42",
+      "source": "content/post-main-make-three-seed-summary.json/audits/42/comparisons/c5-vs-c4-frozen"
+    },
+    {
+      "baseline": "shared-make-strategy-v1-seed42--c4-frozen",
+      "candidate": "shared-make-strategy-v1-seed42--c4",
+      "source": "content/post-main-make-three-seed-summary.json/audits/42/comparisons/c4-vs-c4-frozen"
+    },
+    {
+      "baseline": "main:c5-seed42",
+      "candidate": "shared-make-strategy-v1-seed42--c5-joint",
+      "source": "content/post-main-make-three-seed-summary.json/audits/42/comparisons/c5-joint-vs-c5"
+    },
+    {
+      "baseline": "main:c0-seed42",
+      "candidate": "shared-make-strategy-v1-seed42--c4",
+      "source": "content/post-main-make-three-seed-summary.json/audits/42/comparisons/c4-vs-c0"
+    },
+    {
+      "baseline": "main:c0-seed42",
+      "candidate": "shared-make-strategy-v1-seed42--c4-frozen",
+      "source": "content/post-main-make-three-seed-summary.json/audits/42/comparisons/c4-frozen-vs-c0"
+    },
+    {
+      "baseline": "main:c0-seed42",
+      "candidate": "main:c5-seed42",
+      "source": "content/post-main-make-three-seed-summary.json/audits/42/comparisons/c5-vs-c0"
+    },
+    {
+      "baseline": "main:c0-seed42",
+      "candidate": "shared-make-strategy-v1-seed42--c5-joint",
+      "source": "content/post-main-make-three-seed-summary.json/audits/42/comparisons/c5-joint-vs-c0"
+    },
+    {
+      "baseline": "post-main-make-seeds-v1--seed2026--c4",
+      "candidate": "post-main-make-seeds-v1--seed2026--c5-joint",
+      "source": "content/post-main-make-three-seed-summary.json/audits/2026/comparisons/c5-joint-vs-c4"
+    },
+    {
+      "baseline": "post-main-make-seeds-v1--seed2026--c4-frozen",
+      "candidate": "main:c5-seed2026",
+      "source": "content/post-main-make-three-seed-summary.json/audits/2026/comparisons/c5-vs-c4-frozen"
+    },
+    {
+      "baseline": "post-main-make-seeds-v1--seed2026--c4-frozen",
+      "candidate": "post-main-make-seeds-v1--seed2026--c4",
+      "source": "content/post-main-make-three-seed-summary.json/audits/2026/comparisons/c4-vs-c4-frozen"
+    },
+    {
+      "baseline": "main:c5-seed2026",
+      "candidate": "post-main-make-seeds-v1--seed2026--c5-joint",
+      "source": "content/post-main-make-three-seed-summary.json/audits/2026/comparisons/c5-joint-vs-c5"
+    },
+    {
+      "baseline": "main:c0-seed2026",
+      "candidate": "post-main-make-seeds-v1--seed2026--c4",
+      "source": "content/post-main-make-three-seed-summary.json/audits/2026/comparisons/c4-vs-c0"
+    },
+    {
+      "baseline": "main:c0-seed2026",
+      "candidate": "post-main-make-seeds-v1--seed2026--c4-frozen",
+      "source": "content/post-main-make-three-seed-summary.json/audits/2026/comparisons/c4-frozen-vs-c0"
+    },
+    {
+      "baseline": "main:c0-seed2026",
+      "candidate": "main:c5-seed2026",
+      "source": "content/post-main-make-three-seed-summary.json/audits/2026/comparisons/c5-vs-c0"
+    },
+    {
+      "baseline": "main:c0-seed2026",
+      "candidate": "post-main-make-seeds-v1--seed2026--c5-joint",
+      "source": "content/post-main-make-three-seed-summary.json/audits/2026/comparisons/c5-joint-vs-c0"
+    },
+    {
+      "baseline": "post-main-make-seeds-v1--seed3407--c4",
+      "candidate": "post-main-make-seeds-v1--seed3407--c5-joint",
+      "source": "content/post-main-make-three-seed-summary.json/audits/3407/comparisons/c5-joint-vs-c4"
+    },
+    {
+      "baseline": "post-main-make-seeds-v1--seed3407--c4-frozen",
+      "candidate": "main:c5-seed3407",
+      "source": "content/post-main-make-three-seed-summary.json/audits/3407/comparisons/c5-vs-c4-frozen"
+    },
+    {
+      "baseline": "post-main-make-seeds-v1--seed3407--c4-frozen",
+      "candidate": "post-main-make-seeds-v1--seed3407--c4",
+      "source": "content/post-main-make-three-seed-summary.json/audits/3407/comparisons/c4-vs-c4-frozen"
+    },
+    {
+      "baseline": "main:c5-seed3407",
+      "candidate": "post-main-make-seeds-v1--seed3407--c5-joint",
+      "source": "content/post-main-make-three-seed-summary.json/audits/3407/comparisons/c5-joint-vs-c5"
+    },
+    {
+      "baseline": "main:c0-seed3407",
+      "candidate": "post-main-make-seeds-v1--seed3407--c4",
+      "source": "content/post-main-make-three-seed-summary.json/audits/3407/comparisons/c4-vs-c0"
+    },
+    {
+      "baseline": "main:c0-seed3407",
+      "candidate": "post-main-make-seeds-v1--seed3407--c4-frozen",
+      "source": "content/post-main-make-three-seed-summary.json/audits/3407/comparisons/c4-frozen-vs-c0"
+    },
+    {
+      "baseline": "main:c0-seed3407",
+      "candidate": "main:c5-seed3407",
+      "source": "content/post-main-make-three-seed-summary.json/audits/3407/comparisons/c5-vs-c0"
+    },
+    {
+      "baseline": "main:c0-seed3407",
+      "candidate": "post-main-make-seeds-v1--seed3407--c5-joint",
+      "source": "content/post-main-make-three-seed-summary.json/audits/3407/comparisons/c5-joint-vs-c0"
+    },
+    {
+      "baseline": "shared-make-strategy-v1-seed42--c4",
+      "candidate": "shared-pretraining-endpoints-v1-seed42--p1",
+      "source": "content/post-main-make-epochs-validation.json/reports/42/comparisons/p1-vs-p0-joint"
+    },
+    {
+      "baseline": "shared-make-strategy-v1-seed42--c4",
+      "candidate": "main:c5-seed42",
+      "source": "content/post-main-make-epochs-validation.json/reports/42/comparisons/p3-vs-p0-joint"
+    },
+    {
+      "baseline": "shared-make-strategy-v1-seed42--c4",
+      "candidate": "shared-pretraining-endpoints-v1-seed42--p5",
+      "source": "content/post-main-make-epochs-validation.json/reports/42/comparisons/p5-vs-p0-joint"
+    },
+    {
+      "baseline": "post-main-make-seeds-v1--seed2026--c4",
+      "candidate": "post-main-make-epochs-v1--endpoints-seed2026--p1",
+      "source": "content/post-main-make-epochs-validation.json/reports/2026/comparisons/p1-vs-p0-joint"
+    },
+    {
+      "baseline": "post-main-make-seeds-v1--seed2026--c4",
+      "candidate": "post-main-make-epochs-v1--p3-seed2026",
+      "source": "content/post-main-make-epochs-validation.json/reports/2026/comparisons/p3-vs-p0-joint"
+    },
+    {
+      "baseline": "post-main-make-seeds-v1--seed2026--c4",
+      "candidate": "post-main-make-epochs-v1--endpoints-seed2026--p5",
+      "source": "content/post-main-make-epochs-validation.json/reports/2026/comparisons/p5-vs-p0-joint"
+    },
+    {
+      "baseline": "post-main-make-seeds-v1--seed3407--c4",
+      "candidate": "post-main-make-epochs-v1--endpoints-seed3407--p1",
+      "source": "content/post-main-make-epochs-validation.json/reports/3407/comparisons/p1-vs-p0-joint"
+    },
+    {
+      "baseline": "post-main-make-seeds-v1--seed3407--c4",
+      "candidate": "main:c5-seed3407",
+      "source": "content/post-main-make-epochs-validation.json/reports/3407/comparisons/p3-vs-p0-joint"
+    },
+    {
+      "baseline": "post-main-make-seeds-v1--seed3407--c4",
+      "candidate": "post-main-make-epochs-v1--endpoints-seed3407--p5",
+      "source": "content/post-main-make-epochs-validation.json/reports/3407/comparisons/p5-vs-p0-joint"
+    },
+    {
+      "baseline": "main:c3-seed42",
+      "candidate": "post-main-simtier-boundaries-v1--c3-seed42-paper_literal",
+      "source": "content/post-main-simtier-boundaries-validation.json/comparisons/c3-seed42-paper_literal"
+    },
+    {
+      "baseline": "main:c3-seed42",
+      "candidate": "post-main-simtier-boundaries-v1--c3-seed42-right_closed",
+      "source": "content/post-main-simtier-boundaries-validation.json/comparisons/c3-seed42-right_closed"
+    },
+    {
+      "baseline": "main:c6-seed42",
+      "candidate": "post-main-simtier-boundaries-v1--c6-seed42-paper_literal",
+      "source": "content/post-main-simtier-boundaries-validation.json/comparisons/c6-seed42-paper_literal"
+    },
+    {
+      "baseline": "main:c6-seed42",
+      "candidate": "post-main-simtier-boundaries-v1--c6-seed42-right_closed",
+      "source": "content/post-main-simtier-boundaries-validation.json/comparisons/c6-seed42-right_closed"
+    },
+    {
+      "baseline": "main:c3-seed2026",
+      "candidate": "post-main-simtier-boundaries-v1--c3-seed2026-paper_literal",
+      "source": "content/post-main-simtier-boundaries-validation.json/comparisons/c3-seed2026-paper_literal"
+    },
+    {
+      "baseline": "main:c3-seed2026",
+      "candidate": "post-main-simtier-boundaries-v1--c3-seed2026-right_closed",
+      "source": "content/post-main-simtier-boundaries-validation.json/comparisons/c3-seed2026-right_closed"
+    },
+    {
+      "baseline": "main:c6-seed2026",
+      "candidate": "post-main-simtier-boundaries-v1--c6-seed2026-paper_literal",
+      "source": "content/post-main-simtier-boundaries-validation.json/comparisons/c6-seed2026-paper_literal"
+    },
+    {
+      "baseline": "main:c6-seed2026",
+      "candidate": "post-main-simtier-boundaries-v1--c6-seed2026-right_closed",
+      "source": "content/post-main-simtier-boundaries-validation.json/comparisons/c6-seed2026-right_closed"
+    },
+    {
+      "baseline": "main:c3-seed3407",
+      "candidate": "post-main-simtier-boundaries-v1--c3-seed3407-paper_literal",
+      "source": "content/post-main-simtier-boundaries-validation.json/comparisons/c3-seed3407-paper_literal"
+    },
+    {
+      "baseline": "main:c3-seed3407",
+      "candidate": "post-main-simtier-boundaries-v1--c3-seed3407-right_closed",
+      "source": "content/post-main-simtier-boundaries-validation.json/comparisons/c3-seed3407-right_closed"
+    },
+    {
+      "baseline": "main:c6-seed3407",
+      "candidate": "post-main-simtier-boundaries-v1--c6-seed3407-paper_literal",
+      "source": "content/post-main-simtier-boundaries-validation.json/comparisons/c6-seed3407-paper_literal"
+    },
+    {
+      "baseline": "main:c6-seed3407",
+      "candidate": "post-main-simtier-boundaries-v1--c6-seed3407-right_closed",
+      "source": "content/post-main-simtier-boundaries-validation.json/comparisons/c6-seed3407-right_closed"
+    },
+    {
+      "baseline": "shared-make-strategy-v1-seed42--c4-frozen",
+      "candidate": "shared-pretraining-endpoints-v1-seed42--p1",
+      "source": "content/shared-pretraining-endpoints-v1-seed42-audit.json/comparisons/p1-vs-p0"
+    },
+    {
+      "baseline": "shared-pretraining-endpoints-v1-seed42--p1",
+      "candidate": "main:c5-seed42",
+      "source": "content/shared-pretraining-endpoints-v1-seed42-audit.json/comparisons/p3-vs-p1"
+    },
+    {
+      "baseline": "main:c5-seed42",
+      "candidate": "shared-pretraining-endpoints-v1-seed42--p5",
+      "source": "content/shared-pretraining-endpoints-v1-seed42-audit.json/comparisons/p5-vs-p3"
+    },
+    {
+      "baseline": "post-main-short-interest-v1--dot_softmax-seed42",
+      "candidate": "post-main-short-interest-v1--din_lau-seed42",
+      "source": "muse/post-main-din-validation.json/paired_comparisons/42"
+    },
+    {
+      "baseline": "post-main-short-interest-v1--dot_softmax-seed2026",
+      "candidate": "post-main-short-interest-v1--din_lau-seed2026",
+      "source": "muse/post-main-din-validation.json/paired_comparisons/2026"
+    },
+    {
+      "baseline": "post-main-short-interest-v1--dot_softmax-seed3407",
+      "candidate": "post-main-short-interest-v1--din_lau-seed3407",
+      "source": "muse/post-main-din-validation.json/paired_comparisons/3407"
+    },
+    {
+      "baseline": "post-main-twin-extension-v1--content-seed42",
+      "candidate": "post-main-twin-extension-v1--consistent-seed42",
+      "source": "muse/post-main-twin-validation.json/paired_comparisons/42"
+    },
+    {
+      "baseline": "post-main-twin-extension-v1--content-seed2026",
+      "candidate": "post-main-twin-extension-v1--consistent-seed2026",
+      "source": "muse/post-main-twin-validation.json/paired_comparisons/2026"
+    },
+    {
+      "baseline": "post-main-twin-extension-v1--content-seed3407",
+      "candidate": "post-main-twin-extension-v1--consistent-seed3407",
+      "source": "muse/post-main-twin-validation.json/paired_comparisons/3407"
+    },
+    {
+      "baseline": "post-main-miss-extension-v1--content_separate-seed42",
+      "candidate": "post-main-miss-extension-v1--hybrid_separate-seed42",
+      "source": "muse/post-main-miss-validation.json/comparisons/primary-seed42"
+    },
+    {
+      "baseline": "post-main-miss-extension-v1--hybrid_separate-seed42",
+      "candidate": "post-main-miss-extension-v1--hybrid_shared-seed42",
+      "source": "muse/post-main-miss-validation.json/comparisons/sharing-seed42"
+    },
+    {
+      "baseline": "post-main-miss-extension-v1--content_separate-seed2026",
+      "candidate": "post-main-miss-extension-v1--hybrid_separate-seed2026",
+      "source": "muse/post-main-miss-validation.json/comparisons/primary-seed2026"
+    },
+    {
+      "baseline": "post-main-miss-extension-v1--hybrid_separate-seed2026",
+      "candidate": "post-main-miss-extension-v1--hybrid_shared-seed2026",
+      "source": "muse/post-main-miss-validation.json/comparisons/sharing-seed2026"
+    },
+    {
+      "baseline": "post-main-miss-extension-v1--content_separate-seed3407",
+      "candidate": "post-main-miss-extension-v1--hybrid_separate-seed3407",
+      "source": "muse/post-main-miss-validation.json/comparisons/primary-seed3407"
+    },
+    {
+      "baseline": "post-main-miss-extension-v1--hybrid_separate-seed3407",
+      "candidate": "post-main-miss-extension-v1--hybrid_shared-seed3407",
+      "source": "muse/post-main-miss-validation.json/comparisons/sharing-seed3407"
+    },
+    {
+      "baseline": "main:r4-l1000-seed42",
+      "candidate": "post-main-g1-extension-v1--downstream-seed42",
+      "source": "muse/post-main-g1-validation.json/comparisons/42"
+    },
+    {
+      "baseline": "main:r4-l1000-seed2026",
+      "candidate": "post-main-g1-extension-v1--downstream-seed2026",
+      "source": "muse/post-main-g1-validation.json/comparisons/2026"
+    },
+    {
+      "baseline": "main:r4-l1000-seed3407",
+      "candidate": "post-main-g1-extension-v1--downstream-seed3407",
+      "source": "muse/post-main-g1-validation.json/comparisons/3407"
+    },
+    {
+      "baseline": "main:r4-l1000-seed42",
+      "candidate": "post-main-g3-extension-v1--fused_attention-seed42",
+      "source": "muse/post-main-g3-validation.json/comparisons/42"
+    },
+    {
+      "baseline": "main:r4-l1000-seed2026",
+      "candidate": "post-main-g3-extension-v1--fused_attention-seed2026",
+      "source": "muse/post-main-g3-validation.json/comparisons/2026"
+    },
+    {
+      "baseline": "main:r4-l1000-seed3407",
+      "candidate": "post-main-g3-extension-v1--fused_attention-seed3407",
+      "source": "muse/post-main-g3-validation.json/comparisons/3407"
+    },
+    {
+      "baseline": "shared-length-sensitivity-v1-seed42--shared-r1-l50",
+      "candidate": "main:r1-seed42",
+      "source": "muse/post-main-length-seeds-validation.json/comparisons/r1-l200-vs-l50-seed42"
+    },
+    {
+      "baseline": "main:r1-seed42",
+      "candidate": "shared-length-sensitivity-v1-seed42--shared-r1-l500",
+      "source": "muse/post-main-length-seeds-validation.json/comparisons/r1-l500-vs-l200-seed42"
+    },
+    {
+      "baseline": "shared-length-sensitivity-v1-seed42--shared-r1-l500",
+      "candidate": "main:r1-l1000-seed42",
+      "source": "muse/post-main-length-seeds-validation.json/comparisons/r1-l1000-vs-l500-seed42"
+    },
+    {
+      "baseline": "post-main-length-seeds-v1--r1-l50-seed2026",
+      "candidate": "main:r1-seed2026",
+      "source": "muse/post-main-length-seeds-validation.json/comparisons/r1-l200-vs-l50-seed2026"
+    },
+    {
+      "baseline": "main:r1-seed2026",
+      "candidate": "post-main-length-seeds-v1--r1-l500-seed2026",
+      "source": "muse/post-main-length-seeds-validation.json/comparisons/r1-l500-vs-l200-seed2026"
+    },
+    {
+      "baseline": "post-main-length-seeds-v1--r1-l500-seed2026",
+      "candidate": "main:r1-l1000-seed2026",
+      "source": "muse/post-main-length-seeds-validation.json/comparisons/r1-l1000-vs-l500-seed2026"
+    },
+    {
+      "baseline": "post-main-length-seeds-v1--r1-l50-seed3407",
+      "candidate": "main:r1-seed3407",
+      "source": "muse/post-main-length-seeds-validation.json/comparisons/r1-l200-vs-l50-seed3407"
+    },
+    {
+      "baseline": "main:r1-seed3407",
+      "candidate": "post-main-length-seeds-v1--r1-l500-seed3407",
+      "source": "muse/post-main-length-seeds-validation.json/comparisons/r1-l500-vs-l200-seed3407"
+    },
+    {
+      "baseline": "post-main-length-seeds-v1--r1-l500-seed3407",
+      "candidate": "main:r1-l1000-seed3407",
+      "source": "muse/post-main-length-seeds-validation.json/comparisons/r1-l1000-vs-l500-seed3407"
+    },
+    {
+      "baseline": "shared-length-sensitivity-v1-seed42--shared-r4-l50",
+      "candidate": "main:r4-seed42",
+      "source": "muse/post-main-length-seeds-validation.json/comparisons/r4-l200-vs-l50-seed42"
+    },
+    {
+      "baseline": "main:r4-seed42",
+      "candidate": "shared-length-sensitivity-v1-seed42--shared-r4-l500",
+      "source": "muse/post-main-length-seeds-validation.json/comparisons/r4-l500-vs-l200-seed42"
+    },
+    {
+      "baseline": "shared-length-sensitivity-v1-seed42--shared-r4-l500",
+      "candidate": "main:r4-l1000-seed42",
+      "source": "muse/post-main-length-seeds-validation.json/comparisons/r4-l1000-vs-l500-seed42"
+    },
+    {
+      "baseline": "post-main-length-seeds-v1--r4-l50-seed2026",
+      "candidate": "main:r4-seed2026",
+      "source": "muse/post-main-length-seeds-validation.json/comparisons/r4-l200-vs-l50-seed2026"
+    },
+    {
+      "baseline": "main:r4-seed2026",
+      "candidate": "post-main-length-seeds-v1--r4-l500-seed2026",
+      "source": "muse/post-main-length-seeds-validation.json/comparisons/r4-l500-vs-l200-seed2026"
+    },
+    {
+      "baseline": "post-main-length-seeds-v1--r4-l500-seed2026",
+      "candidate": "main:r4-l1000-seed2026",
+      "source": "muse/post-main-length-seeds-validation.json/comparisons/r4-l1000-vs-l500-seed2026"
+    },
+    {
+      "baseline": "post-main-length-seeds-v1--r4-l50-seed3407",
+      "candidate": "main:r4-seed3407",
+      "source": "muse/post-main-length-seeds-validation.json/comparisons/r4-l200-vs-l50-seed3407"
+    },
+    {
+      "baseline": "main:r4-seed3407",
+      "candidate": "post-main-length-seeds-v1--r4-l500-seed3407",
+      "source": "muse/post-main-length-seeds-validation.json/comparisons/r4-l500-vs-l200-seed3407"
+    },
+    {
+      "baseline": "post-main-length-seeds-v1--r4-l500-seed3407",
+      "candidate": "main:r4-l1000-seed3407",
+      "source": "muse/post-main-length-seeds-validation.json/comparisons/r4-l1000-vs-l500-seed3407"
+    },
+    {
+      "baseline": "post-main-make-seeds-v1--seed2026--c4-frozen",
+      "candidate": "post-main-make-epochs-v1--endpoints-seed2026--p1",
+      "source": "work/endpoints-audit-seed2026/comparisons/p1-vs-p0"
+    },
+    {
+      "baseline": "post-main-make-epochs-v1--endpoints-seed2026--p1",
+      "candidate": "post-main-make-epochs-v1--p3-seed2026",
+      "source": "work/endpoints-audit-seed2026/comparisons/p3-vs-p1"
+    },
+    {
+      "baseline": "post-main-make-epochs-v1--p3-seed2026",
+      "candidate": "post-main-make-epochs-v1--endpoints-seed2026--p5",
+      "source": "work/endpoints-audit-seed2026/comparisons/p5-vs-p3"
+    },
+    {
+      "baseline": "post-main-make-seeds-v1--seed3407--c4-frozen",
+      "candidate": "post-main-make-epochs-v1--endpoints-seed3407--p1",
+      "source": "work/endpoints-audit-seed3407/comparisons/p1-vs-p0"
+    },
+    {
+      "baseline": "post-main-make-epochs-v1--endpoints-seed3407--p1",
+      "candidate": "main:c5-seed3407",
+      "source": "work/endpoints-audit-seed3407/comparisons/p3-vs-p1"
+    },
+    {
+      "baseline": "main:c5-seed3407",
+      "candidate": "post-main-make-epochs-v1--endpoints-seed3407--p5",
+      "source": "work/endpoints-audit-seed3407/comparisons/p5-vs-p3"
+    },
+    {
+      "baseline": "main:c0-seed42",
+      "candidate": "shared-make-strategy-v1-seed42--c0-epochs3",
+      "source": "predefined final ID epoch3 minus main ID epoch1; epoch2 checkpoint unavailable"
+    },
+    {
+      "baseline": "main:c0-seed2026",
+      "candidate": "post-main-make-seeds-v1--seed2026--c0-epochs3",
+      "source": "predefined final ID epoch3 minus main ID epoch1; epoch2 checkpoint unavailable"
+    },
+    {
+      "baseline": "main:c0-seed3407",
+      "candidate": "post-main-make-seeds-v1--seed3407--c0-epochs3",
+      "source": "predefined final ID epoch3 minus main ID epoch1; epoch2 checkpoint unavailable"
+    }
+  ],
+  "source_reports_sha256": {
+    "content/post-main-make-three-seed-summary.json": "c1081f116bcacd406e01d983606e221ca8b72a6004f55802170d7e7ff2185c51",
+    "content/post-main-make-epochs-validation.json": "0f63555354ed57964eff5ab92e98ac0906c6d7adefeccd8340b4833489c235af",
+    "content/post-main-simtier-boundaries-validation.json": "6188d2510cd1247d76d1c2259ab3841a8f1d5ab58d83ec37caf2207dbcb545c9",
+    "content/shared-pretraining-endpoints-v1-seed42-audit.json": "0d1b8753a2c83f7bafac362f44a6fb933711ccd5d27bc7eb42c0f599d68ee197",
+    "muse/post-main-din-validation.json": "bbf98afd786de1bfaac4fc1be6d3f41d3571f88fe263b9c67abd3e54aab8aef9",
+    "muse/post-main-twin-validation.json": "b0ba095e2ccc55f85afee065f22e99e5899103f960bec90c6a75211344fc21ba",
+    "muse/post-main-miss-validation.json": "0913f8b8cb4402927eb06b5457210da6b5a9f0c293b76e61ae31229f2464be8f",
+    "muse/post-main-g1-validation.json": "bc4ecb4ce4a15ac3fe5e4d8fbd4e3d29c741128d6dab4273400c203ebeff12e6",
+    "muse/post-main-g3-validation.json": "4f725f1c02942dbd1f2a57f9760860571f5a57c35cfcb5474aef3f162df2c3c5",
+    "muse/post-main-length-seeds-validation.json": "21a494c9357ab6a556d1d18bee8c704126d199dd1ea8bed3fc2c3a65324dfc08",
+    "work/endpoints-audit-seed2026": "a3aaeb90d47a8ac8639ffca351fe8a3e1a7eaa471228946e0ceba7e7a479e530",
+    "work/endpoints-audit-seed3407": "cf8496e2cbd8bc805203429735168972954f5034afbe6ac5081d0f75fa4d49f2"
+  },
+  "test_arrays_sha256": {
+    "content_int8.npy": "88acccec11c5fa565379a2d6ac8f36b6ef7c343d6f275286ee70a8ce3faa9a4b",
+    "test.content.npy": "6efabd0d40d0574dc5e25a1596756156918a7c40c6bdc95c6971899130485c1b",
+    "test.features.npy": "a3c0da95acadedaf20f037054848814208afdb4c0ae17c31f74c899ebb354246",
+    "test.labels.npy": "d9e22d4d40ad3f385aad32f4f0a7bc95668ceaba69e6d980500e6a633cdc1e04",
+    "test.source_rows.npy": "5970d754a7c8a316ef82ba3ec4634c81446779b660bbcd621d19ebe5e54dde03",
+    "test.user_rows.npy": "6204b5ca736b73af6f3cb47c8841098a4bec76178606030d0ea930f226c06f2c",
+    "test_users.category.npy": "308a63f50263080356fe5660f17f34b11f8e94cf20f4d3a2f7984929fe721ec8",
+    "test_users.content.npy": "2feda70b669e2f3657a2a92fc508f34c95d6d43701684ad41d609b633d85654e",
+    "test_users.item.npy": "e8d9067e3d79c3cf692709ef873a208dc8b9dd9c0f95afa19cb24461dd22f138"
+  },
+  "dependency_sha256": {
+    "content/src/c0.py": "b411d1cc6088559adab91ca71bacc02b191a687870bd57a2ecce6e6658faf456",
+    "content/src/feature_store.py": "3c5f23688388a747b54f36a8e9870c7f51cd82ded05c09a20a99af8b96ad33a3",
+    "content/src/id_probe.py": "ec56cdbe624a870e1bb0848d5accab15db3da6bc7b269618457af596392036a5",
+    "content/src/item_join.py": "775c8d832e8990371ce53a4e2e1c9cb2dfb4f5354a5865b63815cd4b3b5796b9",
+    "content/src/make.py": "4c36b3a98c82bef9f4ea684c48ffa17bdb1737054d8b08764758e0b70b8955a3",
+    "content/src/make_fusion.py": "3471309aa96b783c349a5d7d26a21049d6b90889ff3224d2317e3d30ad87c7d8",
+    "content/src/metrics.py": "a3d47e8ea28aa10010890f2633ff3a39a0e5ec582bd42a6fe408858f34378d56",
+    "content/src/side_information.py": "6765b70fffbf47f05b172fa1f0a378db052b4cb6ed5a98dd35fcf63e9780cebd",
+    "content/src/simtier.py": "7c32c320b67de55edb1df9e8fcb11dd7a81b380464383aeed4a96924acbdb51d",
+    "content/src/user_split.py": "9fbf7f1f888930251d1c1e78f8c82c54daf8959a0ffd6d9f72ad84db527ec306",
+    "muse/src/baseline_model.py": "1960031fd791cee17d6a6ae0ada983a70962e4cd045f632bf852fd4a0c608690",
+    "muse/src/baseline_retrieval.py": "5baa67619fd329874197b413be331bbacc349042aefa5f402fd2e087d0e1ef01",
+    "muse/src/c0.py": "b411d1cc6088559adab91ca71bacc02b191a687870bd57a2ecce6e6658faf456",
+    "muse/src/enhanced_esu.py": "90b9e7344847cf4d2679bdf7373861037c831bbd07c3a4411fb26df46c31d1ec",
+    "muse/src/feature_store.py": "3c5f23688388a747b54f36a8e9870c7f51cd82ded05c09a20a99af8b96ad33a3",
+    "muse/src/fused_retrieval.py": "1cecec66b948e919e9785c2001ac6833cfa0dadcd6d45cd2b49051383465c6f4",
+    "muse/src/metrics.py": "a3d47e8ea28aa10010890f2633ff3a39a0e5ec582bd42a6fe408858f34378d56",
+    "muse/src/muse_model.py": "e1212eab6119b984d0e9adae485299a1e7fee7cd0cb5eaee453f5450bf9e1544",
+    "muse/src/retrieval.py": "87b8c4a1f752ac7a828e34b90ea040085583c713f253535b20c009c2f1687513",
+    "muse/src/search_model.py": "3c06f42df82af3933ee7c690a8a82f8c60a867811b78bf28a28868ec55850936",
+    "muse/extensions/din.py": "9e0d313e7195cd6a6c369017c03131f10eee632a09561b4fa7a099380f22ba91",
+    "muse/extensions/fused_attention_search.py": "4ea56df7fc0cdc2beeae980892a072b14e1ec744d6785a6b6af346b8f7dc4089",
+    "muse/extensions/learned_content_search.py": "511f12b9f450a0bc096705bb224e95df5706a718097cbaf9c4899c1761c53829",
+    "muse/extensions/miss.py": "df42a816f1d0bd73b020a8a305e27ce93680887a1e6a38a1e84ede3ce1fcbae1",
+    "muse/extensions/twin.py": "e1c3490dfedbcb5127538c34e71f3e7748526a39a05b71b85314265243748289",
+    "content/scripts/replay_supplementary.py": "0bf1dcf87cf30309cae2e6b24467a844990bb890a42addcbc4b0b6920e91fcd0",
+    "content/scripts/cache_simtier_boundaries.py": "662b64263d1d3c1e721869d0db1a6dd02d7cee16d661c7188eb00857ffc7026e",
+    "content/scripts/compare_validation.py": "8a4c1a9f34156d04ec31045bae0b9c5320e31b40316deb7107bdff3505f85426"
+  },
+  "policy": "93 fixed pairs, all candidates; no selection from test outcomes",
+  "frozen_for_test": false
+}
