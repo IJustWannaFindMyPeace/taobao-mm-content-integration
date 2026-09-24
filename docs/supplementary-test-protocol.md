@@ -18,7 +18,7 @@
 
 ## 当前状态
 
-候选清点完成，73份检查点的文件摘要已记录。完整验证重放已启动，暂估2–4小时；新增测试尚未执行，最终追加测试冻结文件尚未形成。预计测试耗时将在重放获得实际吞吐后更新。
+截至2026-09-25，73份完整验证重放全部通过，测试入口验收与冻结完成，73份测试评估及93项配对统计全部完成。见[追加测试结果](supplementary-test-results.md)。原主实验冻结和模型未修改。
 
 本阶段不训练、无优化器、不更新参数。部分新模型入口与直方图口径需精确匹配原训练，不能直接套用只支持主模型的旧测试脚本。原96项一致性检查继续有效，但不代表本阶段已完成。
 
@@ -26,4 +26,17 @@
 
 ## 测试前设计审计
 
-已完成[设计与执行审计](supplementary-pretest-audit.md)，形成93项固定比较契约并核验9个测试输入文件。当前仍在完整验证重放阶段；测试入口的辅助依赖冻结、test报告口径及单实例保护未全部实现，不能据本审计直接启动测试。
+已完成[设计与执行审计](supplementary-pretest-audit.md)。辅助依赖冻结、显式test报告、操作系统单实例锁、原子完成记录与续跑校验均已落实；执行约束6项自动化测试和比较契约3项测试通过。全部73份验证重放通过后才冻结并启动测试。
+
+## 执行与复核入口
+
+以下命令从同时包含两个项目与本地产物的工作目录运行。需要既有数据、候选检查点、比较契约和验证重放产物；仓库仅发布代码与摘要，不包含数据和权重。
+
+```powershell
+python projects/taobao-mm-content-integration/scripts/run_supplementary_test.py --work work --output-dir work/supplementary-heldout-test-v1 --resume
+python projects/taobao-mm-content-integration/scripts/summarize_supplementary_test.py --work work
+python projects/taobao-mm-muse-repro/scripts/summarize_adapted_baseline_test.py --work work
+python -m unittest discover -s projects/taobao-mm-content-integration/tests -p "test_supplementary*.py"
+```
+
+首次执行新输出目录时省略 `--resume`。续跑核验已完成文件与冻结摘要；已完成目录不会自动重新训练或覆盖。汇总入口重新校验预测与报告指纹，并生成两个仓库共享的报告。公开冻结清单是移除机器绝对路径后的投影，不能直接替代原执行冻结文件启动续跑。

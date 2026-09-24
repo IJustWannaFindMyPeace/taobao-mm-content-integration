@@ -1,5 +1,8 @@
 # SimTier 分桶敏感性：三种子结果
 
+> 本文保留原验证阶段分析；对应最终下游模型的追加测试已归档，参见[统一追加测试结果](supplementary-test-results.md)。过程诊断不自动变成测试证据。
+
+
 原伪代码字面实现确实遗漏部分有效计数，且仅 SimTier 模型三个种子的 GAUC 均下降。保留全部计数的右闭区间解释没有一致优势：不同模型与种子的差值方向不同。结果不支持静默替换原分桶并改写冻结主表。
 
 [协议](post-main-simtier-boundaries-protocol.md)区分原 floor、paper_literal（原伪代码字面实现）和 right_closed（保留计数的右闭区间解释）。模型、初始化、数据、训练设置及 C6 的 MAKE 检查点均保持不变，只替换计数缓存。

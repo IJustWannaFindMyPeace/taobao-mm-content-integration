@@ -1,5 +1,8 @@
 # TAOBAO-MM · Content Integration
 
+**最新结果：**主实验54份模型及补充73份检查点的测试评估已完成，追加93项统计比较全部归档。先读[结果与故事线](docs/supplementary-test-results.md)和[当前覆盖范围](docs/current-reproduction-status.md)。追加测试单独标注，不混作新的盲测。
+
+
 [当前复现状态与两项目故事线](docs/current-reproduction-status.md)汇总已完成证据、适配边界及剩余工作。
 
 
@@ -63,4 +66,4 @@
 
 [两论文结果阅读指南](docs/storyline-reading-guide.md)：按问题、方法、证据与局限理解完整迭代路径，无需先记实验代号。
 
-[统一追加测试评估](docs/supplementary-test-protocol.md)已启动：先对73份补充下游检查点完整重放验证，再冻结追加测试。此前收尾仅指上一批次，不代表本阶段已完成。
+[统一追加测试结果](docs/supplementary-test-results.md)已归档：73份验证重放、73份测试评估与93项比较全部完成。原验证报告保留时点记录，最新结论单独发布。
