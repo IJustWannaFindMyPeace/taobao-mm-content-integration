@@ -62,3 +62,5 @@
 [本轮补充工作收尾核验](docs/reproduction-closeout.md)：96项产物一致性检查通过；完成范围与原论文限制分别说明。
 
 [两论文结果阅读指南](docs/storyline-reading-guide.md)：按问题、方法、证据与局限理解完整迭代路径，无需先记实验代号。
+
+[统一追加测试评估](docs/supplementary-test-protocol.md)已启动：先对73份补充下游检查点完整重放验证，再冻结追加测试。此前收尾仅指上一批次，不代表本阶段已完成。
