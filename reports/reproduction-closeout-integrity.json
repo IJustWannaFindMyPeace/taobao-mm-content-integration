@@ -1,0 +1,506 @@
+{
+  "scope": "bounded_closeout_integrity_audit",
+  "date": "2026-09-24",
+  "checks": [
+    {
+      "name": "shared_protocol_identical",
+      "passed": true,
+      "detail": "Byte-identical shared downstream protocol"
+    },
+    {
+      "name": "content_freeze_identical",
+      "passed": true,
+      "detail": "Repository freeze matches local frozen specification"
+    },
+    {
+      "name": "content_source_c0.py",
+      "passed": true,
+      "detail": "Frozen source SHA-256"
+    },
+    {
+      "name": "content_source_feature_store.py",
+      "passed": true,
+      "detail": "Frozen source SHA-256"
+    },
+    {
+      "name": "content_source_id_probe.py",
+      "passed": true,
+      "detail": "Frozen source SHA-256"
+    },
+    {
+      "name": "content_source_item_join.py",
+      "passed": true,
+      "detail": "Frozen source SHA-256"
+    },
+    {
+      "name": "content_source_make.py",
+      "passed": true,
+      "detail": "Frozen source SHA-256"
+    },
+    {
+      "name": "content_source_make_fusion.py",
+      "passed": true,
+      "detail": "Frozen source SHA-256"
+    },
+    {
+      "name": "content_source_metrics.py",
+      "passed": true,
+      "detail": "Frozen source SHA-256"
+    },
+    {
+      "name": "content_source_side_information.py",
+      "passed": true,
+      "detail": "Frozen source SHA-256"
+    },
+    {
+      "name": "content_source_simtier.py",
+      "passed": true,
+      "detail": "Frozen source SHA-256"
+    },
+    {
+      "name": "content_source_user_split.py",
+      "passed": true,
+      "detail": "Frozen source SHA-256"
+    },
+    {
+      "name": "muse_freeze_identical",
+      "passed": true,
+      "detail": "Repository freeze matches local frozen specification"
+    },
+    {
+      "name": "muse_source_baseline_model.py",
+      "passed": true,
+      "detail": "Frozen source SHA-256"
+    },
+    {
+      "name": "muse_source_baseline_retrieval.py",
+      "passed": true,
+      "detail": "Frozen source SHA-256"
+    },
+    {
+      "name": "muse_source_c0.py",
+      "passed": true,
+      "detail": "Frozen source SHA-256"
+    },
+    {
+      "name": "muse_source_enhanced_esu.py",
+      "passed": true,
+      "detail": "Frozen source SHA-256"
+    },
+    {
+      "name": "muse_source_feature_store.py",
+      "passed": true,
+      "detail": "Frozen source SHA-256"
+    },
+    {
+      "name": "muse_source_fused_retrieval.py",
+      "passed": true,
+      "detail": "Frozen source SHA-256"
+    },
+    {
+      "name": "muse_source_metrics.py",
+      "passed": true,
+      "detail": "Frozen source SHA-256"
+    },
+    {
+      "name": "muse_source_muse_model.py",
+      "passed": true,
+      "detail": "Frozen source SHA-256"
+    },
+    {
+      "name": "muse_source_retrieval.py",
+      "passed": true,
+      "detail": "Frozen source SHA-256"
+    },
+    {
+      "name": "muse_source_search_model.py",
+      "passed": true,
+      "detail": "Frozen source SHA-256"
+    },
+    {
+      "name": "inventory_unchanged",
+      "passed": true,
+      "detail": "Original 54-model inventory digest"
+    },
+    {
+      "name": "main_report_c0-seed42",
+      "passed": true,
+      "detail": "Original training report unchanged"
+    },
+    {
+      "name": "main_report_c2-seed42",
+      "passed": true,
+      "detail": "Original training report unchanged"
+    },
+    {
+      "name": "main_report_c3-seed42",
+      "passed": true,
+      "detail": "Original training report unchanged"
+    },
+    {
+      "name": "main_report_c5-seed42",
+      "passed": true,
+      "detail": "Original training report unchanged"
+    },
+    {
+      "name": "main_report_c6-seed42",
+      "passed": true,
+      "detail": "Original training report unchanged"
+    },
+    {
+      "name": "main_report_c7-seed42",
+      "passed": true,
+      "detail": "Original training report unchanged"
+    },
+    {
+      "name": "main_report_r0-seed42",
+      "passed": true,
+      "detail": "Original training report unchanged"
+    },
+    {
+      "name": "main_report_r1-seed42",
+      "passed": true,
+      "detail": "Original training report unchanged"
+    },
+    {
+      "name": "main_report_r2-seed42",
+      "passed": true,
+      "detail": "Original training report unchanged"
+    },
+    {
+      "name": "main_report_r3-seed42",
+      "passed": true,
+      "detail": "Original training report unchanged"
+    },
+    {
+      "name": "main_report_r4-seed42",
+      "passed": true,
+      "detail": "Original training report unchanged"
+    },
+    {
+      "name": "main_report_r5-seed42",
+      "passed": true,
+      "detail": "Original training report unchanged"
+    },
+    {
+      "name": "main_report_r1-l1000-seed42",
+      "passed": true,
+      "detail": "Original training report unchanged"
+    },
+    {
+      "name": "main_report_r4-l1000-seed42",
+      "passed": true,
+      "detail": "Original training report unchanged"
+    },
+    {
+      "name": "main_report_b1-hard-enhanced-seed42",
+      "passed": true,
+      "detail": "Original training report unchanged"
+    },
+    {
+      "name": "main_report_b2-soft-enhanced-seed42",
+      "passed": true,
+      "detail": "Original training report unchanged"
+    },
+    {
+      "name": "main_report_g-id-item-seed42",
+      "passed": true,
+      "detail": "Original training report unchanged"
+    },
+    {
+      "name": "main_report_content-id-cosine-l1000-seed42",
+      "passed": true,
+      "detail": "Original training report unchanged"
+    },
+    {
+      "name": "main_report_c0-seed2026",
+      "passed": true,
+      "detail": "Original training report unchanged"
+    },
+    {
+      "name": "main_report_c2-seed2026",
+      "passed": true,
+      "detail": "Original training report unchanged"
+    },
+    {
+      "name": "main_report_c3-seed2026",
+      "passed": true,
+      "detail": "Original training report unchanged"
+    },
+    {
+      "name": "main_report_c5-seed2026",
+      "passed": true,
+      "detail": "Original training report unchanged"
+    },
+    {
+      "name": "main_report_c6-seed2026",
+      "passed": true,
+      "detail": "Original training report unchanged"
+    },
+    {
+      "name": "main_report_c7-seed2026",
+      "passed": true,
+      "detail": "Original training report unchanged"
+    },
+    {
+      "name": "main_report_r0-seed2026",
+      "passed": true,
+      "detail": "Original training report unchanged"
+    },
+    {
+      "name": "main_report_r1-seed2026",
+      "passed": true,
+      "detail": "Original training report unchanged"
+    },
+    {
+      "name": "main_report_r2-seed2026",
+      "passed": true,
+      "detail": "Original training report unchanged"
+    },
+    {
+      "name": "main_report_r3-seed2026",
+      "passed": true,
+      "detail": "Original training report unchanged"
+    },
+    {
+      "name": "main_report_r4-seed2026",
+      "passed": true,
+      "detail": "Original training report unchanged"
+    },
+    {
+      "name": "main_report_r5-seed2026",
+      "passed": true,
+      "detail": "Original training report unchanged"
+    },
+    {
+      "name": "main_report_r1-l1000-seed2026",
+      "passed": true,
+      "detail": "Original training report unchanged"
+    },
+    {
+      "name": "main_report_r4-l1000-seed2026",
+      "passed": true,
+      "detail": "Original training report unchanged"
+    },
+    {
+      "name": "main_report_b1-hard-enhanced-seed2026",
+      "passed": true,
+      "detail": "Original training report unchanged"
+    },
+    {
+      "name": "main_report_b2-soft-enhanced-seed2026",
+      "passed": true,
+      "detail": "Original training report unchanged"
+    },
+    {
+      "name": "main_report_g-id-item-seed2026",
+      "passed": true,
+      "detail": "Original training report unchanged"
+    },
+    {
+      "name": "main_report_content-id-cosine-l1000-seed2026",
+      "passed": true,
+      "detail": "Original training report unchanged"
+    },
+    {
+      "name": "main_report_c0-seed3407",
+      "passed": true,
+      "detail": "Original training report unchanged"
+    },
+    {
+      "name": "main_report_c2-seed3407",
+      "passed": true,
+      "detail": "Original training report unchanged"
+    },
+    {
+      "name": "main_report_c3-seed3407",
+      "passed": true,
+      "detail": "Original training report unchanged"
+    },
+    {
+      "name": "main_report_c5-seed3407",
+      "passed": true,
+      "detail": "Original training report unchanged"
+    },
+    {
+      "name": "main_report_c6-seed3407",
+      "passed": true,
+      "detail": "Original training report unchanged"
+    },
+    {
+      "name": "main_report_c7-seed3407",
+      "passed": true,
+      "detail": "Original training report unchanged"
+    },
+    {
+      "name": "main_report_r0-seed3407",
+      "passed": true,
+      "detail": "Original training report unchanged"
+    },
+    {
+      "name": "main_report_r1-seed3407",
+      "passed": true,
+      "detail": "Original training report unchanged"
+    },
+    {
+      "name": "main_report_r2-seed3407",
+      "passed": true,
+      "detail": "Original training report unchanged"
+    },
+    {
+      "name": "main_report_r3-seed3407",
+      "passed": true,
+      "detail": "Original training report unchanged"
+    },
+    {
+      "name": "main_report_r4-seed3407",
+      "passed": true,
+      "detail": "Original training report unchanged"
+    },
+    {
+      "name": "main_report_r5-seed3407",
+      "passed": true,
+      "detail": "Original training report unchanged"
+    },
+    {
+      "name": "main_report_r1-l1000-seed3407",
+      "passed": true,
+      "detail": "Original training report unchanged"
+    },
+    {
+      "name": "main_report_r4-l1000-seed3407",
+      "passed": true,
+      "detail": "Original training report unchanged"
+    },
+    {
+      "name": "main_report_b1-hard-enhanced-seed3407",
+      "passed": true,
+      "detail": "Original training report unchanged"
+    },
+    {
+      "name": "main_report_b2-soft-enhanced-seed3407",
+      "passed": true,
+      "detail": "Original training report unchanged"
+    },
+    {
+      "name": "main_report_g-id-item-seed3407",
+      "passed": true,
+      "detail": "Original training report unchanged"
+    },
+    {
+      "name": "main_report_content-id-cosine-l1000-seed3407",
+      "passed": true,
+      "detail": "Original training report unchanged"
+    },
+    {
+      "name": "shared_final-heldout-test-summary.json",
+      "passed": true,
+      "detail": "Both projects publish identical primary summary"
+    },
+    {
+      "name": "shared_final-results-summary.json",
+      "passed": true,
+      "detail": "Both projects publish identical primary summary"
+    },
+    {
+      "name": "post-main-g1-extension-v1",
+      "passed": true,
+      "detail": "Completed, no active job, validation only"
+    },
+    {
+      "name": "post-main-g3-extension-v1",
+      "passed": true,
+      "detail": "Completed, no active job, validation only"
+    },
+    {
+      "name": "post-main-make-epochs-v1",
+      "passed": true,
+      "detail": "Completed, no active job, validation only"
+    },
+    {
+      "name": "post-main-simtier-boundaries-v1",
+      "passed": true,
+      "detail": "Completed, no active job, validation only"
+    },
+    {
+      "name": "post-main-length-seeds-v1",
+      "passed": true,
+      "detail": "Completed, no active job, validation only"
+    },
+    {
+      "name": "content_artifact_post-main-make-epochs-validation.json",
+      "passed": true,
+      "detail": "Machine-readable report exists and parses; digest recorded"
+    },
+    {
+      "name": "content_artifact_post-main-simtier-boundaries-validation.json",
+      "passed": true,
+      "detail": "Machine-readable report exists and parses; digest recorded"
+    },
+    {
+      "name": "content_artifact_posthoc-paper-groups-v1.json",
+      "passed": true,
+      "detail": "Machine-readable report exists and parses; digest recorded"
+    },
+    {
+      "name": "muse_artifact_post-main-din-validation.json",
+      "passed": true,
+      "detail": "Machine-readable report exists and parses; digest recorded"
+    },
+    {
+      "name": "muse_artifact_post-main-twin-validation.json",
+      "passed": true,
+      "detail": "Machine-readable report exists and parses; digest recorded"
+    },
+    {
+      "name": "muse_artifact_post-main-miss-validation.json",
+      "passed": true,
+      "detail": "Machine-readable report exists and parses; digest recorded"
+    },
+    {
+      "name": "muse_artifact_post-main-g1-validation.json",
+      "passed": true,
+      "detail": "Machine-readable report exists and parses; digest recorded"
+    },
+    {
+      "name": "muse_artifact_post-main-g3-validation.json",
+      "passed": true,
+      "detail": "Machine-readable report exists and parses; digest recorded"
+    },
+    {
+      "name": "muse_artifact_post-main-length-seeds-validation.json",
+      "passed": true,
+      "detail": "Machine-readable report exists and parses; digest recorded"
+    },
+    {
+      "name": "muse_artifact_adapted-baseline-comparison.json",
+      "passed": true,
+      "detail": "Machine-readable report exists and parses; digest recorded"
+    },
+    {
+      "name": "muse_artifact_anonymous-retrieval-cases.json",
+      "passed": true,
+      "detail": "Machine-readable report exists and parses; digest recorded"
+    }
+  ],
+  "all_passed": true,
+  "artifact_sha256": {
+    "content/post-main-make-epochs-validation.json": "0f63555354ed57964eff5ab92e98ac0906c6d7adefeccd8340b4833489c235af",
+    "content/post-main-simtier-boundaries-validation.json": "6188d2510cd1247d76d1c2259ab3841a8f1d5ab58d83ec37caf2207dbcb545c9",
+    "content/posthoc-paper-groups-v1.json": "0b21182b2e2a7d30e51ba7ab1e7daa14752a12850fd96af2292d4fb88b2f6b32",
+    "muse/post-main-din-validation.json": "bbf98afd786de1bfaac4fc1be6d3f41d3571f88fe263b9c67abd3e54aab8aef9",
+    "muse/post-main-twin-validation.json": "b0ba095e2ccc55f85afee065f22e99e5899103f960bec90c6a75211344fc21ba",
+    "muse/post-main-miss-validation.json": "0913f8b8cb4402927eb06b5457210da6b5a9f0c293b76e61ae31229f2464be8f",
+    "muse/post-main-g1-validation.json": "bc4ecb4ce4a15ac3fe5e4d8fbd4e3d29c741128d6dab4273400c203ebeff12e6",
+    "muse/post-main-g3-validation.json": "4f725f1c02942dbd1f2a57f9760860571f5a57c35cfcb5474aef3f162df2c3c5",
+    "muse/post-main-length-seeds-validation.json": "21a494c9357ab6a556d1d18bee8c704126d199dd1ea8bed3fc2c3a65324dfc08",
+    "muse/adapted-baseline-comparison.json": "1d795465810a5bbc6ee1eff6390634b57c5fb0eee9326e6ed8e33d2b3bee3288",
+    "muse/anonymous-retrieval-cases.json": "6dab04f3481d7334d5ab16163ae482e352d6c1124c40627c204ff1276cb21fd2"
+  },
+  "limitations": [
+    "not a new exhaustive paper review",
+    "does not rerun every metric or rehash all model/data arrays",
+    "does not certify full original-paper reproduction",
+    "posthoc test group analysis remains separate from validation extensions"
+  ]
+}
