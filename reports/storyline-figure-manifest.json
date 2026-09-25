@@ -1,0 +1,188 @@
+{
+  "scope": "storyline_figure_assets",
+  "data_sha256": "b5b38dfe1cf7a864f6e57f1b714ca417dae848f3aef7080e37cee6fcd4ed9ed3",
+  "renderer_sha256": "9218b9ddddba40b7eb526598bd40d07a67dd3522aca88805d2cc242cee878ebd",
+  "figures": [
+    {
+      "id": "01-content",
+      "title": "内容信息有用，最佳接入方式依赖指标",
+      "data_rows": 18,
+      "files": {
+        "png": {
+          "path": "figures/storyline/01-content.png",
+          "sha256": "d9a2de27439ff5f73b077cea60720a067f077a93d9aa3150595442380cf91602"
+        },
+        "svg": {
+          "path": "figures/storyline/01-content.svg",
+          "sha256": "4ab819582851ba5af2bfd7c0aa91190bca6bc5b7cae889ede9e4b3bd2af1549d"
+        }
+      }
+    },
+    {
+      "id": "02-make-strategy",
+      "title": "MAKE：初始化与接入后更新必须分开比较",
+      "data_rows": 12,
+      "files": {
+        "png": {
+          "path": "figures/storyline/02-make-strategy.png",
+          "sha256": "f4c7db3928a8811ef4060497dc3705834f0bd0e2992f01953d2b8efdf14591fd"
+        },
+        "svg": {
+          "path": "figures/storyline/02-make-strategy.svg",
+          "sha256": "5518b3d927662bcff2c9d5d5708ba04211ae9e7254a647827064323554857389"
+        }
+      }
+    },
+    {
+      "id": "03-training",
+      "title": "训练诊断：ID泛化退步，内容分支具有不同的学习曲线",
+      "data_rows": 18,
+      "files": {
+        "png": {
+          "path": "figures/storyline/03-training.png",
+          "sha256": "c3a7cf44eff5051be5321b182238869d87728373dc1d2fa9037b0ab9bcbcfcfb"
+        },
+        "svg": {
+          "path": "figures/storyline/03-training.svg",
+          "sha256": "0d7f30e634ecd05ded7316c3939f3eac65acd9256884e5d7050186f5f268b67a"
+        }
+      }
+    },
+    {
+      "id": "04-pretraining-epochs",
+      "title": "更多预训练并未稳定转化为更多下游收益",
+      "data_rows": 12,
+      "files": {
+        "png": {
+          "path": "figures/storyline/04-pretraining-epochs.png",
+          "sha256": "a286d4e328c0539ac87e8293dfd608b52db6f2ab194326665fb35248e74fa272"
+        },
+        "svg": {
+          "path": "figures/storyline/04-pretraining-epochs.svg",
+          "sha256": "6b5c83553448433011404f0c127111c6ec14f81e256ed1254e27fc69470a9a97"
+        }
+      }
+    },
+    {
+      "id": "05-retrieval",
+      "title": "相同聚合结构下，内容检索优于本地ID与类目检索",
+      "data_rows": 15,
+      "files": {
+        "png": {
+          "path": "figures/storyline/05-retrieval.png",
+          "sha256": "4ad3715fc41235ee40bec61a4ce0d30108e802e943c41e53412cc3d0bc676f9b"
+        },
+        "svg": {
+          "path": "figures/storyline/05-retrieval.svg",
+          "sha256": "eaaf4f09f274fe1ec648c911c1399610afc2f03b6149fd6f0a805f12164f5b07"
+        }
+      }
+    },
+    {
+      "id": "06-aggregation",
+      "title": "统计与语义注意力各有作用，叠加增量却不必明确",
+      "data_rows": 15,
+      "files": {
+        "png": {
+          "path": "figures/storyline/06-aggregation.png",
+          "sha256": "203277fa6085ed3fb3143a200373c34cd2870b2cac604aaaf8fd876420094dcb"
+        },
+        "svg": {
+          "path": "figures/storyline/06-aggregation.svg",
+          "sha256": "529a59995c5f780963b2aed17dce0a1be9610d163053116941ff465e80d40edd"
+        }
+      }
+    },
+    {
+      "id": "07-history-length",
+      "title": "扩大候选历史有效，但最后一段增益具有种子差异",
+      "data_rows": 24,
+      "files": {
+        "png": {
+          "path": "figures/storyline/07-history-length.png",
+          "sha256": "9fe78d1c6e6653c3e7a244c95f9f74678c3559c8c2b8fa22ce5e26549996094b"
+        },
+        "svg": {
+          "path": "figures/storyline/07-history-length.svg",
+          "sha256": "3e6962838f46828cc9dc88cee93c68e4e4c4f1f7f28658804ca728c318b2ad99"
+        }
+      }
+    },
+    {
+      "id": "08-learned-retrieval",
+      "title": "复杂检索没有稳定优势，必须展示失败种子",
+      "data_rows": 6,
+      "files": {
+        "png": {
+          "path": "figures/storyline/08-learned-retrieval.png",
+          "sha256": "407fbb8f3d7b649a180636f53160cadfccec6990b03bd12e6359e3a6b3b2e50e"
+        },
+        "svg": {
+          "path": "figures/storyline/08-learned-retrieval.svg",
+          "sha256": "dddd7cc05df74aa574951ec2707ed47e62987a2d218de12f8f7184328cc155c7"
+        }
+      }
+    },
+    {
+      "id": "09-frequency",
+      "title": "低频组收益更大：描述性证据，不是机制因果证明",
+      "data_rows": 36,
+      "files": {
+        "png": {
+          "path": "figures/storyline/09-frequency.png",
+          "sha256": "a9d20d983d7fae507887e69cc4cff58ef0ca345b45f90024770f0e2c6207bdb5"
+        },
+        "svg": {
+          "path": "figures/storyline/09-frequency.svg",
+          "sha256": "e07d5bac3688b47a16ba317a3fa24a3ede1d6326a59f08191fe8e532a12a83a8"
+        }
+      }
+    },
+    {
+      "id": "10-g3-diagnostic",
+      "title": "G3异常种子的检索行为：内容排序方向出现反转",
+      "data_rows": 3,
+      "files": {
+        "png": {
+          "path": "figures/storyline/10-g3-diagnostic.png",
+          "sha256": "c13560ffcada0692ae02da61997fc04513a0256264e2a6c9798aa0888c61aaed"
+        },
+        "svg": {
+          "path": "figures/storyline/10-g3-diagnostic.svg",
+          "sha256": "af571d31f9459ae8585891b657d975f7c9d36370ff520467781c0d38bda0915c"
+        }
+      }
+    },
+    {
+      "id": "11-baselines",
+      "title": "适配基线提供背景，不能替代受控机制比较",
+      "data_rows": 27,
+      "files": {
+        "png": {
+          "path": "figures/storyline/11-baselines.png",
+          "sha256": "a9a7597ce537e8704fcc308c28bb8043068b08cd4325164fc094b59e6c7b4d88"
+        },
+        "svg": {
+          "path": "figures/storyline/11-baselines.svg",
+          "sha256": "7626bfddfe3c48973603df63d076351ccac26b578381060d394cbaad06058be6"
+        }
+      }
+    },
+    {
+      "id": "12-framework",
+      "title": "两个项目的联系：内容信息 → 历史选择 → 兴趣聚合",
+      "data_rows": 0,
+      "files": {
+        "png": {
+          "path": "figures/storyline/12-framework.png",
+          "sha256": "6ca5bc8d8f1603d180d0e7e2f88fbc6e40f391b3381ba42726cad25e6255d6b9"
+        },
+        "svg": {
+          "path": "figures/storyline/12-framework.svg",
+          "sha256": "bc3f8813f5f625a9e2e2c82e726d23ccdc3d1eff459e32f9cd9774edaaaa2530"
+        }
+      }
+    }
+  ],
+  "note": "Plots use local axis ranges; marker intervals are sample SD unless explicitly labeled bootstrap CI."
+}

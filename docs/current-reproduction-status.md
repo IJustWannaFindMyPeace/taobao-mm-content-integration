@@ -1,5 +1,8 @@
 # 两论文复现：当前覆盖与故事线
 
+正文入口已整理为[研究叙事](research-narrative.md)，配套[论文对照与分析](paper-comparison-and-analysis.md)、[展示计划](presentation-plan.md)和[图表](storyline-figures.md)。本页保留阅读与状态索引。
+
+
 [2026-09-25 整体收尾审计](cross-project-completion-audit.md)：公共协议、127份测试指标、159项比较及产物覆盖核验通过；差异、例外与本次修正单列。
 
 

@@ -1,0 +1,20 @@
+{
+  "scope": "narrative_data_and_presentation_readiness_audit",
+  "date": "2026-09-25",
+  "all_passed": true,
+  "source_files_verified": 9,
+  "figures_verified": 12,
+  "asset_files_verified": 24,
+  "chart_rows_verified": 186,
+  "core_claims_mapped": 11,
+  "shared_outputs_identical": true,
+  "provenance_verified": true,
+  "selected_claim_directions_checked": true,
+  "presentation_file_created": false,
+  "boundaries": [
+    "Does not establish causal explanations for paper-result differences.",
+    "Visual inspection is a separate manual step, not asserted by this numeric audit.",
+    "No new training, test-driven tuning or bootstrap rerun.",
+    "A future PPT still requires page-level visual and numerical QA."
+  ]
+}

@@ -22,3 +22,17 @@ src/metrics.py text eol=crlf
 src/side_information.py text eol=lf
 src/simtier.py text eol=crlf
 src/user_split.py text eol=crlf
+
+# Stable presentation evidence and figure exports.
+reports/storyline-*.json text eol=lf
+reports/storyline-chart-data.csv text eol=lf
+reports/narrative-readiness-audit.json text eol=lf
+figures/storyline/*.svg text eol=lf
+figures/storyline/*.png binary
+reports/final-results-summary.json text eol=crlf
+reports/supplementary-test-summary.json text eol=crlf
+reports/post-main-make-three-seed-summary.json text eol=crlf
+reports/posthoc-test-frequency-v1.json text eol=crlf
+scripts/build_storyline_evidence.py text eol=lf
+scripts/render_storyline_figures.py text eol=lf
+scripts/audit_storyline_evidence.py text eol=lf

@@ -1,0 +1,118 @@
+{
+  "scope": "core_narrative_claim_registry",
+  "claims": [
+    {
+      "id": "C1",
+      "claim": "内容有增量信息",
+      "paper_location": "CIKM 表3",
+      "alignment": "支持方向",
+      "figure_ids": [
+        "01-content",
+        "09-frequency"
+      ],
+      "prohibited_inference": "不能声称重新证明了SCL优于其他表示"
+    },
+    {
+      "id": "C2",
+      "claim": "内容接入方式影响效果",
+      "paper_location": "CIKM 表3",
+      "alignment": "排名不同",
+      "figure_ids": [
+        "01-content"
+      ],
+      "prohibited_inference": "不能声称组合在所有指标最佳"
+    },
+    {
+      "id": "C3",
+      "claim": "训练策略需要区分初始化与更新",
+      "paper_location": "CIKM §4／图3",
+      "alignment": "适配支持",
+      "figure_ids": [
+        "02-make-strategy",
+        "03-training"
+      ],
+      "prohibited_inference": "不能把整个模型的泛化退步唯一归因于ID embedding"
+    },
+    {
+      "id": "C4",
+      "claim": "预训练收益并不单调",
+      "paper_location": "CIKM 图6(c)",
+      "alignment": "趋势不同",
+      "figure_ids": [
+        "04-pretraining-epochs"
+      ],
+      "prohibited_inference": "不能将P0联合与随机冻结混称或用测试选择轮数"
+    },
+    {
+      "id": "M1",
+      "claim": "内容可帮助历史筛选",
+      "paper_location": "MUSE 表1／表2",
+      "alignment": "部分表示对照",
+      "figure_ids": [
+        "05-retrieval"
+      ],
+      "prohibited_inference": "不能宣称完整比较OpenCLIP／I2I／SCL"
+    },
+    {
+      "id": "M2",
+      "claim": "聚合需要独立消融",
+      "paper_location": "MUSE 表3",
+      "alignment": "部分一致",
+      "figure_ids": [
+        "06-aggregation"
+      ],
+      "prohibited_inference": "不能把分别有效等同于组合增量明确"
+    },
+    {
+      "id": "M3",
+      "claim": "增加候选历史有价值",
+      "paper_location": "MUSE 图5",
+      "alignment": "1k范围内适配",
+      "figure_ids": [
+        "07-history-length"
+      ],
+      "prohibited_inference": "不能声称恢复100K趋势或测试选出最优长度"
+    },
+    {
+      "id": "M4",
+      "claim": "复杂检索不保证增益",
+      "paper_location": "MUSE 表2",
+      "alignment": "总体方向相容",
+      "figure_ids": [
+        "08-learned-retrieval",
+        "10-g3-diagnostic"
+      ],
+      "prohibited_inference": "不能把G3最终诊断视为训练因果证明"
+    },
+    {
+      "id": "M5",
+      "claim": "适配基线提供整体背景",
+      "paper_location": "MUSE 表5",
+      "alignment": "结构预算适配",
+      "figure_ids": [
+        "11-baselines"
+      ],
+      "prohibited_inference": "不能称严格等预算或对所有对照显著最优"
+    },
+    {
+      "id": "J1",
+      "claim": "低频群体增益更大",
+      "paper_location": "CIKM 图6(b)／MUSE 图6",
+      "alignment": "描述性支持",
+      "figure_ids": [
+        "09-frequency"
+      ],
+      "prohibited_inference": "不能将频次零称为新商品或宣称分组统计显著"
+    },
+    {
+      "id": "J2",
+      "claim": "项目衔接是研究问题递进",
+      "paper_location": "两文方法框架",
+      "alignment": "共同协议适配",
+      "figure_ids": [
+        "12-framework"
+      ],
+      "prohibited_inference": "不能把两项目最终分数差当成单模块贡献"
+    }
+  ]
+}

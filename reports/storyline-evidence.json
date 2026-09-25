@@ -1,0 +1,1984 @@
+{
+  "scope": "presentation_storyline_evidence",
+  "sources": {
+    "content/reports/final-results-summary.json": "cfb6c50537b29e4d89c4db1abb097ea9b52cdbacd28c20794e7e57b2bfdbc49b",
+    "content/reports/supplementary-test-summary.json": "be789aaae6b90230dd30a99fed93f26d8ead5ea01dd4f5a1d55cbb36978ef52e",
+    "content/reports/post-main-make-three-seed-summary.json": "c1081f116bcacd406e01d983606e221ca8b72a6004f55802170d7e7ff2185c51",
+    "content/reports/posthoc-test-frequency-v1.json": "e83a0e85138264e14f03bf821676bbbce71b6e1986bd88c0145ce47ff3996ea0",
+    "muse/reports/post-main-g3-validation.json": "4f725f1c02942dbd1f2a57f9760860571f5a57c35cfcb5474aef3f162df2c3c5",
+    "muse/reports/adapted-baseline-test-comparison.json": "4539781e9b236f55052ecf679e3f20a6c771ebb66fac2b23eb6ac3b7e115b0d4",
+    "work/c1-050-seed42-epochs3/report.json": "765a1105af7771f08ec9e94b56d7c960d6e0fe243c90f513a9e3bbcb447edbd9",
+    "work/c1-050-seed2026-epochs3/report.json": "112e84d6d299cd1677d9c0b03fcf942b194d52b0041b0272d8a2a4a4fce5701f",
+    "work/c1-050-seed3407-epochs3/report.json": "c9a46ce3bd3ac2df81e8c12ec8869eefbdabcd538121d4ca29d2bae6f7c97fcd"
+  },
+  "figures": {
+    "01-content": {
+      "title": "内容信息有用，最佳接入方式依赖指标",
+      "kind": "metrics",
+      "rows": [
+        {
+          "label": "ID基线",
+          "seed": 42,
+          "model_id": "c0-seed42",
+          "split": "test",
+          "phase": "main",
+          "auc": 0.605501665618931,
+          "gauc": 0.5728545132056299,
+          "logloss": 0.3912547764658467
+        },
+        {
+          "label": "ID基线",
+          "seed": 2026,
+          "model_id": "c0-seed2026",
+          "split": "test",
+          "phase": "main",
+          "auc": 0.6061987960295839,
+          "gauc": 0.574507565533463,
+          "logloss": 0.3924734025046168
+        },
+        {
+          "label": "ID基线",
+          "seed": 3407,
+          "model_id": "c0-seed3407",
+          "split": "test",
+          "phase": "main",
+          "auc": 0.6048523207178377,
+          "gauc": 0.5737631127105417,
+          "logloss": 0.3913988349767643
+        },
+        {
+          "label": "直接向量",
+          "seed": 42,
+          "model_id": "c2-seed42",
+          "split": "test",
+          "phase": "main",
+          "auc": 0.6080890599340064,
+          "gauc": 0.5760402234253548,
+          "logloss": 0.3911309578024918
+        },
+        {
+          "label": "直接向量",
+          "seed": 2026,
+          "model_id": "c2-seed2026",
+          "split": "test",
+          "phase": "main",
+          "auc": 0.6079942061206592,
+          "gauc": 0.578673430601732,
+          "logloss": 0.39309290190443685
+        },
+        {
+          "label": "直接向量",
+          "seed": 3407,
+          "model_id": "c2-seed3407",
+          "split": "test",
+          "phase": "main",
+          "auc": 0.607034363734584,
+          "gauc": 0.5778823886547282,
+          "logloss": 0.39155247022503453
+        },
+        {
+          "label": "SimScore",
+          "seed": 42,
+          "model_id": "c7-seed42",
+          "split": "test",
+          "phase": "main",
+          "auc": 0.6172212812136014,
+          "gauc": 0.5932688564220201,
+          "logloss": 0.3894504208738292
+        },
+        {
+          "label": "SimScore",
+          "seed": 2026,
+          "model_id": "c7-seed2026",
+          "split": "test",
+          "phase": "main",
+          "auc": 0.618012550148949,
+          "gauc": 0.5934121325334729,
+          "logloss": 0.3909408596183177
+        },
+        {
+          "label": "SimScore",
+          "seed": 3407,
+          "model_id": "c7-seed3407",
+          "split": "test",
+          "phase": "main",
+          "auc": 0.6159257622873193,
+          "gauc": 0.5927456365783274,
+          "logloss": 0.38969751819889925
+        },
+        {
+          "label": "SimTier",
+          "seed": 42,
+          "model_id": "c3-seed42",
+          "split": "test",
+          "phase": "main",
+          "auc": 0.6160854672872306,
+          "gauc": 0.5896229074230972,
+          "logloss": 0.3895673208959829
+        },
+        {
+          "label": "SimTier",
+          "seed": 2026,
+          "model_id": "c3-seed2026",
+          "split": "test",
+          "phase": "main",
+          "auc": 0.6168309959128678,
+          "gauc": 0.5906347324081253,
+          "logloss": 0.39211929631031656
+        },
+        {
+          "label": "SimTier",
+          "seed": 3407,
+          "model_id": "c3-seed3407",
+          "split": "test",
+          "phase": "main",
+          "auc": 0.615578095453074,
+          "gauc": 0.5903864695480712,
+          "logloss": 0.38956299294690055
+        },
+        {
+          "label": "MAKE",
+          "seed": 42,
+          "model_id": "c5-seed42",
+          "split": "test",
+          "phase": "main",
+          "auc": 0.61800832511991,
+          "gauc": 0.58881119492876,
+          "logloss": 0.389770391331168
+        },
+        {
+          "label": "MAKE",
+          "seed": 2026,
+          "model_id": "c5-seed2026",
+          "split": "test",
+          "phase": "main",
+          "auc": 0.6203134056614292,
+          "gauc": 0.5915100163862919,
+          "logloss": 0.3905298174624723
+        },
+        {
+          "label": "MAKE",
+          "seed": 3407,
+          "model_id": "c5-seed3407",
+          "split": "test",
+          "phase": "main",
+          "auc": 0.6189939655777724,
+          "gauc": 0.5898450874689479,
+          "logloss": 0.38982578167620907
+        },
+        {
+          "label": "SimTier＋MAKE",
+          "seed": 42,
+          "model_id": "c6-seed42",
+          "split": "test",
+          "phase": "main",
+          "auc": 0.6191212768323624,
+          "gauc": 0.5904731056408654,
+          "logloss": 0.3893653970476013
+        },
+        {
+          "label": "SimTier＋MAKE",
+          "seed": 2026,
+          "model_id": "c6-seed2026",
+          "split": "test",
+          "phase": "main",
+          "auc": 0.6209466820402646,
+          "gauc": 0.5930449024909329,
+          "logloss": 0.3913316755051675
+        },
+        {
+          "label": "SimTier＋MAKE",
+          "seed": 3407,
+          "model_id": "c6-seed3407",
+          "split": "test",
+          "phase": "main",
+          "auc": 0.6183365395773998,
+          "gauc": 0.5900816018660264,
+          "logloss": 0.38975425858701873
+        }
+      ],
+      "note": "主测试；点为三种子均值，短线为样本标准差，不是置信区间。横轴为局部范围。"
+    },
+    "02-make-strategy": {
+      "title": "MAKE：初始化与接入后更新必须分开比较",
+      "kind": "metrics",
+      "rows": [
+        {
+          "label": "随机／冻结",
+          "model_id": "shared-make-strategy-v1-seed42--c4-frozen",
+          "seed": 42,
+          "split": "test",
+          "phase": "supplement",
+          "auc": 0.6056786988867167,
+          "gauc": 0.573046600855841,
+          "logloss": 0.3912989348830779
+        },
+        {
+          "label": "随机／冻结",
+          "model_id": "post-main-make-seeds-v1--seed2026--c4-frozen",
+          "seed": 2026,
+          "split": "test",
+          "phase": "supplement",
+          "auc": 0.6059679074490222,
+          "gauc": 0.574150320305123,
+          "logloss": 0.39224429110790987
+        },
+        {
+          "label": "随机／冻结",
+          "model_id": "post-main-make-seeds-v1--seed3407--c4-frozen",
+          "seed": 3407,
+          "split": "test",
+          "phase": "supplement",
+          "auc": 0.6060052963158908,
+          "gauc": 0.5740748723197804,
+          "logloss": 0.39120137823340734
+        },
+        {
+          "label": "随机／联合",
+          "model_id": "shared-make-strategy-v1-seed42--c4",
+          "seed": 42,
+          "split": "test",
+          "phase": "supplement",
+          "auc": 0.6168450219598648,
+          "gauc": 0.5870283008123259,
+          "logloss": 0.3896234355601778
+        },
+        {
+          "label": "随机／联合",
+          "model_id": "post-main-make-seeds-v1--seed2026--c4",
+          "seed": 2026,
+          "split": "test",
+          "phase": "supplement",
+          "auc": 0.6175519365901502,
+          "gauc": 0.5882262975382581,
+          "logloss": 0.3910526004527535
+        },
+        {
+          "label": "随机／联合",
+          "model_id": "post-main-make-seeds-v1--seed3407--c4",
+          "seed": 3407,
+          "split": "test",
+          "phase": "supplement",
+          "auc": 0.6173249075623481,
+          "gauc": 0.5888118138278033,
+          "logloss": 0.3895595876444817
+        },
+        {
+          "label": "预训练／冻结",
+          "seed": 42,
+          "model_id": "c5-seed42",
+          "split": "test",
+          "phase": "main",
+          "auc": 0.61800832511991,
+          "gauc": 0.58881119492876,
+          "logloss": 0.389770391331168
+        },
+        {
+          "label": "预训练／冻结",
+          "seed": 2026,
+          "model_id": "c5-seed2026",
+          "split": "test",
+          "phase": "main",
+          "auc": 0.6203134056614292,
+          "gauc": 0.5915100163862919,
+          "logloss": 0.3905298174624723
+        },
+        {
+          "label": "预训练／冻结",
+          "seed": 3407,
+          "model_id": "c5-seed3407",
+          "split": "test",
+          "phase": "main",
+          "auc": 0.6189939655777724,
+          "gauc": 0.5898450874689479,
+          "logloss": 0.38982578167620907
+        },
+        {
+          "label": "预训练／联合",
+          "model_id": "shared-make-strategy-v1-seed42--c5-joint",
+          "seed": 42,
+          "split": "test",
+          "phase": "supplement",
+          "auc": 0.6194038711146721,
+          "gauc": 0.5913068225699238,
+          "logloss": 0.3893724265398075
+        },
+        {
+          "label": "预训练／联合",
+          "model_id": "post-main-make-seeds-v1--seed2026--c5-joint",
+          "seed": 2026,
+          "split": "test",
+          "phase": "supplement",
+          "auc": 0.6211578202632752,
+          "gauc": 0.5932265419725572,
+          "logloss": 0.3900369997760271
+        },
+        {
+          "label": "预训练／联合",
+          "model_id": "post-main-make-seeds-v1--seed3407--c5-joint",
+          "seed": 3407,
+          "split": "test",
+          "phase": "supplement",
+          "auc": 0.6199568213486387,
+          "gauc": 0.5916528833616318,
+          "logloss": 0.3896830790964802
+        }
+      ],
+      "note": "相同下游设置；预训练另有计算成本。主测试与追加测试分别留存，非新的盲测。"
+    },
+    "03-training": {
+      "title": "训练诊断：ID泛化退步，内容分支具有不同的学习曲线",
+      "kind": "training",
+      "rows": [
+        {
+          "label": "ID下游",
+          "seed": 42,
+          "epoch": 1,
+          "split": "validation",
+          "batch_size": 256,
+          "gauc": 0.5731984507417858,
+          "logloss": 0.38852298938820967,
+          "online_train_logloss": 0.3837075389329971
+        },
+        {
+          "label": "ID下游",
+          "seed": 42,
+          "epoch": 2,
+          "split": "validation",
+          "batch_size": 256,
+          "gauc": 0.5486279114796216,
+          "logloss": 0.44131273475957594,
+          "online_train_logloss": 0.29489693154549534
+        },
+        {
+          "label": "ID下游",
+          "seed": 42,
+          "epoch": 3,
+          "split": "validation",
+          "batch_size": 256,
+          "gauc": 0.5338798363030755,
+          "logloss": 0.5706822778933048,
+          "online_train_logloss": 0.21377176996574912
+        },
+        {
+          "label": "内容预训练",
+          "seed": 42,
+          "epoch": 1,
+          "split": "validation",
+          "batch_size": 32,
+          "gauc": 0.5807173140094717,
+          "logloss": 0.3884952254092059,
+          "online_train_logloss": 0.3921528640709509
+        },
+        {
+          "label": "内容预训练",
+          "seed": 42,
+          "epoch": 2,
+          "split": "validation",
+          "batch_size": 32,
+          "gauc": 0.5821678598667556,
+          "logloss": 0.38866440212756215,
+          "online_train_logloss": 0.38997220313637204
+        },
+        {
+          "label": "内容预训练",
+          "seed": 42,
+          "epoch": 3,
+          "split": "validation",
+          "batch_size": 32,
+          "gauc": 0.5825247919488462,
+          "logloss": 0.3887750850364924,
+          "online_train_logloss": 0.3891061291569456
+        },
+        {
+          "label": "ID下游",
+          "seed": 2026,
+          "epoch": 1,
+          "split": "validation",
+          "batch_size": 256,
+          "gauc": 0.5722662345089868,
+          "logloss": 0.3900120690092924,
+          "online_train_logloss": 0.38411136782837446
+        },
+        {
+          "label": "ID下游",
+          "seed": 2026,
+          "epoch": 2,
+          "split": "validation",
+          "batch_size": 256,
+          "gauc": 0.5514213557562642,
+          "logloss": 0.43547856658663603,
+          "online_train_logloss": 0.2947800872569961
+        },
+        {
+          "label": "ID下游",
+          "seed": 2026,
+          "epoch": 3,
+          "split": "validation",
+          "batch_size": 256,
+          "gauc": 0.5394550051035768,
+          "logloss": 0.5804047509499877,
+          "online_train_logloss": 0.2092980998104117
+        },
+        {
+          "label": "内容预训练",
+          "seed": 2026,
+          "epoch": 1,
+          "split": "validation",
+          "batch_size": 32,
+          "gauc": 0.5827589308078709,
+          "logloss": 0.3886705011816954,
+          "online_train_logloss": 0.39184687305442245
+        },
+        {
+          "label": "内容预训练",
+          "seed": 2026,
+          "epoch": 2,
+          "split": "validation",
+          "batch_size": 32,
+          "gauc": 0.585197298950995,
+          "logloss": 0.38814706767577745,
+          "online_train_logloss": 0.3898873593070792
+        },
+        {
+          "label": "内容预训练",
+          "seed": 2026,
+          "epoch": 3,
+          "split": "validation",
+          "batch_size": 32,
+          "gauc": 0.5822657116320911,
+          "logloss": 0.3881775823785482,
+          "online_train_logloss": 0.38906945811611515
+        },
+        {
+          "label": "ID下游",
+          "seed": 3407,
+          "epoch": 1,
+          "split": "validation",
+          "batch_size": 256,
+          "gauc": 0.5730741147161154,
+          "logloss": 0.3888775521121585,
+          "online_train_logloss": 0.38405514800414503
+        },
+        {
+          "label": "ID下游",
+          "seed": 3407,
+          "epoch": 2,
+          "split": "validation",
+          "batch_size": 256,
+          "gauc": 0.5454251606867994,
+          "logloss": 0.44913122249018256,
+          "online_train_logloss": 0.2938758389979811
+        },
+        {
+          "label": "ID下游",
+          "seed": 3407,
+          "epoch": 3,
+          "split": "validation",
+          "batch_size": 256,
+          "gauc": 0.5356920657527976,
+          "logloss": 0.5633344086904584,
+          "online_train_logloss": 0.2057580669794453
+        },
+        {
+          "label": "内容预训练",
+          "seed": 3407,
+          "epoch": 1,
+          "split": "validation",
+          "batch_size": 32,
+          "gauc": 0.5670981885404411,
+          "logloss": 0.39279202019818665,
+          "online_train_logloss": 0.3919404270811828
+        },
+        {
+          "label": "内容预训练",
+          "seed": 3407,
+          "epoch": 2,
+          "split": "validation",
+          "batch_size": 32,
+          "gauc": 0.5834423609342994,
+          "logloss": 0.38968279869855316,
+          "online_train_logloss": 0.389770965303775
+        },
+        {
+          "label": "内容预训练",
+          "seed": 3407,
+          "epoch": 3,
+          "split": "validation",
+          "batch_size": 32,
+          "gauc": 0.5841589621121605,
+          "logloss": 0.388588649100933,
+          "online_train_logloss": 0.38894461299809946
+        }
+      ],
+      "note": "验证过程诊断；两分支结构与batch不同，不能归因为ID embedding单一因素。训练损失为在线批次均值。"
+    },
+    "04-pretraining-epochs": {
+      "title": "更多预训练并未稳定转化为更多下游收益",
+      "kind": "epochs",
+      "rows": [
+        {
+          "label": "P0联合",
+          "model_id": "shared-make-strategy-v1-seed42--c4",
+          "seed": 42,
+          "split": "test",
+          "phase": "supplement",
+          "auc": 0.6168450219598648,
+          "gauc": 0.5870283008123259,
+          "logloss": 0.3896234355601778,
+          "epoch": 0
+        },
+        {
+          "label": "正轮冻结",
+          "model_id": "shared-pretraining-endpoints-v1-seed42--p1",
+          "seed": 42,
+          "split": "test",
+          "phase": "supplement",
+          "auc": 0.6182744413545199,
+          "gauc": 0.5884048408205749,
+          "logloss": 0.3899074098999237,
+          "epoch": 1
+        },
+        {
+          "label": "正轮冻结",
+          "seed": 42,
+          "model_id": "c5-seed42",
+          "split": "test",
+          "phase": "main",
+          "auc": 0.61800832511991,
+          "gauc": 0.58881119492876,
+          "logloss": 0.389770391331168,
+          "epoch": 3
+        },
+        {
+          "label": "正轮冻结",
+          "model_id": "shared-pretraining-endpoints-v1-seed42--p5",
+          "seed": 42,
+          "split": "test",
+          "phase": "supplement",
+          "auc": 0.6171959269822079,
+          "gauc": 0.58810463640391,
+          "logloss": 0.39024646817343805,
+          "epoch": 5
+        },
+        {
+          "label": "P0联合",
+          "model_id": "post-main-make-seeds-v1--seed2026--c4",
+          "seed": 2026,
+          "split": "test",
+          "phase": "supplement",
+          "auc": 0.6175519365901502,
+          "gauc": 0.5882262975382581,
+          "logloss": 0.3910526004527535,
+          "epoch": 0
+        },
+        {
+          "label": "正轮冻结",
+          "model_id": "post-main-make-epochs-v1--endpoints-seed2026--p1",
+          "seed": 2026,
+          "split": "test",
+          "phase": "supplement",
+          "auc": 0.6202043892793943,
+          "gauc": 0.5914557644529712,
+          "logloss": 0.391043741114818,
+          "epoch": 1
+        },
+        {
+          "label": "正轮冻结",
+          "model_id": "post-main-make-epochs-v1--p3-seed2026",
+          "seed": 2026,
+          "split": "test",
+          "phase": "supplement",
+          "auc": 0.6194171977945201,
+          "gauc": 0.5905037348122315,
+          "logloss": 0.39065699019345146,
+          "epoch": 3
+        },
+        {
+          "label": "正轮冻结",
+          "model_id": "post-main-make-epochs-v1--endpoints-seed2026--p5",
+          "seed": 2026,
+          "split": "test",
+          "phase": "supplement",
+          "auc": 0.6172620519534491,
+          "gauc": 0.5878901393922543,
+          "logloss": 0.39166910980222763,
+          "epoch": 5
+        },
+        {
+          "label": "P0联合",
+          "model_id": "post-main-make-seeds-v1--seed3407--c4",
+          "seed": 3407,
+          "split": "test",
+          "phase": "supplement",
+          "auc": 0.6173249075623481,
+          "gauc": 0.5888118138278033,
+          "logloss": 0.3895595876444817,
+          "epoch": 0
+        },
+        {
+          "label": "正轮冻结",
+          "model_id": "post-main-make-epochs-v1--endpoints-seed3407--p1",
+          "seed": 3407,
+          "split": "test",
+          "phase": "supplement",
+          "auc": 0.6191320568295858,
+          "gauc": 0.5902470029343592,
+          "logloss": 0.39040639446262526,
+          "epoch": 1
+        },
+        {
+          "label": "正轮冻结",
+          "seed": 3407,
+          "model_id": "c5-seed3407",
+          "split": "test",
+          "phase": "main",
+          "auc": 0.6189939655777724,
+          "gauc": 0.5898450874689479,
+          "logloss": 0.38982578167620907,
+          "epoch": 3
+        },
+        {
+          "label": "正轮冻结",
+          "model_id": "post-main-make-epochs-v1--endpoints-seed3407--p5",
+          "seed": 3407,
+          "split": "test",
+          "phase": "supplement",
+          "auc": 0.617866525445775,
+          "gauc": 0.5885374732355139,
+          "logloss": 0.39052105987151925,
+          "epoch": 5
+        }
+      ],
+      "note": "测试；P0参与联合训练，P1/P3/P5冻结接入。P0与正轮同时改变初始化及冻结策略，不是纯轮数效应。"
+    },
+    "05-retrieval": {
+      "title": "相同聚合结构下，内容检索优于本地ID与类目检索",
+      "kind": "metrics",
+      "rows": [
+        {
+          "label": "类目检索",
+          "seed": 42,
+          "model_id": "b1-hard-enhanced-seed42",
+          "split": "test",
+          "phase": "main",
+          "auc": 0.6124081032613861,
+          "gauc": 0.5893113940572642,
+          "logloss": 0.3902093758096755
+        },
+        {
+          "label": "类目检索",
+          "seed": 2026,
+          "model_id": "b1-hard-enhanced-seed2026",
+          "split": "test",
+          "phase": "main",
+          "auc": 0.6133343452265505,
+          "gauc": 0.5894952173401663,
+          "logloss": 0.3914641830144142
+        },
+        {
+          "label": "类目检索",
+          "seed": 3407,
+          "model_id": "b1-hard-enhanced-seed3407",
+          "split": "test",
+          "phase": "main",
+          "auc": 0.612863341682964,
+          "gauc": 0.5897621309822524,
+          "logloss": 0.3900743418889721
+        },
+        {
+          "label": "商品＋类目ID",
+          "seed": 42,
+          "model_id": "b2-soft-enhanced-seed42",
+          "split": "test",
+          "phase": "main",
+          "auc": 0.6137334280347742,
+          "gauc": 0.5896802147882089,
+          "logloss": 0.3900149373857226
+        },
+        {
+          "label": "商品＋类目ID",
+          "seed": 2026,
+          "model_id": "b2-soft-enhanced-seed2026",
+          "split": "test",
+          "phase": "main",
+          "auc": 0.614305494089484,
+          "gauc": 0.5908755048460811,
+          "logloss": 0.3914002527115536
+        },
+        {
+          "label": "商品＋类目ID",
+          "seed": 3407,
+          "model_id": "b2-soft-enhanced-seed3407",
+          "split": "test",
+          "phase": "main",
+          "auc": 0.6137249811966643,
+          "gauc": 0.5910412188147103,
+          "logloss": 0.389934391460745
+        },
+        {
+          "label": "商品ID",
+          "seed": 42,
+          "model_id": "g-id-item-seed42",
+          "split": "test",
+          "phase": "main",
+          "auc": 0.6120305088157051,
+          "gauc": 0.5862290532434113,
+          "logloss": 0.3902632730785403
+        },
+        {
+          "label": "商品ID",
+          "seed": 2026,
+          "model_id": "g-id-item-seed2026",
+          "split": "test",
+          "phase": "main",
+          "auc": 0.6132301919572812,
+          "gauc": 0.5882306343236728,
+          "logloss": 0.39192254432672224
+        },
+        {
+          "label": "商品ID",
+          "seed": 3407,
+          "model_id": "g-id-item-seed3407",
+          "split": "test",
+          "phase": "main",
+          "auc": 0.6121798593396452,
+          "gauc": 0.5872154393984764,
+          "logloss": 0.39011955789304115
+        },
+        {
+          "label": "内容＋ID余弦",
+          "seed": 42,
+          "model_id": "content-id-cosine-l1000-seed42",
+          "split": "test",
+          "phase": "main",
+          "auc": 0.6155320587576908,
+          "gauc": 0.5896807703097607,
+          "logloss": 0.3898081175698857
+        },
+        {
+          "label": "内容＋ID余弦",
+          "seed": 2026,
+          "model_id": "content-id-cosine-l1000-seed2026",
+          "split": "test",
+          "phase": "main",
+          "auc": 0.6163343586397089,
+          "gauc": 0.5919777622651168,
+          "logloss": 0.3910291094384973
+        },
+        {
+          "label": "内容＋ID余弦",
+          "seed": 3407,
+          "model_id": "content-id-cosine-l1000-seed3407",
+          "split": "test",
+          "phase": "main",
+          "auc": 0.6156099086777893,
+          "gauc": 0.5908708572610152,
+          "logloss": 0.38962556735148
+        },
+        {
+          "label": "内容余弦",
+          "seed": 42,
+          "model_id": "r4-l1000-seed42",
+          "split": "test",
+          "phase": "main",
+          "auc": 0.6187807533535369,
+          "gauc": 0.5942818135242868,
+          "logloss": 0.38915973713989715
+        },
+        {
+          "label": "内容余弦",
+          "seed": 2026,
+          "model_id": "r4-l1000-seed2026",
+          "split": "test",
+          "phase": "main",
+          "auc": 0.6189680025445461,
+          "gauc": 0.5962604885662282,
+          "logloss": 0.3902253129269602
+        },
+        {
+          "label": "内容余弦",
+          "seed": 3407,
+          "model_id": "r4-l1000-seed3407",
+          "split": "test",
+          "phase": "main",
+          "auc": 0.6186062076249936,
+          "gauc": 0.5959227104325819,
+          "logloss": 0.389150053125961
+        }
+      ],
+      "note": "主测试；L1000→K50，完整聚合结构相同。结果限定于当前表示及检索实现。"
+    },
+    "06-aggregation": {
+      "title": "统计与语义注意力各有作用，叠加增量却不必明确",
+      "kind": "metrics",
+      "rows": [
+        {
+          "label": "普通注意力",
+          "seed": 42,
+          "model_id": "r1-seed42",
+          "split": "test",
+          "phase": "main",
+          "auc": 0.6036863600636836,
+          "gauc": 0.5737752238055421,
+          "logloss": 0.3916749392988827
+        },
+        {
+          "label": "普通注意力",
+          "seed": 2026,
+          "model_id": "r1-seed2026",
+          "split": "test",
+          "phase": "main",
+          "auc": 0.6049052785462624,
+          "gauc": 0.575414728933561,
+          "logloss": 0.3928669103509967
+        },
+        {
+          "label": "普通注意力",
+          "seed": 3407,
+          "model_id": "r1-seed3407",
+          "split": "test",
+          "phase": "main",
+          "auc": 0.603521458005645,
+          "gauc": 0.5742450870949599,
+          "logloss": 0.39176468620105703
+        },
+        {
+          "label": "注意力＋统计",
+          "seed": 42,
+          "model_id": "r2-seed42",
+          "split": "test",
+          "phase": "main",
+          "auc": 0.6156337488752601,
+          "gauc": 0.5907244244923461,
+          "logloss": 0.3896028763570345
+        },
+        {
+          "label": "注意力＋统计",
+          "seed": 2026,
+          "model_id": "r2-seed2026",
+          "split": "test",
+          "phase": "main",
+          "auc": 0.6157613014144393,
+          "gauc": 0.5927227177803458,
+          "logloss": 0.3912219319855629
+        },
+        {
+          "label": "注意力＋统计",
+          "seed": 3407,
+          "model_id": "r2-seed3407",
+          "split": "test",
+          "phase": "main",
+          "auc": 0.6145226689896707,
+          "gauc": 0.5911236479409716,
+          "logloss": 0.38980752404625846
+        },
+        {
+          "label": "语义注意力",
+          "seed": 42,
+          "model_id": "r3-seed42",
+          "split": "test",
+          "phase": "main",
+          "auc": 0.6083849681797674,
+          "gauc": 0.5815110386182235,
+          "logloss": 0.39104523581885337
+        },
+        {
+          "label": "语义注意力",
+          "seed": 2026,
+          "model_id": "r3-seed2026",
+          "split": "test",
+          "phase": "main",
+          "auc": 0.6074106437645451,
+          "gauc": 0.5806782061181953,
+          "logloss": 0.39275674651389963
+        },
+        {
+          "label": "语义注意力",
+          "seed": 3407,
+          "model_id": "r3-seed3407",
+          "split": "test",
+          "phase": "main",
+          "auc": 0.6067828240921516,
+          "gauc": 0.5803713564533147,
+          "logloss": 0.3912338038331237
+        },
+        {
+          "label": "语义注意力＋统计",
+          "seed": 42,
+          "model_id": "r4-seed42",
+          "split": "test",
+          "phase": "main",
+          "auc": 0.6154513454983576,
+          "gauc": 0.5909446149667749,
+          "logloss": 0.38969797495736824
+        },
+        {
+          "label": "语义注意力＋统计",
+          "seed": 2026,
+          "model_id": "r4-seed2026",
+          "split": "test",
+          "phase": "main",
+          "auc": 0.6155222996587627,
+          "gauc": 0.5927552449169552,
+          "logloss": 0.3907547874088317
+        },
+        {
+          "label": "语义注意力＋统计",
+          "seed": 3407,
+          "model_id": "r4-seed3407",
+          "split": "test",
+          "phase": "main",
+          "auc": 0.6146507553252426,
+          "gauc": 0.5909950808633665,
+          "logloss": 0.38988500124079156
+        },
+        {
+          "label": "仅长历史统计",
+          "seed": 42,
+          "model_id": "r5-seed42",
+          "split": "test",
+          "phase": "main",
+          "auc": 0.6152069183046057,
+          "gauc": 0.5918165001475139,
+          "logloss": 0.3897718233565666
+        },
+        {
+          "label": "仅长历史统计",
+          "seed": 2026,
+          "model_id": "r5-seed2026",
+          "split": "test",
+          "phase": "main",
+          "auc": 0.6145927254626187,
+          "gauc": 0.5926745276078731,
+          "logloss": 0.391139093532897
+        },
+        {
+          "label": "仅长历史统计",
+          "seed": 3407,
+          "model_id": "r5-seed3407",
+          "split": "test",
+          "phase": "main",
+          "auc": 0.6153693123939431,
+          "gauc": 0.592592740904129,
+          "logloss": 0.38955792081889884
+        }
+      ],
+      "note": "主测试；固定内容检索，L200→K50。“仅长历史统计”仍保留公共ID和短历史分支。"
+    },
+    "07-history-length": {
+      "title": "扩大候选历史有效，但最后一段增益具有种子差异",
+      "kind": "length",
+      "rows": [
+        {
+          "label": "普通注意力",
+          "model_id": "shared-length-sensitivity-v1-seed42--shared-r1-l50",
+          "seed": 42,
+          "split": "test",
+          "phase": "supplement",
+          "auc": 0.6011383511789474,
+          "gauc": 0.5732376954971319,
+          "logloss": 0.39211794830617225,
+          "length": 50
+        },
+        {
+          "label": "普通注意力",
+          "model_id": "post-main-length-seeds-v1--r1-l50-seed2026",
+          "seed": 2026,
+          "split": "test",
+          "phase": "supplement",
+          "auc": 0.6026833098925708,
+          "gauc": 0.5741743185052497,
+          "logloss": 0.3938247216056072,
+          "length": 50
+        },
+        {
+          "label": "普通注意力",
+          "model_id": "post-main-length-seeds-v1--r1-l50-seed3407",
+          "seed": 3407,
+          "split": "test",
+          "phase": "supplement",
+          "auc": 0.6013211988074088,
+          "gauc": 0.5738107588901914,
+          "logloss": 0.3919142380634346,
+          "length": 50
+        },
+        {
+          "label": "普通注意力",
+          "seed": 42,
+          "model_id": "r1-seed42",
+          "split": "test",
+          "phase": "main",
+          "auc": 0.6036863600636836,
+          "gauc": 0.5737752238055421,
+          "logloss": 0.3916749392988827,
+          "length": 200
+        },
+        {
+          "label": "普通注意力",
+          "seed": 2026,
+          "model_id": "r1-seed2026",
+          "split": "test",
+          "phase": "main",
+          "auc": 0.6049052785462624,
+          "gauc": 0.575414728933561,
+          "logloss": 0.3928669103509967,
+          "length": 200
+        },
+        {
+          "label": "普通注意力",
+          "seed": 3407,
+          "model_id": "r1-seed3407",
+          "split": "test",
+          "phase": "main",
+          "auc": 0.603521458005645,
+          "gauc": 0.5742450870949599,
+          "logloss": 0.39176468620105703,
+          "length": 200
+        },
+        {
+          "label": "普通注意力",
+          "model_id": "shared-length-sensitivity-v1-seed42--shared-r1-l500",
+          "seed": 42,
+          "split": "test",
+          "phase": "supplement",
+          "auc": 0.6057115739726747,
+          "gauc": 0.575559366512576,
+          "logloss": 0.3915002503667544,
+          "length": 500
+        },
+        {
+          "label": "普通注意力",
+          "model_id": "post-main-length-seeds-v1--r1-l500-seed2026",
+          "seed": 2026,
+          "split": "test",
+          "phase": "supplement",
+          "auc": 0.6065118156907567,
+          "gauc": 0.5766025483880987,
+          "logloss": 0.3928367719827686,
+          "length": 500
+        },
+        {
+          "label": "普通注意力",
+          "model_id": "post-main-length-seeds-v1--r1-l500-seed3407",
+          "seed": 3407,
+          "split": "test",
+          "phase": "supplement",
+          "auc": 0.6054955868196192,
+          "gauc": 0.5761315691569012,
+          "logloss": 0.3913927824615625,
+          "length": 500
+        },
+        {
+          "label": "普通注意力",
+          "seed": 42,
+          "model_id": "r1-l1000-seed42",
+          "split": "test",
+          "phase": "main",
+          "auc": 0.6064810053077467,
+          "gauc": 0.5760429842047251,
+          "logloss": 0.3913930261074896,
+          "length": 1000
+        },
+        {
+          "label": "普通注意力",
+          "seed": 2026,
+          "model_id": "r1-l1000-seed2026",
+          "split": "test",
+          "phase": "main",
+          "auc": 0.6059723253541462,
+          "gauc": 0.5768851464564894,
+          "logloss": 0.3930932612937008,
+          "length": 1000
+        },
+        {
+          "label": "普通注意力",
+          "seed": 3407,
+          "model_id": "r1-l1000-seed3407",
+          "split": "test",
+          "phase": "main",
+          "auc": 0.6063858934610229,
+          "gauc": 0.577950612307864,
+          "logloss": 0.39122816860641757,
+          "length": 1000
+        },
+        {
+          "label": "完整MUSE",
+          "model_id": "shared-length-sensitivity-v1-seed42--shared-r4-l50",
+          "seed": 42,
+          "split": "test",
+          "phase": "supplement",
+          "auc": 0.6115641171035328,
+          "gauc": 0.5882473189261862,
+          "logloss": 0.39039893074704857,
+          "length": 50
+        },
+        {
+          "label": "完整MUSE",
+          "model_id": "post-main-length-seeds-v1--r4-l50-seed2026",
+          "seed": 2026,
+          "split": "test",
+          "phase": "supplement",
+          "auc": 0.612183339035253,
+          "gauc": 0.5883525440066059,
+          "logloss": 0.39209047090287125,
+          "length": 50
+        },
+        {
+          "label": "完整MUSE",
+          "model_id": "post-main-length-seeds-v1--r4-l50-seed3407",
+          "seed": 3407,
+          "split": "test",
+          "phase": "supplement",
+          "auc": 0.6113466652216959,
+          "gauc": 0.5885338428508794,
+          "logloss": 0.39028926246908613,
+          "length": 50
+        },
+        {
+          "label": "完整MUSE",
+          "seed": 42,
+          "model_id": "r4-seed42",
+          "split": "test",
+          "phase": "main",
+          "auc": 0.6154513454983576,
+          "gauc": 0.5909446149667749,
+          "logloss": 0.38969797495736824,
+          "length": 200
+        },
+        {
+          "label": "完整MUSE",
+          "seed": 2026,
+          "model_id": "r4-seed2026",
+          "split": "test",
+          "phase": "main",
+          "auc": 0.6155222996587627,
+          "gauc": 0.5927552449169552,
+          "logloss": 0.3907547874088317,
+          "length": 200
+        },
+        {
+          "label": "完整MUSE",
+          "seed": 3407,
+          "model_id": "r4-seed3407",
+          "split": "test",
+          "phase": "main",
+          "auc": 0.6146507553252426,
+          "gauc": 0.5909950808633665,
+          "logloss": 0.38988500124079156,
+          "length": 200
+        },
+        {
+          "label": "完整MUSE",
+          "model_id": "shared-length-sensitivity-v1-seed42--shared-r4-l500",
+          "seed": 42,
+          "split": "test",
+          "phase": "supplement",
+          "auc": 0.619216403471124,
+          "gauc": 0.5936046794388175,
+          "logloss": 0.3891026362831712,
+          "length": 500
+        },
+        {
+          "label": "完整MUSE",
+          "model_id": "post-main-length-seeds-v1--r4-l500-seed2026",
+          "seed": 2026,
+          "split": "test",
+          "phase": "supplement",
+          "auc": 0.6186308164536028,
+          "gauc": 0.5960067326806696,
+          "logloss": 0.39009682128164547,
+          "length": 500
+        },
+        {
+          "label": "完整MUSE",
+          "model_id": "post-main-length-seeds-v1--r4-l500-seed3407",
+          "seed": 3407,
+          "split": "test",
+          "phase": "supplement",
+          "auc": 0.6170304603250671,
+          "gauc": 0.5932654291834221,
+          "logloss": 0.3894334072336525,
+          "length": 500
+        },
+        {
+          "label": "完整MUSE",
+          "seed": 42,
+          "model_id": "r4-l1000-seed42",
+          "split": "test",
+          "phase": "main",
+          "auc": 0.6187807533535369,
+          "gauc": 0.5942818135242868,
+          "logloss": 0.38915973713989715,
+          "length": 1000
+        },
+        {
+          "label": "完整MUSE",
+          "seed": 2026,
+          "model_id": "r4-l1000-seed2026",
+          "split": "test",
+          "phase": "main",
+          "auc": 0.6189680025445461,
+          "gauc": 0.5962604885662282,
+          "logloss": 0.3902253129269602,
+          "length": 1000
+        },
+        {
+          "label": "完整MUSE",
+          "seed": 3407,
+          "model_id": "r4-l1000-seed3407",
+          "split": "test",
+          "phase": "main",
+          "auc": 0.6186062076249936,
+          "gauc": 0.5959227104325819,
+          "logloss": 0.389150053125961,
+          "length": 1000
+        }
+      ],
+      "note": "测试；所有长度固定K50。细线为各个种子，粗线为均值；不能由该测试曲线重新选择长度。"
+    },
+    "08-learned-retrieval": {
+      "title": "复杂检索没有稳定优势，必须展示失败种子",
+      "kind": "forest",
+      "rows": [
+        {
+          "label": "G1两阶段投影",
+          "seed": 42,
+          "split": "test",
+          "pair_index": 60,
+          "delta_gauc": -0.00311367422104325,
+          "ci_low": -0.004347900602557763,
+          "ci_high": -0.001793301586282686
+        },
+        {
+          "label": "G1两阶段投影",
+          "seed": 2026,
+          "split": "test",
+          "pair_index": 61,
+          "delta_gauc": -0.0035248496756736802,
+          "ci_low": -0.00471219789455872,
+          "ci_high": -0.002250871180561107
+        },
+        {
+          "label": "G1两阶段投影",
+          "seed": 3407,
+          "split": "test",
+          "pair_index": 62,
+          "delta_gauc": -0.0037162083573454296,
+          "ci_low": -0.004994249585088475,
+          "ci_high": -0.0023700448471437297
+        },
+        {
+          "label": "G3共享融合",
+          "seed": 42,
+          "split": "test",
+          "pair_index": 63,
+          "delta_gauc": 0.00040277041461866947,
+          "ci_low": -0.00044869970266361587,
+          "ci_high": 0.0012982824602416703
+        },
+        {
+          "label": "G3共享融合",
+          "seed": 2026,
+          "split": "test",
+          "pair_index": 64,
+          "delta_gauc": -0.021617289181968258,
+          "ci_low": -0.023418601227896716,
+          "ci_high": -0.01977075518592536
+        },
+        {
+          "label": "G3共享融合",
+          "seed": 3407,
+          "split": "test",
+          "pair_index": 65,
+          "delta_gauc": -0.001081203933527508,
+          "ci_low": -0.0020717390250342338,
+          "ci_high": -8.223824439658826e-05
+        }
+      ],
+      "note": "追加测试；差值＝学习式检索−内容余弦；单项95%用户bootstrap区间，未作多重校正。"
+    },
+    "09-frequency": {
+      "title": "低频组收益更大：描述性证据，不是机制因果证明",
+      "kind": "frequency",
+      "rows": [
+        {
+          "label": "内容集成：统计＋MAKE − ID",
+          "seed": 42,
+          "split": "posthoc_test",
+          "frequency": "0",
+          "rows": 183862,
+          "delta_auc": 0.025176478708095362,
+          "delta_logloss": -0.0027577747384264772
+        },
+        {
+          "label": "内容集成：统计＋MAKE − ID",
+          "seed": 42,
+          "split": "posthoc_test",
+          "frequency": "1",
+          "rows": 102012,
+          "delta_auc": 0.020747586819616748,
+          "delta_logloss": -0.0025087190495559075
+        },
+        {
+          "label": "内容集成：统计＋MAKE − ID",
+          "seed": 42,
+          "split": "posthoc_test",
+          "frequency": "2-5",
+          "rows": 201868,
+          "delta_auc": 0.014713307088010774,
+          "delta_logloss": -0.0020475681420542013
+        },
+        {
+          "label": "内容集成：统计＋MAKE − ID",
+          "seed": 42,
+          "split": "posthoc_test",
+          "frequency": "6-20",
+          "rows": 209630,
+          "delta_auc": 0.010920745352940298,
+          "delta_logloss": -0.0017371395234421771
+        },
+        {
+          "label": "内容集成：统计＋MAKE − ID",
+          "seed": 42,
+          "split": "posthoc_test",
+          "frequency": "21-100",
+          "rows": 159573,
+          "delta_auc": 0.0052493232122162725,
+          "delta_logloss": -0.0008654598751608455
+        },
+        {
+          "label": "内容集成：统计＋MAKE − ID",
+          "seed": 42,
+          "split": "posthoc_test",
+          "frequency": "101+",
+          "rows": 66266,
+          "delta_auc": 0.005230593002587436,
+          "delta_logloss": -0.0009918715902488273
+        },
+        {
+          "label": "内容集成：统计＋MAKE − ID",
+          "seed": 2026,
+          "split": "posthoc_test",
+          "frequency": "0",
+          "rows": 183862,
+          "delta_auc": 0.02604467955399503,
+          "delta_logloss": -0.001691982519986146
+        },
+        {
+          "label": "内容集成：统计＋MAKE − ID",
+          "seed": 2026,
+          "split": "posthoc_test",
+          "frequency": "1",
+          "rows": 102012,
+          "delta_auc": 0.021136588866119688,
+          "delta_logloss": -0.001540121702220898
+        },
+        {
+          "label": "内容集成：统计＋MAKE − ID",
+          "seed": 2026,
+          "split": "posthoc_test",
+          "frequency": "2-5",
+          "rows": 201868,
+          "delta_auc": 0.01825174686384845,
+          "delta_logloss": -0.0015167565984817721
+        },
+        {
+          "label": "内容集成：统计＋MAKE − ID",
+          "seed": 2026,
+          "split": "posthoc_test",
+          "frequency": "6-20",
+          "rows": 209630,
+          "delta_auc": 0.011220296192552381,
+          "delta_logloss": -0.0009845968460359678
+        },
+        {
+          "label": "内容集成：统计＋MAKE − ID",
+          "seed": 2026,
+          "split": "posthoc_test",
+          "frequency": "21-100",
+          "rows": 159573,
+          "delta_auc": 0.00641826781751953,
+          "delta_logloss": -0.00042154839770880415
+        },
+        {
+          "label": "内容集成：统计＋MAKE − ID",
+          "seed": 2026,
+          "split": "posthoc_test",
+          "frequency": "101+",
+          "rows": 66266,
+          "delta_auc": 0.004650416477571473,
+          "delta_logloss": -9.053420136378998e-05
+        },
+        {
+          "label": "内容集成：统计＋MAKE − ID",
+          "seed": 3407,
+          "split": "posthoc_test",
+          "frequency": "0",
+          "rows": 183862,
+          "delta_auc": 0.023653326089249194,
+          "delta_logloss": -0.0028850415114396455
+        },
+        {
+          "label": "内容集成：统计＋MAKE − ID",
+          "seed": 3407,
+          "split": "posthoc_test",
+          "frequency": "1",
+          "rows": 102012,
+          "delta_auc": 0.01879331016309238,
+          "delta_logloss": -0.0020091005042309207
+        },
+        {
+          "label": "内容集成：统计＋MAKE − ID",
+          "seed": 3407,
+          "split": "posthoc_test",
+          "frequency": "2-5",
+          "rows": 201868,
+          "delta_auc": 0.015394034186028804,
+          "delta_logloss": -0.0015571008353292282
+        },
+        {
+          "label": "内容集成：统计＋MAKE − ID",
+          "seed": 3407,
+          "split": "posthoc_test",
+          "frequency": "6-20",
+          "rows": 209630,
+          "delta_auc": 0.011728802885854761,
+          "delta_logloss": -0.001520758232955055
+        },
+        {
+          "label": "内容集成：统计＋MAKE − ID",
+          "seed": 3407,
+          "split": "posthoc_test",
+          "frequency": "21-100",
+          "rows": 159573,
+          "delta_auc": 0.006371320769352207,
+          "delta_logloss": -0.0006783419942915092
+        },
+        {
+          "label": "内容集成：统计＋MAKE − ID",
+          "seed": 3407,
+          "split": "posthoc_test",
+          "frequency": "101+",
+          "rows": 66266,
+          "delta_auc": 0.0041456172236210564,
+          "delta_logloss": -0.0006265460942827539
+        },
+        {
+          "label": "MUSE：内容检索 − 商品ID",
+          "seed": 42,
+          "split": "posthoc_test",
+          "frequency": "0",
+          "rows": 183862,
+          "delta_auc": 0.012171553138751401,
+          "delta_logloss": -0.001697150759153443
+        },
+        {
+          "label": "MUSE：内容检索 − 商品ID",
+          "seed": 42,
+          "split": "posthoc_test",
+          "frequency": "1",
+          "rows": 102012,
+          "delta_auc": 0.00991721755468522,
+          "delta_logloss": -0.0014099754574576906
+        },
+        {
+          "label": "MUSE：内容检索 − 商品ID",
+          "seed": 42,
+          "split": "posthoc_test",
+          "frequency": "2-5",
+          "rows": 201868,
+          "delta_auc": 0.009171500114978248,
+          "delta_logloss": -0.001337344706566379
+        },
+        {
+          "label": "MUSE：内容检索 − 商品ID",
+          "seed": 42,
+          "split": "posthoc_test",
+          "frequency": "6-20",
+          "rows": 209630,
+          "delta_auc": 0.0044626773048024315,
+          "delta_logloss": -0.0006987785748300834
+        },
+        {
+          "label": "MUSE：内容检索 − 商品ID",
+          "seed": 42,
+          "split": "posthoc_test",
+          "frequency": "21-100",
+          "rows": 159573,
+          "delta_auc": 0.0032718010959210675,
+          "delta_logloss": -0.000642278438045929
+        },
+        {
+          "label": "MUSE：内容检索 − 商品ID",
+          "seed": 42,
+          "split": "posthoc_test",
+          "frequency": "101+",
+          "rows": 66266,
+          "delta_auc": 0.002183785873767996,
+          "delta_logloss": -0.000663661864969467
+        },
+        {
+          "label": "MUSE：内容检索 − 商品ID",
+          "seed": 2026,
+          "split": "posthoc_test",
+          "frequency": "0",
+          "rows": 183862,
+          "delta_auc": 0.011879990266451701,
+          "delta_logloss": -0.002610958164503463
+        },
+        {
+          "label": "MUSE：内容检索 − 商品ID",
+          "seed": 2026,
+          "split": "posthoc_test",
+          "frequency": "1",
+          "rows": 102012,
+          "delta_auc": 0.010134186914835253,
+          "delta_logloss": -0.0021209468131575537
+        },
+        {
+          "label": "MUSE：内容检索 − 商品ID",
+          "seed": 2026,
+          "split": "posthoc_test",
+          "frequency": "2-5",
+          "rows": 201868,
+          "delta_auc": 0.006962145111698459,
+          "delta_logloss": -0.001687958893317576
+        },
+        {
+          "label": "MUSE：内容检索 − 商品ID",
+          "seed": 2026,
+          "split": "posthoc_test",
+          "frequency": "6-20",
+          "rows": 209630,
+          "delta_auc": 0.003761320134058277,
+          "delta_logloss": -0.0012792581004519854
+        },
+        {
+          "label": "MUSE：内容检索 − 商品ID",
+          "seed": 2026,
+          "split": "posthoc_test",
+          "frequency": "21-100",
+          "rows": 159573,
+          "delta_auc": 0.0022106940681796416,
+          "delta_logloss": -0.0012907994740250506
+        },
+        {
+          "label": "MUSE：内容检索 − 商品ID",
+          "seed": 2026,
+          "split": "posthoc_test",
+          "frequency": "101+",
+          "rows": 66266,
+          "delta_auc": 0.0005391280617040861,
+          "delta_logloss": -0.0008389245694232494
+        },
+        {
+          "label": "MUSE：内容检索 − 商品ID",
+          "seed": 3407,
+          "split": "posthoc_test",
+          "frequency": "0",
+          "rows": 183862,
+          "delta_auc": 0.011223456890669281,
+          "delta_logloss": -0.0015457611505537705
+        },
+        {
+          "label": "MUSE：内容检索 − 商品ID",
+          "seed": 3407,
+          "split": "posthoc_test",
+          "frequency": "1",
+          "rows": 102012,
+          "delta_auc": 0.008768507307709061,
+          "delta_logloss": -0.0010644759873832954
+        },
+        {
+          "label": "MUSE：内容检索 − 商品ID",
+          "seed": 3407,
+          "split": "posthoc_test",
+          "frequency": "2-5",
+          "rows": 201868,
+          "delta_auc": 0.009744464203031322,
+          "delta_logloss": -0.0013186906156153477
+        },
+        {
+          "label": "MUSE：内容检索 − 商品ID",
+          "seed": 3407,
+          "split": "posthoc_test",
+          "frequency": "6-20",
+          "rows": 209630,
+          "delta_auc": 0.00489136747911223,
+          "delta_logloss": -0.0006898462284618545
+        },
+        {
+          "label": "MUSE：内容检索 − 商品ID",
+          "seed": 3407,
+          "split": "posthoc_test",
+          "frequency": "21-100",
+          "rows": 159573,
+          "delta_auc": 0.002773216619536778,
+          "delta_logloss": -0.00041417302026991454
+        },
+        {
+          "label": "MUSE：内容检索 − 商品ID",
+          "seed": 3407,
+          "split": "posthoc_test",
+          "frequency": "101+",
+          "rows": 66266,
+          "delta_auc": 0.0017984442823043567,
+          "delta_logloss": -0.00038264979029473123
+        }
+      ],
+      "note": "测试事后分组；频次仅由训练目标曝光计算。点为三种子均值，无分组置信区间；频次0不等于新商品。"
+    },
+    "10-g3-diagnostic": {
+      "title": "G3异常种子的检索行为：内容排序方向出现反转",
+      "kind": "behavior",
+      "rows": [
+        {
+          "label": "最终检索行为",
+          "seed": 42,
+          "split": "validation_diagnostic",
+          "negative_slope_fraction": 0.0,
+          "overlap_fraction": 0.805777769084828,
+          "selected_cosine": 0.34070970978213566,
+          "reference_cosine": 0.3504258042281659
+        },
+        {
+          "label": "最终检索行为",
+          "seed": 2026,
+          "split": "validation_diagnostic",
+          "negative_slope_fraction": 1.0,
+          "overlap_fraction": 0.00365755862851331,
+          "selected_cosine": -0.09738504365507707,
+          "reference_cosine": 0.3504258042281659
+        },
+        {
+          "label": "最终检索行为",
+          "seed": 3407,
+          "split": "validation_diagnostic",
+          "negative_slope_fraction": 0.0,
+          "overlap_fraction": 0.7467678526023431,
+          "selected_cosine": 0.33566563229265484,
+          "reference_cosine": 0.3504258042281659
+        }
+      ],
+      "note": "固定1024条验证位置的最终检查点诊断；与测试下降相容，但未证明训练因果或约束系数后的效果。"
+    },
+    "11-baselines": {
+      "title": "适配基线提供背景，不能替代受控机制比较",
+      "kind": "metrics",
+      "rows": [
+        {
+          "label": "DIN 局部激活适配",
+          "budget": "短历史50；无长历史检索",
+          "seed": 42,
+          "model_id": "post-main-short-interest-v1--din_lau-seed42",
+          "split": "test",
+          "phase": "supplement",
+          "auc": 0.60229796887752,
+          "gauc": 0.5729930740336072,
+          "logloss": 0.3918869087882583
+        },
+        {
+          "label": "DIN 局部激活适配",
+          "budget": "短历史50；无长历史检索",
+          "seed": 2026,
+          "model_id": "post-main-short-interest-v1--din_lau-seed2026",
+          "split": "test",
+          "phase": "supplement",
+          "auc": 0.6018700492294625,
+          "gauc": 0.5743611350832304,
+          "logloss": 0.3936231389415948
+        },
+        {
+          "label": "DIN 局部激活适配",
+          "budget": "短历史50；无长历史检索",
+          "seed": 3407,
+          "model_id": "post-main-short-interest-v1--din_lau-seed3407",
+          "split": "test",
+          "phase": "supplement",
+          "auc": 0.6006129134912237,
+          "gauc": 0.57379878463562,
+          "logloss": 0.39219567329987837
+        },
+        {
+          "label": "短历史点积对照",
+          "budget": "短历史50；无长历史检索",
+          "seed": 42,
+          "model_id": "post-main-short-interest-v1--dot_softmax-seed42",
+          "split": "test",
+          "phase": "supplement",
+          "auc": 0.6017637693645058,
+          "gauc": 0.5731548617149677,
+          "logloss": 0.39208563526706025
+        },
+        {
+          "label": "短历史点积对照",
+          "budget": "短历史50；无长历史检索",
+          "seed": 2026,
+          "model_id": "post-main-short-interest-v1--dot_softmax-seed2026",
+          "split": "test",
+          "phase": "supplement",
+          "auc": 0.602147921101702,
+          "gauc": 0.5738015108867708,
+          "logloss": 0.39353814871275
+        },
+        {
+          "label": "短历史点积对照",
+          "budget": "短历史50；无长历史检索",
+          "seed": 3407,
+          "model_id": "post-main-short-interest-v1--dot_softmax-seed3407",
+          "split": "test",
+          "phase": "supplement",
+          "auc": 0.6012057487707234,
+          "gauc": 0.5734407637239815,
+          "logloss": 0.39209872501737564
+        },
+        {
+          "label": "SIM-hard 类目检索适配",
+          "budget": "L1000→K50；增强 ESU",
+          "seed": 42,
+          "model_id": "b1-hard-enhanced-seed42",
+          "split": "test",
+          "phase": "main",
+          "auc": 0.6124081032613861,
+          "gauc": 0.5893113940572642,
+          "logloss": 0.3902093758096755
+        },
+        {
+          "label": "SIM-hard 类目检索适配",
+          "budget": "L1000→K50；增强 ESU",
+          "seed": 2026,
+          "model_id": "b1-hard-enhanced-seed2026",
+          "split": "test",
+          "phase": "main",
+          "auc": 0.6133343452265505,
+          "gauc": 0.5894952173401663,
+          "logloss": 0.3914641830144142
+        },
+        {
+          "label": "SIM-hard 类目检索适配",
+          "budget": "L1000→K50；增强 ESU",
+          "seed": 3407,
+          "model_id": "b1-hard-enhanced-seed3407",
+          "split": "test",
+          "phase": "main",
+          "auc": 0.612863341682964,
+          "gauc": 0.5897621309822524,
+          "logloss": 0.3900743418889721
+        },
+        {
+          "label": "SIM-soft ID检索适配",
+          "budget": "L1000→K50；增强 ESU",
+          "seed": 42,
+          "model_id": "b2-soft-enhanced-seed42",
+          "split": "test",
+          "phase": "main",
+          "auc": 0.6137334280347742,
+          "gauc": 0.5896802147882089,
+          "logloss": 0.3900149373857226
+        },
+        {
+          "label": "SIM-soft ID检索适配",
+          "budget": "L1000→K50；增强 ESU",
+          "seed": 2026,
+          "model_id": "b2-soft-enhanced-seed2026",
+          "split": "test",
+          "phase": "main",
+          "auc": 0.614305494089484,
+          "gauc": 0.5908755048460811,
+          "logloss": 0.3914002527115536
+        },
+        {
+          "label": "SIM-soft ID检索适配",
+          "budget": "L1000→K50；增强 ESU",
+          "seed": 3407,
+          "model_id": "b2-soft-enhanced-seed3407",
+          "split": "test",
+          "phase": "main",
+          "auc": 0.6137249811966643,
+          "gauc": 0.5910412188147103,
+          "logloss": 0.389934391460745
+        },
+        {
+          "label": "TWIN 一致评分适配",
+          "budget": "L1000；4头各50，至多200个位置",
+          "seed": 42,
+          "model_id": "post-main-twin-extension-v1--consistent-seed42",
+          "split": "test",
+          "phase": "supplement",
+          "auc": 0.6108698464307041,
+          "gauc": 0.5802697856170838,
+          "logloss": 0.3905219104274168
+        },
+        {
+          "label": "TWIN 一致评分适配",
+          "budget": "L1000；4头各50，至多200个位置",
+          "seed": 2026,
+          "model_id": "post-main-twin-extension-v1--consistent-seed2026",
+          "split": "test",
+          "phase": "supplement",
+          "auc": 0.6109900332484247,
+          "gauc": 0.5815433055340373,
+          "logloss": 0.3921398692628218
+        },
+        {
+          "label": "TWIN 一致评分适配",
+          "budget": "L1000；4头各50，至多200个位置",
+          "seed": 3407,
+          "model_id": "post-main-twin-extension-v1--consistent-seed3407",
+          "split": "test",
+          "phase": "supplement",
+          "auc": 0.6127655338858052,
+          "gauc": 0.5806710836464111,
+          "logloss": 0.39008058191054434
+        },
+        {
+          "label": "TWIN 内容检索对照",
+          "budget": "L1000；4头共用内容Top50",
+          "seed": 42,
+          "model_id": "post-main-twin-extension-v1--content-seed42",
+          "split": "test",
+          "phase": "supplement",
+          "auc": 0.6190727202989805,
+          "gauc": 0.595797625713293,
+          "logloss": 0.3890852170145754
+        },
+        {
+          "label": "TWIN 内容检索对照",
+          "budget": "L1000；4头共用内容Top50",
+          "seed": 2026,
+          "model_id": "post-main-twin-extension-v1--content-seed2026",
+          "split": "test",
+          "phase": "supplement",
+          "auc": 0.6184449081811273,
+          "gauc": 0.5967344077907152,
+          "logloss": 0.3906815530163573
+        },
+        {
+          "label": "TWIN 内容检索对照",
+          "budget": "L1000；4头共用内容Top50",
+          "seed": 3407,
+          "model_id": "post-main-twin-extension-v1--content-seed3407",
+          "split": "test",
+          "phase": "supplement",
+          "auc": 0.6188286449090283,
+          "gauc": 0.5966557699681855,
+          "logloss": 0.38907956307502045
+        },
+        {
+          "label": "MISS 双路分离适配",
+          "budget": "L1000；ID25＋内容25，可能重叠",
+          "seed": 42,
+          "model_id": "post-main-miss-extension-v1--hybrid_separate-seed42",
+          "split": "test",
+          "phase": "supplement",
+          "auc": 0.6059414055764377,
+          "gauc": 0.5749083127321982,
+          "logloss": 0.391400829117934
+        },
+        {
+          "label": "MISS 双路分离适配",
+          "budget": "L1000；ID25＋内容25，可能重叠",
+          "seed": 2026,
+          "model_id": "post-main-miss-extension-v1--hybrid_separate-seed2026",
+          "split": "test",
+          "phase": "supplement",
+          "auc": 0.606889521002414,
+          "gauc": 0.5762490807778708,
+          "logloss": 0.39290249651797576
+        },
+        {
+          "label": "MISS 双路分离适配",
+          "budget": "L1000；ID25＋内容25，可能重叠",
+          "seed": 3407,
+          "model_id": "post-main-miss-extension-v1--hybrid_separate-seed3407",
+          "split": "test",
+          "phase": "supplement",
+          "auc": 0.6067769452330393,
+          "gauc": 0.5769120554643175,
+          "logloss": 0.3912066577289694
+        },
+        {
+          "label": "MISS 内容双路对照",
+          "budget": "L1000；内容Top50分成两路各25",
+          "seed": 42,
+          "model_id": "post-main-miss-extension-v1--content_separate-seed42",
+          "split": "test",
+          "phase": "supplement",
+          "auc": 0.6050312441712579,
+          "gauc": 0.5752736458303679,
+          "logloss": 0.39159576992027695
+        },
+        {
+          "label": "MISS 内容双路对照",
+          "budget": "L1000；内容Top50分成两路各25",
+          "seed": 2026,
+          "model_id": "post-main-miss-extension-v1--content_separate-seed2026",
+          "split": "test",
+          "phase": "supplement",
+          "auc": 0.6063305231235646,
+          "gauc": 0.5775451210708775,
+          "logloss": 0.39287916499808506
+        },
+        {
+          "label": "MISS 内容双路对照",
+          "budget": "L1000；内容Top50分成两路各25",
+          "seed": 3407,
+          "model_id": "post-main-miss-extension-v1--content_separate-seed3407",
+          "split": "test",
+          "phase": "supplement",
+          "auc": 0.6058307046557421,
+          "gauc": 0.5773593787119716,
+          "logloss": 0.3913624377578207
+        },
+        {
+          "label": "MUSE 完整适配",
+          "budget": "L1000→K50；SimTier＋SA-TA",
+          "seed": 42,
+          "model_id": "r4-l1000-seed42",
+          "split": "test",
+          "phase": "main",
+          "auc": 0.6187807533535369,
+          "gauc": 0.5942818135242868,
+          "logloss": 0.38915973713989715
+        },
+        {
+          "label": "MUSE 完整适配",
+          "budget": "L1000→K50；SimTier＋SA-TA",
+          "seed": 2026,
+          "model_id": "r4-l1000-seed2026",
+          "split": "test",
+          "phase": "main",
+          "auc": 0.6189680025445461,
+          "gauc": 0.5962604885662282,
+          "logloss": 0.3902253129269602
+        },
+        {
+          "label": "MUSE 完整适配",
+          "budget": "L1000→K50；SimTier＋SA-TA",
+          "seed": 3407,
+          "model_id": "r4-l1000-seed3407",
+          "split": "test",
+          "phase": "main",
+          "auc": 0.6186062076249936,
+          "gauc": 0.5959227104325819,
+          "logloss": 0.389150053125961
+        }
+      ],
+      "note": "同一测试集；结构与历史预算不同。包含额外内容检索对照，不是原表数值复刻或等计算量排名。"
+    },
+    "12-framework": {
+      "title": "两个项目的联系：内容信息 → 历史选择 → 兴趣聚合",
+      "kind": "diagram",
+      "rows": [],
+      "note": "概念示意，不对应一条把所有模块串联起来的实测网络；原始图文编码器属于给定前提。"
+    }
+  },
+  "seeds": [
+    42,
+    2026,
+    3407
+  ],
+  "test_rows": 923211,
+  "policy": "No new model selection, fitting or inference. Historical and test phases remain explicit."
+}
