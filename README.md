@@ -13,6 +13,8 @@
 
 [关联项目](https://github.com/IJustWannaFindMyPeace/taobao-mm-muse-repro)共享数据与评估协议；两个项目衔接的是研究问题，不是将所有模块串接成一个模型。
 
+[数据字段字典](docs/dataset-fields.md)：官方字段含义、模型输入顺序与本地索引约定。
+
 ## 完整实验与审计
 
 - [主测试结果](docs/final-test-results.md)与[追加测试结果](docs/supplementary-test-results.md)。追加测试发生在主测试已查看之后，单独标注。
