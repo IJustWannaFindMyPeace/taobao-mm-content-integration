@@ -17,7 +17,7 @@
 
 [正式抽样与划分](docs/sampling-and-splits.md)：5% 用户规则、训练/验证/测试来源与评估边界。
 
-[Vector 内容融合](docs/vector-integration.md)：论文与实现对应、零初始化、训练随机性、正式结果和分析边界。
+[Vector 内容融合](docs/vector-integration.md)：方法适配、实验协议、正式结果与结论边界。
 
 ## 完整实验与审计
 
