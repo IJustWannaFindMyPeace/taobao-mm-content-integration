@@ -1,5 +1,7 @@
 # Vector 与 SimScore 融合对照
 
+> 历史阶段记录：本页实验采用早期 1% 用户与 batch 32。Vector 的正式结构、5% 三种子测试结果及结论边界见 [Vector 内容融合](vector-integration.md)；本页待办措辞反映当时状态。
+
 ## 来源与研究问题
 
 [CIKM 2024 §4、§6.1.3](https://arxiv.org/html/2407.19467v1#S6.SS1.SSS3) 将 Vector 定义为逐商品内容与 ID 的融合，将 SimScore 定义为逐历史行为的语义相似度侧信息。论文没有给出可直接复用的完整生产网络。
