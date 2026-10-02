@@ -19,6 +19,8 @@
 
 [Vector 内容融合](docs/vector-integration.md)：方法适配、实验协议、正式结果与结论边界。
 
+[SimScore 逐行为相似度](docs/simscore-integration.md)：显式关系特征、融合结构与对照结果。
+
 ## 完整实验与审计
 
 - [主测试结果](docs/final-test-results.md)与[追加测试结果](docs/supplementary-test-results.md)。追加测试发生在主测试已查看之后，单独标注。

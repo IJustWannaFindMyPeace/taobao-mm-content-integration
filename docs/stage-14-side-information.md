@@ -1,6 +1,6 @@
 # Vector 与 SimScore 融合对照
 
-> 历史阶段记录：本页实验采用早期 1% 用户与 batch 32。Vector 的正式结构、5% 三种子测试结果及结论边界见 [Vector 内容融合](vector-integration.md)；本页待办措辞反映当时状态。
+> 历史阶段记录：本页实验采用早期 1% 用户与 batch 32。正式结构、5% 三种子测试结果及结论边界见 [Vector 内容融合](vector-integration.md)与 [SimScore 逐行为相似度](simscore-integration.md)；本页待办措辞反映当时状态。
 
 ## 来源与研究问题
 
