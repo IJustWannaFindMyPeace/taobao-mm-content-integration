@@ -23,6 +23,8 @@
 
 [SimTier 相似度统计](docs/simtier-integration.md)：分桶计数、预测层接入与分桶敏感性；三种接入方式的对照见[研究主线](docs/research-narrative.md#内容接入方式对照)。
 
+[MAKE 预训练与组合](docs/make-integration.md)：内容特征结构、四组训练策略、轮数与组合结果。
+
 ## 完整实验与审计
 
 - [主测试结果](docs/final-test-results.md)与[追加测试结果](docs/supplementary-test-results.md)。追加测试发生在主测试已查看之后，单独标注。
