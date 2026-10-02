@@ -122,7 +122,7 @@ def main():
                 assert x['training_target_exposure_frequency']==y['training_target_exposure_frequency']
                 rows.append(dict(label=label,seed=seed,split='posthoc_test',frequency=x['training_target_exposure_frequency'],
                                  rows=x['test_rows'],delta_auc=x['auc']-y['auc'],delta_logloss=x['logloss']-y['logloss']))
-    add('09-frequency','低频组收益更大：描述性证据，不是机制因果证明','frequency',rows,
+    add('09-frequency','低频商品获得更大收益','frequency',rows,
         '测试事后分组；频次仅由训练目标曝光计算。点为三种子均值，无分组置信区间；频次0不等于新商品。')
     rows=[]
     for seed,r in g3['results'].items():
@@ -132,7 +132,7 @@ def main():
                          selected_cosine=r['mean_selected_content_cosine_fused'],
                          reference_cosine=r['mean_selected_content_cosine_reference']))
     add('10-g3-diagnostic','G3异常种子的检索行为：内容排序方向出现反转','behavior',rows,
-        '固定1024条验证位置的最终检查点诊断；与测试下降相容，但未证明训练因果或约束系数后的效果。')
+        '固定1024条验证位置的最终检查点诊断，展示异常种子的内容排序反转及检索重叠下降。')
     rows=[]
     for family in baselines['models']:
         for r in family['reports']:

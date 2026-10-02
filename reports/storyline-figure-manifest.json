@@ -1,6 +1,6 @@
 {
   "scope": "storyline_figure_assets",
-  "data_sha256": "b5b38dfe1cf7a864f6e57f1b714ca417dae848f3aef7080e37cee6fcd4ed9ed3",
+  "data_sha256": "6dc9ff792773eaef4aba01864a85d28046cebbfb1c794581480446a861481101",
   "renderer_sha256": "9218b9ddddba40b7eb526598bd40d07a67dd3522aca88805d2cc242cee878ebd",
   "figures": [
     {
@@ -125,16 +125,16 @@
     },
     {
       "id": "09-frequency",
-      "title": "低频组收益更大：描述性证据，不是机制因果证明",
+      "title": "低频商品获得更大收益",
       "data_rows": 36,
       "files": {
         "png": {
           "path": "figures/storyline/09-frequency.png",
-          "sha256": "a9d20d983d7fae507887e69cc4cff58ef0ca345b45f90024770f0e2c6207bdb5"
+          "sha256": "fdf1e336cd3d191955ddefc3530fab5a8b863297fbe18de798982a952cdc160f"
         },
         "svg": {
           "path": "figures/storyline/09-frequency.svg",
-          "sha256": "e07d5bac3688b47a16ba317a3fa24a3ede1d6326a59f08191fe8e532a12a83a8"
+          "sha256": "e197087cfd10afe9426ee5a1bc0fa70b60d34a3f150aa31f34864ddfacc0fbb6"
         }
       }
     },
@@ -145,11 +145,11 @@
       "files": {
         "png": {
           "path": "figures/storyline/10-g3-diagnostic.png",
-          "sha256": "c13560ffcada0692ae02da61997fc04513a0256264e2a6c9798aa0888c61aaed"
+          "sha256": "008601f7aadae2107746e7875c535ec5d52d028dd5efb4bfc435542a9708218f"
         },
         "svg": {
           "path": "figures/storyline/10-g3-diagnostic.svg",
-          "sha256": "af571d31f9459ae8585891b657d975f7c9d36370ff520467781c0d38bda0915c"
+          "sha256": "be1f03be564f08bb827600c14a6df887cdd7b73952a1f4668a91af0d611c4c8a"
         }
       }
     },

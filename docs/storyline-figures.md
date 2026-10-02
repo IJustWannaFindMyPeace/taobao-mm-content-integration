@@ -66,17 +66,17 @@
 
 ![复杂检索没有稳定优势，必须展示失败种子](../figures/storyline/08-learned-retrieval.png)
 
-## 低频组收益更大：描述性证据，不是机制因果证明
+## 低频商品获得更大收益
 
 测试事后分组；频次仅由训练目标曝光计算。点为三种子均值，无分组置信区间；频次0不等于新商品。
 
 [PNG](../figures/storyline/09-frequency.png) · [SVG](../figures/storyline/09-frequency.svg)
 
-![低频组收益更大：描述性证据，不是机制因果证明](../figures/storyline/09-frequency.png)
+![低频商品获得更大收益](../figures/storyline/09-frequency.png)
 
 ## G3异常种子的检索行为：内容排序方向出现反转
 
-固定1024条验证位置的最终检查点诊断；与测试下降相容，但未证明训练因果或约束系数后的效果。
+固定1024条验证位置的最终检查点诊断，展示异常种子的内容排序反转及检索重叠下降。
 
 [PNG](../figures/storyline/10-g3-diagnostic.png) · [SVG](../figures/storyline/10-g3-diagnostic.svg)
 
