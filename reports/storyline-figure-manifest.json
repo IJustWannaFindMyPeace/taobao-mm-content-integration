@@ -1,20 +1,20 @@
 {
   "scope": "storyline_figure_assets",
   "data_sha256": "6dc9ff792773eaef4aba01864a85d28046cebbfb1c794581480446a861481101",
-  "renderer_sha256": "9218b9ddddba40b7eb526598bd40d07a67dd3522aca88805d2cc242cee878ebd",
+  "renderer_sha256": "428605335fda9f8d52d9ede3ff52ed5e70a63d02cb601ca035ade68f21f14348",
   "figures": [
     {
       "id": "01-content",
-      "title": "内容信息有用，最佳接入方式依赖指标",
+      "title": "多模态信息有用，最佳接入方式依赖指标",
       "data_rows": 18,
       "files": {
         "png": {
           "path": "figures/storyline/01-content.png",
-          "sha256": "d9a2de27439ff5f73b077cea60720a067f077a93d9aa3150595442380cf91602"
+          "sha256": "e9fc817641facdaea993f00c3a469ed03ee6a692d3eb987502027809181d100e"
         },
         "svg": {
           "path": "figures/storyline/01-content.svg",
-          "sha256": "4ab819582851ba5af2bfd7c0aa91190bca6bc5b7cae889ede9e4b3bd2af1549d"
+          "sha256": "1089bb904c756761552925df33862c1955ab608a9064a375b72359914640ae58"
         }
       }
     },
@@ -25,26 +25,26 @@
       "files": {
         "png": {
           "path": "figures/storyline/02-make-strategy.png",
-          "sha256": "f4c7db3928a8811ef4060497dc3705834f0bd0e2992f01953d2b8efdf14591fd"
+          "sha256": "d13e6ca5009e8474a2a180350ab8bb8e325e0c178fd448a84e8c86eb22270ea6"
         },
         "svg": {
           "path": "figures/storyline/02-make-strategy.svg",
-          "sha256": "5518b3d927662bcff2c9d5d5708ba04211ae9e7254a647827064323554857389"
+          "sha256": "e1108e5daaca3f0f4da91e769213ebb045b668958a0aa7c3afa610b1333247d3"
         }
       }
     },
     {
       "id": "03-training",
-      "title": "训练诊断：ID泛化退步，内容分支具有不同的学习曲线",
+      "title": "训练诊断：ID泛化退步，多模态分支具有不同的学习曲线",
       "data_rows": 18,
       "files": {
         "png": {
           "path": "figures/storyline/03-training.png",
-          "sha256": "c3a7cf44eff5051be5321b182238869d87728373dc1d2fa9037b0ab9bcbcfcfb"
+          "sha256": "24d0a6f5dac3d9be1188532c99d42209eb1a1b7cec2485f29dd4f4388fb3ccaf"
         },
         "svg": {
           "path": "figures/storyline/03-training.svg",
-          "sha256": "0d7f30e634ecd05ded7316c3939f3eac65acd9256884e5d7050186f5f268b67a"
+          "sha256": "764c769d671ca733fbd43d41a556009ae85cdd0c640960be74bd383b7c5449c4"
         }
       }
     },
@@ -55,26 +55,26 @@
       "files": {
         "png": {
           "path": "figures/storyline/04-pretraining-epochs.png",
-          "sha256": "a286d4e328c0539ac87e8293dfd608b52db6f2ab194326665fb35248e74fa272"
+          "sha256": "24c34771cb1e72d4231353cf96e427df139333ca069461ff962466487d917f69"
         },
         "svg": {
           "path": "figures/storyline/04-pretraining-epochs.svg",
-          "sha256": "6b5c83553448433011404f0c127111c6ec14f81e256ed1254e27fc69470a9a97"
+          "sha256": "c37974572ea14b09697282570a924feca9be4905936cd7a42643f7c7ffc7a966"
         }
       }
     },
     {
       "id": "05-retrieval",
-      "title": "相同聚合结构下，内容检索优于本地ID与类目检索",
+      "title": "相同聚合结构下，多模态检索优于本地ID与类目检索",
       "data_rows": 15,
       "files": {
         "png": {
           "path": "figures/storyline/05-retrieval.png",
-          "sha256": "4ad3715fc41235ee40bec61a4ce0d30108e802e943c41e53412cc3d0bc676f9b"
+          "sha256": "bd5edb43e4c7dac564523473d6c104d7e32600a7d15630f26a494e0f87cf21eb"
         },
         "svg": {
           "path": "figures/storyline/05-retrieval.svg",
-          "sha256": "eaaf4f09f274fe1ec648c911c1399610afc2f03b6149fd6f0a805f12164f5b07"
+          "sha256": "a55ee0577586f4925c6e5f12304f7a3ee5df1f107b0a2d391c83cf8156d8e57f"
         }
       }
     },
@@ -85,11 +85,11 @@
       "files": {
         "png": {
           "path": "figures/storyline/06-aggregation.png",
-          "sha256": "203277fa6085ed3fb3143a200373c34cd2870b2cac604aaaf8fd876420094dcb"
+          "sha256": "b55b04d4803955cf652208d3f335b2b3bc397fc84464b33b07371485eda58f49"
         },
         "svg": {
           "path": "figures/storyline/06-aggregation.svg",
-          "sha256": "529a59995c5f780963b2aed17dce0a1be9610d163053116941ff465e80d40edd"
+          "sha256": "09baa58114cae1abb7cabeb61dddc3375b34f6a4144216992c47bdb255e0c169"
         }
       }
     },
@@ -100,11 +100,11 @@
       "files": {
         "png": {
           "path": "figures/storyline/07-history-length.png",
-          "sha256": "9fe78d1c6e6653c3e7a244c95f9f74678c3559c8c2b8fa22ce5e26549996094b"
+          "sha256": "a6be17f74b968b72a98ae56d347b7a49d716c9cb0a77bc8391e50f5732419a2d"
         },
         "svg": {
           "path": "figures/storyline/07-history-length.svg",
-          "sha256": "3e6962838f46828cc9dc88cee93c68e4e4c4f1f7f28658804ca728c318b2ad99"
+          "sha256": "6f5b9adce1416e6ed26d7f3d9ad2b708344895a3cdea317587405ce01ac66f67"
         }
       }
     },
@@ -115,11 +115,11 @@
       "files": {
         "png": {
           "path": "figures/storyline/08-learned-retrieval.png",
-          "sha256": "407fbb8f3d7b649a180636f53160cadfccec6990b03bd12e6359e3a6b3b2e50e"
+          "sha256": "9b5ba1b9d298758134efea72c609543019d79b02b047a23720b28da4e954f756"
         },
         "svg": {
           "path": "figures/storyline/08-learned-retrieval.svg",
-          "sha256": "dddd7cc05df74aa574951ec2707ed47e62987a2d218de12f8f7184328cc155c7"
+          "sha256": "bdf95cf715df69271c4bef4895eb881ba1bf5436ce868aa9f3851da5c3a3491b"
         }
       }
     },
@@ -130,26 +130,26 @@
       "files": {
         "png": {
           "path": "figures/storyline/09-frequency.png",
-          "sha256": "fdf1e336cd3d191955ddefc3530fab5a8b863297fbe18de798982a952cdc160f"
+          "sha256": "2a98fe8a6ca5fcac4c1b23a8d0629000f38d0ba3bf93f8e1b4206d7322a43223"
         },
         "svg": {
           "path": "figures/storyline/09-frequency.svg",
-          "sha256": "e197087cfd10afe9426ee5a1bc0fa70b60d34a3f150aa31f34864ddfacc0fbb6"
+          "sha256": "f01ef8fbf28eeb3a52d04aa52b3c2a492d0ab6bcad6b1e6853aec90522ff1967"
         }
       }
     },
     {
       "id": "10-g3-diagnostic",
-      "title": "G3异常种子的检索行为：内容排序方向出现反转",
+      "title": "G3异常种子的检索行为：语义相似度排序方向出现反转",
       "data_rows": 3,
       "files": {
         "png": {
           "path": "figures/storyline/10-g3-diagnostic.png",
-          "sha256": "008601f7aadae2107746e7875c535ec5d52d028dd5efb4bfc435542a9708218f"
+          "sha256": "f7c4f280a84049fe156053e29e129ec72849a01ccc9711366987c2cfa78a56fe"
         },
         "svg": {
           "path": "figures/storyline/10-g3-diagnostic.svg",
-          "sha256": "be1f03be564f08bb827600c14a6df887cdd7b73952a1f4668a91af0d611c4c8a"
+          "sha256": "5976e81df85e5051b9ccb30b3570ec009b77dd296fb62c51bc73f2e4ccfd2bda"
         }
       }
     },
@@ -160,26 +160,26 @@
       "files": {
         "png": {
           "path": "figures/storyline/11-baselines.png",
-          "sha256": "a9a7597ce537e8704fcc308c28bb8043068b08cd4325164fc094b59e6c7b4d88"
+          "sha256": "720a30ca98660f190827a7b966bbdf42944f8d4fab4245a507116fab07681506"
         },
         "svg": {
           "path": "figures/storyline/11-baselines.svg",
-          "sha256": "7626bfddfe3c48973603df63d076351ccac26b578381060d394cbaad06058be6"
+          "sha256": "9e6cf96ed03557c38ff24cc0149dac543307dc42afda2fb94aafb7063e240c93"
         }
       }
     },
     {
       "id": "12-framework",
-      "title": "两个项目的联系：内容信息 → 历史选择 → 兴趣聚合",
+      "title": "两个项目的联系：多模态信息 → 历史选择 → 兴趣聚合",
       "data_rows": 0,
       "files": {
         "png": {
           "path": "figures/storyline/12-framework.png",
-          "sha256": "6ca5bc8d8f1603d180d0e7e2f88fbc6e40f391b3381ba42726cad25e6255d6b9"
+          "sha256": "7232f73d7542b88becc547f330a280037a6dbd0b62209b88e6bf7b189c07e9b7"
         },
         "svg": {
           "path": "figures/storyline/12-framework.svg",
-          "sha256": "bc3f8813f5f625a9e2e2c82e726d23ccdc3d1eff459e32f9cd9774edaaaa2530"
+          "sha256": "2413150aee302b45c54b21f3648e9c38fbb2a97512e7183f7c46f57be9a1dedc"
         }
       }
     }

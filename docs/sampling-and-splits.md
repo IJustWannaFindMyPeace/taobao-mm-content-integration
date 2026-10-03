@@ -4,7 +4,7 @@
 
 ## 抽样与划分规则
 
-数据固定于 revision `f185841b6e9612edd06f5112e06416f1bdf6c6d0`。实现依据为内容集成项目的 [user_split.py](https://github.com/IJustWannaFindMyPeace/taobao-mm-content-integration/blob/main/src/user_split.py) 与 [select_exposures.py](https://github.com/IJustWannaFindMyPeace/taobao-mm-content-integration/blob/main/scripts/select_exposures.py)。
+数据固定于 revision `f185841b6e9612edd06f5112e06416f1bdf6c6d0`。实现依据为多模态表示集成项目的 [user_split.py](https://github.com/IJustWannaFindMyPeace/taobao-mm-content-integration/blob/main/src/user_split.py) 与 [select_exposures.py](https://github.com/IJustWannaFindMyPeace/taobao-mm-content-integration/blob/main/scripts/select_exposures.py)。
 
 1. 对用户 ID 的 64 位位模式使用固定 SplitMix64 混合，种子为 42。`mix64(user_id, 42) % 1000 < 50` 时入选。
 2. 对入选用户使用种子 2026 的另一组混合：`mix64(user_id, 2026) % 5 == 0` 标记为验证用户，名义比例为入选用户的 20%。
@@ -34,7 +34,7 @@
 
 ## 评估含义与边界
 
-- 验证用户与训练用户互斥，且用户 ID 词表只由训练数据建立，因此验证用户 ID 为 OOV；属性、历史商品与内容不一定未知。
+- 验证用户与训练用户互斥，且用户 ID 词表只由训练数据建立，因此验证用户 ID 为 OOV；属性、历史商品与多模态表示不一定未知。
 - 训练与测试用户允许重叠，测试也可能出现训练未见用户。官方 train/test 边界保留；本地用户互斥验证不是时间验证，不能将三者统称为用户完全互斥。
 - 保留用户在对应源表中的曝光有利于完整计算用户内 GAUC，但不代表获取了平台上该用户的全部终身行为。
 - 用户抽样不刻意固定商品热度分组比例。固定队列便于公平比较，但不证明所有分组具有足够样本或结论可外推全量。

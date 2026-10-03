@@ -1,4 +1,4 @@
-# 阶段 7 · 专用环境与历史、内容提取
+# 阶段 7 · 专用环境与历史、多模态表示提取
 
 ## 专用环境
 
@@ -23,20 +23,20 @@ python -m unittest discover -s tests -v
 
 输出按用户保存一条历史，尚未将历史按曝光重复展开。训练和验证共用训练历史来源，测试使用独立测试历史来源。
 
-## 内容提取规则
+## 多模态表示提取规则
 
 所需商品为三份曝光集合的目标商品与选中用户完整历史商品的并集，排除 padding ID 0。对固定 SCL int8 表完整扫描，保留所需向量，校验选中商品键唯一、向量等长且无空元素。保留量化格式；参考代码解量化因子为 1/127。
 
-提取所需内容可以覆盖验证和测试商品，但可训练 ID 词表仍仅使用训练划分构建。内容缺失不能作为 padding 删除；缺失策略须在正式模型接口中统一。
+提取所需多模态表示可以覆盖验证和测试商品，但可训练 ID 词表仍仅使用训练划分构建。多模态表示缺失不能作为 padding 删除；缺失策略须在正式模型接口中统一。
 
 ```powershell
 python scripts/extract_histories.py --manifest reports/source-manifest.json --source-dir ../taobao-mm-source --cohort-dir ../user-cohort-v1-010 --cohort-report reports/user-cohort-010.json --output-dir ../user-cohort-v1-010-histories --report reports/history-extraction-010.json
 python scripts/extract_content.py --source ../taobao-mm-source/raw/scl_embedding_int8_p90.parquet --manifest reports/source-manifest.json --cohort-dir ../user-cohort-v1-010 --cohort-report reports/user-cohort-010.json --history-dir ../user-cohort-v1-010-histories --history-report reports/history-extraction-010.json --output-dir ../user-cohort-v1-010-content --report reports/content-extraction-010.json
 ```
 
-命令中的数据目录为示例路径，运行时通过参数指定。正式公共数据加载、训练词表、缺失内容处理与模型消融尚未完成。
+命令中的数据目录为示例路径，运行时通过参数指定。正式公共数据加载、训练词表、缺失多模态表示处理与模型消融尚未完成。
 
-## 内容提取结果与限制
+## 多模态表示提取结果与限制
 
 完整扫描 35,458,467 条 SCL 记录。当前用户历史与目标共请求 19,986,863 个非零商品 ID，匹配 13,792,739 个，缺失 6,194,124 个；去重商品覆盖率为 69.01%。提取向量均为 128 维 int8，无全零向量。
 
@@ -46,9 +46,9 @@ python scripts/extract_content.py --source ../taobao-mm-source/raw/scl_embedding
 |验证|151,946 / 151,947|1|
 |测试|185,247 / 185,253|6|
 
-内容提取峰值工作集约 2.26 GiB，约 139 秒。见 [内容报告](../reports/content-extraction-010.json)。69.01% 为历史与目标合并后的去重商品覆盖，不是历史行为加权覆盖；不能据此断言 30.99% 的历史行为缺内容。近乎完整的目标覆盖也不等于完全覆盖。
+多模态表示提取峰值工作集约 2.26 GiB，约 139 秒。见 [多模态表示报告](../reports/content-extraction-010.json)。69.01% 为历史与目标合并后的去重商品覆盖，不是历史行为加权覆盖；不能据此断言 30.99% 的历史行为缺多模态表示。近乎完整的目标覆盖也不等于完全覆盖。
 
-官方 p90 的历史覆盖口径与此处去重商品口径不同；目标缺失与官方目标全覆盖声明存在差异，需独立核验。评估保留全部曝光，内容缺失使用独立标记。当前已准备好特征子表，正式输入接口与训练词表尚未冻结。
+官方 p90 的历史覆盖口径与此处去重商品口径不同；目标缺失与官方目标全覆盖声明存在差异，需独立核验。评估保留全部曝光，多模态表示缺失使用独立标记。当前已准备好特征子表，正式输入接口与训练词表尚未冻结。
 
 
 官方定义、实测口径及差异见[数据集说明与覆盖核验](dataset-contract.md)。

@@ -33,7 +33,7 @@ python scripts/prepare_probe.py --manifest reports/source-manifest.json --output
 
 ## 局限与下一步
 
-这是按文件大小选的工程分片，有选择偏差；同用户可能在其他分片还有曝光。它不是之前设计的完整用户评估子集，没有validation/test划分，不适合正式比较方法收益。内容表未提取，不能立即运行SimTier/MAKE。
+这是按文件大小选的工程分片，有选择偏差；同用户可能在其他分片还有曝光。它不是之前设计的完整用户评估子集，没有validation/test划分，不适合正式比较方法收益。多模态向量表未提取，不能立即运行SimTier/MAKE。
 
 下一步用这些真实行完成ID映射与mask，跑C0工程训练；同时确定正式用户子集与验证规则。以后再提取所需SCL向量，不把全量35M商品向量装进GPU。
 

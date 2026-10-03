@@ -32,7 +32,7 @@ python scripts/select_exposures.py --source-dir ../taobao-mm-source --manifest r
 
 抽样函数通过固定参考值、正负 ID、用户组互斥、跨批次及逆序一致性测试。完整扫描行数必须等于 Parquet 元数据行数；报告保留输入与输出哈希。
 
-此产物仅冻结曝光集合。历史与商品特征连接、连接基数检查、内容覆盖和训练词表尚未完成，不能据此启动正式模型比较。最终完整数据 manifest 将在上述检查通过后发布。
+此产物仅冻结曝光集合。历史与商品特征连接、连接基数检查、多模态表示覆盖和训练词表尚未完成，不能据此启动正式模型比较。最终完整数据 manifest 将在上述检查通过后发布。
 
 ## 数据产物
 
@@ -44,4 +44,4 @@ python scripts/select_exposures.py --source-dir ../taobao-mm-source --manifest r
 |验证|15,472|1,404|
 |测试|18,571|1,679|
 
-实际验证通过：源行号无重复且递增，验证用户与训练、测试用户均无交集。统计及文件指纹见 [user-cohort.json](../reports/user-cohort.json)。这些是曝光子集规模，尚未完成历史与内容连接。
+实际验证通过：源行号无重复且递增，验证用户与训练、测试用户均无交集。统计及文件指纹见 [user-cohort.json](../reports/user-cohort.json)。这些是曝光子集规模，尚未完成历史与多模态表示连接。

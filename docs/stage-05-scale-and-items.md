@@ -20,7 +20,7 @@
 
 对 1% 子集关联原始 item_features 表中的 206、213、214 字段。关联键 205 要求全表非空且唯一；目标缺失属性时明确报错，不静默丢弃曝光。按目标索引查表，保留曝光顺序和重复曝光。
 
-训练、验证、测试目标属性覆盖均为 100%，关联后行数与源行号顺序不变。见 [关联报告](../reports/item-join-010.json)。这不代表历史商品内容向量覆盖率为 100%。
+训练、验证、测试目标属性覆盖均为 100%，关联后行数与源行号顺序不变。见 [关联报告](../reports/item-join-010.json)。这不代表历史商品多模态向量覆盖率为 100%。
 
 ```powershell
 python scripts/select_exposures.py --source-dir ../taobao-mm-source --manifest reports/source-manifest.json --output-dir ../user-cohort-v1-010 --report reports/user-cohort-010.json --buckets 10
@@ -35,4 +35,4 @@ python scripts/attach_items.py --items ../taobao-mm-source/raw/item_features.par
 
 ## 验证与状态
 
-14 项测试通过，新增嵌套抽样、重复曝光保持、重复/缺失商品键拒绝测试。当前已完成曝光扩容和目标属性关联；用户历史、SCL 内容、训练词表和正式训练仍待完成。
+14 项测试通过，新增嵌套抽样、重复曝光保持、重复/缺失商品键拒绝测试。当前已完成曝光扩容和目标属性关联；用户历史、SCL 多模态表示、训练词表和正式训练仍待完成。
