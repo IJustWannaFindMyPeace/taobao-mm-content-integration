@@ -27,6 +27,8 @@
 
 ## 完整实验与审计
 
+- [第一个项目收尾审计](docs/content-project-closeout-audit.md)：论文、实现、正式结果及展示材料的交叉核验。
+
 - [主测试结果](docs/final-test-results.md)与[追加测试结果](docs/supplementary-test-results.md)。追加测试发生在主测试已查看之后，单独标注。
 - [当前覆盖范围](docs/current-reproduction-status.md)、[整体实验审计](docs/cross-project-completion-audit.md)与[叙事及展示就绪审计](docs/narrative-readiness-audit.md)。
 - [全部追加配对表](docs/supplementary-test-comparisons.md)、[公共下游配置](configs/shared-downstream-protocol-v1.json)与[执行协议](docs/supplementary-test-protocol.md)。

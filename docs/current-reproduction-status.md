@@ -1,5 +1,7 @@
 # 两论文复现：当前覆盖与故事线
 
+第一个项目的当前收尾结论见[2026-10-03审计](content-project-closeout-audit.md)；以下2026-09-25日期对应统一实验完成节点。
+
 正文入口已整理为[研究叙事](research-narrative.md)，配套[论文对照与分析](paper-comparison-and-analysis.md)、[展示计划](presentation-plan.md)和[图表](storyline-figures.md)。本页保留阅读与状态索引。
 
 
