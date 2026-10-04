@@ -8,7 +8,7 @@ Vector 检验固定商品多模态表示对 ID 推荐模型的增量价值。[CI
 
 `x_fused = x_ID + W · normalize(c)`
 
-目标与历史共享投影参数，融合表示同时参与注意力匹配与历史聚合。投影零初始化，在公共参数与输入相同时保持初始基线预测。多模态表示缺失时保留 ID 表示；padding 不参与聚合。实现见 [side_information.py](../src/side_information.py) 与 [c0.py](../src/c0.py)。
+目标与历史共享投影参数，融合表示同时参与注意力匹配与历史聚合。投影零初始化，在公共参数与输入相同时保持初始基线预测。多模态表示缺失时保留商品 ID 与类目 embeddings 的拼接向量；padding 不参与聚合。实现见 [side_information.py](../src/side_information.py) 与 [c0.py](../src/c0.py)。
 
 该设计等价于对拼接输入施加 `[I, W]` 投影，保持公共主干维度，但比一般可学习拼接投影约束更强，属于本地适配。
 
