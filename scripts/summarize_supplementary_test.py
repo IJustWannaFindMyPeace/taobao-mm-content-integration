@@ -132,7 +132,7 @@ def main():
     for root in roots.values():
         (root / 'reports/supplementary-test-summary.json').write_text(json.dumps(summary, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
         (root / 'reports/supplementary-test-freeze-public.json').write_text(json.dumps(public_freeze, ensure_ascii=False, indent=2) + '\n', encoding='utf-8')
-        (root / 'reports/supplementary-test-models.csv').write_text(csv_buffer.getvalue(), encoding='utf-8')
+        (root / 'reports/supplementary-test-models.csv').write_text(csv_buffer.getvalue(), encoding='utf-8', newline='')
         (root / 'docs/supplementary-test-comparisons.md').write_text('\n'.join(table) + '\n', encoding='utf-8')
     print(json.dumps(summary['checks']))
     print('Validation-to-test interval-direction changes:')

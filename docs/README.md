@@ -39,6 +39,8 @@
 
 ## 审计与历史记录
 
+- [仓库一致性检查 · 2026-10-11](repository-audit-2026-10-11.md)
+
 <details>
 <summary>展开协议演进、阶段实验与审计记录</summary>
 

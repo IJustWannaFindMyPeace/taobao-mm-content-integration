@@ -35,7 +35,7 @@
 - 五种多模态接入方案的 GAUC 均高于 ID 基线，三个种子的用户配对区间均为正。
 - 显式相似度特征取得最高平均 GAUC；SimTier＋MAKE 取得最高平均 AUC。直接向量融合的 LogLoss 略差于基线，排序收益与概率预测质量需要分别评价。
 - MAKE 的追加策略对照中，预训练后联合更新较随机初始化后联合训练，平均 GAUC 绝对增加 0.00404；持续增加预训练轮数未带来稳定收益。
-- SimTier＋MAKE 的平均指标优于单模块，但额外 GAUC 收益并非在所有种子上都明确。
+- SimTier＋MAKE 的平均 AUC、GAUC 高于单模块，但 LogLoss 未优于单独 MAKE，额外 GAUC 收益也并非在所有种子上都明确。
 
 [完整主测试结果](docs/final-test-results.md) · [训练策略及补充结果](docs/supplementary-test-results.md) · [结果分析](docs/research-narrative.md)
 
@@ -67,7 +67,7 @@
 |[`reports/`](reports/)|逐种子指标、配对比较与产物摘要|
 |[`tests/`](tests/)|数据、模型与评估逻辑检查|
 
-Python 环境声明见 [`environment.yml`](environment.yml)，Windows/CUDA 依赖快照见 [`requirements-win-cu132.txt`](requirements-win-cu132.txt)。数据从 [TAOBAO-MM 官方入口](https://taobao-mm.github.io/)获取，原始数据、特征存储及模型权重不包含在仓库中。
+基础 Python 环境声明见 [`environment.yml`](environment.yml)，Windows/CUDA 依赖快照见 [`requirements-win-cu132.txt`](requirements-win-cu132.txt)。`environment.yml` 仅创建 Python 与 pip 环境，训练依赖需另行安装；Windows/CUDA 环境可使用 `python -m pip install -r requirements-win-cu132.txt`。数据从 [TAOBAO-MM 官方入口](https://taobao-mm.github.io/)获取，原始数据、特征存储及模型权重不包含在仓库中。
 
 运行顺序为：准备数据与划分 → 构建特征存储 → 按配置训练 → 验证选点 → 独立测试评估。训练脚本通过 `--store`、`--config`、`--output-dir` 指定输入与输出；SimTier 和 MAKE 还分别需要统计缓存及预训练权重。实验调度脚本含数据摘要校验，重建数据后需使用与本地数据一致的配置。
 
