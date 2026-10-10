@@ -1,5 +1,7 @@
 # MAKE 固定轮数：三种子结果
 
+> 文档性质：阶段记录／历史协议。本文中的规模、配置、验证结果及待办状态属于记录时点；当前结果以[主测试](final-test-results.md)、[补充测试](supplementary-test-results.md)和[覆盖说明](current-reproduction-status.md)为准。
+
 > 本文保留原验证阶段分析；对应最终下游模型的追加测试已归档，参见[统一追加测试结果](supplementary-test-results.md)。过程诊断不自动变成测试证据。
 
 

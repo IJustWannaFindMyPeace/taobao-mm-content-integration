@@ -1,4 +1,4 @@
-# 方法覆盖与复现边界
+# 方法来源、实现差异与覆盖范围
 
 > 当前覆盖状态以[整体收尾审计](cross-project-completion-audit.md)及[统一追加测试](supplementary-test-results.md)为准。主实验54份模型、66项比较与追加73份检查点、93项比较均已完成。下表保留原论文定位及适配边界。
 
@@ -70,11 +70,11 @@ MUSE正文还提及MIMN、UBR4CTR、ETA、SDIM、AlignRec、QARM等，列为背�
 
 ### A2：逐商品融合
 
-C2采用逐商品拼接多模态表示与ID/类目，再做历史建模；池化拼接如保留，另叫Vector-pooled-extension。SimScore主C7使用r_i及有效标记作为逐行为侧信息进入匹配网络，具体宽度为本地适配。不能把SimScore替换成平均余弦而不说明。
+C2（Vector）将归一化后的128维多模态表示经无偏置线性层映射为32维，再与目标及历史的商品ID／类目表示逐元素相加，然后进行目标注意力聚合。原论文使用拼接侧信息，本项目的相加结构用于保持公共主干宽度。C7（SimScore）将每条历史的余弦相似度与有效标志组成2维输入，线性映射为32维后加入历史表示，目标表示不变。两个接入层均零初始化，SCL向量固定；实现见 `src/side_information.py`。
 
 ### A3：优化器配置差异
 
-main.py使用AdamW(fused=True)和SparseAdam；论文§7.1.2写Adam。源码默认weight_decay等也须锁定，不只记录学习率。实施主协议优先使用经实测的MUSE-code配置，另列paper-described；不把两套混写。稀疏梯度不保证优化器状态按访问行节省显存。
+上游参考实现的 main.py 使用 AdamW(fused=True) 和 SparseAdam，论文§7.1.2描述 Adam。本项目下游训练入口对稠密参数使用 AdamW、embedding 使用 SparseAdam，主协议两者学习率均为0.001，weight_decay为0；本地调用未显式设置 fused=True。上游与本地实现分别记录，不能将参考代码默认项当作本地实测配置。
 
 ### A4：可学习检索器的梯度路径
 

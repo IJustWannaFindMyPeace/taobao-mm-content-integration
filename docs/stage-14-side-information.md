@@ -1,5 +1,7 @@
 # Vector 与 SimScore 融合对照
 
+> 文档性质：阶段记录／历史协议。本文中的规模、配置、验证结果及待办状态属于记录时点；当前结果以[主测试](final-test-results.md)、[补充测试](supplementary-test-results.md)和[覆盖说明](current-reproduction-status.md)为准。
+
 > 历史阶段记录：本页实验采用早期 1% 用户与 batch 32。正式结构、5% 三种子测试结果及结论边界见 [Vector 多模态融合](vector-integration.md)与 [SimScore 逐行为相似度](simscore-integration.md)；本页待办措辞反映当时状态。
 
 ## 来源与研究问题

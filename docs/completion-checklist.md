@@ -1,5 +1,7 @@
 # 主实验证据清单（历史归档）
 
+> 文档性质：阶段记录／历史协议。本文中的规模、配置、验证结果及待办状态属于记录时点；当前结果以[主测试](final-test-results.md)、[补充测试](supplementary-test-results.md)和[覆盖说明](current-reproduction-status.md)为准。
+
 > 本页保留主实验完成时的状态；其中未覆盖、单种子及验证阶段描述不代表当前范围。当前结论见[研究叙事](research-narrative.md)、[追加测试结果](supplementary-test-results.md)及[收尾审计](content-project-closeout-audit.md)。
 
 本清单更新共同协议确定后的状态；旧阶段报告保留历史时点，不能用其“待实现”判断最新进度。共同数据为 5% 用户队列，下游 batch=256、两类学习率 0.001、单轮主比较。

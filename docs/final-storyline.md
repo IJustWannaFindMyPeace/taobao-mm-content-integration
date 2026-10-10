@@ -1,5 +1,7 @@
 # 主实验阶段故事线（历史归档）
 
+> 文档性质：阶段记录／历史协议。本文中的规模、配置、验证结果及待办状态属于记录时点；当前结果以[主测试](final-test-results.md)、[补充测试](supplementary-test-results.md)和[覆盖说明](current-reproduction-status.md)为准。
+
 > 本文为主测试阶段的历史快照，保留当时的范围与结论，不作为当前完成状态。最新正文见[研究叙事](research-narrative.md)，追加证据见[追加测试结果](supplementary-test-results.md)，第一个项目收尾核验见[收尾审计](content-project-closeout-audit.md)。
 
 本研究完成了两篇论文在公开 TAOBAO-MM 固定多模态向量上的下游适配实验：共同 5% 用户队列、三个训练种子、54 个冻结模型、完整保留测试集和 66 项配对比较。它回答多模态表示如何用于推荐，以及如何进一步用于选择和聚合长历史；不声称完整复刻两篇论文的工业系统或全部基准。

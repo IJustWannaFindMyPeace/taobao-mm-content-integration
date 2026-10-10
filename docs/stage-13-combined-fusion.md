@@ -1,5 +1,7 @@
 # SimTier 与 MAKE 的互补性对照
 
+> 文档性质：阶段记录／历史协议。本文中的规模、配置、验证结果及待办状态属于记录时点；当前结果以[主测试](final-test-results.md)、[补充测试](supplementary-test-results.md)和[覆盖说明](current-reproduction-status.md)为准。
+
 > 历史阶段记录：当前方法、三种子测试及方案定义见 [MAKE预训练与组合](make-integration.md)。本页早期设置、验证结果与当时待办不替代正式结论；零轮须区分随机冻结与随机联合。
 
 ## 研究问题与控制变量

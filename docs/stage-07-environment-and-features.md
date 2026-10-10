@@ -1,5 +1,7 @@
 # 阶段 7 · 专用环境与历史、多模态表示提取
 
+> 文档性质：阶段记录／历史协议。本文中的规模、配置、验证结果及待办状态属于记录时点；当前结果以[主测试](final-test-results.md)、[补充测试](supplementary-test-results.md)和[覆盖说明](current-reproduction-status.md)为准。
+
 ## 专用环境
 
 运行环境为独立 Conda 环境，Python 3.11.15。环境定义与依赖快照见下方安装入口。

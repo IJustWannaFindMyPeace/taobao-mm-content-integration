@@ -1,5 +1,7 @@
 # 阶段 10 · SimTier 多模态融合对照
 
+> 文档性质：阶段记录／历史协议。本文中的规模、配置、验证结果及待办状态属于记录时点；当前结果以[主测试](final-test-results.md)、[补充测试](supplementary-test-results.md)和[覆盖说明](current-reproduction-status.md)为准。
+
 > 早期验证阶段记录。正式方法说明与三种子测试结果见 [SimTier 相似度统计](simtier-integration.md)；本页 batch 32 等设置不代表最终公共协议。
 
 ## 研究问题

@@ -1,5 +1,7 @@
 # 本轮复现补充：收尾核验
 
+> 文档性质：阶段记录／历史协议。本文中的规模、配置、验证结果及待办状态属于记录时点；当前结果以[主测试](final-test-results.md)、[补充测试](supplementary-test-results.md)和[覆盖说明](current-reproduction-status.md)为准。
+
 > 历史阶段记录。后续统一追加测试已完成，当前证据与完成范围见[追加测试结果](supplementary-test-results.md)。
 
 

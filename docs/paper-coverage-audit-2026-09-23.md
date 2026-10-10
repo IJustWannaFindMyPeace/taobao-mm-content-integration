@@ -1,5 +1,7 @@
 # 论文覆盖审计：2026-09-23
 
+> 文档性质：阶段记录／历史协议。本文中的规模、配置、验证结果及待办状态属于记录时点；当前结果以[主测试](final-test-results.md)、[补充测试](supplementary-test-results.md)和[覆盖说明](current-reproduction-status.md)为准。
+
 当前进展请见[当前复现状态](current-reproduction-status.md)。本页表格保留审计发现时点，不作为待办实时列表。
 
 ## 结论

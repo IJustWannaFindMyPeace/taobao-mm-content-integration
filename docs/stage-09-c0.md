@@ -1,5 +1,7 @@
 # 阶段 9 · C0 ID 基线
 
+> 文档性质：阶段记录／历史协议。本文中的规模、配置、验证结果及待办状态属于记录时点；当前结果以[主测试](final-test-results.md)、[补充测试](supplementary-test-results.md)和[覆盖说明](current-reproduction-status.md)为准。
+
 ## 结构与适配
 
 C0-ID-only-adapted 为两个项目共用的 ID 建模起点，不包含多模态向量。采用十个离散字段的 embedding、短历史目标注意力、长历史目标注意力和点击率预测 MLP。

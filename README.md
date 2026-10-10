@@ -79,3 +79,5 @@ Python 环境声明见 [`environment.yml`](environment.yml)，Windows/CUDA 依�
 
 - [论文](https://arxiv.org/abs/2407.19467)
 - [关联项目：多模态两阶段用户兴趣建模](https://github.com/IJustWannaFindMyPeace/taobao-mm-muse-repro)，研究更长历史的筛选与聚合，共享数据与评估协议。
+
+[完整文档索引](docs/README.md)

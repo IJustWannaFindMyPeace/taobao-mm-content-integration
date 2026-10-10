@@ -1,5 +1,7 @@
 # 阶段 20：5% MAKE 策略与训练轮数证据
 
+> 文档性质：阶段记录／历史协议。本文中的规模、配置、验证结果及待办状态属于记录时点；当前结果以[主测试](final-test-results.md)、[补充测试](supplementary-test-results.md)和[覆盖说明](current-reproduction-status.md)为准。
+
 ## 固定协议
 
 沿用阶段 19：5% 数据、seed 42、历史长度 200、batch size 32、相同公共网络与优化器参数。C5 冻结预训练组复用核心结果，C5-joint 使用同一第三轮多模态表示检查点。所有结果来自完整验证集，未评估保留测试集。
