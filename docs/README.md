@@ -1,42 +1,53 @@
 # 项目文档
 
-方法、数据与正式结果为当前项目入口；阶段记录用于追踪实验条件和先后顺序，不代表实时状态。
+建议先阅读[项目概览](../README.md)，再按方法、数据协议和测试结果查阅。历史阶段记录保留当时的配置与结论，不作为当前完成状态。
 
-## 方法与正式结果
+## 项目概览与方法
+
+- [从多模态表示到长历史兴趣：研究叙事](research-narrative.md)
+- [从多模态表示到长历史兴趣：结果阅读指南](storyline-reading-guide.md)
+- [Vector：逐商品多模态融合](vector-integration.md)
+- [SimScore：逐行为语义相似度](simscore-integration.md)
+- [SimTier：目标相关的相似度统计](simtier-integration.md)
+- [MAKE：推荐预训练（点击率预测任务）与接入](make-integration.md)
+- [论文术语与实现命名](paper-terminology.md)
+- [方法来源、实现差异与覆盖范围](reproduction-scope.md)
+- [两篇论文对照与结果差异分析](paper-comparison-and-analysis.md)
+
+## 数据与评估协议
+
+- [TAOBAO-MM 字段字典与模型输入](dataset-fields.md)
+- [TAOBAO-MM 数据定义与覆盖率核验](dataset-contract.md)
+- [正式用户抽样与评估划分](sampling-and-splits.md)
+- [最终评估候选清单与验证回放门槛](final-evaluation-protocol-v1.md)
+- [统一追加测试评估：范围与门槛](supplementary-test-protocol.md)
+- [8/9 组补充诊断协议](paper-groups-protocol.md)
+
+## 测试结果与诊断
+
+- [最终保留测试集结果](final-test-results.md)
+- [统一追加测试：结果与故事线](supplementary-test-results.md)
+- [追加测试：完整配对结果](supplementary-test-comparisons.md)
+- [测试集商品频次分组：主实验后的补充分析](posthoc-test-frequency-v1.md)
+- [8/9 组事后测试诊断](posthoc-paper-groups-v1.md)
+- [故事线图表与原始数值](storyline-figures.md)
+
+## 覆盖状态与实施路线
+
+- [实验覆盖与评估状态](current-reproduction-status.md)
+- [实施路线](roadmap.md)
+
+## 审计与历史记录
+
+<details>
+<summary>展开协议演进、阶段实验与审计记录</summary>
+
+以下记录用于追踪实验过程。带日期的审计和展示计划只说明对应版本，不代表最新运行环境或在线演示稿状态。
 
 - [多模态表示集成项目：收尾审计](content-project-closeout-audit.md)
 - [两项目整体收尾审计](cross-project-completion-audit.md)
-- [实验覆盖与评估状态](current-reproduction-status.md)
-- [TAOBAO-MM 数据定义与覆盖率核验](dataset-contract.md)
-- [TAOBAO-MM 字段字典与模型输入](dataset-fields.md)
-- [最终评估候选清单与验证回放门槛](final-evaluation-protocol-v1.md)
-- [最终保留测试集结果](final-test-results.md)
-- [MAKE：推荐预训练（点击率预测任务）与接入](make-integration.md)
-- [两篇论文对照与结果差异分析](paper-comparison-and-analysis.md)
-- [8/9 组补充诊断协议](paper-groups-protocol.md)
-- [论文术语与实现命名](paper-terminology.md)
-- [8/9 组事后测试诊断](posthoc-paper-groups-v1.md)
-- [测试集商品频次分组：主实验后的补充分析](posthoc-test-frequency-v1.md)
-- [方法来源、实现差异与覆盖范围](reproduction-scope.md)
 - [研究表达审计](research-expression-audit.md)
-- [从多模态表示到长历史兴趣：研究叙事](research-narrative.md)
-- [实施路线](roadmap.md)
-- [正式用户抽样与评估划分](sampling-and-splits.md)
-- [SimScore：逐行为语义相似度](simscore-integration.md)
-- [SimTier：目标相关的相似度统计](simtier-integration.md)
-- [故事线图表与原始数值](storyline-figures.md)
-- [从多模态表示到长历史兴趣：结果阅读指南](storyline-reading-guide.md)
 - [追加测试前：设计与执行审计](supplementary-pretest-audit.md)
-- [追加测试：完整配对结果](supplementary-test-comparisons.md)
-- [统一追加测试评估：范围与门槛](supplementary-test-protocol.md)
-- [统一追加测试：结果与故事线](supplementary-test-results.md)
-- [Vector：逐商品多模态融合](vector-integration.md)
-
-## 阶段记录与历史协议
-
-<details>
-<summary>展开历史记录</summary>
-
 - [主实验证据清单（历史归档）](completion-checklist.md)
 - [实验导读：从研究问题到证据](experiment-guide.md)
 - [主实验阶段故事线（历史归档）](final-storyline.md)
