@@ -87,6 +87,6 @@ MUSE 原文已有主要 ESU 模块消融，本项目按其结构做本地对照�
 
 最终报告按两条方法主线组织，而不是逐条复述运行日志。每个环节固定展示：痛点/假设、对应改进、必须固定的变量、效果与置信边界、局限。资源和超参数选择另列支撑章节，附清晰编号索引与可复现入口；负向、跨零或指标冲突结果必须保留。
 
-尚未完成的基线多种子、敏感性补充、训练协议确认与最终测试，不用已有工程报告代替。详细研究约束见[共同研究主线](research-storyline.md)，最新训练方案确认见[质量审计与确认](https://github.com/IJustWannaFindMyPeace/taobao-mm-muse-repro/blob/main/docs/stage-13-quality-audit-and-confirmation.md)。
+尚未完成的基线多种子、敏感性补充、训练协议确认与最终测试，不用已有工程报告代替。详细研究约束见[共同研究主线](research-questions.md)，最新训练方案确认见[质量审计与确认](https://github.com/IJustWannaFindMyPeace/taobao-mm-muse-repro/blob/main/docs/stage-13-quality-audit-and-confirmation.md)。
 
 本轮主数据规模已选定，详见[共同规模决策](shared-scale-decision.md)。

@@ -1,4 +1,4 @@
-# 两项目研究收尾：故事线与证据边界
+# 两项目研究收尾：研究主线与证据边界
 
 > 文档性质：阶段记录／历史协议。本文中的规模、配置、验证结果及待办状态属于记录时点；当前结果以[主测试](final-test-results.md)、[补充测试](supplementary-test-results.md)和[覆盖说明](current-reproduction-status.md)为准。
 
@@ -40,7 +40,7 @@ SCL 图文编码器重训、OpenCLIP/I2I 表示对照、完整工业 DIN/TWIN/MI
 
 ## 阅读顺序与结果入口
 
-1. [两项目故事线](https://github.com/IJustWannaFindMyPeace/taobao-mm-content-integration/blob/main/docs/final-storyline.md)：先理解问题与实验对照。
+1. [两项目研究主线](https://github.com/IJustWannaFindMyPeace/taobao-mm-content-integration/blob/main/docs/main-experiment-summary.md)：先理解问题与实验对照。
 2. [多模态融合主结果](https://github.com/IJustWannaFindMyPeace/taobao-mm-content-integration/blob/main/docs/final-test-results.md)与 [MUSE 主结果](https://github.com/IJustWannaFindMyPeace/taobao-mm-muse-repro/blob/main/docs/final-test-results.md)：核对冻结测试证据。
 3. [MAKE 策略](https://github.com/IJustWannaFindMyPeace/taobao-mm-content-integration/blob/main/docs/post-main-make-seed-extension.md)：理解训练阶段差异。
 4. [DIN](https://github.com/IJustWannaFindMyPeace/taobao-mm-muse-repro/blob/main/docs/post-main-din-results.md)、[TWIN](https://github.com/IJustWannaFindMyPeace/taobao-mm-muse-repro/blob/main/docs/post-main-twin-results.md)、[MISS](https://github.com/IJustWannaFindMyPeace/taobao-mm-muse-repro/blob/main/docs/post-main-miss-results.md)：理解补充证据与不同预算口径。

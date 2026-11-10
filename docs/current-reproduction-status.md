@@ -28,7 +28,7 @@
 
 ## 结果索引
 
-- [故事线阅读指南](storyline-reading-guide.md)：先多模态表示集成，再长历史筛选与聚合。
+- [研究主线阅读指南](results-reading-guide.md)：先多模态表示集成，再长历史筛选与聚合。
 - [主实验测试报告](final-test-results.md)：原冻结测试证据。
 - [统一追加测试结果](supplementary-test-results.md)：痛点、改进、效果和局限。
 - [全部配对比较](supplementary-test-comparisons.md)：包括下降与跨零结果。

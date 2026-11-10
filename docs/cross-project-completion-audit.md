@@ -61,4 +61,4 @@ python projects/taobao-mm-content-integration/scripts/audit_execution_contracts.
 
 本轮不重新训练或执行GPU推理，也没有重抽所有bootstrap样本；权重字节已在评估阶段核验，本轮未再次读取全部权重。该审计检查实验一致性、覆盖与可追溯性，不是对原论文私有实现的等价证明，也不能保证任何未来修改都不会出错。
 
-依据：[CIKM论文](https://arxiv.org/html/2407.19467v1)的多模态表示集成与训练轮次实验、[MUSE论文](https://arxiv.org/html/2512.07216v1)的检索/聚合对照、基线与长度实验，以及本地冻结协议和实际产物。具体结果见[统一追加测试故事线](supplementary-test-results.md)。
+依据：[CIKM论文](https://arxiv.org/html/2407.19467v1)的多模态表示集成与训练轮次实验、[MUSE论文](https://arxiv.org/html/2512.07216v1)的检索/聚合对照、基线与长度实验，以及本地冻结协议和实际产物。具体结果见[统一追加测试研究主线](supplementary-test-results.md)。

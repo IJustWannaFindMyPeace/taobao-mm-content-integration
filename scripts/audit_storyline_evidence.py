@@ -102,7 +102,7 @@ def main():
     assert all(pairs[i]['gauc_delta_user_bootstrap_95_percentile'][0]<0<pairs[i]['gauc_delta_user_bootstrap_95_percentile'][1] for i in [77,80])
     shared=['reports/storyline-evidence.json','reports/storyline-chart-data.csv','reports/storyline-claims.json',
             'reports/storyline-figure-manifest.json','docs/research-narrative.md','docs/paper-comparison-and-analysis.md',
-            'docs/presentation-plan.md','docs/storyline-figures.md']
+            'docs/experiment-figures.md']
     for relative in shared:assert (content/relative).read_bytes()==(roots['muse']/relative).read_bytes()
     for root in [content,roots['muse']]:
         for relative in ['README.md']+[s for s in shared if s.startswith('docs/')]:
@@ -114,11 +114,10 @@ def main():
                 source_files_verified=len(evidence['sources']),figures_verified=12,asset_files_verified=24,
                 chart_rows_verified=count,core_claims_mapped=11,shared_outputs_identical=True,
                 provenance_verified=True,selected_claim_directions_checked=True,
-                presentation_file_created=False,
                 boundaries=['Does not establish causal explanations for paper-result differences.',
                             'Visual inspection is a separate manual step, not asserted by this numeric audit.',
                             'No new training, test-driven tuning or bootstrap rerun.',
-                            'A future PPT still requires page-level visual and numerical QA.'])
+                            'Figure layout requires separate visual inspection.'])
     for root in [content,roots['muse']]:
         (root/'reports/narrative-readiness-audit.json').write_text(json.dumps(result,indent=2)+'\n',encoding='utf-8',newline='\n')
     print(json.dumps(result))

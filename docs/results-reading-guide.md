@@ -1,6 +1,6 @@
 # 从多模态表示到长历史兴趣：结果阅读指南
 
-正文入口已整理为[研究叙事](research-narrative.md)，配套[论文对照与分析](paper-comparison-and-analysis.md)、[展示计划](presentation-plan.md)和[图表](storyline-figures.md)。本页保留阅读与状态索引。
+正文入口已整理为[研究概览](research-narrative.md)，配套[论文对照与分析](paper-comparison-and-analysis.md)、[实验结果](final-test-results.md)和[图表](experiment-figures.md)。本页保留阅读与状态索引。
 
 
 两个项目回答同一个逐步深入的问题：给定目标广告，如何利用用户过去的行为预测点击？第一项目研究多模态信息怎样进入模型，第二项目研究怎样从更长历史中选择并聚合相关信息。
