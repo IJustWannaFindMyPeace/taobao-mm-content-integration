@@ -1,0 +1,18 @@
+{
+  "time": 1794293220.6858525,
+  "models": {
+    "42": {
+      "model_sha256": "d2c2f4a4bfe0d482015f28e2b8d4a955299b73624ca1eed67c896713d4f3d53f",
+      "report_sha256": "9c18199cad88af66bdcd234c3330cccab079002451b6fbc71793d9f0bdc47231"
+    },
+    "2026": {
+      "model_sha256": "14eacef4d2c203f85c002139156f0dbd1843cd9e96b4d4fe4d7e7ef235f0b83a",
+      "report_sha256": "369880f0b04a1008371bbe8226b38aa6c4ea0475ed5e53a158a2bf65f5b74d85"
+    },
+    "3407": {
+      "model_sha256": "c36a925e870c2d2ebe9947625aa2de1fae68267241206497cc589521c5b48047",
+      "report_sha256": "22b30af84f9690dabd5434704876138ecce66dbcdf6d2eb5d31991ad899f9ee0"
+    }
+  },
+  "protocol_sha256": "744359b439eaa7639dda3adb58d5cf53e6092b8646cef362c5c70a09dfd500fe"
+}

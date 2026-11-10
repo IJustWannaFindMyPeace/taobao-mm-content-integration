@@ -1,0 +1,24 @@
+{
+  "experiment": "c8-simscore-make-seed3407",
+  "seed": 3407,
+  "embedding_width": 16,
+  "history_length": 200,
+  "short_length": 50,
+  "batch_size": 256,
+  "epochs": 1,
+  "dense_learning_rate": 0.001,
+  "sparse_learning_rate": 0.001,
+  "weight_decay": 0.0,
+  "make_fusion": true,
+  "pretrained_content": true,
+  "freeze_content": true,
+  "content_checkpoint_sha256": "c2c3e6f60ba0f18b9225c8c07ddb611263120b6bce7ee21c1d8bc94f19260ec6",
+  "resource_limits": {
+    "warning_allocated_gib": 9,
+    "max_allocated_gib": 10.5,
+    "min_device_free_gib": 1,
+    "max_process_rss_gib": 24,
+    "min_system_available_gib": 4
+  },
+  "side_information": "simscore"
+}

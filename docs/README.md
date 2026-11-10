@@ -95,3 +95,9 @@
 - [两项目研究收尾：故事线与证据边界](study-completion.md)
 
 </details>
+
+## SimScore＋MAKE 追加对照
+
+组合平均 GAUC 为 0.590357，较 ID 基线相对提高 2.90%，较 SimScore 相对下降 0.47%；未显示超越单独 SimScore 的用户内排序收益。该对照在既有测试结果已知后开展，单独报告。
+
+[实验协议](simscore-make-extension-protocol.md) · [结果与分析](simscore-make-extension-results.md)

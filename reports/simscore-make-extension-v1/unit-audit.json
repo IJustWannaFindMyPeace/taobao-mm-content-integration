@@ -1,0 +1,7 @@
+{
+  "baseline_equivalence": true,
+  "simscore_and_make_projection_gradients": true,
+  "make_frozen": true,
+  "reload_exact": true,
+  "empty_history_and_missing_content_finite": true
+}
