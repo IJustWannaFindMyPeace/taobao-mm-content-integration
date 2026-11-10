@@ -1,6 +1,6 @@
 # 实验覆盖与评估状态
 
-第一个项目的当前收尾结论见[2026-10-03审计](content-project-closeout-audit.md)；以下2026-09-25日期对应统一实验完成节点。
+第一个项目2026-10-03阶段核验见[2026-10-03审计](content-project-closeout-audit.md)；以下2026-09-25日期对应统一实验完成节点。
 
 项目方法与结果见[研究分析](research-narrative.md)，原方法与本地实现差异见[方法对照](paper-comparison-and-analysis.md)。本页汇总已完成实验及评估范围。
 
@@ -8,7 +8,11 @@
 [2026-09-25 整体收尾审计](cross-project-completion-audit.md)：公共协议、127份测试指标、159项比较及产物覆盖核验通过；差异、例外与本次修正单列。
 
 
-更新日期：2026-09-25。主实验与本轮计划的补充下游统一测试均已完成。[最新测试结论](supplementary-test-results.md)是当前结果入口；早期审计和验证报告保留其时点状态，不作为实时进度。
+更新日期：2026-09-25。主实验与本轮计划的补充下游统一测试均已完成。[该批次测试结论](supplementary-test-results.md)汇总该批次结果；早期审计和验证报告保留其时点状态，不作为实时进度。
+
+## 后续补充结果
+
+[SimScore＋MAKE 追加组合评估](simscore-make-extension-results.md)：三种子训练和测试完成，结果单独报告。
 
 ## 证据范围
 

@@ -113,7 +113,7 @@ def main():
                              split='test',pair_index=r['pair_index'],delta_gauc=r['candidate_minus_baseline']['gauc'],
                              ci_low=r['gauc_delta_user_bootstrap_95_percentile'][0],
                              ci_high=r['gauc_delta_user_bootstrap_95_percentile'][1]))
-    add('08-learned-retrieval','复杂检索没有稳定优势，必须展示失败种子','forest',rows,
+    add('08-learned-retrieval','复杂检索的收益缺乏跨种子稳定性','forest',rows,
         '追加测试；差值＝学习式检索−内容余弦；单项95%用户bootstrap区间，未作多重校正。')
     rows=[]
     for candidate,baseline,label in [('c6','c0','内容集成：统计＋MAKE − ID'),('r4-l1000','g-id-item','MUSE：内容检索 − 商品ID')]:

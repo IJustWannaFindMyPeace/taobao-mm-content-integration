@@ -58,13 +58,13 @@
 
 ![扩大候选历史有效，但最后一段增益具有种子差异](../figures/storyline/07-history-length.png)
 
-## 复杂检索没有稳定优势，必须展示失败种子
+## 复杂检索的收益缺乏跨种子稳定性
 
 追加测试；差值＝学习式检索−多模态余弦；单项95%用户bootstrap区间，未作多重校正。
 
 [PNG](../figures/storyline/08-learned-retrieval.png) · [SVG](../figures/storyline/08-learned-retrieval.svg)
 
-![复杂检索没有稳定优势，必须展示失败种子](../figures/storyline/08-learned-retrieval.png)
+![复杂检索的收益缺乏跨种子稳定性](../figures/storyline/08-learned-retrieval.png)
 
 ## 低频商品获得更大收益
 

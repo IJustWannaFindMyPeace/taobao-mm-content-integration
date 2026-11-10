@@ -1,6 +1,6 @@
 {
   "scope": "storyline_figure_assets",
-  "data_sha256": "6dc9ff792773eaef4aba01864a85d28046cebbfb1c794581480446a861481101",
+  "data_sha256": "a7d8e72815cc0eceb189e66c844773c16b751f031771e4f78f92b68f1936459f",
   "renderer_sha256": "428605335fda9f8d52d9ede3ff52ed5e70a63d02cb601ca035ade68f21f14348",
   "figures": [
     {
@@ -110,16 +110,16 @@
     },
     {
       "id": "08-learned-retrieval",
-      "title": "复杂检索没有稳定优势，必须展示失败种子",
+      "title": "复杂检索的收益缺乏跨种子稳定性",
       "data_rows": 6,
       "files": {
         "png": {
           "path": "figures/storyline/08-learned-retrieval.png",
-          "sha256": "9b5ba1b9d298758134efea72c609543019d79b02b047a23720b28da4e954f756"
+          "sha256": "6c3db320b6fa9b432e2bac353a4735d8e1e20e984b1eba2ed4adf4f61dde5ed9"
         },
         "svg": {
           "path": "figures/storyline/08-learned-retrieval.svg",
-          "sha256": "bdf95cf715df69271c4bef4895eb881ba1bf5436ce868aa9f3851da5c3a3491b"
+          "sha256": "4e03bd4df72c1d006e9369f58e4a3098591f45fb78d8ad91e0d0058335f0a5de"
         }
       }
     },
