@@ -53,7 +53,7 @@
 |MAKE 预训练|batch size 32，各种子按前三轮验证 GAUC 选择权重|
 |评估|AUC、GAUC、LogLoss；GAUC 按有效用户的曝光记录数加权|
 
-三个种子共享同一数据划分。预训练成本单独记录；SimScore＋MAKE 及训练策略等追加实验在主测试结果已查看之后开展，沿用固定协议，详细结果分别归档，未据追加测试成绩调参。统计区间使用 2,000 次用户配对 bootstrap，具体口径见结果文档。
+三个种子共享同一数据划分。预训练成本单独记录。统计区间使用 2,000 次用户配对 bootstrap，具体口径见结果文档。
 
 [数据字段](docs/dataset-fields.md) · [抽样与划分](docs/sampling-and-splits.md) · [公共下游配置](configs/shared-downstream-protocol-v1.json)
 
