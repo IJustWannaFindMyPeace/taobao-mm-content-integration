@@ -15,6 +15,7 @@
 |SimScore|将逐行为多模态余弦相似度与有效标志映射为 32 维，加入历史表示|
 |SimTier|将有效相似度转换为 20 维分桶计数，通过线性层接入预测网络|
 |MAKE|用点击标签预训练多模态知识提取器，迁移 128 维兴趣向量和 32 维隐藏层输出|
+|SimScore＋MAKE|在 SimScore 历史表示增强的基础上，将预训练多模态特征接入预测网络|
 |SimTier＋MAKE|在预测网络中并行接入相似度统计与预训练多模态特征|
 
 主实验中的 MAKE 分支在接入后冻结，接入层与下游网络继续训练。另设“随机初始化／预训练 × 冻结／联合更新”对照，区分预训练与接入后更新的作用。
@@ -30,14 +31,15 @@
 |SimScore|0.617053|**0.593142**|**+3.39%**|**0.390030**|
 |SimTier|0.616165|0.590215|+2.88%|0.390417|
 |MAKE|0.619105|0.590055|+2.85%|0.390042|
+|SimScore＋MAKE|0.619259|0.590357|+2.90%|0.390237|
 |SimTier＋MAKE|**0.619468**|0.591200|+3.05%|0.390150|
 
-- 五种多模态接入方案的 GAUC 均高于 ID 基线，三个种子的用户配对区间均为正。
+- 六种多模态接入方案的 GAUC 均高于 ID 基线，三个种子的用户配对区间均为正。
 - 显式相似度特征取得最高平均 GAUC；SimTier＋MAKE 取得最高平均 AUC。直接向量融合的 LogLoss 略差于基线，排序收益与概率预测质量需要分别评价。
 - MAKE 的追加策略对照中，预训练后联合更新较随机初始化后联合训练，平均 GAUC 绝对增加 0.00404；持续增加预训练轮数未带来稳定收益。
-- SimTier＋MAKE 的平均 AUC、GAUC 高于单模块，但 LogLoss 未优于单独 MAKE，额外 GAUC 收益也并非在所有种子上都明确。
+- 组合并不必然带来额外收益：SimScore＋MAKE 的平均 GAUC 较 SimScore 相对下降 0.47%；SimTier＋MAKE 的平均 AUC、GAUC 高于单模块，但 LogLoss 未优于单独 MAKE，额外 GAUC 收益也并非在所有种子上都明确。
 
-[完整主测试结果](docs/final-test-results.md) · [训练策略及补充结果](docs/supplementary-test-results.md) · [结果分析](docs/research-narrative.md) · [SimScore＋MAKE 组合评估](docs/simscore-make-extension-results.md)
+[完整主测试结果](docs/final-test-results.md) · [训练策略及补充结果](docs/supplementary-test-results.md) · [结果分析](docs/research-narrative.md)
 
 ## 数据与实验设置
 
@@ -51,7 +53,7 @@
 |MAKE 预训练|batch size 32，各种子按前三轮验证 GAUC 选择权重|
 |评估|AUC、GAUC、LogLoss；GAUC 按有效用户的曝光记录数加权|
 
-三个种子共享同一数据划分。预训练成本单独记录；追加实验在主测试结果已查看之后开展，结果单独报告。统计区间使用 2,000 次用户配对 bootstrap，具体口径见结果文档。
+三个种子共享同一数据划分。预训练成本单独记录；SimScore＋MAKE 及训练策略等追加实验在主测试结果已查看之后开展，沿用固定协议，详细结果分别归档，未据追加测试成绩调参。统计区间使用 2,000 次用户配对 bootstrap，具体口径见结果文档。
 
 [数据字段](docs/dataset-fields.md) · [抽样与划分](docs/sampling-and-splits.md) · [公共下游配置](configs/shared-downstream-protocol-v1.json)
 
@@ -63,6 +65,7 @@
 |[`scripts/build_feature_store.py`](scripts/build_feature_store.py)|构建训练词表与统一特征存储|
 |[`scripts/train_c0.py`](scripts/train_c0.py)|训练 ID 与多模态接入方案；通过配置选择模型|
 |[`scripts/train_content.py`](scripts/train_content.py)|MAKE 多模态分支预训练|
+|[`scripts/train_simscore_make.py`](scripts/train_simscore_make.py)|训练 SimScore＋MAKE 组合，使用已选定的 MAKE 预训练权重|
 |[`configs/`](configs/)|模型、数据及实验协议配置|
 |[`reports/`](reports/)|逐种子指标、配对比较与产物摘要|
 |[`tests/`](tests/)|数据、模型与评估逻辑检查|
