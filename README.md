@@ -63,9 +63,8 @@
 |---|---|
 |[`src/`](src/)|ID 基线、多模态接入、MAKE、数据读取与评估指标|
 |[`scripts/build_feature_store.py`](scripts/build_feature_store.py)|构建训练词表与统一特征存储|
-|[`scripts/train_c0.py`](scripts/train_c0.py)|训练 ID 与多模态接入方案；通过配置选择模型|
+|[`scripts/`](scripts/)|各方案的训练、评估与实验调度入口；通过对应脚本及配置运行|
 |[`scripts/train_content.py`](scripts/train_content.py)|MAKE 多模态分支预训练|
-|[`scripts/train_simscore_make.py`](scripts/train_simscore_make.py)|训练 SimScore＋MAKE 组合，使用已选定的 MAKE 预训练权重|
 |[`configs/`](configs/)|模型、数据及实验协议配置|
 |[`reports/`](reports/)|逐种子指标、配对比较与产物摘要|
 |[`tests/`](tests/)|数据、模型与评估逻辑检查|
