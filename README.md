@@ -37,7 +37,7 @@
 - MAKE 的追加策略对照中，预训练后联合更新较随机初始化后联合训练，平均 GAUC 绝对增加 0.00404；持续增加预训练轮数未带来稳定收益。
 - SimTier＋MAKE 的平均 AUC、GAUC 高于单模块，但 LogLoss 未优于单独 MAKE，额外 GAUC 收益也并非在所有种子上都明确。
 
-[完整主测试结果](docs/final-test-results.md) · [训练策略及补充结果](docs/supplementary-test-results.md) · [结果分析](docs/research-narrative.md)
+[完整主测试结果](docs/final-test-results.md) · [训练策略及补充结果](docs/supplementary-test-results.md) · [结果分析](docs/research-narrative.md) · [SimScore＋MAKE 组合评估](docs/simscore-make-extension-results.md)
 
 ## 数据与实验设置
 
@@ -81,9 +81,3 @@
 - [关联项目：多模态两阶段用户兴趣建模](https://github.com/IJustWannaFindMyPeace/taobao-mm-muse-repro)，研究更长历史的筛选与聚合，共享数据与评估协议。
 
 [完整文档索引](docs/README.md)
-
-## SimScore＋MAKE 追加对照
-
-组合平均 GAUC 为 0.590357，较 ID 基线相对提高 2.90%，较 SimScore 相对下降 0.47%；未显示超越单独 SimScore 的用户内排序收益。该对照在既有测试结果已知后开展，单独报告。
-
-[实验协议](docs/simscore-make-extension-protocol.md) · [结果与分析](docs/simscore-make-extension-results.md)
