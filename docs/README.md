@@ -1,6 +1,6 @@
 # 项目文档
 
-建议先阅读[项目概览](../README.md)，再按方法、数据协议和测试结果查阅。历史阶段记录保留当时的配置与结论，不作为当前完成状态。
+建议先阅读[项目概览](../README.md)，再按方法、数据协议和测试结果查阅。历史实验按各自配置归档。
 
 ## 项目概览与方法
 
@@ -21,11 +21,13 @@
 - [正式用户抽样与评估划分](sampling-and-splits.md)
 - [最终评估候选清单与验证回放门槛](final-evaluation-protocol-v1.md)
 - [统一追加测试评估：范围与门槛](supplementary-test-protocol.md)
+- [SimScore＋MAKE 实验协议](simscore-make-extension-protocol.md)
 - [8/9 组补充诊断协议](paper-groups-protocol.md)
 
 ## 测试结果与诊断
 
 - [最终保留测试集结果](final-test-results.md)
+- [SimScore＋MAKE 组合结果与分析](simscore-make-extension-results.md)
 - [统一追加测试：结果与分析](supplementary-test-results.md)
 - [追加测试：完整配对结果](supplementary-test-comparisons.md)
 - [测试集商品频次分组：主实验后的补充分析](posthoc-test-frequency-v1.md)
@@ -37,12 +39,12 @@
 - [实验覆盖与评估状态](current-reproduction-status.md)
 - [实施路线](roadmap.md)
 
-## 审计与历史记录
-
-- [仓库一致性检查 · 2026-10-11](repository-audit-2026-10-11.md)
+## 历史实验与协议记录
 
 <details>
-<summary>展开协议演进、阶段实验与审计记录</summary>
+<summary>展开历史记录</summary>
+
+- [仓库一致性检查 · 2026-10-11](repository-audit-2026-10-11.md)
 
 以下记录用于追踪实验过程。带日期的核验记录只说明对应实验版本，不代表最新运行状态。
 
@@ -90,9 +92,3 @@
 - [两项目研究收尾：研究主线与证据边界](study-completion.md)
 
 </details>
-
-## SimScore＋MAKE 追加对照
-
-组合平均 GAUC 为 0.590357，较 ID 基线相对提高 2.90%，较 SimScore 相对下降 0.47%；未显示超越单独 SimScore 的用户内排序收益。该对照在既有测试结果已知后开展，单独报告。
-
-[实验协议](simscore-make-extension-protocol.md) · [结果与分析](simscore-make-extension-results.md)
