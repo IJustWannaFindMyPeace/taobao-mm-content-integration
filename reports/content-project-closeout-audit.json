@@ -5,9 +5,6 @@
   "source_revision": "8c64c9b85e2544c4ae5ef07d98315c5015fc5213",
   "source_files_verified": 9,
   "chart_rows_verified": 186,
-  "ppt_slides": 19,
-  "speaker_notes_verified": 19,
-  "ppt_sha256": "59694a97015f9edbc56184160fbeb03d95ce0cb092df399c278598292bb8ab6f",
   "tests": {
     "passed": 32,
     "import_blocked_modules": 7,
@@ -15,6 +12,5 @@
     "model_assertions_rerun": false
   },
   "model_training_changed": false,
-  "new_experiments": false,
-  "native_powerpoint_verified": false
+  "new_experiments": false
 }
