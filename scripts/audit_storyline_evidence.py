@@ -86,7 +86,7 @@ def main():
     for actual,row in zip(csv_rows,expected):
         for k,v in row.items():assert actual[k]==str(v),(k,actual[k],v)
     for claim in claims['claims']:
-        assert claim['prohibited_inference'] and claim['paper_location']
+        assert claim['evidence_limit'] and claim['paper_location']
         assert all(f in figures for f in claim['figure_ids'])
     assert len(claims['claims'])==11
     # Numerical assertions are separate from the prose writing path.
