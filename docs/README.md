@@ -48,9 +48,9 @@
 
 以下记录用于追踪实验过程。带日期的核验记录只说明对应实验版本，不代表最新运行状态。
 
-- [多模态表示集成项目：收尾审计](content-project-closeout-audit.md)
-- [两项目整体收尾审计](cross-project-completion-audit.md)
-- [追加测试前：设计与执行审计](supplementary-pretest-audit.md)
+- [多模态表示集成：实现与结果核验](content-project-closeout-audit.md)
+- [两项目实验一致性与覆盖核验](cross-project-completion-audit.md)
+- [追加测试：评估设计与执行核验](supplementary-pretest-audit.md)
 - [实验导读：从研究问题到证据](experiment-guide.md)
 - [主实验阶段研究主线（历史归档）](main-experiment-summary.md)
 - [论文覆盖审计：2026-09-23](paper-coverage-audit-2026-09-23.md)
