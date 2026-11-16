@@ -1,5 +1,5 @@
 {
-  "scope": "core_narrative_claim_registry",
+  "scope": "research_claim_evidence_registry",
   "claims": [
     {
       "id": "C1",
@@ -10,7 +10,7 @@
         "01-content",
         "09-frequency"
       ],
-      "prohibited_inference": "不能声称重新证明了SCL优于其他表示"
+      "evidence_limit": "未比较不同上游表示，SCL 相对其他表示的优势不在本实验验证范围内。"
     },
     {
       "id": "C2",
@@ -20,7 +20,7 @@
       "figure_ids": [
         "01-content"
       ],
-      "prohibited_inference": "不能声称组合在所有指标最佳"
+      "evidence_limit": "组合并非所有指标最优。"
     },
     {
       "id": "C3",
@@ -31,7 +31,7 @@
         "02-make-strategy",
         "03-training"
       ],
-      "prohibited_inference": "不能把整个模型的泛化退步唯一归因于ID embedding"
+      "evidence_limit": "ID embedding 与其他网络组件的独立影响未被分离。"
     },
     {
       "id": "C4",
@@ -41,7 +41,7 @@
       "figure_ids": [
         "04-pretraining-epochs"
       ],
-      "prohibited_inference": "不能将P0联合与随机冻结混称或用测试选择轮数"
+      "evidence_limit": "P0 联合训练与随机冻结是不同对照；预训练轮数依据验证集选择。"
     },
     {
       "id": "M1",
@@ -51,7 +51,7 @@
       "figure_ids": [
         "05-retrieval"
       ],
-      "prohibited_inference": "不能宣称完整比较OpenCLIP／I2I／SCL"
+      "evidence_limit": "未覆盖 OpenCLIP、I2I 与 SCL 的完整表示对照。"
     },
     {
       "id": "M2",
@@ -61,7 +61,7 @@
       "figure_ids": [
         "06-aggregation"
       ],
-      "prohibited_inference": "不能把分别有效等同于组合增量明确"
+      "evidence_limit": "单模块分别有效不代表组合有明确额外收益。"
     },
     {
       "id": "M3",
@@ -71,7 +71,7 @@
       "figure_ids": [
         "07-history-length"
       ],
-      "prohibited_inference": "不能声称恢复100K趋势或测试选出最优长度"
+      "evidence_limit": "历史长度上限为1,000条；未验证100K历史或通过测试选择最优长度。"
     },
     {
       "id": "M4",
@@ -82,7 +82,7 @@
         "08-learned-retrieval",
         "10-g3-diagnostic"
       ],
-      "prohibited_inference": "不能把G3最终诊断视为训练因果证明"
+      "evidence_limit": "G3诊断描述最终模型行为，不构成训练过程的因果证据。"
     },
     {
       "id": "M5",
@@ -92,7 +92,7 @@
       "figure_ids": [
         "11-baselines"
       ],
-      "prohibited_inference": "不能称严格等预算或对所有对照显著最优"
+      "evidence_limit": "各架构预算存在差异，未证明对所有对照均有统计显著优势。"
     },
     {
       "id": "J1",
@@ -102,7 +102,7 @@
       "figure_ids": [
         "09-frequency"
       ],
-      "prohibited_inference": "不能将频次零称为新商品或宣称分组统计显著"
+      "evidence_limit": "训练曝光为零不等于新商品；分组结果为描述性比较。"
     },
     {
       "id": "J2",
@@ -112,7 +112,7 @@
       "figure_ids": [
         "12-framework"
       ],
-      "prohibited_inference": "不能把两项目最终分数差当成单模块贡献"
+      "evidence_limit": "两项目结构与预算不同，最终分数差不代表单模块贡献。"
     }
   ]
 }
