@@ -30,14 +30,14 @@ def display_terms(value):
 def main():
     p=argparse.ArgumentParser();p.add_argument('--font',type=Path);a=p.parse_args()
     root=Path(__file__).resolve().parents[1];muse=root.parent/'taobao-mm-muse-repro'
-    evidence=root/'reports/storyline-evidence.json';data=display_terms(json.loads(evidence.read_text(encoding='utf-8')))
+    evidence=root/'reports/research-evidence.json';data=display_terms(json.loads(evidence.read_text(encoding='utf-8')))
     font=a.font or Path('C:/Windows/Fonts/msyh.ttc')
     if font.exists():font_manager.fontManager.addfont(str(font));fontname=font_manager.FontProperties(fname=str(font)).get_name()
     else:fontname='Noto Sans CJK SC'
     plt.rcParams.update({'font.family':fontname,'font.size':11,'axes.spines.top':False,'axes.spines.right':False,
                          'axes.unicode_minus':False,'svg.fonttype':'path','savefig.facecolor':'white'})
     colors=['#2563a6','#d07828','#20806b'];seeds=data['seeds'];manifest=[]
-    output=root/'figures/storyline';output.mkdir(parents=True,exist_ok=True)
+    output=root/'figures/experiment-figures';output.mkdir(parents=True,exist_ok=True)
     for key,spec in data['figures'].items():
         rows=spec['rows'];kind=spec['kind'];labels=list(dict.fromkeys(r['label'] for r in rows))
         if kind=='metrics':
@@ -133,15 +133,15 @@ def main():
         for extension in ('png','svg'):
             path=output/(key+'.'+extension);fig.savefig(path,dpi=220)
             if extension=='svg':path.write_bytes(b'\n'.join(line.rstrip(b' \t') for line in path.read_bytes().splitlines())+b'\n')
-            files[extension]=dict(path='figures/storyline/'+path.name,sha256=hashlib.sha256(path.read_bytes()).hexdigest())
+            files[extension]=dict(path='figures/experiment-figures/'+path.name,sha256=hashlib.sha256(path.read_bytes()).hexdigest())
         plt.close(fig);manifest.append(dict(id=key,title=spec['title'],data_rows=len(spec['rows']),files=files))
-    manifest=dict(scope='storyline_figure_assets',data_sha256=hashlib.sha256(evidence.read_bytes()).hexdigest(),
+    manifest=dict(scope='experiment_figure_assets',data_sha256=hashlib.sha256(evidence.read_bytes()).hexdigest(),
                   renderer_sha256=hashlib.sha256(Path(__file__).read_bytes()).hexdigest(),figures=manifest,
                   note='Plots use local axis ranges; marker intervals are sample SD unless explicitly labeled bootstrap CI.')
-    (root/'reports/storyline-figure-manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n',encoding='utf-8',newline='\n')
-    (muse/'figures/storyline').mkdir(parents=True,exist_ok=True)
-    for file in output.iterdir():shutil.copy2(file,muse/'figures/storyline'/file.name)
-    shutil.copy2(root/'reports/storyline-figure-manifest.json',muse/'reports/storyline-figure-manifest.json')
+    (root/'reports/research-figure-manifest.json').write_text(json.dumps(manifest,ensure_ascii=False,indent=2)+'\n',encoding='utf-8',newline='\n')
+    (muse/'figures/experiment-figures').mkdir(parents=True,exist_ok=True)
+    for file in output.iterdir():shutil.copy2(file,muse/'figures/experiment-figures'/file.name)
+    shutil.copy2(root/'reports/research-figure-manifest.json',muse/'reports/research-figure-manifest.json')
     print('Rendered and copied 12 PNG + 12 SVG figures.')
 
 

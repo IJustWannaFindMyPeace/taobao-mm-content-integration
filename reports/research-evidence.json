@@ -1,5 +1,5 @@
 {
-  "scope": "presentation_storyline_evidence",
+  "scope": "research_evidence",
   "sources": {
     "content/reports/final-results-summary.json": "cfb6c50537b29e4d89c4db1abb097ea9b52cdbacd28c20794e7e57b2bfdbc49b",
     "content/reports/supplementary-test-summary.json": "be789aaae6b90230dd30a99fed93f26d8ead5ea01dd4f5a1d55cbb36978ef52e",

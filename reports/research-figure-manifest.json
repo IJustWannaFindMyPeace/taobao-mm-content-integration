@@ -1,7 +1,7 @@
 {
-  "scope": "storyline_figure_assets",
-  "data_sha256": "a7d8e72815cc0eceb189e66c844773c16b751f031771e4f78f92b68f1936459f",
-  "renderer_sha256": "428605335fda9f8d52d9ede3ff52ed5e70a63d02cb601ca035ade68f21f14348",
+  "scope": "experiment_figure_assets",
+  "data_sha256": "3d2b6c07a94f9ef495fe00bdeecf5e4d5e0086af654b15451690cdf56269a6c4",
+  "renderer_sha256": "09765782b7772eda3b2162a60c22aacc653082d39afaffef64c32de8cb7b469d",
   "figures": [
     {
       "id": "01-content",
@@ -9,11 +9,11 @@
       "data_rows": 18,
       "files": {
         "png": {
-          "path": "figures/storyline/01-content.png",
+          "path": "figures/experiment-figures/01-content.png",
           "sha256": "e9fc817641facdaea993f00c3a469ed03ee6a692d3eb987502027809181d100e"
         },
         "svg": {
-          "path": "figures/storyline/01-content.svg",
+          "path": "figures/experiment-figures/01-content.svg",
           "sha256": "1089bb904c756761552925df33862c1955ab608a9064a375b72359914640ae58"
         }
       }
@@ -24,11 +24,11 @@
       "data_rows": 12,
       "files": {
         "png": {
-          "path": "figures/storyline/02-make-strategy.png",
+          "path": "figures/experiment-figures/02-make-strategy.png",
           "sha256": "d13e6ca5009e8474a2a180350ab8bb8e325e0c178fd448a84e8c86eb22270ea6"
         },
         "svg": {
-          "path": "figures/storyline/02-make-strategy.svg",
+          "path": "figures/experiment-figures/02-make-strategy.svg",
           "sha256": "e1108e5daaca3f0f4da91e769213ebb045b668958a0aa7c3afa610b1333247d3"
         }
       }
@@ -39,11 +39,11 @@
       "data_rows": 18,
       "files": {
         "png": {
-          "path": "figures/storyline/03-training.png",
+          "path": "figures/experiment-figures/03-training.png",
           "sha256": "24d0a6f5dac3d9be1188532c99d42209eb1a1b7cec2485f29dd4f4388fb3ccaf"
         },
         "svg": {
-          "path": "figures/storyline/03-training.svg",
+          "path": "figures/experiment-figures/03-training.svg",
           "sha256": "764c769d671ca733fbd43d41a556009ae85cdd0c640960be74bd383b7c5449c4"
         }
       }
@@ -54,11 +54,11 @@
       "data_rows": 12,
       "files": {
         "png": {
-          "path": "figures/storyline/04-pretraining-epochs.png",
+          "path": "figures/experiment-figures/04-pretraining-epochs.png",
           "sha256": "24c34771cb1e72d4231353cf96e427df139333ca069461ff962466487d917f69"
         },
         "svg": {
-          "path": "figures/storyline/04-pretraining-epochs.svg",
+          "path": "figures/experiment-figures/04-pretraining-epochs.svg",
           "sha256": "c37974572ea14b09697282570a924feca9be4905936cd7a42643f7c7ffc7a966"
         }
       }
@@ -69,11 +69,11 @@
       "data_rows": 15,
       "files": {
         "png": {
-          "path": "figures/storyline/05-retrieval.png",
+          "path": "figures/experiment-figures/05-retrieval.png",
           "sha256": "bd5edb43e4c7dac564523473d6c104d7e32600a7d15630f26a494e0f87cf21eb"
         },
         "svg": {
-          "path": "figures/storyline/05-retrieval.svg",
+          "path": "figures/experiment-figures/05-retrieval.svg",
           "sha256": "a55ee0577586f4925c6e5f12304f7a3ee5df1f107b0a2d391c83cf8156d8e57f"
         }
       }
@@ -84,11 +84,11 @@
       "data_rows": 15,
       "files": {
         "png": {
-          "path": "figures/storyline/06-aggregation.png",
+          "path": "figures/experiment-figures/06-aggregation.png",
           "sha256": "b55b04d4803955cf652208d3f335b2b3bc397fc84464b33b07371485eda58f49"
         },
         "svg": {
-          "path": "figures/storyline/06-aggregation.svg",
+          "path": "figures/experiment-figures/06-aggregation.svg",
           "sha256": "09baa58114cae1abb7cabeb61dddc3375b34f6a4144216992c47bdb255e0c169"
         }
       }
@@ -99,11 +99,11 @@
       "data_rows": 24,
       "files": {
         "png": {
-          "path": "figures/storyline/07-history-length.png",
+          "path": "figures/experiment-figures/07-history-length.png",
           "sha256": "a6be17f74b968b72a98ae56d347b7a49d716c9cb0a77bc8391e50f5732419a2d"
         },
         "svg": {
-          "path": "figures/storyline/07-history-length.svg",
+          "path": "figures/experiment-figures/07-history-length.svg",
           "sha256": "6f5b9adce1416e6ed26d7f3d9ad2b708344895a3cdea317587405ce01ac66f67"
         }
       }
@@ -114,11 +114,11 @@
       "data_rows": 6,
       "files": {
         "png": {
-          "path": "figures/storyline/08-learned-retrieval.png",
+          "path": "figures/experiment-figures/08-learned-retrieval.png",
           "sha256": "6c3db320b6fa9b432e2bac353a4735d8e1e20e984b1eba2ed4adf4f61dde5ed9"
         },
         "svg": {
-          "path": "figures/storyline/08-learned-retrieval.svg",
+          "path": "figures/experiment-figures/08-learned-retrieval.svg",
           "sha256": "4e03bd4df72c1d006e9369f58e4a3098591f45fb78d8ad91e0d0058335f0a5de"
         }
       }
@@ -129,11 +129,11 @@
       "data_rows": 36,
       "files": {
         "png": {
-          "path": "figures/storyline/09-frequency.png",
+          "path": "figures/experiment-figures/09-frequency.png",
           "sha256": "2a98fe8a6ca5fcac4c1b23a8d0629000f38d0ba3bf93f8e1b4206d7322a43223"
         },
         "svg": {
-          "path": "figures/storyline/09-frequency.svg",
+          "path": "figures/experiment-figures/09-frequency.svg",
           "sha256": "f01ef8fbf28eeb3a52d04aa52b3c2a492d0ab6bcad6b1e6853aec90522ff1967"
         }
       }
@@ -144,11 +144,11 @@
       "data_rows": 3,
       "files": {
         "png": {
-          "path": "figures/storyline/10-g3-diagnostic.png",
+          "path": "figures/experiment-figures/10-g3-diagnostic.png",
           "sha256": "f7c4f280a84049fe156053e29e129ec72849a01ccc9711366987c2cfa78a56fe"
         },
         "svg": {
-          "path": "figures/storyline/10-g3-diagnostic.svg",
+          "path": "figures/experiment-figures/10-g3-diagnostic.svg",
           "sha256": "5976e81df85e5051b9ccb30b3570ec009b77dd296fb62c51bc73f2e4ccfd2bda"
         }
       }
@@ -159,11 +159,11 @@
       "data_rows": 27,
       "files": {
         "png": {
-          "path": "figures/storyline/11-baselines.png",
+          "path": "figures/experiment-figures/11-baselines.png",
           "sha256": "720a30ca98660f190827a7b966bbdf42944f8d4fab4245a507116fab07681506"
         },
         "svg": {
-          "path": "figures/storyline/11-baselines.svg",
+          "path": "figures/experiment-figures/11-baselines.svg",
           "sha256": "9e6cf96ed03557c38ff24cc0149dac543307dc42afda2fb94aafb7063e240c93"
         }
       }
@@ -174,11 +174,11 @@
       "data_rows": 0,
       "files": {
         "png": {
-          "path": "figures/storyline/12-framework.png",
+          "path": "figures/experiment-figures/12-framework.png",
           "sha256": "7232f73d7542b88becc547f330a280037a6dbd0b62209b88e6bf7b189c07e9b7"
         },
         "svg": {
-          "path": "figures/storyline/12-framework.svg",
+          "path": "figures/experiment-figures/12-framework.svg",
           "sha256": "2413150aee302b45c54b21f3648e9c38fbb2a97512e7183f7c46f57be9a1dedc"
         }
       }

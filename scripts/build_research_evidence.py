@@ -142,7 +142,7 @@ def main():
         '同一测试集；结构与历史预算不同。包含额外内容检索对照，不是原表数值复刻或等计算量排名。')
     add('12-framework','两个项目的联系：内容信息 → 历史选择 → 兴趣聚合','diagram',[],
         '概念示意，不对应一条把所有模块串联起来的实测网络；原始图文编码器属于给定前提。')
-    result=dict(scope='presentation_storyline_evidence',sources=provenance,figures=figures,
+    result=dict(scope='research_evidence',sources=provenance,figures=figures,
                 seeds=seeds,test_rows=923211,policy='No new model selection, fitting or inference. Historical and test phases remain explicit.')
     text=json.dumps(result,ensure_ascii=False,indent=2)+'\n'
     columns=['figure','label','seed','model_id','split','phase','epoch','length','frequency','rows','batch_size',
@@ -152,8 +152,8 @@ def main():
     for key,figure in figures.items():
         for row in figure['rows']:writer.writerow(dict(figure=key,**row))
     for project in ('content','muse'):
-        (roots[project]/'reports/storyline-evidence.json').write_text(text,encoding='utf-8',newline='\n')
-        (roots[project]/'reports/storyline-chart-data.csv').write_text(buf.getvalue(),encoding='utf-8',newline='\n')
+        (roots[project]/'reports/research-evidence.json').write_text(text,encoding='utf-8',newline='\n')
+        (roots[project]/'reports/research-chart-data.csv').write_text(buf.getvalue(),encoding='utf-8',newline='\n')
     print(f'Exported {len(figures)} figure specifications, {sum(len(f["rows"]) for f in figures.values())} rows.')
 
 

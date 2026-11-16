@@ -17,11 +17,11 @@ def main():
     p=argparse.ArgumentParser();p.add_argument('--work',type=Path,required=True);a=p.parse_args()
     content=Path(__file__).resolve().parents[1]
     roots={'content':content,'muse':content.parent/'taobao-mm-muse-repro','work':a.work.resolve()}
-    evidence=read(content/'reports/storyline-evidence.json')
+    evidence=read(content/'reports/research-evidence.json')
     primary=read(content/'reports/final-results-summary.json');extra=read(content/'reports/supplementary-test-summary.json')
-    manifest=read(content/'reports/storyline-figure-manifest.json');claims=read(content/'reports/storyline-claims.json')
-    assert manifest['data_sha256']==sha(content/'reports/storyline-evidence.json')
-    assert manifest['renderer_sha256']==sha(content/'scripts/render_storyline_figures.py')
+    manifest=read(content/'reports/research-figure-manifest.json');claims=read(content/'reports/research-claims.json')
+    assert manifest['data_sha256']==sha(content/'reports/research-evidence.json')
+    assert manifest['renderer_sha256']==sha(content/'scripts/render_experiment_figures.py')
     for source,value in evidence['sources'].items():
         project,relative=source.split('/',1);assert sha(roots[project]/relative)==value,source
     figures=evidence['figures'];assert len(figures)==len(manifest['figures'])==12
@@ -80,7 +80,7 @@ def main():
                              ('selected_cosine','mean_selected_content_cosine_fused'),
                              ('reference_cosine','mean_selected_content_cosine_reference')]:
             assert r[field]==original[source]
-    csv_rows=list(csv.DictReader((content/'reports/storyline-chart-data.csv').open(encoding='utf-8',newline='')))
+    csv_rows=list(csv.DictReader((content/'reports/research-chart-data.csv').open(encoding='utf-8',newline='')))
     expected=[dict(figure=k,**r) for k,f in figures.items() for r in f['rows']]
     assert len(csv_rows)==len(expected)==count==186
     for actual,row in zip(csv_rows,expected):
@@ -100,8 +100,8 @@ def main():
     assert pairs[63]['gauc_delta_user_bootstrap_95_percentile'][0]<0<pairs[63]['gauc_delta_user_bootstrap_95_percentile'][1]
     assert all(pairs[i]['gauc_delta_user_bootstrap_95_percentile'][0]>0 for i in [75,76,78,79,81,82,83])
     assert all(pairs[i]['gauc_delta_user_bootstrap_95_percentile'][0]<0<pairs[i]['gauc_delta_user_bootstrap_95_percentile'][1] for i in [77,80])
-    shared=['reports/storyline-evidence.json','reports/storyline-chart-data.csv','reports/storyline-claims.json',
-            'reports/storyline-figure-manifest.json','docs/research-narrative.md','docs/paper-comparison-and-analysis.md',
+    shared=['reports/research-evidence.json','reports/research-chart-data.csv','reports/research-claims.json',
+            'reports/research-figure-manifest.json','docs/research-narrative.md','docs/paper-comparison-and-analysis.md',
             'docs/experiment-figures.md']
     for relative in shared:assert (content/relative).read_bytes()==(roots['muse']/relative).read_bytes()
     for root in [content,roots['muse']]:
@@ -110,7 +110,7 @@ def main():
             assert '\ufffd' not in text and 'C:\\Users' not in text
             for link in re.findall(r'\]\(([^)]+)\)',text):
                 if not link.startswith(('http','#')):assert (path.parent/link.split('#')[0]).exists(),(relative,link)
-    result=dict(scope='narrative_data_and_presentation_readiness_audit',date='2026-09-25',all_passed=True,
+    result=dict(scope='research_evidence_validation',date='2026-09-25',all_passed=True,
                 source_files_verified=len(evidence['sources']),figures_verified=12,asset_files_verified=24,
                 chart_rows_verified=count,core_claims_mapped=11,shared_outputs_identical=True,
                 provenance_verified=True,selected_claim_directions_checked=True,
@@ -119,7 +119,7 @@ def main():
                             'No new training, test-driven tuning or bootstrap rerun.',
                             'Figure layout requires separate visual inspection.'])
     for root in [content,roots['muse']]:
-        (root/'reports/narrative-readiness-audit.json').write_text(json.dumps(result,indent=2)+'\n',encoding='utf-8',newline='\n')
+        (root/'reports/research-evidence-validation.json').write_text(json.dumps(result,indent=2)+'\n',encoding='utf-8',newline='\n')
     print(json.dumps(result))
 
 

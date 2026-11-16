@@ -88,7 +88,7 @@
 - [阶段 19：三种子核心汇总与 MAKE 策略归因](stage-19-core-summary-and-make-controls.md)
 - [阶段 20：5% MAKE 策略与训练轮数证据](stage-20-make-strategy-evidence.md)
 - [阶段 21：商品频次与多模态表示覆盖率分组诊断](stage-21-frequency-and-coverage.md)
-- [阶段 22：研究主线证据审计与最终测试准入](stage-22-storyline-readiness.md)
+- [阶段 22：研究主线证据审计与最终测试准入](stage-22-evidence-validation.md)
 - [两项目研究收尾：研究主线与证据边界](study-completion.md)
 
 </details>
